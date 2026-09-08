@@ -570,6 +570,7 @@ textarea {
 /* Keep editing and playback navigation visible together. */
 :root {
   --studio-header-height: 88px;
+  --studio-footer-height: 48px;
 }
 html {
   scroll-padding-top: calc(var(--studio-header-height) + 20px);
@@ -748,7 +749,7 @@ header nav {
     overflow: hidden;
   }
   main {
-    height: calc(100dvh - var(--studio-header-height));
+    height: calc(100dvh - var(--studio-header-height) - var(--studio-footer-height));
     max-width: 1320px;
     grid-template-columns: minmax(260px, 360px) minmax(0, 1fr);
     grid-template-rows: minmax(0, 1fr);
@@ -1071,7 +1072,12 @@ summary {
   justify-content: center;
   gap: 5px;
   flex: none;
-  margin: 12px 0 0;
+  margin: 0;
+  width: 100%;
+  min-height: var(--studio-footer-height);
+  padding: 8px 16px;
+  border-top: 1px solid var(--color-border-strong);
+  background: var(--color-bg-surface);
   color: var(--color-text-secondary);
   font-size: 11px;
 }
