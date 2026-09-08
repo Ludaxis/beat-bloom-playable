@@ -89,7 +89,7 @@ class StreamedBuffer {
 }
 
 /** A single streamed WebGL mesh for all field ribbons; neither CPU canvas nor fat blurred lines. */
-class RibbonMesh {
+export class RibbonMesh {
   readonly geometry = new MeshGeometry({
     positions: new Float32Array(8),
     uvs: new Float32Array(8),
@@ -132,6 +132,7 @@ class RibbonMesh {
     ribbon = false,
     brightness = 1,
     opacity?: number[],
+    joins?: [Vec2, Vec2],
   ) {
     if (points.length < 2 || alpha <= 0) return;
     const count = points.length,
@@ -140,8 +141,12 @@ class RibbonMesh {
     const green = (((color >> 8) & 255) / 255) * brightness;
     const blue = ((color & 255) / 255) * brightness;
     for (let i = 0; i < count; i++) {
-      const previous = points[i === 0 ? (closed ? count - 2 : 0) : i - 1];
-      const next = points[i === count - 1 ? (closed ? 1 : count - 1) : i + 1];
+      const previous =
+        i === 0 && joins ? joins[0] : points[i === 0 ? (closed ? count - 2 : 0) : i - 1];
+      const next =
+        i === count - 1 && joins
+          ? joins[1]
+          : points[i === count - 1 ? (closed ? 1 : count - 1) : i + 1];
       const dx = next.x - previous.x,
         dy = next.y - previous.y,
         length = Math.hypot(dx, dy) || 1;
@@ -583,33 +588,47 @@ export class NativeRenderer {
     for (const segment of ring.segments) {
       if (segment.color < 0) continue;
       const points = this.toScreenPoints(segment.points);
+      // Adjacent colors share their endpoint tangent. Independent butt caps leave a
+      // wedge at the heart notch even when their centerline endpoints coincide.
+      const previous =
+        ring.segments[(segment.index + ring.segments.length - 1) % ring.segments.length].points;
+      const next = ring.segments[(segment.index + 1) % ring.segments.length].points;
+      const joins: [Vec2, Vec2] | undefined =
+        this.lastModel?.level.segmentGap === 0 && previous.length > 1 && next.length > 1
+          ? [
+              worldToScreen(previous[previous.length - 2], this.config),
+              worldToScreen(next[1], this.config),
+            ]
+          : undefined;
+      const strokePath = (mesh: RibbonMesh, width: number, color: number, alpha: number) =>
+        mesh.stroke(points, width, color, alpha, false, false, 1, undefined, joins);
       if (!this.pathOnScreen(points, stroke * VFX.field.flashWidth)) continue;
       if (segment.alive && shadowAlpha >= VFX.field.cullAlpha) {
-        this.field.stroke(points, stroke, VFX.field.trackColor, shadowAlpha);
+        strokePath(this.field, stroke, VFX.field.trackColor, shadowAlpha);
       }
       if (colorAlpha >= VFX.field.cullAlpha && !segment.alive) {
-        this.field.stroke(points, stroke, VFX.field.trackColor, colorAlpha * VFX.field.trackAlpha);
+        strokePath(this.field, stroke, VFX.field.trackColor, colorAlpha * VFX.field.trackAlpha);
       } else if (colorAlpha >= VFX.field.cullAlpha) {
         const base = this.palette[segment.color] ?? 0xffffff;
-        this.field.stroke(points, stroke, base, colorAlpha);
+        strokePath(this.field, stroke, base, colorAlpha);
         // Additive neon overlays illuminate the actual rotating ring, not a second outline.
         // Only the small band reached by the center pulse is submitted to this mesh.
         const glow = illumination * colorAlpha;
         if (glow > VFX.field.cullAlpha) {
-          this.lineLight.stroke(
-            points,
+          strokePath(
+            this.lineLight,
             stroke + VFX.shockwave.lineHaloPixels,
             base,
             glow * VFX.shockwave.lineHaloAlpha,
           );
-          this.lineLight.stroke(
-            points,
+          strokePath(
+            this.lineLight,
             stroke,
             this.lighten(base, VFX.shockwave.lineWhiteness),
             glow * VFX.shockwave.lineBodyAlpha,
           );
-          this.lineLight.stroke(
-            points,
+          strokePath(
+            this.lineLight,
             stroke * VFX.shockwave.lineCoreWidth,
             0xffffff,
             glow * VFX.shockwave.lineCoreAlpha,
@@ -620,8 +639,8 @@ export class NativeRenderer {
       if (flashAt !== undefined) {
         const phase = clamp01((this.clock - flashAt) / VFX.field.flashSeconds);
         const color = this.palette[segment.color] ?? 0xffffff;
-        this.field.stroke(
-          points,
+        strokePath(
+          this.field,
           stroke * mix(VFX.field.flashWidth, 1, phase),
           this.lighten(color, 0.46),
           (1 - phase) * 0.86 * colorAlpha,

@@ -16,6 +16,8 @@ npm run dev
 
 Open [localhost:4178](http://127.0.0.1:4178). Build once before starting the studio; rebuild after changing runtime code. The development server also handles playable downloads.
 
+The default opening puzzle is the supplied 16-ring heart level (`beat-bloom-heart-level (1).json`), stored in `src/native/data/studio-default.json`. Fresh Studio sessions and the default standalone preview use this same definition.
+
 ## Create a playable
 
 1. **Gameplay:** select a song, then adjust the shape, colors, ring count, spacing, line thickness, and ball controls. Advanced pattern settings include the 20 imported ring templates.
