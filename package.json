@@ -9,7 +9,7 @@
     "dev": "node scripts/serve.mjs",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test test/native*.test.ts",
-    "test:export": "node --test scripts/native-package.test.mjs",
+    "test:export": "node --test scripts/native-package.test.mjs scripts/audio-variants.test.mjs",
     "qa": "node scripts/native-qa.mjs",
     "qa:export": "node scripts/native-export-qa.mjs",
     "qa:endcard": "node scripts/native-endcard-qa.mjs",
@@ -19,7 +19,8 @@
     "export:levels": "node scripts/export-native-level.mjs",
     "templates": "node scripts/export-ring-templates.mjs",
     "format": "prettier --write src review scripts test",
-    "format:check": "prettier --check src review scripts test"
+    "format:check": "prettier --check src review scripts test",
+    "assets:audio": "node scripts/prepare-audio-variants.mjs"
   },
   "dependencies": {
     "pixi.js": "8.20.1"
@@ -34,5 +35,8 @@
     "sharp": "^0.35.4",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
   }
 }

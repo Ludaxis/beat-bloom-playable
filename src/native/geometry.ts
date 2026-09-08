@@ -273,6 +273,28 @@ export function pointAtArc(points: Point[], u: number): Point {
     b = points[(i + 1) % points.length];
   return { x: lerp(a.x, b.x, f), y: lerp(a.y, b.y, f) };
 }
+const heartHalfPhases = new WeakMap<Point[], number>();
+/** Start a stationary two-part heart at its lower symmetry-axis crossing. */
+export function heartHalfPhase(points: Point[]): number {
+  const cached = heartHalfPhases.get(points);
+  if (cached !== undefined) return cached;
+  let phase = 0,
+    lowest = -Infinity;
+  for (let i = 0; i < points.length; i++) {
+    const a = points[i],
+      b = points[(i + 1) % points.length];
+    if ((a.x <= 0 && b.x >= 0) || (a.x >= 0 && b.x <= 0)) {
+      const t = a.x === b.x ? 0 : -a.x / (b.x - a.x);
+      const y = lerp(a.y, b.y, t);
+      if (y > lowest) {
+        lowest = y;
+        phase = (i + t) / points.length;
+      }
+    }
+  }
+  heartHalfPhases.set(points, phase);
+  return phase;
+}
 export function segmentPath(
   points: Point[],
   index: number,

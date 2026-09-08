@@ -25,6 +25,8 @@ Open [localhost:4178](http://127.0.0.1:4178). Build once before starting the stu
 
 **Open playable** opens the current authored level. **Share** creates a link containing its configuration; recipients need access to the hosted studio. A localhost link works only on your computer. Large custom images can make share links long.
 
+**Shuffle balls**, in Advanced pattern, mixes positions within each three-ball row. Studio applies the new order only after verifying a winning route; Cancel keeps the current queue. For a two-segment heart with two colors, set Segment speed and Shift per ring to zero to split it into left and right color halves.
+
 Each queued ball has three power. The queue rounds up the number of balls needed per color without changing the pattern. A solve-check result of **Verified win** confirms a successful input sequence; an unfinished check does not prove the level is impossible.
 
 ## Export and install actions
@@ -81,7 +83,7 @@ npm run templates
 npm run export:levels -- 6
 ```
 
-`npm run assets` and `npm run assets:native` rebuild prepared media from that checkout and the included source artwork; their media tools also require FFmpeg. Review generated asset changes before committing. Source audits run when this environment variable is set; otherwise standalone verification explicitly skips the Unity audit and still tests the packaged templates.
+`npm run assets` and `npm run assets:native` rebuild prepared media from that checkout and the included source artwork; their media tools also require FFmpeg. After changing audio, run `npm run assets:audio` and commit `assets/encoded-audio/`. Normal builds and exports use these checksum-verified variants and do not require FFmpeg. Review generated asset changes before committing. Source audits run when this environment variable is set; otherwise standalone verification explicitly skips the Unity audit and still tests the packaged templates.
 
 ## Hosting
 

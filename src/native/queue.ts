@@ -86,3 +86,22 @@ export function normalizePlayableQueue(level: NativeLevel, forcedRebuild = false
   }));
   return next;
 }
+
+/** Mix positions within each three-ball row without pulling late colors ahead of early demand. */
+export function shuffleQueueRows(queue: NativeQueueEntry[], seed: number): NativeQueueEntry[] {
+  let state = seed >>> 0 || 1;
+  const random = () => {
+    state ^= state << 13;
+    state ^= state >>> 17;
+    state ^= state << 5;
+    return (state >>> 0) / 4294967296;
+  };
+  const next = queue.map((ball) => ({ ...ball }));
+  for (let start = 0; start < next.length; start += 3) {
+    for (let i = Math.min(start + 2, next.length - 1); i > start; i--) {
+      const j = start + Math.floor(random() * (i - start + 1));
+      [next[i], next[j]] = [next[j], next[i]];
+    }
+  }
+  return next;
+}

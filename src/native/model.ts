@@ -12,6 +12,7 @@ import {
   closestPoint,
   distance,
   makeContour,
+  heartHalfPhase,
   normalize,
   offsetContour,
   pointAtArc,
@@ -859,7 +860,14 @@ export class NativeModel {
       (m.conveyorBeatsPerSlot > 0
         ? ((m.conveyorAlternate && ring.id % 2 ? -1 : 1) * travel) /
           (m.conveyorBeatsPerSlot * ring.segments.length)
-        : 0) + (l.ringPhaseOffsets?.[ring.sourceLayer] ?? 0);
+        : 0) +
+      (l.ringPhaseOffsets?.[ring.sourceLayer] ?? 0) +
+      (l.shape === 'heart' &&
+      m.conveyorBeatsPerSlot <= 0 &&
+      ring.segments.length === 2 &&
+      ring.segments[0].color !== ring.segments[1].color
+        ? heartHalfPhase(contour)
+        : 0);
     return {
       ...ring,
       points: contour.map((p) => rotate(p, this.rotation)),
@@ -926,7 +934,14 @@ export class NativeModel {
         (m.conveyorBeatsPerSlot > 0
           ? ((m.conveyorAlternate && ring.id % 2 ? -1 : 1) * travel) /
             (m.conveyorBeatsPerSlot * ring.segments.length)
-          : 0) + (l.ringPhaseOffsets?.[ring.sourceLayer] ?? 0);
+          : 0) +
+        (l.ringPhaseOffsets?.[ring.sourceLayer] ?? 0) +
+        (l.shape === 'heart' &&
+        m.conveyorBeatsPerSlot <= 0 &&
+        ring.segments.length === 2 &&
+        ring.segments[0].color !== ring.segments[1].color
+          ? heartHalfPhase(contour)
+          : 0);
       for (const s of ring.segments) {
         s.previousPoints = s.points;
         s.points = segmentPath(

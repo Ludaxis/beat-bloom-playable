@@ -1,17 +1,15 @@
+import { encodedAudio } from './audio-variants.mjs';
 import { build, transform } from 'esbuild';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
-import { execFile } from 'node:child_process';
-import { promisify } from 'node:util';
 import { zipSync, strToU8 } from 'fflate';
 import sharp from 'sharp';
 import { checkArtwork } from './check-artwork.mjs';
 import { prepareTutorialAssets, TUTORIAL_ASSET_FILES } from './tutorial-assets.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const runFile = promisify(execFile);
 export const EXPORT_NETWORKS = Object.freeze(['unity', 'applovin', 'meta']);
 export const EXPORT_PROFILES = Object.freeze([
   'native',
@@ -267,29 +265,7 @@ async function packAsset(relativePath, mime, tier) {
           .webp({ quality: tier.imageQuality, alphaQuality: 90 })
           .toBuffer();
       } else if (tier.id !== 'original' && relativePath.endsWith('.mp3')) {
-        ({ stdout: buffer } = await runFile(
-          'ffmpeg',
-          [
-            '-v',
-            'error',
-            '-i',
-            path,
-            '-map_metadata',
-            '-1',
-            '-ac',
-            '1',
-            '-ar',
-            String(tier.audioSampleRate),
-            '-codec:a',
-            'libmp3lame',
-            '-b:a',
-            `${tier.audioKbps}k`,
-            '-f',
-            'mp3',
-            'pipe:1',
-          ],
-          { encoding: 'buffer', maxBuffer: 4_000_000, timeout: 60_000 },
-        ));
+        buffer = await encodedAudio(relativePath, tier);
       } else buffer = await readFile(path);
       return `data:${mime};base64,${buffer.toString('base64')}`;
     })();

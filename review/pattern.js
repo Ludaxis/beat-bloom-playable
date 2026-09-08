@@ -343,14 +343,19 @@ function scheduleSolvability() {
   clearTimeout(solveTimer);
   solveTimer = setTimeout(checkSolvability, 400);
 }
-function checkSolvability({ longer = false } = {}) {
+function checkSolvability({ longer = false, shuffle = false } = {}) {
   const current = api();
   if (!current?.snapshot().ready) return;
   cancelSolvability();
   const revision = solveRevision,
     level = current.getLevel();
   solveKey = solvabilityKey(level);
-  setSolveStatus('checking', 'Checking a winning route using normal ball moves…');
+  setSolveStatus(
+    'checking',
+    shuffle
+      ? 'Finding a solvable shuffle… Your queue stays unchanged until verified.'
+      : 'Checking a winning route using normal ball moves…',
+  );
   $('#check-solvable').textContent = 'Cancel check';
   try {
     solveWorker = new Worker('/review/pattern-worker.js');
@@ -367,6 +372,14 @@ function checkSolvability({ longer = false } = {}) {
       solveWorker?.terminate();
       solveWorker = null;
       $('#check-solvable').textContent = 'Check again';
+      if (shuffle && data.queue && data.result?.status === 'verified-win') {
+        if (solvabilityKey(current.getLevel()) !== solveKey) return;
+        patternUndo = current.getLevel();
+        const next = current.setLevel({ ...patternUndo, queue: data.queue });
+        solveKey = solvabilityKey(next);
+        $('#undo-pattern').disabled = false;
+        commitPattern(next, 'Balls shuffled. A winning route is verified.');
+      }
       lastSolveResult = data.result ? { levelKey: solveKey, ...data.result } : null;
       if (data.result?.status === 'verified-win')
         setSolveStatus(
@@ -389,12 +402,18 @@ function checkSolvability({ longer = false } = {}) {
       cancelSolvability();
       setSolveStatus('not-verified', 'The check could not finish. Try Check solvability again.');
     };
-    solveWorker.postMessage({ level, maxWallTimeMs: longer ? 60000 : 12000 });
+    solveWorker.postMessage({
+      level,
+      shuffle,
+      seed: crypto.getRandomValues(new Uint32Array(1))[0],
+      maxWallTimeMs: longer ? 60000 : 12000,
+    });
   } catch (error) {
     cancelSolvability();
     setSolveStatus('not-verified', 'The solve check is unavailable: ' + error.message);
   }
 }
+$('#shuffle-balls').onclick = () => checkSolvability({ shuffle: true, longer: true });
 $('#check-solvable').onclick = () => {
   autoCheck = true;
   if (solveWorker) {
