@@ -30,3 +30,8 @@ Run `npm run verify` before pushing. Hosted-adapter tests cover origin checks, b
 `/play/<id>` loads the snapshot through `GET /api/share?id=<id>`. IDs are 128-bit keyed content hashes; identical settings reuse one immutable object. There is no expiry or overwrite operation. Anyone holding a link can play its snapshot. Links survive deployments; do not delete the store or its objects during cleanup. Token rotation leaves existing links readable but may generate a different ID for later shares.
 
 The Vercel firewall limits share creation to 30 requests per minute per IP. Reads are unaffected. The API also bounds request bodies to 256 KiB and validates the origin, profile, song and gameplay settings. Old `/play#…` and `/review/shared.html#…` links remain supported. Local Studio continues using self-contained links without cloud credentials.
+
+
+## Link previews
+
+Studio and shared viewers include Open Graph and large-image card metadata in their initial HTML. They use the approved 1200 × 630 game banner in `review/brand/beat-bloom-share-20260908.jpg` (134 KB). This is website-only artwork and is not embedded in ad exports. Shared pages deliberately omit a fixed `og:url`: each requested level URL stays distinct rather than being canonicalized to Studio. Hash links share `/play` metadata because URL fragments are not sent to servers. Chat apps may retain cached previews for previously posted links.
