@@ -6,7 +6,7 @@ const button = document.querySelector('#share-playable'),
 button.onclick = async () => {
   const current = api();
   if (!current?.snapshot().ready) {
-    message('Wait for the playable to finish loading.');
+    message('Still loading. Try again in a moment.');
     return;
   }
   button.disabled = true;
@@ -15,8 +15,8 @@ button.onclick = async () => {
       fragment = await encodeShare(snapshot);
     link.value = new URL('/play', location.origin).href + '#' + fragment;
     status.textContent = ['localhost', '127.0.0.1', '::1'].includes(location.hostname)
-      ? 'Local link: deploy the project before sharing with other devices. Create a new link on your deployed site.'
-      : 'This link includes a snapshot of your current playable. Later edits won’t change it.';
+      ? 'Local link. Use the live Studio to share with others.'
+      : 'A copy of this level. Later edits won’t change it.';
     dialog.showModal();
     try {
       await navigator.clipboard.writeText(link.value);
@@ -39,7 +39,7 @@ document.querySelector('#share-copy').onclick = async () => {
   } catch {
     link.focus();
     link.select();
-    status.textContent = 'Copy the selected link with your browser’s Copy command.';
+    status.textContent = 'Select and copy the link.';
   }
 };
 document.querySelector('#share-close').onclick = () => dialog.close();

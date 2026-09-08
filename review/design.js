@@ -34,8 +34,8 @@ function endCardControls() {
   designSizeLabels();
   if (typeof refreshDesignAssets === 'function') refreshDesignAssets(design);
   $('#design-concept').textContent = profile.startsWith('b-')
-    ? 'Tagline + logo · headline above your brand.'
-    : 'Free to play · brand, headline and footer.';
+    ? 'Tagline + logo'
+    : 'Free to play footer';
   if (studioTab === 'design') a.previewEndCard();
 }
 function designSizeLabels() {
@@ -52,11 +52,11 @@ function designSizeLabels() {
 function selectStudioTab(next, focus = false) {
   const a = api();
   if (next === 'design' && !a?.snapshot().ready) {
-    message('Wait for the playable to finish loading.');
+    message('Still loading. Try again in a moment.');
     return;
   }
   if (next === 'design' && !a.getEndCardDesign) {
-    message('Reload Studio to use the latest ending design tools.');
+    message('Reload Studio to update.');
     return;
   }
   if (next !== studioTab) $('.editor').scrollTop = 0;
@@ -71,7 +71,7 @@ function selectStudioTab(next, focus = false) {
   }
   $('.transport').hidden = next === 'design';
   $('.design-transport').hidden = next !== 'design';
-  $('#preview-title').textContent = next === 'design' ? 'Ending preview' : 'Web playable';
+  $('#preview-title').textContent = next === 'design' ? 'Ending preview' : 'Live preview';
   if (next === 'design') endCardControls();
   else a?.closeEndCardPreview?.();
   if (focus) $(`#${next}-tab`).focus({ preventScroll: true });
@@ -128,7 +128,7 @@ function applyDesign(event) {
     designSizeLabels();
     event.currentTarget.removeAttribute('aria-invalid');
     $('#design-status').dataset.error = 'false';
-    $('#design-status').textContent = 'Ending updated. Included in your export.';
+    $('#design-status').textContent = 'Ending updated.';
   } catch (error) {
     $('#design-status').textContent = error.message;
   }
@@ -145,7 +145,7 @@ $('#reset-end-design').onclick = () => {
     a.resetEndCardDesign();
     $('#level-json').value = JSON.stringify(a.getLevel(), null, 2);
     endCardControls();
-    $('#design-status').textContent = 'Restored the approved ending layout.';
+    $('#design-status').textContent = 'Design reset.';
   } catch (error) {
     $('#design-status').textContent = error.message;
   }

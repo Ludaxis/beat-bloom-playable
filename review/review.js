@@ -68,12 +68,11 @@ function controls(level) {
 function labels() {
   $('#ball-speed-value').value = (Number($('#ball-speed').value) / 100).toFixed(2) + '×';
   $('#ball-size-value').value = $('#ball-size').value + '%';
-  $('#inner-radius-value').value =
-    (Number($('#inner-radius').value) * 49).toFixed(0) + ' px at base size';
+  $('#inner-radius-value').value = (Number($('#inner-radius').value) * 49).toFixed(0) + ' px';
   $('#layers-value').value = $('#layers').value;
   $('#visible-layers-value').value = $('#visible-layers').value;
-  $('#thickness-value').value = Number($('#thickness').value).toFixed(1) + ' px at base size';
-  $('#spacing-value').value = Number($('#spacing').value).toFixed(1) + ' px at base size';
+  $('#thickness-value').value = Number($('#thickness').value).toFixed(1) + ' px';
+  $('#spacing-value').value = Number($('#spacing').value).toFixed(1) + ' px';
   $('#petals-value').value = $('#petals').value;
   $('#roundness-value').value = Math.round(Number($('#roundness').value) * 100) + '%';
   const flower = $('#shape').value === 'flower';
@@ -144,7 +143,7 @@ for (const id of ['tutorial-enabled', 'tutorial-placement'])
       });
       $('#level-json').value = JSON.stringify(next, null, 2);
       tutorialControls();
-      message('Tutorial updated. Ready to play.');
+      message('Hints updated.');
     } catch (e) {
       message(e.message);
       tutorialControls();
@@ -179,7 +178,7 @@ function change(event) {
     const l = api().setOptions(options);
     $('#level-json').value = JSON.stringify(l, null, 2);
     if (typeof patternControls === 'function') patternControls(l);
-    message('Level updated. Ready to play.');
+    message('Level updated.');
   } catch (e) {
     message(e.message);
     controls(api().getLevel());
@@ -216,9 +215,7 @@ $('#layers').addEventListener('change', () => {
   try {
     const level = api().setLayerCount(Number($('#layers').value));
     controls(level);
-    message(
-      `Updated to ${level.rings.length} layers. ${level.queue.length} balls × 3 power cover ${level.rings.flat().filter((c) => c >= 0).length} pieces.`,
-    );
+    message(`${level.rings.length} rings. ${level.queue.length} balls, 3 power each.`);
   } catch (e) {
     message(e.message);
     controls(api().getLevel());
@@ -250,7 +247,7 @@ $('#profile').onchange = () => {
   paused = false;
   labelTransport('pause', 'Pause');
   $('#pause').setAttribute('aria-pressed', 'false');
-  message('Loading song stems and instruments…');
+  message('Loading song…');
 };
 function applyPendingSong(a) {
   if (!pendingSongLevel) return;
@@ -288,7 +285,7 @@ function applyPendingSong(a) {
   const level = a.setLevel(next);
   pendingSongLevel = null;
   controls(level);
-  message('Song loaded. Your shape, pattern and ending are preserved.');
+  message('Song ready.');
 }
 $('#restart').onclick = () => {
   api()?.restart();
@@ -321,14 +318,14 @@ $('#save').onclick = () => {
   a.download = `beat-bloom-${l.shape}-level.json`;
   a.click();
   setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-  message('Level saved. Load this JSON to use it again.');
+  message('Level saved.');
 };
 $('#load').onclick = () => $('#load-file').click();
 async function applyText(text) {
   try {
     const l = api().setLevel(JSON.parse(text));
     controls(l);
-    message('Level loaded and validated.');
+    message('Level loaded.');
   } catch (e) {
     message('Level was not changed: ' + e.message);
   }
@@ -382,15 +379,15 @@ function exportControls() {
   $('.store-destinations').hidden = meta;
   for (const id of ['store-ios', 'store-android']) $(`#${id}`).disabled = meta;
   $('#destination-help').textContent = meta
-    ? 'Managed in Meta Ads Manager. Install Now uses your campaign’s destination; no link is needed in this export.'
+    ? 'Set the destination in Meta Ads Manager.'
     : network === 'applovin'
-      ? 'Choose the app, operating system and any custom product page in AppLovin. The playable includes base app links for its install action.'
-      : 'The playable includes your app’s store links. Manage tracking in Unity’s campaign settings.';
+      ? 'Uses your store links. Set tracking in AppLovin.'
+      : 'Uses your store links. Set tracking in Unity.';
   $('#export-format-help').textContent = zip
     ? meta
-      ? 'ZIP with a single index.html. The included HTML stays within our 2 MB budget.'
-      : 'For upload, unzip and select index.html. The network accepts a single HTML file.'
-    : `One file with all assets included. ${meta ? '2 MB export budget' : 'Under 5 MB'}.`;
+      ? 'Contains index.html. HTML limit: 2 MB.'
+      : 'Unzip, then upload index.html.'
+    : `All assets included. ${meta ? '2 MB' : '5 MB'} limit.`;
   $('#network-guide').href = meta
     ? 'https://www.facebook.com/business/help/412951382532338'
     : network === 'applovin'
@@ -454,7 +451,7 @@ $('#export-playable').onclick = async () => {
     link.click();
     const bytes = Number(response.headers.get('X-Playable-HTML-Bytes')),
       cap = Number(response.headers.get('X-Playable-Limit-Bytes'));
-    status.textContent = `Exported ${level.shape} · ${level.rings.length} layers. HTML ${(bytes / 1000000).toFixed(2)} MB / ${(cap / 1000000).toFixed(0)} MB limit. Ready for the network’s upload validator.`;
+    status.textContent = `Downloaded. ${(bytes / 1000000).toFixed(2)} / ${(cap / 1000000).toFixed(0)} MB. Test in the network’s validator.`;
   } catch (error) {
     status.dataset.error = 'true';
     status.textContent = error.message;
@@ -472,7 +469,7 @@ addEventListener('beforeunload', () => {
 $('#fullscreen').onclick = () => {
   const current = api();
   if (!current?.snapshot().ready) {
-    message('Wait for your level to finish loading.');
+    message('Still loading. Try again in a moment.');
     return;
   }
   try {
@@ -482,9 +479,7 @@ $('#fullscreen').onclick = () => {
       throw Error('This level is too large to open. Save its JSON and reduce the level size.');
     localStorage.setItem(`beatbloom:studio-preview:${id}`, snapshot);
     window.open(`/dist/preview/${profile}.html?studioLevel=${id}`, '_blank', 'noopener');
-    message(
-      'Opened your current level in a new tab. It starts fresh and keeps these settings when reloaded.',
-    );
+    message('Opened in a new tab.');
   } catch (error) {
     message('Unable to open this level: ' + error.message);
   }

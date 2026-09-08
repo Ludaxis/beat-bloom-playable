@@ -45,8 +45,7 @@ for (const key of ['logo', 'icon']) {
       a.setEndCardDesign({ [key + 'Image']: url });
       $('#level-json').value = JSON.stringify(a.getLevel(), null, 2);
       refreshDesignAssets(a.getEndCardDesign());
-      $('#design-status').textContent =
-        `${key === 'logo' ? 'Logo' : 'Icon'} updated. Included in saved levels and exports.`;
+      $('#design-status').textContent = `${key === 'logo' ? 'Logo' : 'Icon'} updated.`;
     } catch (error) {
       $('#design-status').textContent = 'Image not changed: ' + error.message;
     }

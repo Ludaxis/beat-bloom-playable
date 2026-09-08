@@ -62,10 +62,8 @@
     <main>
       <aside class="editor">
         <section id="gameplay-panel" role="tabpanel" aria-labelledby="gameplay-tab">
-          <h1>Make the next level.</h1>
-          <p class="lead">
-            Choose a song, then shape its puzzle. Each song includes its own stems and instruments.
-          </p>
+          <h1>Shape your level.</h1>
+          <p class="lead">Pick a song. Make it yours.</p>
           <label class="field" for="profile"
             >Song<select id="profile" aria-label="Song">
               <option value="native">Kiss Me More</option>
@@ -87,15 +85,15 @@
             </select></label
           >
           <label class="field slider"
-            >Total colored layers<output id="layers-value">12</output
+            >Total rings<output id="layers-value">12</output
             ><input id="layers" type="range" min="1" max="24" step="1" value="12"
           /></label>
           <label class="field slider"
-            >Visible layers<output id="visible-layers-value">6</output
+            >Visible rings<output id="visible-layers-value">6</output
             ><input id="visible-layers" type="range" min="1" max="12" step="1" value="6"
           /></label>
           <label class="field slider" for="inner-radius"
-            >Center space radius<output id="inner-radius-value">137 px at base size</output
+            >Center space<output id="inner-radius-value">137 px</output
             ><input
               id="inner-radius"
               type="range"
@@ -105,17 +103,12 @@
               value="2.8"
               aria-describedby="inner-radius-help"
           /></label>
-          <p id="inner-radius-help" class="control-help">
-            Moves the innermost line outward to give balls more room. The board scales to fit.
-          </p>
+          <p id="inner-radius-help" class="control-help">Give balls more room.</p>
           <label class="field slider"
             >Center ball size<output id="ball-size-value">85%</output
             ><input id="ball-size" type="range" min="60" max="110" step="1" value="85"
           /></label>
-          <p class="control-help">
-            Changes moving balls and their collision size. Queue and slot buttons stay the same
-            size.
-          </p>
+          <p class="control-help">Size of balls in play.</p>
           <label class="field slider">
             Ball speed<output id="ball-speed-value">1.00×</output>
             <input
@@ -128,9 +121,7 @@
               aria-describedby="ball-speed-help"
             />
           </label>
-          <p id="ball-speed-help" class="control-help">
-            Adjusts movement and bounce speed. Keeps ball size and music tempo unchanged.
-          </p>
+          <p id="ball-speed-help" class="control-help">Music tempo stays the same.</p>
           <label class="field slider"
             >Line thickness<output id="thickness-value">8.8 px</output
             ><input id="thickness" type="range" min="3" max="16" step=".2" value="8.8"
@@ -151,12 +142,10 @@
                 value="5"
                 aria-describedby="petals-help"
             /></label>
-            <p id="petals-help" class="control-help">
-              The rounded lobes around the Flower outline.
-            </p>
+            <p id="petals-help" class="control-help">Points around the flower.</p>
           </div>
           <div id="petals-unavailable" class="control-help">
-            <p>Petals are the rounded lobes of the Flower shape. They don’t apply to this shape.</p>
+            <p>Petals apply to Flower only.</p>
           </div>
           <label class="field slider"
             >Roundness<output id="roundness-value">0%</output
@@ -164,33 +153,26 @@
           /></label>
           <details id="advanced-pattern" class="advanced-pattern">
             <summary>Advanced pattern</summary>
-            <p class="control-help">
-              Start with a game pattern, then tune it. Every queued ball has 3 power. The queue
-              covers all pieces of each color across every ring.
-            </p>
+            <p class="control-help">Try a pattern, then tweak it.</p>
             <label class="field"
               >Game pattern<select id="pattern-template" disabled>
-                <option value="">Loading game patterns…</option>
+                <option value="">Loading patterns…</option>
               </select></label
             >
-            <p id="template-description" class="control-help">
-              Copies rings, colors and ring count. Keeps your shape, song and motion.
-            </p>
+            <p id="template-description" class="control-help">Applies rings and colors only.</p>
             <div class="buttons">
               <button id="apply-template" type="button" disabled>Apply pattern</button
               ><button id="undo-pattern" type="button" disabled>Undo pattern</button>
             </div>
             <div class="pattern-preview">
-              <span>Rings from center outward</span
+              <span>Inner → outer</span
               ><svg id="pattern-map" role="img" aria-label="Current ring color pattern"></svg>
             </div>
             <label class="field slider" for="color-count"
-              >Palette colors<output id="color-count-value">4</output
+              >Color count<output id="color-count-value">4</output
               ><input id="color-count" type="range" min="1" max="12" step="1" value="4"
             /></label>
-            <p id="color-count-help" class="control-help">
-              Adding or removing colors rebuilds the ball queue.
-            </p>
+            <p id="color-count-help" class="control-help">Balls update to match your colors.</p>
             <fieldset class="palette">
               <legend>Palette</legend>
               <input type="color" aria-label="First color" value="#f64648" /><input
@@ -242,22 +224,16 @@
               /><span>°</span>
             </div>
             <p id="pattern-shift-help" class="control-help">
-              A smooth offset along the outline. Use a small decimal for a tiny shift; negative
-              values shift the other way.
+              Use decimals for a small shift. Negative values reverse it.
             </p>
-            <p id="pattern-status" class="control-help">
-              Shift offsets each ring’s color pattern. Zero aligns the segments.
-            </p>
+            <p id="pattern-status" class="control-help">Zero aligns the colors.</p>
             <div class="pattern-depth">
               <h3>Ring depth</h3>
               <label class="field slider" for="color-fade"
                 >Color fade per ring<output id="color-fade-value">8%</output
                 ><input id="color-fade" type="range" min="0" max="30" step=".5" value="8"
               /></label>
-              <p class="control-help">
-                Each ring fades a little more as it moves outward. Zero keeps every colored ring at
-                full brightness.
-              </p>
+              <p class="control-help">Fade colors toward the edge.</p>
               <label class="field slider" for="shadow-opacity"
                 >Outer shadow strength<output id="shadow-opacity-value">20%</output
                 ><input id="shadow-opacity" type="range" min="0" max="50" step="1" value="20"
@@ -266,10 +242,7 @@
                 >Shadow fade per ring<output id="shadow-fade-value">30%</output
                 ><input id="shadow-fade" type="range" min="0" max="80" step="1" value="30"
               /></label>
-              <p class="control-help">
-                Remaining rings beyond the white wall appear as neutral shadows. Farther rings fade
-                progressively; no remaining rings means no outer shadows.
-              </p>
+              <p class="control-help">Show remaining rings as shadows beyond the wall.</p>
             </div>
             <div class="pattern-motion">
               <label class="field slider" for="shape-speed"
@@ -280,14 +253,11 @@
                 >Segment speed<output id="segment-speed-value">1×</output
                 ><input id="segment-speed" type="range" min="0" max="3" step=".1" value="1"
               /></label>
-              <p class="control-help">
-                Shape speed rotates the outline. Segment speed moves colors along it. Set either to
-                zero to stop it.
-              </p>
+              <p class="control-help">Set either speed to zero to stop it.</p>
             </div>
             <div class="solve-check">
               <p id="solve-status" role="status" data-state="unchecked">
-                Use Check solvability to test a winning route.
+                Check if the level can be cleared.
               </p>
               <button id="shuffle-balls" type="button">Shuffle balls</button>
               <button id="check-solvable" type="button">Check solvability</button>
@@ -298,29 +268,20 @@
                 ><input id="tutorial-enabled" type="checkbox" checked />Show tutorial hints</label
               >
               <label class="field" for="tutorial-placement"
-                >Hint text position<select id="tutorial-placement">
+                >Hint position<select id="tutorial-placement">
                   <option value="auto">Follow the action</option>
                   <option value="top">Above instruments</option>
                   <option value="slots">Above slots</option>
                 </select></label
               >
-              <p class="control-help">
-                The hand points to a useful next move. Hints return after 5 seconds without input
-                and disappear when the player acts.
-              </p>
+              <p class="control-help">Hints return after 5 seconds of inactivity.</p>
             </div>
           </details>
-          <p class="edit-note">
-            Total layers sets puzzle length; visible layers sets the colored rings inside the white
-            boundary. Layer edits rebalance ball power automatically and restart the puzzle.
-          </p>
+          <p class="edit-note">Ring edits update the balls and restart play.</p>
         </section>
         <section id="design-panel" role="tabpanel" aria-labelledby="design-tab" hidden>
-          <h1>Design the ending.</h1>
-          <p class="lead">
-            Your logo, icon and message, in the actual playable ending. Changes are included in
-            saved levels and exports.
-          </p>
+          <h1>Make it yours.</h1>
+          <p class="lead">Edit the ending. See it live.</p>
           <div class="design-assets">
             <a href="/assets/logo.webp" download="Beat-Bloom-logo.webp" class="design-asset"
               ><span class="design-asset-image"
@@ -342,10 +303,7 @@
             accept="image/png,image/jpeg,image/webp"
             hidden
           />
-          <p class="control-help">
-            PNG, JPG or WebP. Images are resized and compressed for lightweight exports. Reset
-            ending design restores the original artwork.
-          </p>
+          <p class="control-help">PNG, JPG or WebP. We’ll resize it.</p>
           <p class="control-help" id="design-concept"></p>
           <label class="field" for="end-headline"
             >Headline<textarea
@@ -356,34 +314,32 @@
             ></textarea>
           </label>
           <label class="field" for="end-cta-label"
-            >CTA text<input id="end-cta-label" type="text" maxlength="24" value="Install Now"
+            >Button text<input id="end-cta-label" type="text" maxlength="24" value="Install Now"
           /></label>
           <label class="field slider"
             >Headline size<output id="end-headline-size-value">38 px</output
             ><input id="end-headline-size" type="range" min="18" max="64" value="38"
           /></label>
           <label class="field slider"
-            >CTA text size<output id="end-cta-size-value">25 px</output
+            >Button text size<output id="end-cta-size-value">25 px</output
             ><input id="end-cta-size" type="range" min="16" max="40" value="25"
           /></label>
           <label class="field slider"
-            >CTA button width<output id="end-cta-width-value">310 px</output
+            >Button width<output id="end-cta-width-value">310 px</output
             ><input id="end-cta-width" type="range" min="140" max="360" value="310"
           /></label>
           <label class="field slider"
-            >CTA button height<output id="end-cta-height-value">56 px</output
+            >Button height<output id="end-cta-height-value">56 px</output
             ><input id="end-cta-height" type="range" min="44" max="100" value="56"
           /></label>
-          <p class="control-help">
-            The button fits the screen and grows if needed to keep its text readable.
-          </p>
+          <p class="control-help">Auto-fits the screen.</p>
           <label class="pattern-toggle"
-            ><input id="end-replay-enabled" type="checkbox" checked />Show Replay button</label
+            ><input id="end-replay-enabled" type="checkbox" checked />Show Replay</label
           >
-          <p class="control-help">The CTA keeps the selected ad network’s install action.</p>
+
           <div class="design-color-fields">
             <label class="field" for="end-cta-color"
-              >CTA color<input id="end-cta-color" type="color" value="#69d442" /></label
+              >Button color<input id="end-cta-color" type="color" value="#69d442" /></label
             ><label class="field" for="end-background"
               >Background<input id="end-background" type="color" value="#19102e"
             /></label>
@@ -396,14 +352,9 @@
             >Icon size<output id="end-icon-size-value">156 px</output
             ><input id="end-icon-size" type="range" min="64" max="180" step="1" value="156"
           /></label>
-          <p class="control-help">
-            Sizes adapt to the screen. The preview uses the same layout and artwork as the export.
-          </p>
-          <button id="preview-finish" type="button" class="design-reset">
-            Preview finish animation</button
-          ><button id="reset-end-design" type="button" class="design-reset">
-            Reset ending design
-          </button>
+
+          <button id="preview-finish" type="button" class="design-reset">Preview finish</button
+          ><button id="reset-end-design" type="button" class="design-reset">Reset design</button>
           <p id="design-status" role="status" class="control-help"></p>
         </section>
         <section
@@ -414,7 +365,7 @@
           hidden
         >
           <h2>Export playable</h2>
-          <p>Your current level, with its shape, colors, song and finish.</p>
+          <p>Download your playable.</p>
           <label class="field"
             >Ad network<select id="export-network">
               <option value="unity">Unity Ads</option>
@@ -424,8 +375,8 @@
           >
           <label class="field"
             >File format<select id="export-format">
-              <option value="html">Single HTML — ready to upload</option>
-              <option value="zip">ZIP — contains index.html</option>
+              <option value="html">HTML</option>
+              <option value="zip">ZIP</option>
             </select></label
           >
           <p id="export-format-help" class="control-help"></p>
@@ -434,11 +385,8 @@
             <p id="destination-help"></p>
           </div>
           <details class="store-destinations">
-            <summary>App links · advanced</summary>
-            <p id="store-help">
-              Direct store links for the playable’s install action. Use campaign settings for
-              tracking and custom product pages.
-            </p>
+            <summary>Store links</summary>
+            <p id="store-help">Add store links here. Set tracking in your campaign.</p>
             <label class="field"
               >App Store URL<input
                 id="store-ios"
@@ -457,9 +405,7 @@
           <button id="export-playable" type="button" class="primary" disabled>
             Download playable
           </button>
-          <p id="export-status" role="status">
-            Builds locally with the selected network’s size limit and install action.
-          </p>
+          <p id="export-status" role="status"></p>
           <a id="export-download" hidden download>Download again</a>
           <a
             id="network-guide"
@@ -478,11 +424,7 @@
           </div>
           <details>
             <summary>Edit rings and queue</summary>
-            <p>
-              Each ring contains palette indexes. Applying a level rebuilds its queue from all
-              rings: every ball starts with 3 power, rounding up per color. Valid 3-power queue
-              ordering is preserved.
-            </p>
+            <p>Edit the level JSON. Balls update automatically.</p>
             <textarea id="level-json" spellcheck="false" aria-label="Level JSON"></textarea
             ><button id="apply-json">Apply level</button>
           </details>
@@ -491,7 +433,7 @@
       </aside>
       <section class="workspace">
         <div class="view-label">
-          <h2 id="preview-title">Web playable</h2>
+          <h2 id="preview-title">Live preview</h2>
           <span id="game-state">Loading…</span>
         </div>
         <div class="screens">

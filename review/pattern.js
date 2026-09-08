@@ -34,11 +34,11 @@ function patternBounds() {
   $('#color-count-help').textContent =
     Number($('#color-count').max) < 12
       ? `This layout fits up to ${$('#color-count').max} colors. Add rings or segments to use more.`
-      : 'Adding or removing colors rebuilds the ball queue.';
+      : 'Balls update to match your colors.';
   perRing.disabled = perRing.min === perRing.max;
   $('#colors-per-ring-help').hidden = !perRing.disabled;
   $('#colors-per-ring-help').textContent =
-    `This layout needs ${perRing.min} ${Number(perRing.min) === 1 ? 'color' : 'colors'} per ring. Add rings or segments to allow more combinations.`;
+    `This layout needs ${perRing.min} ${Number(perRing.min) === 1 ? 'color' : 'colors'} per ring. Add rings or segments for more options.`;
   for (const id of patternInputIds) $(`#${id}-value`).value = $(`#${id}`).value;
   $('#pattern-shift-value').value = `${Number(Number($('#pattern-shift-fine').value).toFixed(4))}°`;
   const corners = $('#shape').value === 'hexagon' ? 6 : 0,
@@ -52,8 +52,8 @@ function patternBounds() {
   segmentInput.value = segmentValue;
   $('#segments-per-ring-value').value = segmentInput.value;
   $('#equal-color-spans-help').textContent = $('#equal-color-spans').checked
-    ? `${corners && corners % n === 0 ? `${corners / n} ${corners / n === 1 ? 'corner' : 'corners'} per color at 0° shift. ` : ''}Segment count snaps to multiples of ${n}, giving every color the same span.`
-    : 'Uses the exact segment count. Colors can occupy different spans when the count does not divide evenly.';
+    ? `${corners && corners % n === 0 ? `${corners / n} ${corners / n === 1 ? 'corner' : 'corners'} per color at 0° shift. ` : ''}Segments use multiples of ${n} for equal spans.`
+    : 'Exact segment count. Color spans may differ.';
   for (const id of ['shape-speed', 'segment-speed'])
     $(`#${id}-value`).value =
       Number($(`#${id}`).value) === 0 ? 'Stopped' : `${Number($(`#${id}`).value).toFixed(1)}×`;
@@ -96,17 +96,14 @@ function patternControls(level) {
     level.motion.conveyorBeatsPerSlot > 0 ? 12 / level.motion.conveyorBeatsPerSlot : 0;
   patternBounds();
   $('#pattern-status').textContent = validRecipe
-    ? 'Palette and segment controls rebuild the pattern. Shift slides colors smoothly along the outline.'
-    : 'Authored pattern preserved, including mixed ring sizes. Shift keeps its pieces and ball queue; palette and segment controls create a new pattern.';
+    ? 'Shift moves colors along each ring.'
+    : 'Custom pattern. Changing colors or segments rebuilds it.';
   drawPattern(level);
   const key = solvabilityKey(level);
   if (key !== solveKey) {
     cancelSolvability();
     solveKey = key;
-    setSolveStatus(
-      'unchecked',
-      '3-power balls cover every color. A winning route has not been checked yet.',
-    );
+    setSolveStatus('unchecked', 'Enough ball power. Winning route not checked yet.');
     if (autoCheck) scheduleSolvability();
   }
 }
@@ -193,7 +190,7 @@ function changeContinuousShift(target) {
   try {
     const degrees = Number(target.value);
     if (!target.value.trim() || !Number.isFinite(degrees) || Math.abs(degrees) > 180)
-      throw Error('Enter a shift from −180° to 180°. Small decimals are welcome.');
+      throw Error('Use −180° to 180°. Decimals work too.');
     const next = current.setPatternShift(degrees);
     patternUndo = before;
     $('#undo-pattern').disabled = false;
@@ -240,7 +237,7 @@ for (const id of ['shape-speed', 'segment-speed']) {
       });
       autoCheck = true;
       controls(next);
-      message('Motion updated. Checking this speed with the current pattern…');
+      message('Speed updated. Checking…');
     } catch (error) {
       controls(before);
       message('Motion was not changed: ' + error.message);
@@ -259,7 +256,7 @@ $('#apply-template').onclick = () => {
     $('#undo-pattern').disabled = false;
     autoCheck = true;
     controls(next);
-    message(`${template.label} pattern applied. Balls rebuilt; your song and shape are retained.`);
+    message(`${template.label} pattern applied.`);
   } catch (error) {
     message('Pattern was not changed: ' + error.message);
   }
@@ -280,15 +277,14 @@ $('#pattern-template').onchange = () => {
   const template = ringTemplates.find((t) => t.id === $('#pattern-template').value);
   $('#apply-template').disabled = !template;
   if (!template) {
-    $('#template-description').textContent =
-      'Copies rings, colors and ring count. Keeps your shape, song and motion.';
+    $('#template-description').textContent = 'Applies rings and colors only.';
     return;
   }
   const counts = template.rings.map((r) => r.length),
     min = Math.min(...counts),
     max = Math.max(...counts);
   $('#template-description').textContent =
-    `${template.rings.length} rings · ${template.palette.length} colors · ${min === max ? min : `${min}–${max}`} segments per ring. Keeps your shape and song.`;
+    `${template.rings.length} rings · ${template.palette.length} colors · ${min === max ? min : `${min}–${max}`} segments per ring.`;
 };
 fetch('/review/data/ring-templates.json')
   .then((response) => {
@@ -350,12 +346,7 @@ function checkSolvability({ longer = false, shuffle = false } = {}) {
   const revision = solveRevision,
     level = current.getLevel();
   solveKey = solvabilityKey(level);
-  setSolveStatus(
-    'checking',
-    shuffle
-      ? 'Finding a solvable shuffle… Your queue stays unchanged until verified.'
-      : 'Checking a winning route using normal ball moves…',
-  );
+  setSolveStatus('checking', shuffle ? 'Finding a solvable shuffle…' : 'Checking for a win…');
   $('#check-solvable').textContent = 'Cancel check';
   try {
     solveWorker = new Worker('/review/pattern-worker.js');
@@ -363,10 +354,7 @@ function checkSolvability({ longer = false, shuffle = false } = {}) {
       if (revision !== solveRevision) return;
       const data = event.data;
       if (data.type === 'progress') {
-        setSolveStatus(
-          'checking',
-          `Checking a route… ${data.remaining ?? '…'} pieces remaining in the simulation.`,
-        );
+        setSolveStatus('checking', `Checking… ${data.remaining ?? '…'} pieces left.`);
         return;
       }
       solveWorker?.terminate();
@@ -378,21 +366,21 @@ function checkSolvability({ longer = false, shuffle = false } = {}) {
         const next = current.setLevel({ ...patternUndo, queue: data.queue });
         solveKey = solvabilityKey(next);
         $('#undo-pattern').disabled = false;
-        commitPattern(next, 'Balls shuffled. A winning route is verified.');
+        commitPattern(next, 'Balls shuffled. Verified win.');
       }
       lastSolveResult = data.result ? { levelKey: solveKey, ...data.result } : null;
       if (data.result?.status === 'verified-win')
         setSolveStatus(
           'verified-win',
-          `Verified win. All ${level.rings.flat().filter((c) => c >= 0).length} pieces cleared with normal ball moves.`,
+          `Verified win. ${level.rings.flat().filter((c) => c >= 0).length} pieces cleared.`,
         );
       else {
         setSolveStatus(
           'not-verified',
           data.error ||
             (longer
-              ? 'No winning route verified within this check. Try fewer colors, fewer rings or slower movement.'
-              : 'The quick check did not verify a win. Run a longer check, or try fewer colors, fewer rings or slower movement.'),
+              ? 'No win found yet. Try fewer colors or slower movement.'
+              : 'No win found yet. Try a longer check.'),
         );
         $('#check-solvable').textContent = longer ? 'Check again' : 'Run longer check';
       }
@@ -400,7 +388,7 @@ function checkSolvability({ longer = false, shuffle = false } = {}) {
     solveWorker.onerror = () => {
       if (revision !== solveRevision) return;
       cancelSolvability();
-      setSolveStatus('not-verified', 'The check could not finish. Try Check solvability again.');
+      setSolveStatus('not-verified', 'Check interrupted. Try again.');
     };
     solveWorker.postMessage({
       level,
@@ -429,5 +417,5 @@ function resetPatternSession() {
   $('#undo-pattern').disabled = true;
   $('#pattern-template').value = '';
   $('#pattern-template').onchange();
-  setSolveStatus('unchecked', 'Use Check solvability to test a winning route.');
+  setSolveStatus('unchecked', 'Check if the level can be cleared.');
 }
