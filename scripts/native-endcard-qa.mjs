@@ -287,7 +287,7 @@ try {
     const provenance = JSON.parse(await readFile('assets/provenance.json', 'utf8')),
       records = [];
     for (const [name, node, expected] of [
-      ['icon', '5-1449', 'e6c56d0d7fd21a29e68cd44cc2fdabea6119ece90ef2894d98386c8064f7781c'],
+      ['icon', '2011-47202', 'c8f788521ba4ec36ac430da79cd147e2c865ebe068e4cd6c372c94b9bf539618'],
       ['logo', '6-2443', 'e74ce21723fbd1cef66f031340a219c80bc8ed3d07988a48f15c8cffd3929021'],
     ]) {
       const record = provenance.assets.find((a) => a.output === `${name}.webp`);

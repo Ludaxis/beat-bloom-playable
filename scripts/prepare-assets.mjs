@@ -13,7 +13,7 @@ const sourcePath = (source) => resolve(source.startsWith('assets/') ? project : 
 await mkdir(out, { recursive: true });
 const provenance = [];
 const brandNodes = {
-  icon: 'https://www.figma.com/board/2phyEEt4ZlbRBtBVZaIzMB/NCBB---Beat-Bloom?node-id=5-1449',
+  icon: 'https://www.figma.com/design/HwApJvdkAl7j5owdhlep83/Product---Ludaxis---BeatBloom?node-id=2011-47202',
   logo: 'https://www.figma.com/board/2phyEEt4ZlbRBtBVZaIzMB/NCBB---Beat-Bloom?node-id=6-2443',
 };
 async function record(source, output, operation) {
@@ -31,7 +31,7 @@ async function record(source, output, operation) {
   });
 }
 const images = {
-  icon: ['assets/source/brand/figma-icon-5-1449.png', 320],
+  icon: ['assets/source/brand/figma-icon-2011-47202.png', 320],
   logo: ['assets/source/brand/figma-logo-6-2443.png', 640],
   ukulele: ['Assets/_Ludaxis/BeatBloom/Art/Instrument/Assets/Ukulele.png', 96],
   violin: ['Assets/_Ludaxis/BeatBloom/Art/Instrument/Assets/Violin.png', 96],

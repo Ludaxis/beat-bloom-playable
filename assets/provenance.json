@@ -2,13 +2,13 @@
   "generatedWith": "scripts/prepare-assets.mjs",
   "assets": [
     {
-      "source": "Playables/beat-bloom/assets/source/brand/figma-icon-5-1449.png",
+      "source": "assets/source/brand/figma-icon-2011-47202.png",
       "output": "icon.webp",
-      "operation": "Exact user-selected Figma PNG; remove transparent export margins, WebP delivery resize; original artwork preserved",
-      "approvedFigmaNode": "https://www.figma.com/board/2phyEEt4ZlbRBtBVZaIzMB/NCBB---Beat-Bloom?node-id=5-1449",
+      "operation": "Exact approved Figma export, resized to 320 px and encoded as WebP; artwork unchanged",
+      "approvedFigmaNode": "https://www.figma.com/design/HwApJvdkAl7j5owdhlep83/Product---Ludaxis---BeatBloom?node-id=2011-47202",
       "approvedOn": "2026-09-08",
-      "sourceSha256": "e6c56d0d7fd21a29e68cd44cc2fdabea6119ece90ef2894d98386c8064f7781c",
-      "outputBytes": 16888
+      "sourceSha256": "c8f788521ba4ec36ac430da79cd147e2c865ebe068e4cd6c372c94b9bf539618",
+      "outputBytes": 17542
     },
     {
       "source": "Playables/beat-bloom/assets/source/brand/figma-logo-6-2443.png",
