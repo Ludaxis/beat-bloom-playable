@@ -1,0 +1,28 @@
+/* Adapted from ludaxis.io/src/app/globals.css. Studio only; never imported by the game. */
+@font-face {
+  font-family: Inter;
+  src: url('./inter-latin.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: Comfortaa;
+  src: url('./comfortaa-latin.woff2') format('woff2');
+  font-weight: 400 700;
+  font-display: swap;
+}
+:root {
+  --color-bg-base: #0a0a0f;
+  --color-bg-surface: #0f0f14;
+  --color-bg-elevated: #141419;
+  --color-text-primary: #fcfbf9;
+  --color-text-secondary: #a7abb5;
+  --color-text-on-brand: #0a0a0f;
+  --color-brand: #3fe0b0;
+  --color-brand-hover: #5fe5bd;
+  --color-accent: #ff5c49;
+  --color-gold: #c8a24a;
+  --color-border-strong: #2a2a33;
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-display: Comfortaa, ui-rounded, sans-serif;
+}

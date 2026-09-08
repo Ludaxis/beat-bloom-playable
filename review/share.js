@@ -13,7 +13,7 @@ button.onclick = async () => {
   try {
     const snapshot = { version: 1, profile, level: current.getLevel() },
       fragment = await encodeShare(snapshot);
-    link.value = new URL('/review/shared.html', location.origin).href + '#' + fragment;
+    link.value = new URL('/play', location.origin).href + '#' + fragment;
     status.textContent = ['localhost', '127.0.0.1', '::1'].includes(location.hostname)
       ? 'Local link: deploy the project before sharing with other devices. Create a new link on your deployed site.'
       : 'This link includes a snapshot of your current playable. Later edits won’t change it.';

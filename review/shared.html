@@ -46,7 +46,7 @@
       hidden
     ></iframe>
     <script type="module">
-      import { decodeShare } from './share-codec.js';
+      import { decodeShare } from '/review/share-codec.js';
       addEventListener('hashchange', () => location.reload());
       try {
         const saved = await decodeShare(location.hash.slice(1)),

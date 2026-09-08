@@ -89,11 +89,11 @@ npm run export:levels -- 6
 
 ## Hosting
 
-Vercel builds with `npm run build` and publishes `dist`, as configured in `vercel.json`. The site root opens the default heart playable. Shared snapshots at `/review/shared.html` and existing `/dist/preview/...` playable links continue to resolve; direct `/preview/...` links work too. All playable assets are embedded in the generated HTML.
+Open [Beat Bloom Studio](https://beatbloomstudio.ludaxis.io) to edit, design, share and export playables. The subdomain opens the Studio; shared links at `/play#…` open the saved playable.
 
-Deploy the repository root with the **Other** framework preset. The committed configuration supplies the build command and output directory, so no `public` folder is needed.
+Vercel runs `npm run build`, publishes `dist` and serves the custom export function. Cloudflare routes the Studio subdomain to Vercel. The main Ludaxis website remains a separate deployment.
 
-This deployment hosts the playable and prebuilt downloads. Studio authoring and custom exports still run through the local Node.js server. Hosting the complete Studio export workflow requires a separate server integration.
+See [Hosting](docs/HOSTING.md) for routes, export behavior and verification. Studio uses the Ludaxis design system; the game retains Beat Bloom's visuals.
 
 ## Ownership
 

@@ -9,7 +9,7 @@
     "dev": "node scripts/serve.mjs",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test test/native*.test.ts",
-    "test:export": "node --test scripts/native-package.test.mjs scripts/audio-variants.test.mjs",
+    "test:export": "node --test scripts/native-package.test.mjs scripts/audio-variants.test.mjs scripts/hosted-export.test.mjs",
     "qa": "node scripts/native-qa.mjs",
     "qa:export": "node scripts/native-export-qa.mjs",
     "qa:endcard": "node scripts/native-endcard-qa.mjs",
@@ -18,8 +18,8 @@
     "assets:native": "node scripts/prepare-native-assets.mjs && node scripts/bake-native-instruments.mjs",
     "export:levels": "node scripts/export-native-level.mjs",
     "templates": "node scripts/export-ring-templates.mjs",
-    "format": "prettier --write src review scripts test",
-    "format:check": "prettier --check src review scripts test",
+    "format": "prettier --write src review scripts test api",
+    "format:check": "prettier --check src review scripts test api",
     "assets:audio": "node scripts/prepare-audio-variants.mjs"
   },
   "dependencies": {

@@ -1,0 +1,14 @@
+node_modules
+.git
+.vercel
+.env
+.env.*
+dist
+artifacts
+qa
+playwright-report
+test-results
+coverage
+*.log
+*.tsbuildinfo
+.DS_Store

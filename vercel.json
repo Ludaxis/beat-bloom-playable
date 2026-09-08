@@ -4,7 +4,23 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "rewrites": [
-    { "source": "/", "destination": "/preview/native.html" },
-    { "source": "/dist/:path*", "destination": "/:path*" }
-  ]
+    {
+      "source": "/",
+      "destination": "/review/index.html"
+    },
+    {
+      "source": "/play",
+      "destination": "/review/shared.html"
+    },
+    {
+      "source": "/dist/:path*",
+      "destination": "/:path*"
+    }
+  ],
+  "functions": {
+    "api/export.js": {
+      "maxDuration": 60,
+      "includeFiles": "{assets/**,src/**,scripts/**,THIRD_PARTY_NOTICES.txt,node_modules/{pixi.js,@pixi,earcut,eventemitter3,gifuct-js,ismobilejs,parse-svg-path,tiny-lru,js-binary-schema-parser,@xmldom}/**}"
+    }
+  }
 }

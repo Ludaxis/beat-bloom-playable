@@ -1,4 +1,4 @@
-import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, copyFile, cp } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { zipSync, strToU8 } from 'fflate';
@@ -11,11 +11,6 @@ const previewOnly = process.argv.slice(2).includes('--preview');
 const generated = [],
   allZip = {};
 await mkdir(dist, { recursive: true });
-// Publish only the shared-link viewer; Studio's export API remains a local service.
-await mkdir(resolve(dist, 'review'), { recursive: true });
-for (const file of ['shared.html', 'share-codec.js']) {
-  await copyFile(resolve(root, 'review', file), resolve(dist, 'review', file));
-}
 await build({
   entryPoints: [resolve(root, 'src/native/pattern-worker.ts')],
   outfile: resolve(root, 'review/pattern-worker.js'),
@@ -24,6 +19,12 @@ await build({
   platform: 'browser',
   target: 'es2020',
 });
+// Publish the Studio and its self-contained shared-link viewer beside the playables.
+await cp(resolve(root, 'review'), resolve(dist, 'review'), { recursive: true });
+await mkdir(resolve(dist, 'assets'), { recursive: true });
+for (const name of ['icon.webp', 'logo.webp']) {
+  await copyFile(resolve(root, 'assets', name), resolve(dist, 'assets', name));
+}
 for (const network of previewOnly ? ['preview'] : ['preview', 'unity', 'applovin', 'meta']) {
   await mkdir(resolve(dist, network), { recursive: true });
   for (const profile of network === 'preview'

@@ -20,6 +20,8 @@ const types = {
   '.mp3': 'audio/mpeg',
   '.zip': 'application/zip',
   '.ttf': 'font/ttf',
+  '.woff2': 'font/woff2',
+  '.svg': 'image/svg+xml',
   '.md': 'text/plain; charset=utf-8',
 };
 const loopback = (address) =>
@@ -187,7 +189,15 @@ export function createReviewServer({ packageBuilder = createNativePackage } = {}
         res.writeHead(405, { Allow: 'GET, HEAD' }).end();
         return;
       }
-      let path = resolve(root, '.' + (route === '/' ? '/review/index.html' : route));
+      let path = resolve(
+        root,
+        '.' +
+          (route === '/'
+            ? '/review/index.html'
+            : route === '/play'
+              ? '/review/shared.html'
+              : route),
+      );
       if (
         !path.startsWith(root + sep) ||
         route.split('/').some((p) => p.startsWith('.')) ||
