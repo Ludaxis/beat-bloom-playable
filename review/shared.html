@@ -49,7 +49,23 @@
       import { decodeShare } from '/review/share-codec.js';
       addEventListener('hashchange', () => location.reload());
       try {
-        const saved = await decodeShare(location.hash.slice(1)),
+        const shortId = location.pathname.match(/^\/play\/([A-Za-z0-9_-]{22})$/)?.[1];
+        async function loadSnapshot() {
+          if (!shortId) return decodeShare(location.hash.slice(1));
+          const response = await fetch('/api/share?id=' + shortId, {
+            signal: AbortSignal.timeout(30000),
+          });
+          const saved = await response.json();
+          if (!response.ok) throw Error(saved.error || 'Please try again.');
+          if (
+            saved?.version !== 1 ||
+            !['native', 'a-heart', 'b-heart', 'a-flower', 'b-flower'].includes(saved.profile) ||
+            !saved.level
+          )
+            throw Error('This playable has invalid settings.');
+          return saved;
+        }
+        const saved = await loadSnapshot(),
           raw = JSON.stringify(saved),
           digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw));
         const hex = [...new Uint8Array(digest)]

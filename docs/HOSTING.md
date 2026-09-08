@@ -21,3 +21,12 @@ Share links contain a compressed level snapshot in the URL fragment, including u
 ## Verification
 
 Run `npm run verify` before pushing. Hosted-adapter tests cover origin checks, body limits, invalid requests and complete streamed responses. Check the deployed Studio, a shared edited level in a fresh browser session, and one export per network. Local tests do not replace validation in an ad network.
+
+
+## Short share links
+
+`POST /api/share` validates the same level contract as exports and saves the full snapshot in the dedicated private `beat-bloom-shares` Vercel Blob store. `BLOB_READ_WRITE_TOKEN` is server-only and is connected to production and preview. Never commit it or include it in static builds.
+
+`/play/<id>` loads the snapshot through `GET /api/share?id=<id>`. IDs are 128-bit keyed content hashes; identical settings reuse one immutable object. There is no expiry or overwrite operation. Anyone holding a link can play its snapshot. Links survive deployments; do not delete the store or its objects during cleanup. Token rotation leaves existing links readable but may generate a different ID for later shares.
+
+The Vercel firewall limits share creation to 30 requests per minute per IP. Reads are unaffected. The API also bounds request bodies to 256 KiB and validates the origin, profile, song and gameplay settings. Old `/play#…` and `/review/shared.html#…` links remain supported. Local Studio continues using self-contained links without cloud credentials.

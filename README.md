@@ -25,7 +25,7 @@ The default opening puzzle is the supplied 16-ring heart level (`beat-bloom-hear
 3. **Design:** customize the ending, upload a logo or icon, adjust text and button sizes, and choose whether to show Replay.
 4. **Export:** select the ad network and file format, review the install destination, then download the current playable.
 
-**Open playable** opens the current authored level. **Share** creates a link containing its configuration; recipients need access to the hosted studio. A localhost link works only on your computer. Large custom images can make share links long.
+**Open playable** opens the current authored level. **Share** saves an immutable copy and creates a short link. Anyone with the link can play it; later edits do not change the shared copy. A localhost link works only on your computer.
 
 **Shuffle balls**, in Advanced pattern, mixes positions within each three-ball row. Studio applies the new order only after verifying a winning route; Cancel keeps the current queue. For a two-segment heart with two colors, set Segment speed and Shift per ring to zero to split it into left and right color halves.
 
@@ -89,7 +89,7 @@ npm run export:levels -- 6
 
 ## Hosting
 
-Open [Beat Bloom Studio](https://beatbloomstudio.ludaxis.io) to edit, design, share and export playables. The subdomain opens the Studio; shared links at `/play#…` open the saved playable.
+Open [Beat Bloom Studio](https://beatbloomstudio.ludaxis.io) to edit, design, share and export playables. The subdomain opens the Studio; shared links at `/play/<id>` open the saved playable.
 
 Vercel runs `npm run build`, publishes `dist` and serves the custom export function. Cloudflare routes the Studio subdomain to Vercel. The main Ludaxis website remains a separate deployment.
 

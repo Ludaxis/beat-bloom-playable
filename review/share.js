@@ -11,9 +11,20 @@ button.onclick = async () => {
   }
   button.disabled = true;
   try {
-    const snapshot = { version: 1, profile, level: current.getLevel() },
-      fragment = await encodeShare(snapshot);
-    link.value = new URL('/play', location.origin).href + '#' + fragment;
+    const snapshot = { version: 1, profile, level: current.getLevel() };
+    if (['localhost', '127.0.0.1', '::1'].includes(location.hostname)) {
+      link.value = new URL('/play', location.origin).href + '#' + (await encodeShare(snapshot));
+    } else {
+      const response = await fetch('/api/share', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(snapshot),
+        signal: AbortSignal.timeout(30000),
+      });
+      const result = await response.json();
+      if (!response.ok) throw Error(result.error || 'Please try again.');
+      link.value = new URL(result.path, location.origin).href;
+    }
     status.textContent = ['localhost', '127.0.0.1', '::1'].includes(location.hostname)
       ? 'Local link. Use the live Studio to share with others.'
       : 'A copy of this level. Later edits won’t change it.';

@@ -9,7 +9,7 @@
     "dev": "node scripts/serve.mjs",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test test/native*.test.ts",
-    "test:export": "node --test scripts/native-package.test.mjs scripts/audio-variants.test.mjs scripts/hosted-export.test.mjs",
+    "test:export": "node --test scripts/native-package.test.mjs scripts/audio-variants.test.mjs scripts/hosted-export.test.mjs scripts/share.test.mjs",
     "qa": "node scripts/native-qa.mjs",
     "qa:export": "node scripts/native-export-qa.mjs",
     "qa:endcard": "node scripts/native-endcard-qa.mjs",
@@ -23,6 +23,7 @@
     "assets:audio": "node scripts/prepare-audio-variants.mjs"
   },
   "dependencies": {
+    "@vercel/blob": "2.8.0",
     "pixi.js": "8.20.1"
   },
   "devDependencies": {

@@ -30,3 +30,4 @@ Thumbs.db
 *.swo
 
 # Keep authored assets, level data, tests and package-lock.json tracked.
+.env*.local

@@ -20,7 +20,7 @@ Use direct model fields for per-frame presentation. Full snapshots are for autho
 
 `npm run format` maintains readable source. `npm run verify` checks formatting, types, model/audio regressions, export service validation, all delivery builds and browser flows against a fresh isolated server. It always includes production host tests and clears single-case QA filters. Results go to `qa/native/latest/`; generated captures and downloads are ignored by Git.
 
-Keep production output free of preview APIs and external assets, apart from the network-provided bridge. Check every network's file limit after any artwork, font or audio change. Studio export rejects oversized output rather than silently reducing the authored puzzle. Shared URLs include the authored snapshot; large uploaded artwork can make them unsuitable for messaging services with short URL limits.
+Keep production output free of preview APIs and external assets, apart from the network-provided bridge. Check every network's file limit after any artwork, font or audio change. Studio export rejects oversized output rather than silently reducing the authored puzzle. Hosted shares store immutable snapshots in private Vercel Blob storage, bounded to 256 KiB. Keep legacy hash links readable and never expose the storage token to browser code.
 
 Before release, test on physical lower-end Android and iOS devices and in each network's validator/SDK. Desktop CPU throttling is useful regression evidence, but does not reproduce mobile GPU performance, thermal limits or audio output latency. The hosted adapter in `api/export.js` uses the same package builder as the local export server; keep its streamed response and same-origin validation intact. See `docs/HOSTING.md`.
 
