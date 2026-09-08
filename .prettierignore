@@ -1,0 +1,9 @@
+node_modules
+dist
+artifacts
+qa
+assets
+review/pattern-worker.js
+src/native/data
+review/data
+package-lock.json

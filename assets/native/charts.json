@@ -1,0 +1,382 @@
+{
+  "kissmemore": {
+    "bpm": 111,
+    "downbeatOffset": 1.0810812,
+    "beatsPerBar": 4,
+    "gainDb": -0.12,
+    "tuningCents": 0,
+    "loopBeats": 66,
+    "sections": [
+      {
+        "startBeat": 0,
+        "intensity": 0.69,
+        "direction": 1,
+        "degreesPerBeat": 33
+      },
+      {
+        "startBeat": 4,
+        "intensity": 0.58,
+        "direction": 1,
+        "degreesPerBeat": 30
+      },
+      {
+        "startBeat": 8,
+        "intensity": 0.66,
+        "direction": 1,
+        "degreesPerBeat": 32
+      },
+      {
+        "startBeat": 12,
+        "intensity": 0.48,
+        "direction": 1,
+        "degreesPerBeat": 28
+      },
+      {
+        "startBeat": 16,
+        "intensity": 0.76,
+        "direction": -1,
+        "degreesPerBeat": 34
+      },
+      {
+        "startBeat": 20,
+        "intensity": 0.6,
+        "direction": -1,
+        "degreesPerBeat": 30
+      },
+      {
+        "startBeat": 24,
+        "intensity": 0.59,
+        "direction": -1,
+        "degreesPerBeat": 30
+      },
+      {
+        "startBeat": 28,
+        "intensity": 0.48,
+        "direction": -1,
+        "degreesPerBeat": 28
+      },
+      {
+        "startBeat": 32,
+        "intensity": 0.86,
+        "direction": 1,
+        "degreesPerBeat": 37
+      },
+      {
+        "startBeat": 36,
+        "intensity": 0.81,
+        "direction": 1,
+        "degreesPerBeat": 35
+      },
+      {
+        "startBeat": 40,
+        "intensity": 0.85,
+        "direction": 1,
+        "degreesPerBeat": 36
+      },
+      {
+        "startBeat": 44,
+        "intensity": 0.86,
+        "direction": 1,
+        "degreesPerBeat": 37
+      },
+      {
+        "startBeat": 48,
+        "intensity": 0.83,
+        "direction": -1,
+        "degreesPerBeat": 36
+      },
+      {
+        "startBeat": 52,
+        "intensity": 0.71,
+        "direction": -1,
+        "degreesPerBeat": 33
+      },
+      {
+        "startBeat": 56,
+        "intensity": 0.82,
+        "direction": -1,
+        "degreesPerBeat": 36
+      },
+      {
+        "startBeat": 60,
+        "intensity": 0.84,
+        "direction": -1,
+        "degreesPerBeat": 36
+      }
+    ],
+    "harmony": [
+      [
+        0,
+        10,
+        7
+      ],
+      [
+        95351,
+        7,
+        9
+      ],
+      [
+        143027,
+        3,
+        1
+      ],
+      [
+        238378,
+        8,
+        1
+      ],
+      [
+        286054,
+        5,
+        9
+      ],
+      [
+        429081,
+        10,
+        7
+      ],
+      [
+        524432,
+        3,
+        1
+      ],
+      [
+        619784,
+        0,
+        2
+      ],
+      [
+        715135,
+        5,
+        9
+      ],
+      [
+        905838,
+        3,
+        1
+      ],
+      [
+        1001189,
+        8,
+        1
+      ],
+      [
+        1096541,
+        5,
+        9
+      ],
+      [
+        1287243,
+        3,
+        1
+      ],
+      [
+        1382595,
+        8,
+        1
+      ],
+      [
+        1477946,
+        5,
+        9
+      ]
+    ],
+    "source": "Assets/_Ludaxis/BeatBloom/Resources/Songs/kissmemore/Chart.asset"
+  },
+  "nobatidao": {
+    "bpm": 130,
+    "downbeatOffset": 0,
+    "beatsPerBar": 4,
+    "gainDb": -2.54,
+    "tuningCents": 0,
+    "loopBeats": 47.99997,
+    "sections": [
+      {
+        "startBeat": 0,
+        "intensity": 0.55,
+        "direction": 1,
+        "degreesPerBeat": 29
+      },
+      {
+        "startBeat": 4,
+        "intensity": 0.7,
+        "direction": 1,
+        "degreesPerBeat": 33
+      },
+      {
+        "startBeat": 8,
+        "intensity": 0.76,
+        "direction": 1,
+        "degreesPerBeat": 34
+      },
+      {
+        "startBeat": 12,
+        "intensity": 0.86,
+        "direction": 1,
+        "degreesPerBeat": 37
+      },
+      {
+        "startBeat": 16,
+        "intensity": 0.48,
+        "direction": -1,
+        "degreesPerBeat": 28
+      },
+      {
+        "startBeat": 20,
+        "intensity": 0.48,
+        "direction": -1,
+        "degreesPerBeat": 28
+      },
+      {
+        "startBeat": 24,
+        "intensity": 0.74,
+        "direction": -1,
+        "degreesPerBeat": 34
+      },
+      {
+        "startBeat": 28,
+        "intensity": 0.63,
+        "direction": -1,
+        "degreesPerBeat": 31
+      },
+      {
+        "startBeat": 32,
+        "intensity": 0.67,
+        "direction": 1,
+        "degreesPerBeat": 32
+      },
+      {
+        "startBeat": 36,
+        "intensity": 0.75,
+        "direction": 1,
+        "degreesPerBeat": 34
+      },
+      {
+        "startBeat": 40,
+        "intensity": 0.86,
+        "direction": 1,
+        "degreesPerBeat": 37
+      },
+      {
+        "startBeat": 44,
+        "intensity": 0.85,
+        "direction": 1,
+        "degreesPerBeat": 36
+      }
+    ],
+    "harmony": [
+      [
+        0,
+        5,
+        1
+      ],
+      [
+        203538,
+        10,
+        1
+      ],
+      [
+        284954,
+        5,
+        1
+      ],
+      [
+        488492,
+        10,
+        1
+      ],
+      [
+        610615,
+        5,
+        1
+      ],
+      [
+        814154,
+        10,
+        1
+      ],
+      [
+        936277,
+        5,
+        1
+      ]
+    ],
+    "source": "Assets/_Ludaxis/BeatBloom/Resources/Songs/Nobatidao/Chart.asset"
+  },
+  "sunflower": {
+    "bpm": 90,
+    "downbeatOffset": 0,
+    "beatsPerBar": 4,
+    "gainDb": 0,
+    "tuningCents": 3.45,
+    "loopBeats": 32,
+    "sections": [
+      {
+        "startBeat": 0,
+        "intensity": 0.55,
+        "direction": 1,
+        "degreesPerBeat": 23
+      },
+      {
+        "startBeat": 4,
+        "intensity": 0.79,
+        "direction": 1,
+        "degreesPerBeat": 57
+      },
+      {
+        "startBeat": 8,
+        "intensity": 0.68,
+        "direction": 1,
+        "degreesPerBeat": 42
+      },
+      {
+        "startBeat": 12,
+        "intensity": 0.88,
+        "direction": 1,
+        "degreesPerBeat": 70
+      },
+      {
+        "startBeat": 16,
+        "intensity": 0.67,
+        "direction": 1,
+        "degreesPerBeat": 40
+      },
+      {
+        "startBeat": 20,
+        "intensity": 0.86,
+        "direction": 1,
+        "degreesPerBeat": 67
+      },
+      {
+        "startBeat": 24,
+        "intensity": 0.67,
+        "direction": 1,
+        "degreesPerBeat": 40
+      },
+      {
+        "startBeat": 28,
+        "intensity": 0.78,
+        "direction": 1,
+        "degreesPerBeat": 56
+      }
+    ],
+    "harmony": [
+      [
+        0,
+        11,
+        9
+      ],
+      [
+        470400,
+        4,
+        9
+      ],
+      [
+        705600,
+        11,
+        9
+      ]
+    ],
+    "source": "Assets/_Ludaxis/BeatBloom/Resources/Songs/sunflower/Chart.asset"
+  }
+}

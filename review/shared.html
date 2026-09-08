@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Beat Bloom — Shared playable</title>
+    <meta name="referrer" content="no-referrer" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: #120c28;
+        color: white;
+        font:
+          16px/1.6 Arial,
+          sans-serif;
+      }
+      iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+      #status {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-content: center;
+        padding: 32px;
+        text-align: center;
+      }
+      [hidden] {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="status" role="status">Loading playable…</div>
+    <iframe
+      id="playable"
+      title="Beat Bloom shared playable"
+      allow="autoplay"
+      sandbox="allow-scripts allow-same-origin"
+      hidden
+    ></iframe>
+    <script type="module">
+      import { decodeShare } from './share-codec.js';
+      addEventListener('hashchange', () => location.reload());
+      try {
+        const saved = await decodeShare(location.hash.slice(1)),
+          raw = JSON.stringify(saved),
+          digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(raw));
+        const hex = [...new Uint8Array(digest)]
+          .map((n) => n.toString(16).padStart(2, '0'))
+          .join('')
+          .slice(0, 32);
+        const id = [
+          hex.slice(0, 8),
+          hex.slice(8, 12),
+          hex.slice(12, 16),
+          hex.slice(16, 20),
+          hex.slice(20),
+        ].join('-');
+        localStorage.setItem('beatbloom:studio-preview:' + id, raw);
+        const frame = document.querySelector('#playable');
+        frame.src = `/dist/preview/${saved.profile}.html?studioLevel=${id}`;
+        frame.hidden = false;
+        document.querySelector('#status').hidden = true;
+      } catch (error) {
+        document.querySelector('#status').textContent = 'Unable to open playable. ' + error.message;
+      }
+    </script>
+  </body>
+</html>

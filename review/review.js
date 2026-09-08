@@ -1,0 +1,491 @@
+function labelTransport(id, label) {
+  const button = document.getElementById(id);
+  if (button.title === label) return;
+  button.setAttribute('aria-label', label);
+  button.title = label;
+}
+const $ = (s) => document.querySelector(s),
+  frame = $('#game');
+let controlsInitialized = false,
+  paused = false,
+  profile = 'native',
+  frameLoading = false,
+  pendingSongLevel = null;
+const api = () => {
+  try {
+    return frameLoading ? null : frame.contentWindow?.__beatBloom;
+  } catch {
+    return null;
+  }
+};
+frame.addEventListener('load', () => {
+  frameLoading = false;
+});
+function loadProfile(url) {
+  if (typeof resetPatternSession === 'function') resetPatternSession();
+  frameLoading = true;
+  $('#fullscreen').disabled = true;
+  frame.src = url;
+}
+function message(s) {
+  const lines = s.split('\n');
+  $('#editor-message').textContent =
+    lines.length > 3 ? lines.slice(0, 3).join(' · ') + ` (${lines.length - 3} more checks)` : s;
+}
+function controls(level) {
+  controlsInitialized = true;
+  $('#shape').value = level.shape;
+  $('#ball-speed').value = Math.round((level.ballSpeed ?? 1) * 100);
+  $('#ball-size').value = (level.ballScale ?? 0.85) * 100;
+  $('#layers').value = level.rings.length;
+  $('#visible-layers').max = Math.min(12, level.rings.length);
+  $('#visible-layers').value = level.arenaRingCapacity;
+  $('#inner-radius').value = level.innerRadius;
+  $('#thickness').value = level.lineThickness * 49;
+  $('#spacing').value = level.lineSpacing * 49;
+  $('#petals').value = level.flowerPetals;
+  $('#roundness').value = level.roundness;
+  const palette = $('.palette');
+  palette.querySelectorAll('input').forEach((i) => i.remove());
+  level.palette.forEach((color, i) => {
+    const input = document.createElement('input');
+    input.type = 'color';
+    input.setAttribute(
+      'aria-label',
+      ['First color', 'Second color', 'Third color', 'Fourth color'][i] ?? `Color ${i + 1}`,
+    );
+    input.value = '#' + color.toString(16).padStart(6, '0');
+    input.addEventListener('change', change);
+    palette.append(input);
+  });
+  $('#level-json').value = JSON.stringify(level, null, 2);
+  labels();
+  appearanceControls();
+  tutorialControls();
+  if (typeof patternControls === 'function') patternControls(level);
+  if (typeof endCardControls === 'function') endCardControls();
+}
+function labels() {
+  $('#ball-speed-value').value = (Number($('#ball-speed').value) / 100).toFixed(2) + '×';
+  $('#ball-size-value').value = $('#ball-size').value + '%';
+  $('#inner-radius-value').value =
+    (Number($('#inner-radius').value) * 49).toFixed(0) + ' px at base size';
+  $('#layers-value').value = $('#layers').value;
+  $('#visible-layers-value').value = $('#visible-layers').value;
+  $('#thickness-value').value = Number($('#thickness').value).toFixed(1) + ' px at base size';
+  $('#spacing-value').value = Number($('#spacing').value).toFixed(1) + ' px at base size';
+  $('#petals-value').value = $('#petals').value;
+  $('#roundness-value').value = Math.round(Number($('#roundness').value) * 100) + '%';
+  const flower = $('#shape').value === 'flower';
+  $('#petals').disabled = !flower;
+  $('#petals-control').hidden = !flower;
+  $('#petals-unavailable').hidden = flower;
+}
+const appearanceFields = {
+  'color-fade': 'colorFade',
+  'shadow-opacity': 'shadowOpacity',
+  'shadow-fade': 'shadowFade',
+};
+const appearanceMaximums = { 'color-fade': 30, 'shadow-opacity': 50, 'shadow-fade': 80 };
+function appearanceLabel(id, percent) {
+  const text = `${Number(percent.toFixed(4))}%`;
+  $(`#${id}-value`).value = text;
+  $(`#${id}`).setAttribute('aria-valuetext', text);
+}
+function appearanceLabels() {
+  for (const id of Object.keys(appearanceFields)) appearanceLabel(id, Number($(`#${id}`).value));
+}
+function appearanceControls() {
+  const appearance = api()?.getRingAppearance();
+  if (!appearance) return;
+  for (const [id, key] of Object.entries(appearanceFields)) {
+    const percent = appearance[key] * 100,
+      control = $(`#${id}`);
+    control.max = Math.max(appearanceMaximums[id], Math.ceil(percent));
+    control.value = percent;
+    appearanceLabel(id, percent);
+  }
+}
+for (const [id, key] of Object.entries(appearanceFields)) {
+  $(`#${id}`).addEventListener('input', appearanceLabels);
+  $(`#${id}`).addEventListener('change', () => {
+    const a = api();
+    if (!a?.snapshot().ready) return;
+    try {
+      const next = a.setOptions({
+        ringAppearance: { ...a.getRingAppearance(), [key]: Number($(`#${id}`).value) / 100 },
+      });
+      $('#level-json').value = JSON.stringify(next, null, 2);
+      appearanceControls();
+      message('Ring depth updated.');
+    } catch (e) {
+      message(e.message);
+      appearanceControls();
+    }
+  });
+}
+function tutorialControls() {
+  const options = api()?.getTutorialOptions?.();
+  if (!options) return;
+  $('#tutorial-enabled').checked = options.enabled;
+  $('#tutorial-placement').value = options.placement;
+  $('#tutorial-placement').disabled = !options.enabled;
+}
+for (const id of ['tutorial-enabled', 'tutorial-placement'])
+  $(`#${id}`).addEventListener('change', () => {
+    const a = api();
+    if (!a?.snapshot().ready) return;
+    try {
+      const next = a.setOptions({
+        tutorial: {
+          enabled: $('#tutorial-enabled').checked,
+          placement: $('#tutorial-placement').value,
+        },
+      });
+      $('#level-json').value = JSON.stringify(next, null, 2);
+      tutorialControls();
+      message('Tutorial updated. Ready to play.');
+    } catch (e) {
+      message(e.message);
+      tutorialControls();
+    }
+  });
+function change(event) {
+  labels();
+  if (!api()?.snapshot().ready) return;
+  const target = event?.currentTarget || $('#shape'),
+    fields = {
+      'ball-size': ['ballScale', 100],
+      'ball-speed': ['ballSpeed', 100],
+      shape: ['shape', 1],
+      'inner-radius': ['innerRadius', 1],
+      thickness: ['lineThickness', 49],
+      spacing: ['lineSpacing', 49],
+      petals: ['flowerPetals', 1],
+      roundness: ['roundness', 1],
+    };
+  try {
+    const field = fields[target.id];
+    const options =
+      target.type === 'color'
+        ? {
+            palette: [...$('.palette').querySelectorAll('input')].map((i) =>
+              parseInt(i.value.slice(1), 16),
+            ),
+          }
+        : field
+          ? { [field[0]]: target.id === 'shape' ? target.value : Number(target.value) / field[1] }
+          : {};
+    const l = api().setOptions(options);
+    $('#level-json').value = JSON.stringify(l, null, 2);
+    if (typeof patternControls === 'function') patternControls(l);
+    message('Level updated. Ready to play.');
+  } catch (e) {
+    message(e.message);
+    controls(api().getLevel());
+  }
+}
+for (const s of [
+  '#ball-size',
+  '#ball-speed',
+  '#shape',
+  '#inner-radius',
+  '#thickness',
+  '#spacing',
+  '#petals',
+  '#roundness',
+])
+  $(s).addEventListener('change', change);
+for (const s of [
+  '#ball-size',
+  '#ball-speed',
+  '#inner-radius',
+  '#thickness',
+  '#spacing',
+  '#petals',
+  '#roundness',
+  '#layers',
+  '#visible-layers',
+])
+  $(s).addEventListener('input', labels);
+$('.palette')
+  .querySelectorAll('input')
+  .forEach((i) => i.addEventListener('change', change));
+$('#layers').addEventListener('change', () => {
+  if (!api()?.snapshot().ready) return;
+  try {
+    const level = api().setLayerCount(Number($('#layers').value));
+    controls(level);
+    message(
+      `Updated to ${level.rings.length} layers. ${level.queue.length} balls × 3 power cover ${level.rings.flat().filter((c) => c >= 0).length} pieces.`,
+    );
+  } catch (e) {
+    message(e.message);
+    controls(api().getLevel());
+  }
+});
+$('#visible-layers').addEventListener('change', () => {
+  if (!api()?.snapshot().ready) return;
+  try {
+    const count = Number($('#visible-layers').value),
+      current = api().getLevel();
+    const level = api().setOptions({
+      arenaRingCapacity: count,
+      maxRenderedRings: Math.max(current.maxRenderedRings, count + current.previewRingCount),
+    });
+    controls(level);
+    message(`${count} colored layers visible at once.`);
+  } catch (e) {
+    message(e.message);
+    controls(api().getLevel());
+  }
+});
+$('#profile').onchange = () => {
+  const a = api();
+  pendingSongLevel = pendingSongLevel || a?.getLevel();
+  if (pendingSongLevel && a?.getEndCardDesign) pendingSongLevel.endCard = a.getEndCardDesign();
+  profile = $('#profile').value;
+  controlsInitialized = false;
+  loadProfile(`/dist/preview/${profile}.html`);
+  paused = false;
+  labelTransport('pause', 'Pause');
+  $('#pause').setAttribute('aria-pressed', 'false');
+  message('Loading song stems and instruments…');
+};
+function applyPendingSong(a) {
+  if (!pendingSongLevel) return;
+  const song = a.getLevel(),
+    next = structuredClone(pendingSongLevel);
+  for (const key of [
+    'songId',
+    'name',
+    'bpm',
+    'beatsPerBar',
+    'loopBeats',
+    'downbeatOffset',
+    'sections',
+  ])
+    next[key] = structuredClone(song[key]);
+  const demand = Array(next.palette.length).fill(0);
+  next.rings.flat().forEach((c) => {
+    if (c >= 0) demand[c]++;
+  });
+  next.stemLanes = song.stemLanes.map((lane) => ({
+    ...lane,
+    colors: [...new Set(lane.colors.map((c) => c % next.palette.length))],
+  }));
+  for (let color = 0; color < next.palette.length; color++)
+    if (!next.stemLanes.some((l) => l.colors.includes(color)))
+      next.stemLanes[color % next.stemLanes.length].colors.push(color);
+  for (const lane of next.stemLanes)
+    lane.requiredBreaks = Math.max(
+      1,
+      Math.min(
+        lane.requiredBreaks,
+        lane.colors.reduce((sum, c) => sum + demand[c], 0),
+      ),
+    );
+  const level = a.setLevel(next);
+  pendingSongLevel = null;
+  controls(level);
+  message('Song loaded. Your shape, pattern and ending are preserved.');
+}
+$('#restart').onclick = () => {
+  api()?.restart();
+  message('Level restarted.');
+};
+$('#pause').onclick = () => {
+  paused = !paused;
+  api()?.pause(paused);
+  labelTransport('pause', paused ? 'Resume' : 'Pause');
+  $('#pause').setAttribute('aria-pressed', String(paused));
+};
+$('#sound').onclick = () => {
+  const s = api()?.snapshot();
+  if (s) api().setMuted(!s.music.muted);
+};
+$('#step').onclick = () => {
+  paused = true;
+  api()?.pause(true);
+  api()?.step(1 / 60);
+  labelTransport('pause', 'Resume');
+  $('#pause').setAttribute('aria-pressed', 'true');
+};
+$('#save').onclick = () => {
+  if (!api()) return;
+  const l = api().getLevel(),
+    a = document.createElement('a');
+  a.href = URL.createObjectURL(
+    new Blob([JSON.stringify(l, null, 2)], { type: 'application/json' }),
+  );
+  a.download = `beat-bloom-${l.shape}-level.json`;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  message('Level saved. Load this JSON to use it again.');
+};
+$('#load').onclick = () => $('#load-file').click();
+async function applyText(text) {
+  try {
+    const l = api().setLevel(JSON.parse(text));
+    controls(l);
+    message('Level loaded and validated.');
+  } catch (e) {
+    message('Level was not changed: ' + e.message);
+  }
+}
+$('#load-file').onchange = async () => {
+  const f = $('#load-file').files[0];
+  if (f) await applyText(await f.text());
+  $('#load-file').value = '';
+};
+$('#apply-json').onclick = () => applyText($('#level-json').value);
+let lastPreviewError = '';
+// The iframe owns gameplay; Studio polls only its lightweight authoring status.
+setInterval(() => {
+  if (document.hidden) return;
+  try {
+    const a = api(),
+      s = a?.snapshot();
+    $('#fullscreen').disabled = !s?.ready;
+    $('#export-playable').disabled = exportBusy || !s?.ready;
+    if (!s?.ready) return;
+    if (pendingSongLevel) applyPendingSong(a);
+    if (!controlsInitialized) controls(a.getLevel());
+    if (typeof syncDesignPreview === 'function') syncDesignPreview(s);
+    $('#game-state').textContent =
+      typeof studioTab !== 'undefined' && studioTab === 'design'
+        ? 'Design preview'
+        : s.status === 'won'
+          ? 'Complete'
+          : s.paused
+            ? 'Paused'
+            : `${s.time.toFixed(1)} s`;
+    labelTransport('sound', s.music.muted ? 'Unmute sound' : 'Mute sound');
+    $('#sound').setAttribute('aria-pressed', String(s.music.muted));
+    lastPreviewError = '';
+  } catch (error) {
+    const detail = error instanceof Error ? error.message : String(error);
+    if (detail !== lastPreviewError) {
+      lastPreviewError = detail;
+      message(`Preview could not update: ${detail}`);
+      console.error('Studio preview update failed', error);
+    }
+  }
+}, 250);
+
+let exportURL = '',
+  exportBusy = false;
+function exportControls() {
+  const network = $('#export-network').value,
+    meta = network === 'meta',
+    zip = $('#export-format').value === 'zip';
+  $('.store-destinations').hidden = meta;
+  for (const id of ['store-ios', 'store-android']) $(`#${id}`).disabled = meta;
+  $('#destination-help').textContent = meta
+    ? 'Managed in Meta Ads Manager. Install Now uses your campaign’s destination; no link is needed in this export.'
+    : network === 'applovin'
+      ? 'Choose the app, operating system and any custom product page in AppLovin. The playable includes base app links for its install action.'
+      : 'The playable includes your app’s store links. Manage tracking in Unity’s campaign settings.';
+  $('#export-format-help').textContent = zip
+    ? meta
+      ? 'ZIP with a single index.html. The included HTML stays within our 2 MB budget.'
+      : 'For upload, unzip and select index.html. The network accepts a single HTML file.'
+    : `One file with all assets included. ${meta ? '2 MB export budget' : 'Under 5 MB'}.`;
+  $('#network-guide').href = meta
+    ? 'https://www.facebook.com/business/help/412951382532338'
+    : network === 'applovin'
+      ? 'https://support.applovin.com/en/growth/promoting-your-apps/welcome-to-applovin/creative-specs-and-guidelines'
+      : 'https://docs.unity.com/en-us/grow/acquire/creatives/playable/specifications';
+}
+$('#export-network').addEventListener('change', exportControls);
+$('#export-format').addEventListener('change', exportControls);
+exportControls();
+$('#export-playable').onclick = async () => {
+  const current = api();
+  if (exportBusy || !current?.snapshot().ready) return;
+  const button = $('#export-playable'),
+    status = $('#export-status'),
+    network = $('#export-network').value,
+    format = $('#export-format').value,
+    level = current.getLevel(),
+    selectedProfile = profile;
+  exportBusy = true;
+  button.disabled = true;
+  button.textContent = 'Building playable…';
+  status.dataset.error = 'false';
+  status.textContent = `Packaging ${level.shape} · ${level.rings.length} layers for ${$('#export-network').selectedOptions[0].textContent}…`;
+  $('#export-download').hidden = true;
+  try {
+    const response = await fetch('/api/export', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        network,
+        profile: selectedProfile,
+        level,
+        format,
+        ...(network === 'meta'
+          ? {}
+          : {
+              storeURLs: {
+                ios: $('#store-ios').value.trim(),
+                android: $('#store-android').value.trim(),
+              },
+            }),
+      }),
+    });
+    if (!response.ok) {
+      const result = await response
+        .json()
+        .catch(() => ({ error: 'Unable to build the playable.' }));
+      throw Error(result.error || 'Unable to build the playable.');
+    }
+    const file = await response.blob(),
+      filename =
+        /filename="([^"]+)"/.exec(response.headers.get('Content-Disposition') || '')?.[1] ||
+        `beat-bloom-${network}.${format}`;
+    if (exportURL) URL.revokeObjectURL(exportURL);
+    exportURL = URL.createObjectURL(file);
+    const link = $('#export-download');
+    link.href = exportURL;
+    link.download = filename;
+    link.textContent = `Download ${filename}`;
+    link.hidden = false;
+    link.click();
+    const bytes = Number(response.headers.get('X-Playable-HTML-Bytes')),
+      cap = Number(response.headers.get('X-Playable-Limit-Bytes'));
+    status.textContent = `Exported ${level.shape} · ${level.rings.length} layers. HTML ${(bytes / 1000000).toFixed(2)} MB / ${(cap / 1000000).toFixed(0)} MB limit. Ready for the network’s upload validator.`;
+  } catch (error) {
+    status.dataset.error = 'true';
+    status.textContent = error.message;
+  } finally {
+    exportBusy = false;
+    button.disabled = !api()?.snapshot().ready;
+    button.textContent = 'Download playable';
+  }
+};
+addEventListener('beforeunload', () => {
+  if (exportURL) URL.revokeObjectURL(exportURL);
+  if (typeof cancelSolvability === 'function') cancelSolvability();
+});
+
+$('#fullscreen').onclick = () => {
+  const current = api();
+  if (!current?.snapshot().ready) {
+    message('Wait for your level to finish loading.');
+    return;
+  }
+  try {
+    const id = crypto.randomUUID(),
+      snapshot = JSON.stringify({ version: 1, profile, level: current.getLevel() });
+    if (new TextEncoder().encode(snapshot).length > 256 * 1024)
+      throw Error('This level is too large to open. Save its JSON and reduce the level size.');
+    localStorage.setItem(`beatbloom:studio-preview:${id}`, snapshot);
+    window.open(`/dist/preview/${profile}.html?studioLevel=${id}`, '_blank', 'noopener');
+    message(
+      'Opened your current level in a new tab. It starts fresh and keeps these settings when reloaded.',
+    );
+  } catch (error) {
+    message('Unable to open this level: ' + error.message);
+  }
+};

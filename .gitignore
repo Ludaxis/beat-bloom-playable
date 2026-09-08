@@ -1,0 +1,32 @@
+# Installed dependencies and generated delivery bundles
+/node_modules/
+/dist/
+/artifacts/
+
+# Local QA runs, browser captures and downloaded exports
+/qa/
+/playwright-report/
+/test-results/
+/coverage/
+*.log
+*.tsbuildinfo
+
+# Credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+/.vercel/
+*.pem
+*.key
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*.swo
+
+# Keep authored assets, level data, tests and package-lock.json tracked.

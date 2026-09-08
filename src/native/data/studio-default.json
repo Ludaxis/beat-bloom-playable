@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "id": "native-6",
+  "name": "Kiss Me More",
+  "levelNumber": 6,
+  "songId": "kissmemore",
+  "shape": "heart",
+  "flowerPetals": 5,
+  "roundness": 0,
+  "palette": [
+    10120442,
+    16357817,
+    15026253
+  ],
+  "innerRadius": 2.8,
+  "lineSpacing": 0.4163265306122449,
+  "lineThickness": 0.19183673469387755,
+  "segmentGap": 0,
+  "arenaRingCapacity": 7,
+  "previewRingCount": 0,
+  "maxRenderedRings": 7,
+  "rings": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2
+    ]
+  ],
+  "queue": [
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    }
+  ],
+  "queueColumns": 3,
+  "activeCapacity": 3,
+  "trayCapacity": 3,
+  "stemLanes": [
+    {
+      "stem": 1,
+      "colors": [
+        0
+      ],
+      "requiredBreaks": 5
+    },
+    {
+      "stem": 2,
+      "colors": [
+        1
+      ],
+      "requiredBreaks": 10
+    },
+    {
+      "stem": 3,
+      "colors": [
+        2
+      ],
+      "requiredBreaks": 10
+    },
+    {
+      "stem": 4,
+      "colors": [
+        0
+      ],
+      "requiredBreaks": 10
+    }
+  ],
+  "bpm": 111,
+  "beatsPerBar": 4,
+  "loopBeats": 66,
+  "downbeatOffset": 1.0810812,
+  "sections": [
+    {
+      "startBeat": 0,
+      "intensity": 0.69,
+      "direction": 1,
+      "degreesPerBeat": 33
+    },
+    {
+      "startBeat": 4,
+      "intensity": 0.58,
+      "direction": 1,
+      "degreesPerBeat": 30
+    },
+    {
+      "startBeat": 8,
+      "intensity": 0.66,
+      "direction": 1,
+      "degreesPerBeat": 32
+    },
+    {
+      "startBeat": 12,
+      "intensity": 0.48,
+      "direction": 1,
+      "degreesPerBeat": 28
+    },
+    {
+      "startBeat": 16,
+      "intensity": 0.76,
+      "direction": -1,
+      "degreesPerBeat": 34
+    },
+    {
+      "startBeat": 20,
+      "intensity": 0.6,
+      "direction": -1,
+      "degreesPerBeat": 30
+    },
+    {
+      "startBeat": 24,
+      "intensity": 0.59,
+      "direction": -1,
+      "degreesPerBeat": 30
+    },
+    {
+      "startBeat": 28,
+      "intensity": 0.48,
+      "direction": -1,
+      "degreesPerBeat": 28
+    },
+    {
+      "startBeat": 32,
+      "intensity": 0.86,
+      "direction": 1,
+      "degreesPerBeat": 37
+    },
+    {
+      "startBeat": 36,
+      "intensity": 0.81,
+      "direction": 1,
+      "degreesPerBeat": 35
+    },
+    {
+      "startBeat": 40,
+      "intensity": 0.85,
+      "direction": 1,
+      "degreesPerBeat": 36
+    },
+    {
+      "startBeat": 44,
+      "intensity": 0.86,
+      "direction": 1,
+      "degreesPerBeat": 37
+    },
+    {
+      "startBeat": 48,
+      "intensity": 0.83,
+      "direction": -1,
+      "degreesPerBeat": 36
+    },
+    {
+      "startBeat": 52,
+      "intensity": 0.71,
+      "direction": -1,
+      "degreesPerBeat": 33
+    },
+    {
+      "startBeat": 56,
+      "intensity": 0.82,
+      "direction": -1,
+      "degreesPerBeat": 36
+    },
+    {
+      "startBeat": 60,
+      "intensity": 0.84,
+      "direction": -1,
+      "degreesPerBeat": 36
+    }
+  ],
+  "motion": {
+    "phaseDegrees": 196.7559594483,
+    "degreesPerBeat": 12,
+    "speedMultiplier": 2,
+    "flipEaseBeats": 1,
+    "conveyorBeatsPerSlot": 12,
+    "conveyorAlternate": false,
+    "conveyorHoldFigure": false,
+    "conveyorPulseEveryBeats": 8,
+    "conveyorPulseDurationBeats": 2,
+    "conveyorPulseSpeedBoost": 0.2
+  },
+  "source": {
+    "level": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_6.asset",
+    "levelSha256": "2562dff14bd22f4f73d857b15db73717c7ddaaac95748b4efd97adcaa0b0932d",
+    "field": "Assets/_Ludaxis/BeatBloom/Content/Config/FieldConfig.asset",
+    "exportedAt": "2026-09-07T19:16:47.414Z"
+  },
+  "referenceCalibration": {
+    "video": "BeatBloomNewVersion.mp4",
+    "phaseDegrees": 196.7559594483,
+    "physicsHandoffSeconds": 0.03333333333333333,
+    "audioSourceOffsetSeconds": 0.6024,
+    "measuredFromSeconds": 3.8,
+    "measuredToSeconds": 22,
+    "angularRmsDegrees": 0.293,
+    "note": "The recording starts 0.6024 seconds into the native music source, measured by waveform correlation. Palette is measured from lossless decoded video frames, not JPEG intermediates. White-wall fit across 10 reference frames determines phase modulo 60 degrees. First yellow launch chooses the full winding. Raw Unity prefab phase is 56 degrees. The recorded UI-to-physics handoff holds at center for approximately two 60 Hz frames; this is a reference timing calibration, not a claimed Unity engine constant."
+  },
+  "queuePolicy": "fixed-three",
+  "ringPhaseOffsets": [
+    0,
+    0.04166666666666652,
+    0.08333333333333348,
+    0.125,
+    0.16666666666666652,
+    0.20833333333333348,
+    0.25,
+    0.2916666666666665,
+    0.3333333333333335,
+    0.375
+  ],
+  "ringShiftDegrees": 15,
+  "pattern": {
+    "colorCount": 3,
+    "segmentsPerRing": 3,
+    "colorsPerRing": 3,
+    "shift": 0,
+    "shiftDegrees": 15,
+    "equalColorSpans": false
+  }
+}

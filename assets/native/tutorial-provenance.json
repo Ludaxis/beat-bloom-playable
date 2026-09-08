@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "sourceArt": [
+    {
+      "key": "idle",
+      "path": "Assets/UI/Common/Assets/Icons-Common/Icon-Hand-Idle.png",
+      "guid": "44a76ed82e3324610b419ca36d67d465",
+      "sha256": "5911ec48fdaab1a36b3fac89816afb2588788296b3d72486790657bd14804783"
+    },
+    {
+      "key": "tap",
+      "path": "Assets/UI/Common/Assets/Icons-Common/Icon-Hand-Tap.png",
+      "guid": "978da294fbc354c3f82fc8f938bb18e7",
+      "sha256": "229abd7b20fcb560d524a87c16abc06c90e8e6571a67f90796f24439214e35f5"
+    },
+    {
+      "key": "tip",
+      "path": "Assets/UI/Common/Assets/Backgrounds/Bg-Bubble 04.png",
+      "guid": "610e0fed88e774032a9278c31b1cc795",
+      "sha256": "e5a7fe6969da73cc25aacdebc03f28ada6e686051622c7c38967448acf05da9b"
+    }
+  ],
+  "hand": {
+    "frames": [
+      "idle",
+      "tap"
+    ],
+    "sourceFramePixels": 256,
+    "outputFramePixels": 256,
+    "nativePrefabPixels": 280,
+    "fingertip": [
+      0.20357142857142857,
+      0.22857142857142856
+    ],
+    "nativeLoopSeconds": 0.68333334,
+    "nativeTapAtSeconds": 0.5,
+    "nativeScale": [
+      1.1,
+      1
+    ],
+    "operation": "Untrimmed original PNGs encoded at original 256px as quality 84 WebP with 100% alpha quality; no redraw or recoloring."
+  },
+  "tip": {
+    "outputPixels": [
+      1000,
+      116
+    ],
+    "operation": "Original Bg-Bubble04 native sliced strip baked at 2× logical size from its left cap, center column and right cap; quality 82 WebP with 100% alpha quality. Single texture prevents browser slice seams; no redraw/recoloring."
+  },
+  "outputs": {
+    "tutorialHand": {
+      "path": "assets/native/tutorial-hand.webp",
+      "bytes": 3586
+    },
+    "tutorialHandTap": {
+      "path": "assets/native/tutorial-hand-tap.webp",
+      "bytes": 3622
+    },
+    "tutorialTip": {
+      "path": "assets/native/tutorial-tip.webp",
+      "bytes": 4078
+    }
+  }
+}

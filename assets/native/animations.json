@@ -1,0 +1,73 @@
+{
+  "frameSize": 192,
+  "columns": 8,
+  "frames": 48,
+  "instruments": {
+    "ukulele": {
+      "duration": 1.166700005531311,
+      "bounds": {
+        "x": -323.9669156769771,
+        "y": -1138.3868699109735,
+        "width": 658.6605114207645,
+        "height": 1095.4981736143404
+      },
+      "animation": "Looping3",
+      "source": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Animations/Ukulele Export/Ukulele.json"
+    },
+    "violin": {
+      "duration": 1,
+      "bounds": {
+        "x": -532.9260150319901,
+        "y": -1433.6798349555738,
+        "width": 1302.7177458598046,
+        "height": 1418.4148331253737
+      },
+      "animation": "Looping",
+      "source": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Animations/Violin Export/violin.json"
+    },
+    "piano": {
+      "duration": 1,
+      "bounds": {
+        "x": -537.5885192432686,
+        "y": -1027.5964509528774,
+        "width": 1085.8650547944003,
+        "height": 1027.1532412290076
+      },
+      "animation": "Looping",
+      "source": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Animations/Piano Export/Piano.json"
+    },
+    "drum": {
+      "duration": 1,
+      "bounds": {
+        "x": -555.8449159672891,
+        "y": -1081.058426456272,
+        "width": 1159.631757267423,
+        "height": 1032.2884301351203
+      },
+      "animation": "Looping",
+      "source": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Animations/Drum Export/DrumSnare.json"
+    },
+    "xylophone": {
+      "duration": 1,
+      "bounds": {
+        "x": -623.0459677504921,
+        "y": -788.9537999927724,
+        "width": 1208.5590137401757,
+        "height": 897.0827818563605
+      },
+      "animation": "Looping",
+      "source": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Animations/Xylophone Export/Xylophone.json"
+    },
+    "trumpet": {
+      "duration": 1,
+      "bounds": {
+        "x": -625.7583720138095,
+        "y": -742.8831415397738,
+        "width": 1016.8534948499084,
+        "height": 730.8154535494739
+      },
+      "animation": "Looping",
+      "source": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Animations/Trumpet Export/Trumpet.json"
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "sources": [
+    {
+      "source": "Assets/UI/Common/Assets/Icons-Common/Icon-Lock-Gold.png",
+      "output": "lock.webp",
+      "operation": "Resize approved original artwork",
+      "sha256": "358fa271621e6eba4796598af294ac1d01e75e6c57b2c29e14bc4438bee0bb73"
+    },
+    {
+      "source": "Assets/UI/Common/Assets/Icons-Flat/Icon-Flat-Setting.png",
+      "output": "gear.webp",
+      "operation": "Resize approved original artwork",
+      "sha256": "354537d93e757897e70f810d4d0fed11d66532688a6ea85c958f5eebddd00cd5"
+    },
+    {
+      "source": "Assets/UI/GamePlay/Assets/Icon-Element-Mystery.png",
+      "output": "mystery.webp",
+      "operation": "Resize approved original artwork",
+      "sha256": "8840d885b6075814b814f8e603467fb1df0712714774d35a495fe262529203b4"
+    },
+    {
+      "source": "Assets/UI/GamePlay/Assets/Title-Element-Mystery.png",
+      "output": "mysteryTitle.webp",
+      "operation": "Resize approved original artwork",
+      "sha256": "d46a1b9b4e0dc51ba771abe3a286434fa43bdf5a54b6a967d4f2399fea46cd0c"
+    },
+    {
+      "source": "Assets/UI/GamePlay/Assets/Icon-Booster-ExtraBall.png",
+      "output": "booster.webp",
+      "operation": "Resize approved original artwork",
+      "sha256": "7b894d0841dc14f6ee55c7d2a6ed95f25b710aa20487a23c9d4aaf533f680917"
+    },
+    {
+      "source": "Assets/UI/Common/Assets/Icons-Flat/Icon-Flat-Music.png",
+      "output": "clef.webp",
+      "operation": "Resize approved original artwork",
+      "sha256": "a92f67bcf5a7831d52a42e4fa51ffd17c0d2045897e0016ec8e53ba9226cd81d"
+    },
+    {
+      "source": "Assets/UI/GamePlay/Assets/PreWin/Typo-BEAT-B.png",
+      "output": "BEAT-B.webp",
+      "operation": "Native pre-win letter artwork",
+      "sha256": "f32d8062882f346b06c3c8d0324f9807cfdcf98efdf443e2202b3692ddb1acc4"
+    },
+    {
+      "source": "Assets/UI/GamePlay/Assets/PreWin/Typo-BEAT-E.png",
+      "output": "BEAT-E.webp",
+      "operation": "Native pre-win letter artwork",
+      "sha256": "4fc2277d1973175c3a16dc8269e6360dff1316c2afedaa2b9df863edc22bf1d7"
+    },
+    {
+      "source": "Assets/UI/GamePlay/Assets/PreWin/Typo-BEAT-A.png",
+      "output": "BEAT-A.webp",
+      "operation": "Native pre-win letter artwork",
+      "sha256": "a9ef74c546e1fe97da9bb39ed519585aadaad3acdfb5d072afcea4004b4349b7"
+    },
+    {
+      "source": "Assets/UI/GamePlay/Assets/PreWin/Typo-BEAT-T.png",
+      "output": "BEAT-T.webp",
+      "operation": "Native pre-win letter artwork",
+      "sha256": "0791739d8648d589dd0f68430e3668e04a0232fd12e4ade6ffd058199f40a350"
+    },
+    {
+      "source": "Assets/UI/GamePlay/Assets/PreWin/Typo-BLOOM-B.png",
+      "output": "BLOOM-B.webp",
+      "operation": "Native pre-win letter artwork",
+      "sha256": "b4ad4feec9e1d0c33f701e1c04c87539b775037f0a7212ec28352bd372efd184"
+    },
+    {
+      "source": "Assets/UI/GamePlay/Assets/PreWin/Typo-BLOOM-L.png",
+      "output": "BLOOM-L.webp",
+      "operation": "Native pre-win letter artwork",
+      "sha256": "e661b5c13ced28e27fcb1062afa7cd2aef55e154c09403deb7a2d79e5fa792a0"
+    },
+    {
+      "source": "Assets/UI/GamePlay/Assets/PreWin/Typo-BLOOM-O-Yellow.png",
+      "output": "BLOOM-O-Yellow.webp",
+      "operation": "Native pre-win letter artwork",
+      "sha256": "d306635ac3648df2299aa997a5d108650b1a5200250a1c601a2bcb4137b0888a"
+    },
+    {
+      "source": "Assets/UI/GamePlay/Assets/PreWin/Typo-BLOOM-O-Red.png",
+      "output": "BLOOM-O-Red.webp",
+      "operation": "Native pre-win letter artwork",
+      "sha256": "ec5ce29ec4eb3e2033a03ef15975b214104d006b6e399d73d40fd2dca03c7501"
+    },
+    {
+      "source": "Assets/UI/GamePlay/Assets/PreWin/Typo-BLOOM-M.png",
+      "output": "BLOOM-M.webp",
+      "operation": "Native pre-win letter artwork",
+      "sha256": "105d4da26162a9bdde921e16136c0b261b6511f39a5b7f38005dafae7e0771ae"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Content/Songs/kissmemore/Kissmemore_Stage0.ogg",
+      "output": "kissmemore-0.mp3",
+      "operation": "Full native loop; common sample origin; mono 44.1kHz MP3 80k",
+      "sha256": "1a8043536f3bcb36920e45c24546d536da128a4c4bb7a1649ecaa07d7fe5523b"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Content/Songs/kissmemore/Kissmemore_Stage1.ogg",
+      "output": "kissmemore-1.mp3",
+      "operation": "Full native loop; common sample origin; mono 44.1kHz MP3 80k",
+      "sha256": "bd5c5eb4b76c51eb53865e0c22ae98f01249f53c11e0fc5759356bd328a98dac"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Content/Songs/kissmemore/Kissmemore_Stage2.ogg",
+      "output": "kissmemore-2.mp3",
+      "operation": "Full native loop; common sample origin; mono 44.1kHz MP3 80k",
+      "sha256": "8a3ba9065d55badc074b8f6c9510a642c4c8d86cdd115412856760b73a7c811f"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Content/Songs/kissmemore/Kissmemore_Stage3.ogg",
+      "output": "kissmemore-3.mp3",
+      "operation": "Full native loop; common sample origin; mono 44.1kHz MP3 80k",
+      "sha256": "2485c201b89bf3334e61ac9df33a91baf8e4e4ccab335d484f877de3a25348c3"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Content/Songs/kissmemore/Kissmemore_Stage4.ogg",
+      "output": "kissmemore-4.mp3",
+      "operation": "Full native loop; common sample origin; mono 44.1kHz MP3 80k",
+      "sha256": "eb75181c5a9cf8bda6d7aeb3eaa12c10b28704b1e1f52f5c6c94e0f2be5716b7"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Sfx/launch_pluck.wav",
+      "output": "launch_pluck.mp3",
+      "operation": "Native SFX, no synthesized substitute",
+      "sha256": "c07f18da5ef207781baf63969fab8acda35ad67fde2ebfab455e37481e6971be"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Sfx/bounce_mute.wav",
+      "output": "bounce_mute.mp3",
+      "operation": "Native SFX, no synthesized substitute",
+      "sha256": "8e3b775b8f53938595f5fe3098d6df8ccdb46c5cba9da8d946f20a164836ee41"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Sfx/break_bell.wav",
+      "output": "break_bell.mp3",
+      "operation": "Native SFX, no synthesized substitute",
+      "sha256": "b4106bcb4cf0f716edc38f9eed3db26653b41738962cac47a58e0446e27699c4"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Sfx/break_tick.wav",
+      "output": "break_tick.mp3",
+      "operation": "Native SFX, no synthesized substitute",
+      "sha256": "bd4809393c6ea020d92b34145a34bde822ab9cd5a78e000a401b41e55754d928"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Sfx/shot_waste.wav",
+      "output": "shot_waste.mp3",
+      "operation": "Native SFX, no synthesized substitute",
+      "sha256": "821cf6730e08febaac38324eede6391db91f51fb5a1f71b089f2b8ebad69739c"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Sfx/result_lose.ogg",
+      "output": "result_lose.mp3",
+      "operation": "Native SFX, no synthesized substitute",
+      "sha256": "59edc2c6579b1902e10df850a7e60ee117ebf59d9b0f8b8c87f6f034262e1673"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Sfx/Bells/bell_m61_hard_rr1.wav",
+      "output": "bell-61.mp3",
+      "operation": "Native mapped-break bell sample",
+      "sha256": "7d2c2e57f72535933c0bef0ec0b0f7511a85e5f6b341a103639453f5ffa15f0c"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Sfx/Bells/bell_m67_hard_rr1.wav",
+      "output": "bell-67.mp3",
+      "operation": "Native mapped-break bell sample",
+      "sha256": "e650a48bb76198453e8a135ae88b1ca3efec2461ea7c8342f0980ae0cb8a44f3"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Sfx/Bells/bell_m73_hard_rr1.wav",
+      "output": "bell-73.mp3",
+      "operation": "Native mapped-break bell sample",
+      "sha256": "5b69572a87fcff96510af877a987b8641bcb78d4aee54a61f0c418d65b8258a7"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Sfx/Bells/bell_m79_hard_rr1.wav",
+      "output": "bell-79.mp3",
+      "operation": "Native mapped-break bell sample",
+      "sha256": "ce8ff979eaba379b909909fc7c76ec0e6b0a92e855342f94ac3fd3ec77692c23"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Sfx/InstrumentGold/Drum/DrumHit/hit_kick_v1_rr1.wav",
+      "output": "kick.mp3",
+      "operation": "Native mapped-break drum sample",
+      "sha256": "5ffa8a0eb2e51202b90b874ed6502d19ad8448aeefa0b6d6c9f3f7833a267a52"
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Sfx/InstrumentGold/Drum/DrumHit/hit_snare_v1_rr1.wav",
+      "output": "snare.mp3",
+      "operation": "Native mapped-break drum sample",
+      "sha256": "18a7e7b1ee90740903c731b506bc2a48e09b422a0364dcbf02f2f381d35d13a4"
+    }
+  ]
+}

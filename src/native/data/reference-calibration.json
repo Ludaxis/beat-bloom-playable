@@ -1,0 +1,82 @@
+{
+  "samples": [
+    {
+      "videoSeconds": 3.8,
+      "angleDegreesModulo60": -17.151977230587107,
+      "rmsDistance": 3.8251872328294247,
+      "samples": 4268,
+      "phaseDegreesModulo60": 16.656977230586847
+    },
+    {
+      "videoSeconds": 4.5,
+      "angleDegreesModulo60": -32.74294383150047,
+      "rmsDistance": 3.832922407319118,
+      "samples": 4298,
+      "phaseDegreesModulo60": 16.707943831501183
+    },
+    {
+      "videoSeconds": 5.5,
+      "angleDegreesModulo60": -54.8237545543944,
+      "rmsDistance": 3.835914457351823,
+      "samples": 4265,
+      "phaseDegreesModulo60": 16.588754554396488
+    },
+    {
+      "videoSeconds": 7.5,
+      "angleDegreesModulo60": -39.4175528169414,
+      "rmsDistance": 3.8249039831107727,
+      "samples": 4253,
+      "phaseDegreesModulo60": 16.782552816946264
+    },
+    {
+      "videoSeconds": 10,
+      "angleDegreesModulo60": -35.59630027295828,
+      "rmsDistance": 3.8204158513024646,
+      "samples": 4283,
+      "phaseDegreesModulo60": 17.46130027296317
+    },
+    {
+      "videoSeconds": 13,
+      "angleDegreesModulo60": -41.62903005220048,
+      "rmsDistance": 3.814701638040602,
+      "samples": 4230,
+      "phaseDegreesModulo60": 16.894030052200378
+    },
+    {
+      "videoSeconds": 14,
+      "angleDegreesModulo60": -3.2425311226412807,
+      "rmsDistance": 3.84146440629418,
+      "samples": 4317,
+      "phaseDegreesModulo60": 16.30753112263949
+    },
+    {
+      "videoSeconds": 17,
+      "angleDegreesModulo60": -10.27619921203111,
+      "rmsDistance": 3.8283826255676243,
+      "samples": 4326,
+      "phaseDegreesModulo60": 16.7411992120243
+    },
+    {
+      "videoSeconds": 20,
+      "angleDegreesModulo60": -16.627089529838404,
+      "rmsDistance": 3.816638992599801,
+      "samples": 4272,
+      "phaseDegreesModulo60": 16.49208952982667
+    },
+    {
+      "videoSeconds": 22,
+      "angleDegreesModulo60": -1.4622158599547694,
+      "rmsDistance": 3.821035059238998,
+      "samples": 4313,
+      "phaseDegreesModulo60": 16.927215859939565
+    }
+  ],
+  "phaseDegrees": 196.75595944830243,
+  "sourceVideo": "/Users/reza/Downloads/BeatBloomNewVersion.mp4",
+  "sourcePrefabPhaseDegrees": 56,
+  "method": "Bright white arena-band mask, nearest distance to identical native parallel-offset contour, rigid roll +22.2 degrees/second; 49 pixels per unit, center(288,512). Fit modulo60 disambiguated by first yellow shot direction. Frames before3.8 excluded because intro expansion or modal occlusion.",
+  "angularRmsDegrees": 0.29284787066180784,
+  "physicsHandoffSeconds": 0.03333333333333333,
+  "audioSourceOffsetSeconds": 0.6024,
+  "audioMethod": "Normalized waveform correlation against the native Stage0 stem, decoded at 8000 Hz; qa/native/audio-correlation.json. This aligns the source recording origin, not an inferred change to the native song chart."
+}

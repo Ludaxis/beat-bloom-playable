@@ -1,0 +1,738 @@
+{
+  "schemaVersion": 1,
+  "id": "native-41",
+  "name": "Sunflower",
+  "levelNumber": 41,
+  "songId": "sunflower",
+  "shape": "ring",
+  "flowerPetals": 5,
+  "roundness": 0,
+  "palette": [
+    6540610,
+    16699947,
+    3181311,
+    16139848,
+    8941041
+  ],
+  "innerRadius": 2.85,
+  "lineSpacing": 0.38253000000000004,
+  "lineThickness": 0.18,
+  "segmentGap": 0,
+  "arenaRingCapacity": 6,
+  "previewRingCount": 2,
+  "maxRenderedRings": 8,
+  "rings": [
+    [
+      0,
+      3,
+      0,
+      3,
+      0,
+      3,
+      2,
+      3,
+      2,
+      1,
+      2,
+      1,
+      4,
+      1,
+      4,
+      1
+    ],
+    [
+      3,
+      2,
+      3,
+      2,
+      3,
+      2,
+      0,
+      2,
+      0,
+      4,
+      0,
+      4,
+      1,
+      4,
+      1,
+      4
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      2,
+      0,
+      2,
+      3,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3
+    ],
+    [
+      3,
+      4,
+      3,
+      4,
+      3,
+      4,
+      0,
+      4,
+      0,
+      1,
+      0,
+      1,
+      2,
+      1,
+      2,
+      1
+    ],
+    [
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      3,
+      2,
+      3,
+      0,
+      3,
+      0,
+      4,
+      0,
+      4,
+      0
+    ],
+    [
+      4,
+      1,
+      4,
+      1,
+      4,
+      1,
+      0,
+      1,
+      0,
+      3,
+      2,
+      3,
+      2,
+      3
+    ],
+    [
+      1,
+      4,
+      1,
+      4,
+      1,
+      4,
+      3,
+      4,
+      3,
+      2,
+      0,
+      2,
+      0,
+      2
+    ],
+    [
+      4,
+      3,
+      4,
+      3,
+      4,
+      3,
+      1,
+      3,
+      1,
+      0,
+      2,
+      0,
+      2,
+      0
+    ],
+    [
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      3,
+      1,
+      3,
+      4,
+      0,
+      4,
+      0,
+      4
+    ],
+    [
+      4,
+      0,
+      4,
+      0,
+      4,
+      0,
+      1,
+      0,
+      1,
+      2,
+      3,
+      2,
+      3,
+      2
+    ],
+    [
+      2,
+      3,
+      2,
+      3,
+      4,
+      3,
+      4,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      2,
+      0,
+      2,
+      1,
+      2,
+      1,
+      4,
+      3,
+      4,
+      3,
+      4
+    ],
+    [
+      2,
+      0,
+      2,
+      0,
+      4,
+      0,
+      4,
+      3,
+      1,
+      3,
+      1,
+      3
+    ],
+    [
+      0,
+      4,
+      0,
+      4,
+      2,
+      4,
+      2,
+      1,
+      3,
+      1,
+      3,
+      1
+    ],
+    [
+      3,
+      2,
+      3,
+      2,
+      4,
+      2,
+      4,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      2,
+      1,
+      2,
+      3,
+      4,
+      3,
+      4,
+      3
+    ]
+  ],
+  "queue": [
+    {
+      "color": 0,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 4,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    }
+  ],
+  "queueColumns": 3,
+  "activeCapacity": 3,
+  "trayCapacity": 3,
+  "stemLanes": [
+    {
+      "stem": 1,
+      "colors": [
+        0,
+        4
+      ],
+      "requiredBreaks": 15
+    },
+    {
+      "stem": 2,
+      "colors": [
+        1
+      ],
+      "requiredBreaks": 18
+    },
+    {
+      "stem": 3,
+      "colors": [
+        2
+      ],
+      "requiredBreaks": 25
+    },
+    {
+      "stem": 4,
+      "colors": [
+        3
+      ],
+      "requiredBreaks": 34
+    }
+  ],
+  "bpm": 90,
+  "beatsPerBar": 4,
+  "loopBeats": 32,
+  "downbeatOffset": 0,
+  "sections": [
+    {
+      "startBeat": 0,
+      "intensity": 0.55,
+      "direction": 1,
+      "degreesPerBeat": 23
+    },
+    {
+      "startBeat": 4,
+      "intensity": 0.79,
+      "direction": 1,
+      "degreesPerBeat": 57
+    },
+    {
+      "startBeat": 8,
+      "intensity": 0.68,
+      "direction": 1,
+      "degreesPerBeat": 42
+    },
+    {
+      "startBeat": 12,
+      "intensity": 0.88,
+      "direction": 1,
+      "degreesPerBeat": 70
+    },
+    {
+      "startBeat": 16,
+      "intensity": 0.67,
+      "direction": 1,
+      "degreesPerBeat": 40
+    },
+    {
+      "startBeat": 20,
+      "intensity": 0.86,
+      "direction": 1,
+      "degreesPerBeat": 67
+    },
+    {
+      "startBeat": 24,
+      "intensity": 0.67,
+      "direction": 1,
+      "degreesPerBeat": 40
+    },
+    {
+      "startBeat": 28,
+      "intensity": 0.78,
+      "direction": 1,
+      "degreesPerBeat": 56
+    }
+  ],
+  "motion": {
+    "phaseDegrees": 56,
+    "degreesPerBeat": 12,
+    "speedMultiplier": 2,
+    "flipEaseBeats": 1,
+    "conveyorBeatsPerSlot": 0,
+    "conveyorAlternate": true,
+    "conveyorHoldFigure": false,
+    "conveyorPulseEveryBeats": 0,
+    "conveyorPulseDurationBeats": 0,
+    "conveyorPulseSpeedBoost": 0
+  },
+  "source": {
+    "level": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_41.asset",
+    "levelSha256": "ffa2794a4adabc0b81e321de592c63dc126e378b69e9f6f41a51bb656598e119",
+    "field": "Assets/_Ludaxis/BeatBloom/Content/Config/FieldConfig.asset",
+    "exportedAt": "2026-09-07T19:30:02.224Z"
+  }
+}

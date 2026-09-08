@@ -1,0 +1,38 @@
+{
+  "name": "beat-bloom-playables",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "assets": "node scripts/prepare-assets.mjs",
+    "build": "node scripts/build-native.mjs",
+    "dev": "node scripts/serve.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/native*.test.ts",
+    "test:export": "node --test scripts/native-package.test.mjs",
+    "qa": "node scripts/native-qa.mjs",
+    "qa:export": "node scripts/native-export-qa.mjs",
+    "qa:endcard": "node scripts/native-endcard-qa.mjs",
+    "qa:patterns": "node scripts/native-pattern-qa.mjs",
+    "verify": "node scripts/verify.mjs",
+    "assets:native": "node scripts/prepare-native-assets.mjs && node scripts/bake-native-instruments.mjs",
+    "export:levels": "node scripts/export-native-level.mjs",
+    "templates": "node scripts/export-ring-templates.mjs",
+    "format": "prettier --write src review scripts test",
+    "format:check": "prettier --check src review scripts test"
+  },
+  "dependencies": {
+    "pixi.js": "8.20.1"
+  },
+  "devDependencies": {
+    "@esotericsoftware/spine-pixi-v8": "~4.2.0",
+    "@types/node": "^24.0.0",
+    "esbuild": "0.28.2",
+    "fflate": "^0.8.2",
+    "playwright": "^1.58.0",
+    "prettier": "3.9.6",
+    "sharp": "^0.35.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

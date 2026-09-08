@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Beat Bloom — Gameplay studio</title>
+    <link rel="stylesheet" href="/review/review.css" />
+  </head>
+  <body>
+    <header>
+      <a class="identity" href="/"
+        ><img src="/assets/icon.webp" alt="" /><span
+          >Beat Bloom<small>Gameplay studio</small></span
+        ></a
+      >
+      <div class="studio-tabs" role="tablist" aria-label="Studio editor">
+        <button
+          id="gameplay-tab"
+          type="button"
+          role="tab"
+          aria-selected="true"
+          aria-controls="gameplay-panel"
+        >
+          Gameplay</button
+        ><button
+          id="design-tab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="design-panel"
+          tabindex="-1"
+        >
+          Design</button
+        ><button
+          id="export-tab"
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="export-panel"
+          tabindex="-1"
+        >
+          Export
+        </button>
+      </div>
+      <nav>
+        <button id="share-playable" type="button" title="Share current playable">Share ↗</button
+        ><button id="fullscreen" class="primary" type="button" disabled>Open playable ↗</button>
+      </nav>
+    </header>
+    <main>
+      <aside class="editor">
+        <section id="gameplay-panel" role="tabpanel" aria-labelledby="gameplay-tab">
+          <h1>Make the next level.</h1>
+          <p class="lead">
+            Choose a song, then shape its puzzle. Each song includes its own stems and instruments.
+          </p>
+          <label class="field" for="profile"
+            >Song<select id="profile" aria-label="Song">
+              <option value="native">Kiss Me More</option>
+              <option value="a-heart">NO BATIDÃO</option>
+              <option value="a-flower">Sunflower</option>
+            </select></label
+          >
+          <div class="divider"></div>
+          <label class="field"
+            >Shape<select id="shape">
+              <option value="hexagon">Rounded hexagon</option>
+              <option value="heart">Heart</option>
+              <option value="flower">Flower</option>
+              <option value="ring">Circle</option>
+              <option value="triangle">Triangle</option>
+              <option value="square">Square</option>
+              <option value="pentagon">Pentagon</option>
+              <option value="heptagon">Heptagon</option>
+            </select></label
+          >
+          <label class="field slider"
+            >Total colored layers<output id="layers-value">12</output
+            ><input id="layers" type="range" min="1" max="24" step="1" value="12"
+          /></label>
+          <label class="field slider"
+            >Visible layers<output id="visible-layers-value">6</output
+            ><input id="visible-layers" type="range" min="1" max="12" step="1" value="6"
+          /></label>
+          <label class="field slider" for="inner-radius"
+            >Center space radius<output id="inner-radius-value">137 px at base size</output
+            ><input
+              id="inner-radius"
+              type="range"
+              min=".5"
+              max="10"
+              step=".05"
+              value="2.8"
+              aria-describedby="inner-radius-help"
+          /></label>
+          <p id="inner-radius-help" class="control-help">
+            Moves the innermost line outward to give balls more room. The board scales to fit.
+          </p>
+          <label class="field slider"
+            >Center ball size<output id="ball-size-value">85%</output
+            ><input id="ball-size" type="range" min="60" max="110" step="1" value="85"
+          /></label>
+          <p class="control-help">
+            Changes moving balls and their collision size. Queue and slot buttons stay the same
+            size.
+          </p>
+          <label class="field slider">
+            Ball speed<output id="ball-speed-value">1.00×</output>
+            <input
+              id="ball-speed"
+              type="range"
+              min="80"
+              max="125"
+              step="1"
+              value="100"
+              aria-describedby="ball-speed-help"
+            />
+          </label>
+          <p id="ball-speed-help" class="control-help">
+            Adjusts movement and bounce speed. Keeps ball size and music tempo unchanged.
+          </p>
+          <label class="field slider"
+            >Line thickness<output id="thickness-value">8.8 px</output
+            ><input id="thickness" type="range" min="3" max="16" step=".2" value="8.8"
+          /></label>
+          <label class="field slider"
+            >Ring spacing<output id="spacing-value">18.7 px</output
+            ><input id="spacing" type="range" min="18" max="30" step=".2" value="18.7"
+          /></label>
+          <div id="petals-control" hidden>
+            <label class="field slider"
+              >Flower petals<output id="petals-value">5</output
+              ><input
+                id="petals"
+                type="range"
+                min="3"
+                max="9"
+                step="1"
+                value="5"
+                aria-describedby="petals-help"
+            /></label>
+            <p id="petals-help" class="control-help">
+              The rounded lobes around the Flower outline.
+            </p>
+          </div>
+          <div id="petals-unavailable" class="control-help">
+            <p>Petals are the rounded lobes of the Flower shape. They don’t apply to this shape.</p>
+          </div>
+          <label class="field slider"
+            >Roundness<output id="roundness-value">0%</output
+            ><input id="roundness" type="range" min="0" max="1" step=".05" value="0"
+          /></label>
+          <details id="advanced-pattern" class="advanced-pattern">
+            <summary>Advanced pattern</summary>
+            <p class="control-help">
+              Start with a game pattern, then tune it. Every queued ball has 3 power. The queue
+              covers all pieces of each color across every ring.
+            </p>
+            <label class="field"
+              >Game pattern<select id="pattern-template" disabled>
+                <option value="">Loading game patterns…</option>
+              </select></label
+            >
+            <p id="template-description" class="control-help">
+              Copies rings, colors and ring count. Keeps your shape, song and motion.
+            </p>
+            <div class="buttons">
+              <button id="apply-template" type="button" disabled>Apply pattern</button
+              ><button id="undo-pattern" type="button" disabled>Undo pattern</button>
+            </div>
+            <div class="pattern-preview">
+              <span>Rings from center outward</span
+              ><svg id="pattern-map" role="img" aria-label="Current ring color pattern"></svg>
+            </div>
+            <label class="field slider" for="color-count"
+              >Palette colors<output id="color-count-value">4</output
+              ><input id="color-count" type="range" min="1" max="12" step="1" value="4"
+            /></label>
+            <p id="color-count-help" class="control-help">
+              Adding or removing colors rebuilds the ball queue.
+            </p>
+            <fieldset class="palette">
+              <legend>Palette</legend>
+              <input type="color" aria-label="First color" value="#f64648" /><input
+                type="color"
+                aria-label="Second color"
+                value="#63cd42"
+              /><input type="color" aria-label="Third color" value="#308aff" /><input
+                type="color"
+                aria-label="Fourth color"
+                value="#fed22b"
+              />
+            </fieldset>
+            <label class="field slider" for="segments-per-ring"
+              >Segments per ring<output id="segments-per-ring-value">8</output
+              ><input id="segments-per-ring" type="range" min="1" max="24" step="1" value="8"
+            /></label>
+            <label class="pattern-toggle" for="equal-color-spans"
+              ><input id="equal-color-spans" type="checkbox" checked />Equal color spans</label
+            >
+            <p id="equal-color-spans-help" class="control-help">
+              Keeps each color’s share of the outline equal.
+            </p>
+            <label class="field slider" for="colors-per-ring"
+              >Colors per ring<output id="colors-per-ring-value">4</output
+              ><input id="colors-per-ring" type="range" min="1" max="4" step="1" value="4"
+            /></label>
+            <p id="colors-per-ring-help" class="control-help" hidden></p>
+            <label class="field slider" for="pattern-shift"
+              >Shift per ring<output id="pattern-shift-value">0°</output
+              ><input
+                id="pattern-shift"
+                type="range"
+                min="-180"
+                max="180"
+                step=".1"
+                value="0"
+                aria-describedby="pattern-shift-help"
+            /></label>
+            <div class="fine-offset">
+              <label for="pattern-shift-fine">Fine offset</label
+              ><input
+                id="pattern-shift-fine"
+                type="number"
+                min="-180"
+                max="180"
+                step=".01"
+                value="0"
+                aria-label="Fine shift per ring"
+              /><span>°</span>
+            </div>
+            <p id="pattern-shift-help" class="control-help">
+              A smooth offset along the outline. Use a small decimal for a tiny shift; negative
+              values shift the other way.
+            </p>
+            <p id="pattern-status" class="control-help">
+              Shift offsets each ring’s color pattern. Zero aligns the segments.
+            </p>
+            <div class="pattern-depth">
+              <h3>Ring depth</h3>
+              <label class="field slider" for="color-fade"
+                >Color fade per ring<output id="color-fade-value">8%</output
+                ><input id="color-fade" type="range" min="0" max="30" step=".5" value="8"
+              /></label>
+              <p class="control-help">
+                Each ring fades a little more as it moves outward. Zero keeps every colored ring at
+                full brightness.
+              </p>
+              <label class="field slider" for="shadow-opacity"
+                >Outer shadow strength<output id="shadow-opacity-value">20%</output
+                ><input id="shadow-opacity" type="range" min="0" max="50" step="1" value="20"
+              /></label>
+              <label class="field slider" for="shadow-fade"
+                >Shadow fade per ring<output id="shadow-fade-value">30%</output
+                ><input id="shadow-fade" type="range" min="0" max="80" step="1" value="30"
+              /></label>
+              <p class="control-help">
+                Remaining rings beyond the white wall appear as neutral shadows. Farther rings fade
+                progressively; no remaining rings means no outer shadows.
+              </p>
+            </div>
+            <div class="pattern-motion">
+              <label class="field slider" for="shape-speed"
+                >Shape speed<output id="shape-speed-value">1×</output
+                ><input id="shape-speed" type="range" min="0" max="2.5" step=".1" value="1"
+              /></label>
+              <label class="field slider" for="segment-speed"
+                >Segment speed<output id="segment-speed-value">1×</output
+                ><input id="segment-speed" type="range" min="0" max="3" step=".1" value="1"
+              /></label>
+              <p class="control-help">
+                Shape speed rotates the outline. Segment speed moves colors along it. Set either to
+                zero to stop it.
+              </p>
+            </div>
+            <div class="solve-check">
+              <p id="solve-status" role="status" data-state="unchecked">
+                Use Check solvability to test a winning route.
+              </p>
+              <button id="check-solvable" type="button">Check solvability</button>
+            </div>
+            <div class="pattern-depth">
+              <h3>Tutorial</h3>
+              <label class="pattern-toggle" for="tutorial-enabled"
+                ><input id="tutorial-enabled" type="checkbox" checked />Show tutorial hints</label
+              >
+              <label class="field" for="tutorial-placement"
+                >Hint text position<select id="tutorial-placement">
+                  <option value="auto">Follow the action</option>
+                  <option value="top">Above instruments</option>
+                  <option value="slots">Above slots</option>
+                </select></label
+              >
+              <p class="control-help">
+                The hand points to a useful next move. Hints return after 5 seconds without input
+                and disappear when the player acts.
+              </p>
+            </div>
+          </details>
+          <p class="edit-note">
+            Total layers sets puzzle length; visible layers sets the colored rings inside the white
+            boundary. Layer edits rebalance ball power automatically and restart the puzzle.
+          </p>
+        </section>
+        <section id="design-panel" role="tabpanel" aria-labelledby="design-tab" hidden>
+          <h1>Design the ending.</h1>
+          <p class="lead">
+            Your logo, icon and message, in the actual playable ending. Changes are included in
+            saved levels and exports.
+          </p>
+          <div class="design-assets">
+            <a href="/assets/logo.webp" download="Beat-Bloom-logo.webp" class="design-asset"
+              ><span class="design-asset-image"
+                ><img src="/assets/logo.webp" alt="Approved Beat Bloom logo" /></span
+              ><span>Logo <small>Download ↗</small></span></a
+            ><a href="/assets/icon.webp" download="Beat-Bloom-icon.webp" class="design-asset"
+              ><span class="design-asset-image"
+                ><img src="/assets/icon.webp" alt="Approved Beat Bloom app icon" /></span
+              ><span>App icon <small>Download ↗</small></span></a
+            >
+          </div>
+          <div class="buttons">
+            <button id="upload-logo">Upload logo</button
+            ><button id="upload-icon">Upload icon</button>
+          </div>
+          <input id="logo-file" type="file" accept="image/png,image/jpeg,image/webp" hidden /><input
+            id="icon-file"
+            type="file"
+            accept="image/png,image/jpeg,image/webp"
+            hidden
+          />
+          <p class="control-help">
+            PNG, JPG or WebP. Images are resized and compressed for lightweight exports. Reset
+            ending design restores the original artwork.
+          </p>
+          <p class="control-help" id="design-concept"></p>
+          <label class="field" for="end-headline"
+            >Headline<textarea
+              id="end-headline"
+              maxlength="80"
+              rows="2"
+              spellcheck="true"
+            ></textarea>
+          </label>
+          <label class="field" for="end-cta-label"
+            >CTA text<input id="end-cta-label" type="text" maxlength="24" value="Install Now"
+          /></label>
+          <label class="field slider"
+            >Headline size<output id="end-headline-size-value">38 px</output
+            ><input id="end-headline-size" type="range" min="18" max="64" value="38"
+          /></label>
+          <label class="field slider"
+            >CTA text size<output id="end-cta-size-value">28 px</output
+            ><input id="end-cta-size" type="range" min="16" max="40" value="28"
+          /></label>
+          <label class="field slider"
+            >CTA button width<output id="end-cta-width-value">360 px</output
+            ><input id="end-cta-width" type="range" min="140" max="360" value="360"
+          /></label>
+          <label class="field slider"
+            >CTA button height<output id="end-cta-height-value">64 px</output
+            ><input id="end-cta-height" type="range" min="44" max="100" value="64"
+          /></label>
+          <p class="control-help">
+            The button fits the screen and grows if needed to keep its text readable.
+          </p>
+          <label class="pattern-toggle"
+            ><input id="end-replay-enabled" type="checkbox" checked />Show Replay button</label
+          >
+          <p class="control-help">The CTA keeps the selected ad network’s install action.</p>
+          <div class="design-color-fields">
+            <label class="field" for="end-cta-color"
+              >CTA color<input id="end-cta-color" type="color" value="#69d442" /></label
+            ><label class="field" for="end-background"
+              >Background<input id="end-background" type="color" value="#19102e"
+            /></label>
+          </div>
+          <label class="field slider" for="end-logo-width"
+            >Logo width<output id="end-logo-width-value">290 px</output
+            ><input id="end-logo-width" type="range" min="120" max="340" step="1" value="290"
+          /></label>
+          <label class="field slider" for="end-icon-size"
+            >Icon size<output id="end-icon-size-value">156 px</output
+            ><input id="end-icon-size" type="range" min="64" max="180" step="1" value="156"
+          /></label>
+          <p class="control-help">
+            Sizes adapt to the screen. The preview uses the same layout and artwork as the export.
+          </p>
+          <button id="preview-finish" type="button" class="design-reset">
+            Preview finish animation</button
+          ><button id="reset-end-design" type="button" class="design-reset">
+            Reset ending design
+          </button>
+          <p id="design-status" role="status" class="control-help"></p>
+        </section>
+        <section
+          id="export-panel"
+          class="export-panel"
+          role="tabpanel"
+          aria-labelledby="export-tab"
+          hidden
+        >
+          <h2>Export playable</h2>
+          <p>Your current level, with its shape, colors, song and finish.</p>
+          <label class="field"
+            >Ad network<select id="export-network">
+              <option value="unity">Unity Ads</option>
+              <option value="applovin">AppLovin</option>
+              <option value="meta">Meta</option>
+            </select></label
+          >
+          <label class="field"
+            >File format<select id="export-format">
+              <option value="html">Single HTML — ready to upload</option>
+              <option value="zip">ZIP — contains index.html</option>
+            </select></label
+          >
+          <p id="export-format-help" class="control-help"></p>
+          <div class="install-destination">
+            <h3>Install Now destination</h3>
+            <p id="destination-help"></p>
+          </div>
+          <details class="store-destinations">
+            <summary>App links · advanced</summary>
+            <p id="store-help">
+              Direct store links for the playable’s install action. Use campaign settings for
+              tracking and custom product pages.
+            </p>
+            <label class="field"
+              >App Store URL<input
+                id="store-ios"
+                type="url"
+                value="https://apps.apple.com/app/id6797421221"
+                spellcheck="false"
+            /></label>
+            <label class="field"
+              >Google Play URL<input
+                id="store-android"
+                type="url"
+                value="https://play.google.com/store/apps/details?id=io.ludaxis.beatbloom"
+                spellcheck="false"
+            /></label>
+          </details>
+          <button id="export-playable" type="button" class="primary" disabled>
+            Download playable
+          </button>
+          <p id="export-status" role="status">
+            Builds locally with the selected network’s size limit and install action.
+          </p>
+          <a id="export-download" hidden download>Download again</a>
+          <a
+            id="network-guide"
+            class="network-guide"
+            href="https://docs.unity.com/en-us/grow/acquire/creatives/playable/specifications"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Network requirements ↗</a
+          >
+        </section>
+        <div id="level-file-controls">
+          <div class="buttons">
+            <button id="save" class="primary">Save level</button
+            ><button id="load">Load level</button
+            ><input id="load-file" type="file" accept=".json,application/json" hidden />
+          </div>
+          <details>
+            <summary>Edit rings and queue</summary>
+            <p>
+              Each ring contains palette indexes. Applying a level rebuilds its queue from all
+              rings: every ball starts with 3 power, rounding up per color. Valid 3-power queue
+              ordering is preserved.
+            </p>
+            <textarea id="level-json" spellcheck="false" aria-label="Level JSON"></textarea
+            ><button id="apply-json">Apply level</button>
+          </details>
+        </div>
+        <p id="editor-message" role="status"></p>
+      </aside>
+      <section class="workspace">
+        <div class="view-label">
+          <h2 id="preview-title">Web playable</h2>
+          <span id="game-state">Loading…</span>
+        </div>
+        <div class="screens">
+          <div class="phone">
+            <iframe
+              id="game"
+              title="Beat Bloom playable"
+              src="/dist/preview/native.html"
+              allow="autoplay"
+              sandbox="allow-scripts allow-same-origin allow-downloads"
+            ></iframe>
+          </div>
+        </div>
+        <div class="transport" role="group" aria-label="Preview controls">
+          <button id="restart" type="button" aria-label="Restart playable" title="Restart playable">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M4 10a8 8 0 1 1 1 8M4 4v6h6" />
+            </svg></button
+          ><button id="pause" type="button" aria-label="Pause" title="Pause" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <g class="pause-symbol"><path d="M8 5v14M16 5v14" /></g>
+              <path class="play-symbol" d="m8 5 11 7-11 7Z" />
+            </svg></button
+          ><button
+            id="sound"
+            type="button"
+            aria-label="Mute sound"
+            title="Mute sound"
+            aria-pressed="false"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="m11 5-6 4H2v6h3l6 4Z" />
+              <g class="sound-on"><path d="M15 8a6 6 0 0 1 0 8M18 4a11 11 0 0 1 0 16" /></g>
+              <path class="sound-off" d="m16 9 6 6m0-6-6 6" />
+            </svg></button
+          ><button
+            id="step"
+            type="button"
+            aria-label="Step physics frame"
+            title="Step physics frame"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="m5 5 10 7-10 7Z" />
+              <path d="M19 5v14" />
+            </svg></button
+          ><button id="end-card" type="button" aria-label="Design ending" title="Design ending">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <rect x="3" y="3" width="18" height="18" rx="3" />
+              <path d="M7 8h10M7 12h6M8 17h8" />
+            </svg>
+          </button>
+        </div>
+        <div class="design-transport" hidden>
+          <button id="return-gameplay" type="button">Back to gameplay</button>
+        </div>
+      </section>
+    </main>
+    <dialog id="share-dialog" aria-labelledby="share-title">
+      <h2 id="share-title">Share playable</h2>
+      <p id="share-status"></p>
+      <label class="field" for="share-link">Playable link</label
+      ><input id="share-link" type="text" readonly />
+      <div class="buttons">
+        <button id="share-copy" class="primary">Copy link</button
+        ><button id="share-close">Done</button>
+      </div>
+    </dialog>
+    <script type="module" src="/review/share.js"></script>
+    <script src="/review/review.js"></script>
+    <script src="/review/pattern.js"></script>
+    <script src="/review/design.js"></script>
+    <script src="/review/design-assets.js"></script>
+  </body>
+</html>

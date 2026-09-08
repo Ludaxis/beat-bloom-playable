@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "id": "native-6",
+  "name": "Kiss Me More",
+  "levelNumber": 6,
+  "songId": "kissmemore",
+  "shape": "hexagon",
+  "flowerPetals": 5,
+  "roundness": 0,
+  "palette": [
+    16139848,
+    6540610,
+    3181311,
+    16699947
+  ],
+  "innerRadius": 2.8,
+  "lineSpacing": 0.38253000000000004,
+  "lineThickness": 0.18,
+  "segmentGap": 0,
+  "arenaRingCapacity": 6,
+  "previewRingCount": 2,
+  "maxRenderedRings": 10,
+  "rings": [
+    [
+      0,
+      3,
+      0,
+      3,
+      0,
+      3,
+      0,
+      3,
+      0,
+      3,
+      0,
+      3
+    ],
+    [
+      0,
+      3,
+      0,
+      3,
+      0,
+      3
+    ],
+    [
+      3,
+      0,
+      3,
+      0,
+      3,
+      0
+    ],
+    [
+      3,
+      0,
+      3,
+      0,
+      3,
+      0
+    ],
+    [
+      3,
+      0,
+      3,
+      0,
+      3,
+      0
+    ],
+    [
+      3,
+      0,
+      3,
+      0,
+      3,
+      0
+    ],
+    [
+      0,
+      3,
+      0,
+      3,
+      0,
+      3
+    ],
+    [
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1
+    ],
+    [
+      2,
+      1,
+      0,
+      2,
+      1,
+      0
+    ],
+    [
+      1,
+      2,
+      0,
+      1,
+      2,
+      0
+    ],
+    [
+      3,
+      1,
+      2,
+      0,
+      3,
+      1,
+      2,
+      0,
+      3,
+      1,
+      2,
+      0
+    ],
+    [
+      3,
+      2,
+      1,
+      0,
+      3,
+      2,
+      1,
+      0,
+      3,
+      2,
+      1,
+      0
+    ]
+  ],
+  "queue": [
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": true
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": true
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": true
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": true
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": true
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 0,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 3,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": true
+    },
+    {
+      "color": 0,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 1,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 2,
+      "power": 4,
+      "mystery": false
+    },
+    {
+      "color": 3,
+      "power": 3,
+      "mystery": false
+    }
+  ],
+  "queueColumns": 3,
+  "activeCapacity": 3,
+  "trayCapacity": 3,
+  "stemLanes": [
+    {
+      "stem": 1,
+      "colors": [
+        0
+      ],
+      "requiredBreaks": 11
+    },
+    {
+      "stem": 2,
+      "colors": [
+        1
+      ],
+      "requiredBreaks": 3
+    },
+    {
+      "stem": 3,
+      "colors": [
+        2
+      ],
+      "requiredBreaks": 7
+    },
+    {
+      "stem": 4,
+      "colors": [
+        3
+      ],
+      "requiredBreaks": 26
+    }
+  ],
+  "bpm": 111,
+  "beatsPerBar": 4,
+  "loopBeats": 66,
+  "downbeatOffset": 1.0810812,
+  "sections": [
+    {
+      "startBeat": 0,
+      "intensity": 0.69,
+      "direction": 1,
+      "degreesPerBeat": 33
+    },
+    {
+      "startBeat": 4,
+      "intensity": 0.58,
+      "direction": 1,
+      "degreesPerBeat": 30
+    },
+    {
+      "startBeat": 8,
+      "intensity": 0.66,
+      "direction": 1,
+      "degreesPerBeat": 32
+    },
+    {
+      "startBeat": 12,
+      "intensity": 0.48,
+      "direction": 1,
+      "degreesPerBeat": 28
+    },
+    {
+      "startBeat": 16,
+      "intensity": 0.76,
+      "direction": -1,
+      "degreesPerBeat": 34
+    },
+    {
+      "startBeat": 20,
+      "intensity": 0.6,
+      "direction": -1,
+      "degreesPerBeat": 30
+    },
+    {
+      "startBeat": 24,
+      "intensity": 0.59,
+      "direction": -1,
+      "degreesPerBeat": 30
+    },
+    {
+      "startBeat": 28,
+      "intensity": 0.48,
+      "direction": -1,
+      "degreesPerBeat": 28
+    },
+    {
+      "startBeat": 32,
+      "intensity": 0.86,
+      "direction": 1,
+      "degreesPerBeat": 37
+    },
+    {
+      "startBeat": 36,
+      "intensity": 0.81,
+      "direction": 1,
+      "degreesPerBeat": 35
+    },
+    {
+      "startBeat": 40,
+      "intensity": 0.85,
+      "direction": 1,
+      "degreesPerBeat": 36
+    },
+    {
+      "startBeat": 44,
+      "intensity": 0.86,
+      "direction": 1,
+      "degreesPerBeat": 37
+    },
+    {
+      "startBeat": 48,
+      "intensity": 0.83,
+      "direction": -1,
+      "degreesPerBeat": 36
+    },
+    {
+      "startBeat": 52,
+      "intensity": 0.71,
+      "direction": -1,
+      "degreesPerBeat": 33
+    },
+    {
+      "startBeat": 56,
+      "intensity": 0.82,
+      "direction": -1,
+      "degreesPerBeat": 36
+    },
+    {
+      "startBeat": 60,
+      "intensity": 0.84,
+      "direction": -1,
+      "degreesPerBeat": 36
+    }
+  ],
+  "motion": {
+    "phaseDegrees": 56,
+    "degreesPerBeat": 12,
+    "speedMultiplier": 2,
+    "flipEaseBeats": 1,
+    "conveyorBeatsPerSlot": 12,
+    "conveyorAlternate": false,
+    "conveyorHoldFigure": false,
+    "conveyorPulseEveryBeats": 8,
+    "conveyorPulseDurationBeats": 2,
+    "conveyorPulseSpeedBoost": 0.2
+  },
+  "source": {
+    "level": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_6.asset",
+    "levelSha256": "2562dff14bd22f4f73d857b15db73717c7ddaaac95748b4efd97adcaa0b0932d",
+    "field": "Assets/_Ludaxis/BeatBloom/Content/Config/FieldConfig.asset",
+    "exportedAt": "2026-09-07T19:16:47.414Z"
+  }
+}

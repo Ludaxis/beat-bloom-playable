@@ -1,0 +1,5212 @@
+{
+  "version": 1,
+  "templates": [
+    {
+      "id": "menu-level-01",
+      "label": "Level 1 · Say So",
+      "levelNumber": 1,
+      "rings": [
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      ],
+      "palette": [
+        15026253,
+        3116008
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_1.asset",
+        "sha256": "d6217a51be6fea5a400d40139ac42dfcdef41f585290908361ddce35afc516f5",
+        "guid": "3fe82b25c6a674947a5b2f15e07ce71e",
+        "sourceLevelId": "Level_1",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_01.asset",
+          "sha256": "67004d2bd64bcba94302e22467ef0f8ae84056005930b2609e93352912d28eb6",
+          "guid": "d7cab09e99af7e743b601485e4b6f8c0",
+          "index": 0
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 0,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 6,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "lineCount": 8,
+          "paddingSlotCount": 0,
+          "paddingAbsentCount": 0
+        },
+        "activeColorCount": 2,
+        "authoredPalette": [
+          16139848,
+          3181311
+        ],
+        "authoredRgba": [
+          [
+            0.9647059,
+            0.27450982,
+            0.28235295,
+            1
+          ],
+          [
+            0.1882353,
+            0.5411765,
+            1,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            9,
+            4
+          ],
+          "effectiveRgba": [
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ],
+            [
+              0.184,
+              0.545,
+              0.91,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-02",
+      "label": "Level 2 · Say So",
+      "levelNumber": 2,
+      "rings": [
+        [
+          0,
+          2,
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          2,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "palette": [
+        10120442,
+        16357817,
+        15026253
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_2.asset",
+        "sha256": "4e5d444b6766986a7e62b969187809afebe0d5565f431aac748404438b0e22af",
+        "guid": "98d804e2c3252468cb418c39d68aa5b4",
+        "sourceLevelId": "Level_2",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_02.asset",
+          "sha256": "d155f4b71b2eb369a14c2d61fdbc69110fbdbe0395790b979421b85d4a1b99de",
+          "guid": "85dc86cc7c5debc4c83506522a824014",
+          "index": 1
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 1,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 6,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "lineCount": 9,
+          "paddingSlotCount": 0,
+          "paddingAbsentCount": 0
+        },
+        "activeColorCount": 3,
+        "authoredPalette": [
+          8941041,
+          16760574,
+          16139848
+        ],
+        "authoredRgba": [
+          [
+            0.53333336,
+            0.42745098,
+            0.94509804,
+            1
+          ],
+          [
+            1,
+            0.74509805,
+            0.99607843,
+            1
+          ],
+          [
+            0.9647059,
+            0.27450982,
+            0.28235295,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            7,
+            8,
+            9
+          ],
+          "effectiveRgba": [
+            [
+              0.604,
+              0.424,
+              0.98,
+              1
+            ],
+            [
+              0.976,
+              0.6,
+              0.725,
+              1
+            ],
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-03",
+      "label": "Level 3 · Dance Monkey",
+      "levelNumber": 3,
+      "rings": [
+        [
+          2,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          2,
+          0,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          2,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          0,
+          2,
+          0,
+          2,
+          0
+        ]
+      ],
+      "palette": [
+        6081782,
+        3723448,
+        3116008
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_3.asset",
+        "sha256": "6ad72b0280bd40f1c54726445f1f9f57e7bd1842d3f549a6847c552f6cbb1dc8",
+        "guid": "a37b2bbe6ce0c4693b0054071dda4e03",
+        "sourceLevelId": "Level_3",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_03.asset",
+          "sha256": "b2c06ee527fa7f2275bbc869f7f55471bee4ff7490d5fe485457d7ad57a19edf",
+          "guid": "9204f5779a189fd43b0464d92eb5c0c8",
+          "index": 2
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 2,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 6,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "lineCount": 10,
+          "paddingSlotCount": 0,
+          "paddingAbsentCount": 0
+        },
+        "activeColorCount": 3,
+        "authoredPalette": [
+          4442111,
+          5829049,
+          3181311
+        ],
+        "authoredRgba": [
+          [
+            0.2627451,
+            0.78039217,
+            1,
+            1
+          ],
+          [
+            0.34509805,
+            0.94509804,
+            0.7254902,
+            1
+          ],
+          [
+            0.1882353,
+            0.5411765,
+            1,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            5,
+            1,
+            4
+          ],
+          "effectiveRgba": [
+            [
+              0.361,
+              0.8,
+              0.965,
+              1
+            ],
+            [
+              0.22,
+              0.816,
+              0.722,
+              1
+            ],
+            [
+              0.184,
+              0.545,
+              0.91,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-04",
+      "label": "Level 4 · Take On Me",
+      "levelNumber": 4,
+      "rings": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          2,
+          0,
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0
+        ]
+      ],
+      "palette": [
+        7389781,
+        16175186,
+        15697976
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_4.asset",
+        "sha256": "6b83a3fbeecc2608f10e4109beeadbd9a7f579c350f99f09953e89279a732813",
+        "guid": "39597d22dd3df4f2c8907640b0c166ff",
+        "sourceLevelId": "Level_4",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_04.asset",
+          "sha256": "5b3dffe0c7ee913a0ce672758affa714a7513d0526092e84898377a4aaeece88",
+          "guid": "526773a01955a9548911171139da7d61",
+          "index": 3
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 3,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 8,
+          "layerSegmentCounts": [
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8,
+            8
+          ],
+          "lineCount": 9,
+          "paddingSlotCount": 0,
+          "paddingAbsentCount": 0
+        },
+        "activeColorCount": 3,
+        "authoredPalette": [
+          6540610,
+          16699947,
+          16751162
+        ],
+        "authoredRgba": [
+          [
+            0.3882353,
+            0.8039216,
+            0.25882354,
+            1
+          ],
+          [
+            0.99607843,
+            0.8235294,
+            0.16862746,
+            1
+          ],
+          [
+            1,
+            0.6039216,
+            0.22745098,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            0,
+            3,
+            2
+          ],
+          "effectiveRgba": [
+            [
+              0.439,
+              0.761,
+              0.333,
+              1
+            ],
+            [
+              0.965,
+              0.816,
+              0.322,
+              1
+            ],
+            [
+              0.937,
+              0.533,
+              0.22,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-05",
+      "label": "Level 5 · Say So",
+      "levelNumber": 5,
+      "rings": [
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          3,
+          3,
+          1,
+          1,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          2,
+          2,
+          0,
+          0,
+          2,
+          2,
+          0,
+          0
+        ]
+      ],
+      "palette": [
+        10120442,
+        14825375,
+        6081782,
+        16175186
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_5.asset",
+        "sha256": "f5f70c682cb1570335d6354708fd59b8e711a52780169ced3ba185c34a63c35b",
+        "guid": "21eac0697bfd24eb4842432e7498b140",
+        "sourceLevelId": "Level_5",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_05.asset",
+          "sha256": "ae856ace98ea2116fe04f566fe784db781d31153d8f9c5738d636d52cc6e3c1d",
+          "guid": "6128f8b25e21dc4418de625accaf02c9",
+          "index": 4
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 4,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 10,
+          "layerSegmentCounts": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ],
+          "lineCount": 9,
+          "paddingSlotCount": 0,
+          "paddingAbsentCount": 0
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          8941041,
+          15230454,
+          4442111,
+          16699947
+        ],
+        "authoredRgba": [
+          [
+            0.53333336,
+            0.42745098,
+            0.94509804,
+            1
+          ],
+          [
+            0.9098039,
+            0.39607844,
+            0.9647059,
+            1
+          ],
+          [
+            0.2627451,
+            0.78039217,
+            1,
+            1
+          ],
+          [
+            0.99607843,
+            0.8235294,
+            0.16862746,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            7,
+            6,
+            5,
+            3
+          ],
+          "effectiveRgba": [
+            [
+              0.604,
+              0.424,
+              0.98,
+              1
+            ],
+            [
+              0.886,
+              0.216,
+              0.624,
+              1
+            ],
+            [
+              0.361,
+              0.8,
+              0.965,
+              1
+            ],
+            [
+              0.965,
+              0.816,
+              0.322,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-06",
+      "label": "Level 6 · Kiss Me More",
+      "levelNumber": 6,
+      "rings": [
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          3,
+          1,
+          2,
+          0,
+          3,
+          1,
+          2,
+          0,
+          3,
+          1,
+          2,
+          0
+        ],
+        [
+          3,
+          2,
+          1,
+          0,
+          3,
+          2,
+          1,
+          0,
+          3,
+          2,
+          1,
+          0
+        ]
+      ],
+      "palette": [
+        15026253,
+        7389781,
+        3116008,
+        16175186
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_6.asset",
+        "sha256": "2562dff14bd22f4f73d857b15db73717c7ddaaac95748b4efd97adcaa0b0932d",
+        "guid": "cabcff8e151fb4b06adb5f33ce1def09",
+        "sourceLevelId": "Level_6",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_06.asset",
+          "sha256": "dbe19db33318bc654f9c5101c2080c2ec1f10ac4f91e90230d4ebfaa7b8b48f2",
+          "guid": "040baaa05ed6b3e44b135e2d54a11489",
+          "index": 5
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 5,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            12,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            6,
+            6,
+            12,
+            12
+          ],
+          "lineCount": 12,
+          "paddingSlotCount": 48,
+          "paddingAbsentCount": 48
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          16139848,
+          6540610,
+          3181311,
+          16699947
+        ],
+        "authoredRgba": [
+          [
+            0.9647059,
+            0.27450982,
+            0.28235295,
+            1
+          ],
+          [
+            0.3882353,
+            0.8039216,
+            0.25882354,
+            1
+          ],
+          [
+            0.1882353,
+            0.5411765,
+            1,
+            1
+          ],
+          [
+            0.99607843,
+            0.8235294,
+            0.16862746,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            9,
+            0,
+            4,
+            3
+          ],
+          "effectiveRgba": [
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ],
+            [
+              0.439,
+              0.761,
+              0.333,
+              1
+            ],
+            [
+              0.184,
+              0.545,
+              0.91,
+              1
+            ],
+            [
+              0.965,
+              0.816,
+              0.322,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-07",
+      "label": "Level 7 · Bad Habits",
+      "levelNumber": 7,
+      "rings": [
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          2,
+          0,
+          3,
+          1,
+          2,
+          0,
+          3,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          2,
+          1,
+          0,
+          2
+        ],
+        [
+          2,
+          1,
+          0,
+          2,
+          1,
+          0
+        ]
+      ],
+      "palette": [
+        15026253,
+        7389781,
+        3116008,
+        16175186
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_7.asset",
+        "sha256": "b2e4b19b82b94ec026c445f95d57fc7dc86beda8b605408bad2f39542b567fd6",
+        "guid": "235d0abefc20b47b2bfde5cbc049e0fd",
+        "sourceLevelId": "Level_7",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_07.asset",
+          "sha256": "95e142c6a22713589b4a8cb3619ad5d012feac29929a0c8628a4aab2d0559a43",
+          "guid": "fac969b443463aa4285cf9f32d2fa5af",
+          "index": 6
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 6,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            12,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            12,
+            6,
+            6,
+            6
+          ],
+          "lineCount": 13,
+          "paddingSlotCount": 54,
+          "paddingAbsentCount": 54
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          16139848,
+          6540610,
+          3181311,
+          16699947
+        ],
+        "authoredRgba": [
+          [
+            0.9647059,
+            0.27450982,
+            0.28235295,
+            1
+          ],
+          [
+            0.3882353,
+            0.8039216,
+            0.25882354,
+            1
+          ],
+          [
+            0.1882353,
+            0.5411765,
+            1,
+            1
+          ],
+          [
+            0.99607843,
+            0.8235294,
+            0.16862746,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            9,
+            0,
+            4,
+            3
+          ],
+          "effectiveRgba": [
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ],
+            [
+              0.439,
+              0.761,
+              0.333,
+              1
+            ],
+            [
+              0.184,
+              0.545,
+              0.91,
+              1
+            ],
+            [
+              0.965,
+              0.816,
+              0.322,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-08",
+      "label": "Level 8 · Despacito",
+      "levelNumber": 8,
+      "rings": [
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          0,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          3,
+          1,
+          2,
+          0,
+          3,
+          1,
+          2,
+          0,
+          3,
+          1
+        ]
+      ],
+      "palette": [
+        15026253,
+        16357817,
+        10120442,
+        15697976
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_8.asset",
+        "sha256": "6765426ff4b627797cf4f8cd1da3e9001582203371fcfa059fde18bd6e29a9b5",
+        "guid": "762c38a6e15b349dea5739f80e735f47",
+        "sourceLevelId": "Level_8",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_08.asset",
+          "sha256": "79b59a1f1e0ccfa55388e1b2240ca882c0b70b0928855af703a2d40788285a5b",
+          "guid": "6f51c2cfbf915e24a8b3d2abfe21addb",
+          "index": 7
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 7,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            12,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            6,
+            6,
+            6,
+            12
+          ],
+          "lineCount": 14,
+          "paddingSlotCount": 60,
+          "paddingAbsentCount": 60
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          16139848,
+          16760574,
+          8941041,
+          16751162
+        ],
+        "authoredRgba": [
+          [
+            0.964706,
+            0.27451,
+            0.282353,
+            1
+          ],
+          [
+            1,
+            0.745098,
+            0.996078,
+            1
+          ],
+          [
+            0.533333,
+            0.427451,
+            0.945098,
+            1
+          ],
+          [
+            1,
+            0.603922,
+            0.227451,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            9,
+            8,
+            7,
+            2
+          ],
+          "effectiveRgba": [
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ],
+            [
+              0.976,
+              0.6,
+              0.725,
+              1
+            ],
+            [
+              0.604,
+              0.424,
+              0.98,
+              1
+            ],
+            [
+              0.937,
+              0.533,
+              0.22,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-09",
+      "label": "Level 9 · This Love",
+      "levelNumber": 9,
+      "rings": [
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          3,
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          2,
+          0,
+          1
+        ],
+        [
+          1,
+          3,
+          2,
+          0,
+          1,
+          3,
+          2,
+          0,
+          1,
+          3,
+          2,
+          0
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          0,
+          1,
+          3,
+          2,
+          0,
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          2,
+          0,
+          1,
+          2,
+          0
+        ]
+      ],
+      "palette": [
+        15026253,
+        7389781,
+        3116008,
+        16175186
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_9.asset",
+        "sha256": "902cf29cb0cdacc37d1b734338f6f9d45065a10adf612837a80dac1dde1b9403",
+        "guid": "b4c43858e00cb486e8761289ef527956",
+        "sourceLevelId": "Level_9",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_09.asset",
+          "sha256": "255b649cb73e75d85ff8310fae302fc1c330cd611037051796913eeae647e6df",
+          "guid": "065fb016c2fffb14a9059b7f002ecaac",
+          "index": 8
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 8,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            12,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            6,
+            12,
+            12,
+            6
+          ],
+          "lineCount": 13,
+          "paddingSlotCount": 54,
+          "paddingAbsentCount": 54
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          16139848,
+          6540610,
+          3181311,
+          16699947
+        ],
+        "authoredRgba": [
+          [
+            0.9647059,
+            0.27450982,
+            0.28235295,
+            1
+          ],
+          [
+            0.3882353,
+            0.8039216,
+            0.25882354,
+            1
+          ],
+          [
+            0.1882353,
+            0.5411765,
+            1,
+            1
+          ],
+          [
+            0.99607843,
+            0.8235294,
+            0.16862746,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            9,
+            0,
+            4,
+            3
+          ],
+          "effectiveRgba": [
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ],
+            [
+              0.439,
+              0.761,
+              0.333,
+              1
+            ],
+            [
+              0.184,
+              0.545,
+              0.91,
+              1
+            ],
+            [
+              0.965,
+              0.816,
+              0.322,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-10",
+      "label": "Level 10 · Baby One More Time",
+      "levelNumber": 10,
+      "rings": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          3,
+          3,
+          0,
+          0,
+          3,
+          3,
+          0,
+          0,
+          3,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0
+        ]
+      ],
+      "palette": [
+        15026253,
+        7389781,
+        3116008,
+        16175186
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_10.asset",
+        "sha256": "297732fa202978698c30ad2bb51115957314493cb2b9f8b71f85fe5591370a65",
+        "guid": "3f63837cb541b4e05800dfe9ce21a9a9",
+        "sourceLevelId": "Level_10",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_10.asset",
+          "sha256": "22db0d64d995d4ca7a2173d50ac1488b01b7186e73217bfa33ab5708104e3e1e",
+          "guid": "e9ce777c2366def409c84523f9d40771",
+          "index": 9
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 9,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "lineCount": 14,
+          "paddingSlotCount": 48,
+          "paddingAbsentCount": 48
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          16139848,
+          6540610,
+          3181311,
+          16699947
+        ],
+        "authoredRgba": [
+          [
+            0.9647059,
+            0.27450982,
+            0.28235295,
+            1
+          ],
+          [
+            0.3882353,
+            0.8039216,
+            0.25882354,
+            1
+          ],
+          [
+            0.1882353,
+            0.5411765,
+            1,
+            1
+          ],
+          [
+            0.99607843,
+            0.8235294,
+            0.16862746,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            9,
+            0,
+            4,
+            3
+          ],
+          "effectiveRgba": [
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ],
+            [
+              0.439,
+              0.761,
+              0.333,
+              1
+            ],
+            [
+              0.184,
+              0.545,
+              0.91,
+              1
+            ],
+            [
+              0.965,
+              0.816,
+              0.322,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-11",
+      "label": "Level 11 · Mistletoe",
+      "levelNumber": 11,
+      "rings": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "palette": [
+        15697976,
+        3116008,
+        16357817,
+        7389781
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_11.asset",
+        "sha256": "696ccbf302b4fe9b9d11cf97ae8fb2c26e7e65d027e1c4701ae931d238f6551f",
+        "guid": "a3e2c028be3634c50977d47f03a5abe8",
+        "sourceLevelId": "Level_11",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_11.asset",
+          "sha256": "b50957bc4134f5e77287fdd8cca4dc97a627cd6ee9d26d0c0683d436a25b2a71",
+          "guid": "54cafa426b9701149a6882cdce5e9e74",
+          "index": 10
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 10,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "lineCount": 13,
+          "paddingSlotCount": 48,
+          "paddingAbsentCount": 48
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          16751162,
+          3181311,
+          16760574,
+          6540610
+        ],
+        "authoredRgba": [
+          [
+            1,
+            0.6039216,
+            0.227451,
+            1
+          ],
+          [
+            0.1882353,
+            0.5411765,
+            1,
+            1
+          ],
+          [
+            1,
+            0.745098,
+            0.9960784,
+            1
+          ],
+          [
+            0.3882353,
+            0.8039216,
+            0.25882354,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            2,
+            4,
+            8,
+            0
+          ],
+          "effectiveRgba": [
+            [
+              0.937,
+              0.533,
+              0.22,
+              1
+            ],
+            [
+              0.184,
+              0.545,
+              0.91,
+              1
+            ],
+            [
+              0.976,
+              0.6,
+              0.725,
+              1
+            ],
+            [
+              0.439,
+              0.761,
+              0.333,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-12",
+      "label": "Level 12 · Sad",
+      "levelNumber": 12,
+      "rings": [
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          2,
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          2,
+          3,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          0,
+          0,
+          3,
+          3,
+          3
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          3,
+          3,
+          0,
+          0,
+          3,
+          3,
+          0,
+          0,
+          3
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "palette": [
+        14825375,
+        3116008,
+        16175186,
+        15026253
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_12.asset",
+        "sha256": "9e6dfd5bfb5d761485cf07e8bae8cc1311ce1ac968398b6360c78e9e34305fd6",
+        "guid": "be05717f9e23040bcb372335f4d1d758",
+        "sourceLevelId": "Level_12",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_12.asset",
+          "sha256": "ba24d66bff02d156db1e5d1e2d7610bc13028c672b3724347f41ed6234d406ff",
+          "guid": "31f2d1e98255edb44a459019ecfb10eb",
+          "index": 11
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 11,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "lineCount": 14,
+          "paddingSlotCount": 54,
+          "paddingAbsentCount": 54
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          15230454,
+          3181311,
+          16699947,
+          16139848
+        ],
+        "authoredRgba": [
+          [
+            0.9098039,
+            0.3960784,
+            0.9647059,
+            1
+          ],
+          [
+            0.1882353,
+            0.5411765,
+            1,
+            1
+          ],
+          [
+            0.9960784,
+            0.8235294,
+            0.1686275,
+            1
+          ],
+          [
+            0.9647059,
+            0.27450982,
+            0.28235295,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            6,
+            4,
+            3,
+            9
+          ],
+          "effectiveRgba": [
+            [
+              0.886,
+              0.216,
+              0.624,
+              1
+            ],
+            [
+              0.184,
+              0.545,
+              0.91,
+              1
+            ],
+            [
+              0.965,
+              0.816,
+              0.322,
+              1
+            ],
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-13",
+      "label": "Level 13 · Lovely",
+      "levelNumber": 13,
+      "rings": [
+        [
+          1,
+          1,
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          2,
+          3,
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2,
+          2,
+          3,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0
+        ]
+      ],
+      "palette": [
+        15026253,
+        3723448,
+        10120442,
+        16175186
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_13.asset",
+        "sha256": "b62ef3c2cb8ce548ba7c10f138161bc7b8e4d1ac827e13e27e1d07b51cef8c13",
+        "guid": "b7a9258f35a984605b071136ede443c6",
+        "sourceLevelId": "Level_13",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_13.asset",
+          "sha256": "0248beb0da1274f14ca52e1a1956cdf879c55f821592ac2899e1b21f6ea3349a",
+          "guid": "c047d73ca67902e45a0391d67a9eb0bf",
+          "index": 12
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 12,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "lineCount": 14,
+          "paddingSlotCount": 54,
+          "paddingAbsentCount": 54
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          16139848,
+          5829049,
+          8941041,
+          16699947
+        ],
+        "authoredRgba": [
+          [
+            0.9647059,
+            0.2745098,
+            0.2823529,
+            1
+          ],
+          [
+            0.345098,
+            0.945098,
+            0.7254902,
+            1
+          ],
+          [
+            0.5333334,
+            0.427451,
+            0.945098,
+            1
+          ],
+          [
+            0.99607843,
+            0.8235294,
+            0.16862746,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            9,
+            1,
+            7,
+            3
+          ],
+          "effectiveRgba": [
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ],
+            [
+              0.22,
+              0.816,
+              0.722,
+              1
+            ],
+            [
+              0.604,
+              0.424,
+              0.98,
+              1
+            ],
+            [
+              0.965,
+              0.816,
+              0.322,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-14",
+      "label": "Level 14 · I Ain't Worried",
+      "levelNumber": 14,
+      "rings": [
+        [
+          3,
+          3,
+          0,
+          0,
+          3,
+          3
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          3,
+          3,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          3,
+          0,
+          0,
+          3,
+          3
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1
+        ]
+      ],
+      "palette": [
+        10120442,
+        6081782,
+        16175186,
+        7389781
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_14.asset",
+        "sha256": "578b29efa8aca6c208faeefd552b1ec8c6624ff37fdbad33b26e99cc14c352bf",
+        "guid": "94404a1b53c2e4a1fad8c5b53dfb3429",
+        "sourceLevelId": "Level_14",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_14.asset",
+          "sha256": "df4a87014953c11a9bb99ed57e93910660da8e284f6d62f0dac7ceb2e4bc3e80",
+          "guid": "aae9ca1717c106548a91f49f16b05994",
+          "index": 13
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 13,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "lineCount": 15,
+          "paddingSlotCount": 60,
+          "paddingAbsentCount": 60
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          8941041,
+          4442111,
+          16699947,
+          6540610
+        ],
+        "authoredRgba": [
+          [
+            0.5333334,
+            0.427451,
+            0.945098,
+            1
+          ],
+          [
+            0.2627451,
+            0.7803922,
+            1,
+            1
+          ],
+          [
+            0.9960784,
+            0.8235294,
+            0.1686275,
+            1
+          ],
+          [
+            0.3882353,
+            0.8039216,
+            0.25882354,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            7,
+            5,
+            3,
+            0
+          ],
+          "effectiveRgba": [
+            [
+              0.604,
+              0.424,
+              0.98,
+              1
+            ],
+            [
+              0.361,
+              0.8,
+              0.965,
+              1
+            ],
+            [
+              0.965,
+              0.816,
+              0.322,
+              1
+            ],
+            [
+              0.439,
+              0.761,
+              0.333,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-15",
+      "label": "Level 15 · Shallow",
+      "levelNumber": 15,
+      "rings": [
+        [
+          2,
+          2,
+          3,
+          3,
+          2,
+          2
+        ],
+        [
+          3,
+          2,
+          3,
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          2,
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          3,
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          2,
+          3,
+          3,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          3,
+          3,
+          0,
+          0,
+          3,
+          3,
+          0,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1
+        ]
+      ],
+      "palette": [
+        3116008,
+        14825375,
+        15697976,
+        3723448
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_15.asset",
+        "sha256": "684b85baf6e9552b0246587091d28f6bdee3152676c68a3d08857a46a9e2a598",
+        "guid": "18b2f8218c14c482d9294a8d03e5fbb0",
+        "sourceLevelId": "Level_15",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_15.asset",
+          "sha256": "4c9b42a7c5ab2df35370234ef23046324156c9b58de0c4e2bddd9cd8cef1ca68",
+          "guid": "16b6fd327f314984e94f903405e800fc",
+          "index": 14
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 14,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "lineCount": 15,
+          "paddingSlotCount": 54,
+          "paddingAbsentCount": 54
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          3181311,
+          15230454,
+          16751162,
+          5829049
+        ],
+        "authoredRgba": [
+          [
+            0.1882353,
+            0.5411765,
+            1,
+            1
+          ],
+          [
+            0.9098039,
+            0.3960784,
+            0.9647059,
+            1
+          ],
+          [
+            1,
+            0.6039216,
+            0.227451,
+            1
+          ],
+          [
+            0.34509805,
+            0.94509804,
+            0.7254902,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            4,
+            6,
+            2,
+            1
+          ],
+          "effectiveRgba": [
+            [
+              0.184,
+              0.545,
+              0.91,
+              1
+            ],
+            [
+              0.886,
+              0.216,
+              0.624,
+              1
+            ],
+            [
+              0.937,
+              0.533,
+              0.22,
+              1
+            ],
+            [
+              0.22,
+              0.816,
+              0.722,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-16",
+      "label": "Level 16 · Heartbreak Anniversary",
+      "levelNumber": 16,
+      "rings": [
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          2,
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "palette": [
+        10120442,
+        16175186,
+        3723448,
+        15026253
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_16.asset",
+        "sha256": "462810a0c75ee115f0369e6039549ed8f81e53f57839f52be05b800087a0ef65",
+        "guid": "84832723048f14ccd86af565452030c5",
+        "sourceLevelId": "Level_16",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_16.asset",
+          "sha256": "070e98c6cae96867673387e2f8208152b8c23d49322df70bdc7532bfab817a44",
+          "guid": "57e548dba2825294cb0f3f2016331cc6",
+          "index": 15
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 15,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            12
+          ],
+          "lineCount": 14,
+          "paddingSlotCount": 66,
+          "paddingAbsentCount": 66
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          8941041,
+          16699947,
+          5829049,
+          16139848
+        ],
+        "authoredRgba": [
+          [
+            0.5333334,
+            0.427451,
+            0.945098,
+            1
+          ],
+          [
+            0.9960784,
+            0.8235294,
+            0.1686275,
+            1
+          ],
+          [
+            0.345098,
+            0.945098,
+            0.7254902,
+            1
+          ],
+          [
+            0.9647059,
+            0.2745098,
+            0.2823529,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            7,
+            3,
+            1,
+            9
+          ],
+          "effectiveRgba": [
+            [
+              0.604,
+              0.424,
+              0.98,
+              1
+            ],
+            [
+              0.965,
+              0.816,
+              0.322,
+              1
+            ],
+            [
+              0.22,
+              0.816,
+              0.722,
+              1
+            ],
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-17",
+      "label": "Level 17 · Leave A Light On",
+      "levelNumber": 17,
+      "rings": [
+        [
+          3,
+          2,
+          3,
+          3,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          3,
+          2,
+          3,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          3,
+          2,
+          3,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          3,
+          3,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          1,
+          2,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          1,
+          0,
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          1,
+          0,
+          3,
+          2,
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "palette": [
+        15026253,
+        16357817,
+        10120442,
+        15697976
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_17.asset",
+        "sha256": "9dd6ac6092a4554ecaf0c62dfe9f483d45d8b084dc41226f3ac677a8144d8bed",
+        "guid": "0c5b085c9ec7647349ecca0cfe8adff7",
+        "sourceLevelId": "Level_17",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_17.asset",
+          "sha256": "e4bb0799d8bfd86d4aad05d18fcbfb7563d0b6550ccdbf2263544841944bf7b4",
+          "guid": "707fd85de6c5e324fa18113f400930c9",
+          "index": 16
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 16,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "lineCount": 15,
+          "paddingSlotCount": 60,
+          "paddingAbsentCount": 60
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          16139848,
+          16760574,
+          8941041,
+          16751162
+        ],
+        "authoredRgba": [
+          [
+            0.964706,
+            0.27451,
+            0.282353,
+            1
+          ],
+          [
+            1,
+            0.745098,
+            0.996078,
+            1
+          ],
+          [
+            0.533333,
+            0.427451,
+            0.945098,
+            1
+          ],
+          [
+            1,
+            0.603922,
+            0.227451,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            9,
+            8,
+            7,
+            2
+          ],
+          "effectiveRgba": [
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ],
+            [
+              0.976,
+              0.6,
+              0.725,
+              1
+            ],
+            [
+              0.604,
+              0.424,
+              0.98,
+              1
+            ],
+            [
+              0.937,
+              0.533,
+              0.22,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-18",
+      "label": "Level 18 · Lovesick Girls",
+      "levelNumber": 18,
+      "rings": [
+        [
+          2,
+          2,
+          3,
+          3,
+          2,
+          2
+        ],
+        [
+          3,
+          2,
+          3,
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          2,
+          2,
+          2,
+          3
+        ],
+        [
+          2,
+          3,
+          2,
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          2,
+          3,
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          2,
+          3,
+          3,
+          2,
+          2
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          3,
+          3,
+          3,
+          0
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "palette": [
+        15026253,
+        6081782,
+        16175186,
+        10120442
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_18.asset",
+        "sha256": "a65cd5b880193aefbbaaba64e2dcec4de4a5fe9ec54c2ea0e1bc231fc5b85515",
+        "guid": "0f396cd02f0594f1db231ae880a59fdf",
+        "sourceLevelId": "Level_18",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_18.asset",
+          "sha256": "258c05a6cdd53188eac0e226f974113eaa2d8a7ee112cd00ac6402ec80b6eee9",
+          "guid": "8c7fc86b7ae623343b817642b50603d0",
+          "index": 17
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 17,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "lineCount": 16,
+          "paddingSlotCount": 66,
+          "paddingAbsentCount": 66
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          16139848,
+          4442111,
+          16699947,
+          8941041
+        ],
+        "authoredRgba": [
+          [
+            0.9647059,
+            0.2745098,
+            0.2823529,
+            1
+          ],
+          [
+            0.2627451,
+            0.7803922,
+            1,
+            1
+          ],
+          [
+            0.9960784,
+            0.8235294,
+            0.1686275,
+            1
+          ],
+          [
+            0.5333334,
+            0.427451,
+            0.945098,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            9,
+            5,
+            3,
+            7
+          ],
+          "effectiveRgba": [
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ],
+            [
+              0.361,
+              0.8,
+              0.965,
+              1
+            ],
+            [
+              0.965,
+              0.816,
+              0.322,
+              1
+            ],
+            [
+              0.604,
+              0.424,
+              0.98,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-19",
+      "label": "Level 19 · Stressed Out",
+      "levelNumber": 19,
+      "rings": [
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3
+        ],
+        [
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1
+        ]
+      ],
+      "palette": [
+        15697976,
+        7389781,
+        3116008,
+        16357817
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_19.asset",
+        "sha256": "9b2edfcb764c988b64d5730a0d074adb2a69d24664823b54c8b5c42d5030d066",
+        "guid": "ca1751a729bd14fc7be18cf6e133a72e",
+        "sourceLevelId": "Level_19",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_19.asset",
+          "sha256": "8533dfd06488dadc0eb0a4bd926fec394a51665a87ff9c7d49b5c7c70629b3f6",
+          "guid": "92b44a6a4aa00f6459fed50767f3b37f",
+          "index": 18
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 18,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "lineCount": 16,
+          "paddingSlotCount": 60,
+          "paddingAbsentCount": 60
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          16751162,
+          6540610,
+          3181311,
+          16760574
+        ],
+        "authoredRgba": [
+          [
+            1,
+            0.6039216,
+            0.227451,
+            1
+          ],
+          [
+            0.3882353,
+            0.8039216,
+            0.2588235,
+            1
+          ],
+          [
+            0.1882353,
+            0.5411765,
+            1,
+            1
+          ],
+          [
+            1,
+            0.745098,
+            0.9960784,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            2,
+            0,
+            4,
+            8
+          ],
+          "effectiveRgba": [
+            [
+              0.937,
+              0.533,
+              0.22,
+              1
+            ],
+            [
+              0.439,
+              0.761,
+              0.333,
+              1
+            ],
+            [
+              0.184,
+              0.545,
+              0.91,
+              1
+            ],
+            [
+              0.976,
+              0.6,
+              0.725,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    },
+    {
+      "id": "menu-level-20",
+      "label": "Level 20 · Starboy",
+      "levelNumber": 20,
+      "rings": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          1,
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          0,
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3,
+          0,
+          1
+        ]
+      ],
+      "palette": [
+        14825375,
+        16175186,
+        3116008,
+        15026253
+      ],
+      "source": {
+        "path": "Assets/_Ludaxis/BeatBloom/Resources/LevelOverrides/Level_20.asset",
+        "sha256": "24cc329337d73e42d632b7458c1173e9c0b2b242b4223194bf3fd04b7df51b99",
+        "guid": "03e86d638f3b8470bb7009051310bb34",
+        "sourceLevelId": "Level_20",
+        "wrapper": {
+          "path": "Assets/_Ludaxis/BeatBloom/SkeletonGenerated/Levels/BeatBloomLevel_20.asset",
+          "sha256": "903d54ca4a25ba7a2bb4d0a84ee7152b641ffa6f4e4a81449cb7bb52191865a5",
+          "guid": "c074d4cd3f2b9a143bf670cab4a44988",
+          "index": 19
+        },
+        "menu": {
+          "path": "Assets/Scenes/Main.unity",
+          "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625",
+          "entryIndex": 19,
+          "testLevel": null
+        },
+        "prefab": {
+          "path": "Assets/_Ludaxis/BeatBloom/Prefabs/BeatBloomGameplay.prefab",
+          "sha256": "f184da059f0890300b8166e24d2fee0c08318d01dd3ac6583cd6b7a482287ba1",
+          "guid": "e5055ce24b53c9048815de262beeef1e",
+          "preserveImportedLevelPalette": true
+        },
+        "explicitPattern": {
+          "stride": 12,
+          "layerSegmentCounts": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            12,
+            12,
+            12
+          ],
+          "lineCount": 15,
+          "paddingSlotCount": 72,
+          "paddingAbsentCount": 72
+        },
+        "activeColorCount": 4,
+        "authoredPalette": [
+          15230454,
+          16699947,
+          3181311,
+          16139848
+        ],
+        "authoredRgba": [
+          [
+            0.9098039,
+            0.3960784,
+            0.9647059,
+            1
+          ],
+          [
+            0.9960784,
+            0.8235294,
+            0.1686275,
+            1
+          ],
+          [
+            0.1882353,
+            0.5411765,
+            1,
+            1
+          ],
+          [
+            0.9647059,
+            0.2745098,
+            0.2823529,
+            1
+          ]
+        ],
+        "paletteSkin": {
+          "enabled": true,
+          "sourceColorIds": [
+            6,
+            3,
+            4,
+            9
+          ],
+          "effectiveRgba": [
+            [
+              0.886,
+              0.216,
+              0.624,
+              1
+            ],
+            [
+              0.965,
+              0.816,
+              0.322,
+              1
+            ],
+            [
+              0.184,
+              0.545,
+              0.91,
+              1
+            ],
+            [
+              0.898,
+              0.282,
+              0.302,
+              1
+            ]
+          ],
+          "app": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+            "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+          },
+          "palette": {
+            "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+            "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+          }
+        }
+      }
+    }
+  ],
+  "provenance": {
+    "pipeline": "Main LevelLoader.levels → BeatBloomLevelData.sourceLevel → BeatBloomLevelAdapter → ApplyLoadedLevel → explicit pattern + SkinPalette",
+    "files": {
+      "buildSettings": {
+        "path": "ProjectSettings/EditorBuildSettings.asset",
+        "sha256": "8b898c51bb2f86e3d74f848ebed286ccf4ccaf8f787115b82039ad018e09ce19"
+      },
+      "menu": {
+        "path": "Assets/Scenes/Main.unity",
+        "sha256": "a1711f3f4c3d170463e7b37fcab1197290fd16a1b1f1b711a245c72ccfa9a625"
+      },
+      "levelLoader": {
+        "path": "Assets/Scripts/LevelLoader.cs",
+        "sha256": "0bb233193bccaabe15f7ed3de54fb2610a85921b8c4005f5850c3481cd93f4cc"
+      },
+      "adapter": {
+        "path": "Assets/Scripts/BeatBloomIntegration/BeatBloomLevelAdapter.cs",
+        "sha256": "3f0cc9fa2428778761407b2087361f24f4b2768f6dc27e51350b565234954dc1"
+      },
+      "nativeLoader": {
+        "path": "Assets/_Ludaxis/BeatBloom/Scripts/Runtime/Levels/BeatBloomLoopEscapeLevelLoader.cs",
+        "sha256": "155a8399cc0cf5df14e404240d24b48b3e5080f2ca0daa199bfa5fc73c3c453e"
+      },
+      "level": {
+        "path": "Assets/_Ludaxis/BeatBloom/Scripts/Runtime/Gameplay/BeatBloomLevel.cs",
+        "sha256": "867ab7b04dad392a300079dedcd10d5f1120152d7cc82f7bc97d53164ab78d2b"
+      },
+      "renderer": {
+        "path": "Assets/_Ludaxis/BeatBloom/Scripts/Runtime/Gameplay/BeatBloomCurveShapeRenderer.cs",
+        "sha256": "42ba42e95a922cef8aaeda6fe721facc1349a998c35395fda92eefb68cf39b09"
+      },
+      "rendererLevels": {
+        "path": "Assets/_Ludaxis/BeatBloom/Scripts/Runtime/Gameplay/CurveShapeRenderer/BeatBloomCurveShapeRenderer.Levels.cs",
+        "sha256": "6b478c7a42128cd89f4262487c2aaba3bca8c123b5f7fb0336cdac9d7b0fcee0"
+      },
+      "rendererSegments": {
+        "path": "Assets/_Ludaxis/BeatBloom/Scripts/Runtime/Gameplay/CurveShapeRenderer/BeatBloomCurveShapeRenderer.Segments.cs",
+        "sha256": "8c6ba2a0d8023743d5b05c3197e7c2688c3bff65e816a6c67b911940c2bff9e4"
+      },
+      "style": {
+        "path": "Assets/_Ludaxis/BeatBloom/Scripts/Runtime/Gameplay/BeatBloomHypnoStyle.cs",
+        "sha256": "da5836cb682505b510bc0a3bafdc63bd0a93f3f4c497346f85a111f5c359e4f3"
+      },
+      "paletteCode": {
+        "path": "Assets/_Ludaxis/BeatBloom/Scripts/Runtime/Gameplay/BeatBloomPalette.cs",
+        "sha256": "d4d014cec62cd98cf39b4e73dac1c76d5deeddbee7e32dff0f65dcaeaf52d285"
+      },
+      "configCode": {
+        "path": "Assets/_Ludaxis/BeatBloom/Scripts/Runtime/Config/BeatBloomConfigs.cs",
+        "sha256": "8ceefe085222a020335615dab941cf2acda8b79e6dacd631a0ea1d7c18ada036"
+      },
+      "app": {
+        "path": "Assets/_Ludaxis/BeatBloom/Content/Config/AppConfig.asset",
+        "sha256": "f9a621259230eb24c968260177ca9c591b67eefe8ef9def9844064e79508ddba"
+      },
+      "palette": {
+        "path": "Assets/_Ludaxis/BeatBloom/Content/Config/PaletteConfig.asset",
+        "sha256": "5cd42cdddf9c14f0a817b514a9cad5309b4416fb6e3fcc064a08d01f8712660f"
+      }
+    },
+    "rendererLimits": {
+      "maxRings": 200,
+      "maxSegmentsPerRing": 24
+    },
+    "contents": "Only authored ring order, segment color indices, per-ring counts and effective current palette. No song, shape, queue, timing or gameplay settings are applied by these templates."
+  }
+}

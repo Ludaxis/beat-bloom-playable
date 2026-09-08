@@ -1,0 +1,46 @@
+{
+  "observed": "2026-09-07",
+  "instrumentCapture": "scripts/capture-instruments.cs; current Unity prefabs rendered in temporary Editor previews, black/white mattes recover transparency",
+  "sources": [
+    {
+      "path": "Assets/_Ludaxis/BeatBloom/Scripts/Runtime/Shapes/BeatBloomContours.cs",
+      "sha256": "c3bab89a4543e52f57ad17873c7115a80397e902f729e2b076e061faf4699b4a"
+    },
+    {
+      "path": "Assets/_Ludaxis/BeatBloom/Scripts/Runtime/Shapes/BeatBloomRingOffsetGeometry.cs",
+      "sha256": "e7e94055deb32b5c1bc21b90f090d7054f5de39cfd540cd5955689b19b69773c"
+    },
+    {
+      "path": "Assets/_Ludaxis/BeatBloom/Art/Instrument/prefab/musicItem_Piano.prefab",
+      "sha256": "6c8898000f28a168dbd77e52965c54fc5c70106b9e62b7a3abdef900ff869e34"
+    },
+    {
+      "path": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Animations/Piano Export/Piano.png",
+      "sha256": "c214bbb1e25ea473762b6412d81e75e914fe7da97b6a274aeabb63a97f78354d"
+    },
+    {
+      "path": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Animations/Piano Export/Piano.json",
+      "sha256": "3c3025749b730d3074f9285f92093a9d3b504d5aa964e9ef4b9ee5301af106fa"
+    },
+    {
+      "path": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Animations/Piano Export/Piano.atlas.txt",
+      "sha256": "8a48e8a8bbec6b52cd17cda19b65f6d8b0b734578428a8e5953d876da4ef9107"
+    },
+    {
+      "path": "Assets/_Ludaxis/BeatBloom/Art/Instrument/prefab/musicItem_Trumpet.prefab",
+      "sha256": "39ef8f511884e3766f2f3c5697d3c1e0e704173b12dbcfe0e960392350faba71"
+    },
+    {
+      "path": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Animations/Trumpet Export/Trumpet.png",
+      "sha256": "07f6565d0b76fbda18822f20ad4121c215cdf5b3a6db5a17c98bfa19a8dd632a"
+    },
+    {
+      "path": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Animations/Trumpet Export/Trumpet.json",
+      "sha256": "66097e39b31c68c72c6e0a7267a2853235bea202e6ed6725782dba2f7fabce17"
+    },
+    {
+      "path": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Animations/Trumpet Export/Trumpet.atlas.txt",
+      "sha256": "ea6d0bf9a52b12f07f7d4a4e46d5c72cfde6831077c382ae76f848b9ea6865e8"
+    }
+  ]
+}

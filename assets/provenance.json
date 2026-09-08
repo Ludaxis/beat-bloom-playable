@@ -1,0 +1,128 @@
+{
+  "generatedWith": "scripts/prepare-assets.mjs",
+  "assets": [
+    {
+      "source": "Playables/beat-bloom/assets/source/brand/figma-icon-5-1449.png",
+      "output": "icon.webp",
+      "operation": "Exact user-selected Figma PNG; remove transparent export margins, WebP delivery resize; original artwork preserved",
+      "approvedFigmaNode": "https://www.figma.com/board/2phyEEt4ZlbRBtBVZaIzMB/NCBB---Beat-Bloom?node-id=5-1449",
+      "approvedOn": "2026-09-08",
+      "sourceSha256": "e6c56d0d7fd21a29e68cd44cc2fdabea6119ece90ef2894d98386c8064f7781c",
+      "outputBytes": 16888
+    },
+    {
+      "source": "Playables/beat-bloom/assets/source/brand/figma-logo-6-2443.png",
+      "output": "logo.webp",
+      "operation": "Exact user-selected Figma PNG; remove transparent export margins, WebP delivery resize; original artwork preserved",
+      "approvedFigmaNode": "https://www.figma.com/board/2phyEEt4ZlbRBtBVZaIzMB/NCBB---Beat-Bloom?node-id=6-2443",
+      "approvedOn": "2026-09-08",
+      "sourceSha256": "e74ce21723fbd1cef66f031340a219c80bc8ed3d07988a48f15c8cffd3929021",
+      "outputBytes": 71154
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Assets/Ukulele.png",
+      "output": "ukulele.webp",
+      "operation": "WebP delivery resize; original art preserved",
+      "sourceSha256": "f25b61ee6b58eda58c90a8e8c2f9804fff7ced00ef74d9a0d3919c42ef9e818f",
+      "outputBytes": 5100
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Assets/Violin.png",
+      "output": "violin.webp",
+      "operation": "WebP delivery resize; original art preserved",
+      "sourceSha256": "b927761d95cbfbe7420dcb1a776cce341a883e99a5b90e5fd372afb50a7ccbf1",
+      "outputBytes": 7830
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Assets/Xylophone.png",
+      "output": "xylophone.webp",
+      "operation": "WebP delivery resize; original art preserved",
+      "sourceSha256": "ea782e72ba0f67efc3f44ee3e3f38af51c99c363a9839b5d23ef5ca27b4ad740",
+      "outputBytes": 6054
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Art/Instrument/Assets/Drum.png",
+      "output": "drum.webp",
+      "operation": "WebP delivery resize; original art preserved",
+      "sourceSha256": "68fe92ddde6c535f6333c585e9480e278a6f40690db3b7c7441ac3886e1f2173",
+      "outputBytes": 4936
+    },
+    {
+      "source": "Playables/beat-bloom/assets/source/piano.png",
+      "output": "piano.webp",
+      "operation": "WebP delivery resize; original art preserved",
+      "sourceSha256": "706487c73f4ccef2c8b472c73c314c46a8738ff6941c6ffed1ba16d120a4abc9",
+      "outputBytes": 2516
+    },
+    {
+      "source": "Playables/beat-bloom/assets/source/trumpet.png",
+      "output": "trumpet.webp",
+      "operation": "WebP delivery resize; original art preserved",
+      "sourceSha256": "616606126018545d95a477d59537382f3fe042431c92526bbfa87563dc067742",
+      "outputBytes": 3508
+    },
+    {
+      "source": "Assets/UI/Fonts/LilitaOne-Regular/LilitaOne-Regular.ttf",
+      "output": "lilita.ttf",
+      "operation": "Copy existing game font",
+      "sourceSha256": "4444c23631884f411aa7f2fee35061b1756a9927940c62d2a5572acf470b3ffa",
+      "outputBytes": 26828
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Content/Songs/Nobatidao/Nobatidao_Stage0.ogg",
+      "output": "nobatidao-0.mp3",
+      "operation": "Full authored loop, mono 44.1 kHz MP3 at 64 kb/s; no shifted start",
+      "sourceSha256": "e0a7303a2eee7700fefcda3ad8c04c28e54511ef09606a3a44e954f520d34619",
+      "outputBytes": 177885
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Content/Songs/Nobatidao/Nobatidao_Stage1.ogg",
+      "output": "nobatidao-1.mp3",
+      "operation": "Full authored loop, mono 44.1 kHz MP3 at 64 kb/s; no shifted start",
+      "sourceSha256": "c54f898b4dbd6e1538d37d8d71e6cd412094b69b2bf220231f6905a41f548914",
+      "outputBytes": 177885
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Content/Songs/Nobatidao/Nobatidao_Stage2.ogg",
+      "output": "nobatidao-2.mp3",
+      "operation": "Full authored loop, mono 44.1 kHz MP3 at 64 kb/s; no shifted start",
+      "sourceSha256": "44df53b9e855752894f0eef4e7de6844630c5aba2075877139b4765a8f01cfcb",
+      "outputBytes": 177885
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Songs/sunflower/Sunflower_Stage0.ogg",
+      "output": "sunflower-0.mp3",
+      "operation": "Full authored loop, mono 44.1 kHz MP3 at 64 kb/s; no shifted start",
+      "sourceSha256": "dff76502f65de62f9e102857bb0fd90ff437150709c1236661b392580d90093c",
+      "outputBytes": 171198
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Songs/sunflower/Sunflower_Stage1.ogg",
+      "output": "sunflower-1.mp3",
+      "operation": "Full authored loop, mono 44.1 kHz MP3 at 64 kb/s; no shifted start",
+      "sourceSha256": "80ce01ddd5d46e0da9a487b7be0556fadce6f944479c67ef76c4b10230152a7b",
+      "outputBytes": 171198
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Songs/sunflower/Sunflower_Stage2.ogg",
+      "output": "sunflower-2.mp3",
+      "operation": "Full authored loop, mono 44.1 kHz MP3 at 64 kb/s; no shifted start",
+      "sourceSha256": "b1737b0582c75a52e78b3d7bc14a9dabd6919c1ae9711736961d6c283badaa15",
+      "outputBytes": 171198
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Songs/sunflower/Sunflower_Stage3.ogg",
+      "output": "sunflower-3.mp3",
+      "operation": "Full authored loop, mono 44.1 kHz MP3 at 64 kb/s; no shifted start",
+      "sourceSha256": "4831d5d8ee58b19bd62676baf3dde6985e85dc44acd559ac5b201e72804bdd30",
+      "outputBytes": 171198
+    },
+    {
+      "source": "Assets/_Ludaxis/BeatBloom/Resources/Songs/sunflower/Sunflower_Stage4.ogg",
+      "output": "sunflower-4.mp3",
+      "operation": "Full authored loop, mono 44.1 kHz MP3 at 64 kb/s; no shifted start",
+      "sourceSha256": "314375658cb6929ef70f7f2f04f31a86588824408e40e52459acd3d433311c77",
+      "outputBytes": 171198
+    }
+  ]
+}

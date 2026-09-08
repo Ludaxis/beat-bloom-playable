@@ -1,0 +1,59 @@
+{
+  "songId": "sunflower",
+  "bpm": 90.0,
+  "beatsPerBar": 4,
+  "downbeatOffset": 0.0,
+  "loopBeats": 32.0,
+  "sections": [
+    {
+      "startBeat": 0.0,
+      "intensity": 0.55,
+      "direction": 1,
+      "degreesPerBeat": 23.0
+    },
+    {
+      "startBeat": 4.0,
+      "intensity": 0.79,
+      "direction": 1,
+      "degreesPerBeat": 57.0
+    },
+    {
+      "startBeat": 8.0,
+      "intensity": 0.68,
+      "direction": 1,
+      "degreesPerBeat": 42.0
+    },
+    {
+      "startBeat": 12.0,
+      "intensity": 0.88,
+      "direction": 1,
+      "degreesPerBeat": 70.0
+    },
+    {
+      "startBeat": 16.0,
+      "intensity": 0.67,
+      "direction": 1,
+      "degreesPerBeat": 40.0
+    },
+    {
+      "startBeat": 20.0,
+      "intensity": 0.86,
+      "direction": 1,
+      "degreesPerBeat": 67.0
+    },
+    {
+      "startBeat": 24.0,
+      "intensity": 0.67,
+      "direction": 1,
+      "degreesPerBeat": 40.0
+    },
+    {
+      "startBeat": 28.0,
+      "intensity": 0.78,
+      "direction": 1,
+      "degreesPerBeat": 56.0
+    }
+  ],
+  "source": "Assets/_Ludaxis/BeatBloom/Resources/Songs/sunflower/Chart.asset",
+  "sha256": "59a3cfcced596ae9476a6933e1bcbaecbc6fed7f5350a13563e83ca94ab540a6"
+}
