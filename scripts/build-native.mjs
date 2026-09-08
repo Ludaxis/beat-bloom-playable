@@ -1,4 +1,4 @@
-import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { zipSync, strToU8 } from 'fflate';
@@ -11,6 +11,11 @@ const previewOnly = process.argv.slice(2).includes('--preview');
 const generated = [],
   allZip = {};
 await mkdir(dist, { recursive: true });
+// Publish only the shared-link viewer; Studio's export API remains a local service.
+await mkdir(resolve(dist, 'review'), { recursive: true });
+for (const file of ['shared.html', 'share-codec.js']) {
+  await copyFile(resolve(root, 'review', file), resolve(dist, 'review', file));
+}
 await build({
   entryPoints: [resolve(root, 'src/native/pattern-worker.ts')],
   outfile: resolve(root, 'review/pattern-worker.js'),

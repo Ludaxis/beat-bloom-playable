@@ -89,7 +89,11 @@ npm run export:levels -- 6
 
 ## Hosting
 
-The project currently uses a local Node.js server for Studio exports. Vercel deployment is a separate integration task: the export endpoint needs a supported server runtime and its required assets. Uploading only static files will not provide the complete Studio export workflow.
+Vercel builds with `npm run build` and publishes `dist`, as configured in `vercel.json`. The site root opens the default heart playable. Shared snapshots at `/review/shared.html` and existing `/dist/preview/...` playable links continue to resolve; direct `/preview/...` links work too. All playable assets are embedded in the generated HTML.
+
+Deploy the repository root with the **Other** framework preset. The committed configuration supplies the build command and output directory, so no `public` folder is needed.
+
+This deployment hosts the playable and prebuilt downloads. Studio authoring and custom exports still run through the local Node.js server. Hosting the complete Studio export workflow requires a separate server integration.
 
 ## Ownership
 
