@@ -16,6 +16,9 @@ export const DEFAULT_END_CARD_STYLE = Object.freeze({
   backgroundColor: 0x19102e,
   logoWidth: 290,
   iconSize: 156,
+  ctaWidth: 310,
+  ctaHeight: 56,
+  ctaSize: 25,
 });
 const fields = [
   'headline',
@@ -93,7 +96,7 @@ export function resolveEndCardDesign(
   if (level.endCard) {
     const errors = validateEndCardDesign(level.endCard);
     if (errors.length) throw Error(errors.join('\n'));
-    return { ...level.endCard };
+    return { ...DEFAULT_END_CARD_STYLE, ...level.endCard };
   }
   return {
     ...DEFAULT_END_CARD_STYLE,

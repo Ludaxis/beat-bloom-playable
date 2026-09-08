@@ -643,3 +643,49 @@ button:focus-visible {
     will-change: auto;
   }
 }
+
+/* Animate the artwork, not the hit target: taps and focus keep stable bounds. */
+.result .continue {
+  position: relative;
+  isolation: isolate;
+  background: transparent;
+  box-shadow: none;
+}
+.result .continue::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(var(--endcard-cta-top, #9cec60), var(--endcard-cta, #69d442));
+  box-shadow:
+    0 5px 0 var(--endcard-cta-shadow, #2d7727),
+    0 9px 25px #0003,
+    inset 0 1px 0 #ffffff55;
+}
+.cta-label {
+  display: block;
+}
+.result:not([hidden]) .continue::before,
+.result:not([hidden]) .continue .cta-label {
+  animation: install-breathe 2.8s ease-in-out infinite;
+}
+@keyframes install-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.035);
+  }
+}
+.result:not([hidden]) .continue:active::before,
+.result:not([hidden]) .continue:active .cta-label {
+  animation: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .result:not([hidden]) .continue::before,
+  .result:not([hidden]) .continue .cta-label {
+    animation: none;
+  }
+}

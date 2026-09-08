@@ -1064,3 +1064,24 @@ summary {
     scroll-behavior: auto !important;
   }
 }
+
+.studio-credit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex: none;
+  margin: 12px 0 0;
+  color: var(--color-text-secondary);
+  font-size: 11px;
+}
+.studio-credit svg {
+  width: 14px;
+  height: 14px;
+  fill: var(--color-brand);
+}
+.studio-credit a {
+  color: var(--color-brand);
+  font-size: inherit;
+  text-underline-offset: 3px;
+}

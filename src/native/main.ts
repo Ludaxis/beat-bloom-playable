@@ -371,7 +371,10 @@ function applyEndCardDesign(): EndCardDesign {
     result = $('.result');
   $('.result h2').textContent =
     model.status === 'failed' && !endCardPreview ? END_CARD.failureHeadline : design.headline;
-  $('.continue').textContent = design.ctaLabel;
+  const ctaLabel = document.createElement('span');
+  ctaLabel.className = 'cta-label';
+  ctaLabel.textContent = design.ctaLabel;
+  $('.continue').replaceChildren(ctaLabel);
   ($('.result-logo') as HTMLImageElement).src = design.logoImage ?? assets.logo;
   ($('.celebration-logo') as HTMLImageElement).src = design.logoImage ?? assets.logo;
   $('.celebration-logo').style.width = `${(design.logoWidth * 400) / 290}px`;

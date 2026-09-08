@@ -27,9 +27,9 @@ function endCardControls() {
   $('#end-logo-width').value = design.logoWidth;
   $('#end-icon-size').value = design.iconSize;
   $('#end-headline-size').value = design.headlineSize ?? (profile.startsWith('b-') ? 44 : 38);
-  $('#end-cta-size').value = design.ctaSize ?? 28;
-  $('#end-cta-width').value = design.ctaWidth ?? 360;
-  $('#end-cta-height').value = design.ctaHeight ?? 64;
+  $('#end-cta-size').value = design.ctaSize ?? 25;
+  $('#end-cta-width').value = design.ctaWidth ?? 310;
+  $('#end-cta-height').value = design.ctaHeight ?? 56;
   $('#end-replay-enabled').checked = design.replayEnabled !== false;
   designSizeLabels();
   if (typeof refreshDesignAssets === 'function') refreshDesignAssets(design);
