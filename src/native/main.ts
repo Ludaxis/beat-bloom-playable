@@ -514,12 +514,16 @@ function updateLogoMotion(dt: number) {
 }
 function setEndCardDesign(options: Partial<EndCardDesign>): EndCardDesign {
   level = setLevelEndCardDesign(level, __PROFILE__, options);
-  return applyEndCardDesign();
+  const design = applyEndCardDesign();
+  if (!adFlow.started && $('.result').hidden) syncIntro();
+  return design;
 }
 function resetEndCardDesign(): EndCardDesign {
   level = cloneLevel(level);
   delete level.endCard;
-  return applyEndCardDesign();
+  const design = applyEndCardDesign();
+  if (!adFlow.started && $('.result').hidden) syncIntro();
+  return design;
 }
 function step(seconds: number) {
   if (!ready || endCardPreview || !adFlow.started || adFlow.complete) return;

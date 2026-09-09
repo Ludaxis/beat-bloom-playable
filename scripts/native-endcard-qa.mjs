@@ -627,6 +627,35 @@ try {
           await context.close();
         }
       });
+  await run('studio-intro-edits-stay-visible', async () => {
+    const { page, context } = await makePage({ width: 1440, height: 1000 });
+    try {
+      await page.goto(origin + '/');
+      await page.waitForFunction(() => document.querySelector('#fullscreen')?.disabled === false);
+      const frame = page.frames().find((f) => f.url().includes('/dist/preview/'));
+      await page.locator('#design-tab').click();
+      await page.locator('#intro-layout').selectOption('logo');
+      await frame.locator('.ad-intro').waitFor({ state: 'visible' });
+      assert.equal(await page.locator('#design-tab').getAttribute('aria-selected'), 'true');
+      assert.equal(await frame.locator('.result').isVisible(), false);
+      await page.locator('#intro-tagline').fill('Find your rhythm');
+      assert.equal(await frame.locator('.intro-tagline').textContent(), 'Find your rhythm');
+      await page.locator('#preview-ending').click();
+      assert.equal(await frame.locator('.result').isVisible(), true);
+      await page.locator('#preview-intro').click();
+      assert.equal(await frame.locator('.ad-intro').isVisible(), true);
+      assert.equal(await page.locator('#design-tab').getAttribute('aria-selected'), 'true');
+      await page.locator('#intro-layout').selectOption('footer');
+      assert.equal(await frame.locator('.intro-footer').isVisible(), true);
+      await page.locator('#intro-layout').selectOption('none');
+      assert.equal(await frame.locator('.ad-intro').isVisible(), false);
+      assert.equal(await frame.locator('.result').isVisible(), false);
+      assert.equal(await page.locator('#design-tab').getAttribute('aria-selected'), 'true');
+      return { liveTagline: true, layouts: 3, previewSwitching: true };
+    } finally {
+      await context.close();
+    }
+  });
 } catch {
   process.exitCode = 1;
 } finally {

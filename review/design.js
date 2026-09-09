@@ -1,4 +1,5 @@
 let studioTab = 'gameplay';
+let introPreview = false;
 const studioTabs = ['gameplay', 'design', 'export'];
 const designFields = [
   'end-headline',
@@ -42,7 +43,15 @@ function endCardControls() {
   $('#design-concept').textContent = profile.startsWith('b-')
     ? 'Tagline + logo'
     : 'Free to play footer';
-  if (studioTab === 'design') a.previewEndCard();
+  if (studioTab === 'design') {
+    if (!introPreview) a.previewEndCard();
+    updateDesignPreviewTitle();
+  }
+}
+function updateDesignPreviewTitle() {
+  $('#preview-title').textContent = introPreview ? 'Intro preview' : 'Ending preview';
+  $('#preview-intro').setAttribute('aria-pressed', String(introPreview));
+  $('#preview-ending').setAttribute('aria-pressed', String(!introPreview));
 }
 function designSizeLabels() {
   for (const id of [
@@ -160,6 +169,7 @@ $('#reset-end-design').onclick = () => {
 function syncDesignPreview(snapshot) {
   if (
     studioTab === 'design' &&
+    !introPreview &&
     snapshot.endCard &&
     !snapshot.endCard.visible &&
     !snapshot.endCard.finishPreview
@@ -167,13 +177,19 @@ function syncDesignPreview(snapshot) {
     selectStudioTab('gameplay');
 }
 
-$('#preview-finish').onclick = () => api()?.previewFinish?.();
+$('#preview-finish').onclick = () => {
+  introPreview = false;
+  updateDesignPreviewTitle();
+  api()?.previewFinish?.();
+};
 
 function updateIntro() {
   try {
     const a = api();
+    if (!$('#intro-tagline').value.trim()) return;
+    introPreview = true;
     a.setOptions({
-      adFlow: { intro: $('#intro-layout').value, tagline: $('#intro-tagline').value.trim() },
+      adFlow: { intro: $('#intro-layout').value, tagline: $('#intro-tagline').value },
     });
     $('#level-json').value = JSON.stringify(a.getLevel(), null, 2);
     endCardControls();
@@ -182,8 +198,14 @@ function updateIntro() {
   }
 }
 $('#intro-layout').onchange = updateIntro;
-$('#intro-tagline').onchange = updateIntro;
+$('#intro-tagline').oninput = updateIntro;
 $('#preview-intro').onclick = () => {
-  selectStudioTab('gameplay');
+  introPreview = true;
   api()?.restart();
+  updateDesignPreviewTitle();
+};
+$('#preview-ending').onclick = () => {
+  introPreview = false;
+  api()?.previewEndCard();
+  updateDesignPreviewTitle();
 };
