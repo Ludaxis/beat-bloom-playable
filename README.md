@@ -57,7 +57,9 @@ Keep store links editable in Export. The current listings are unpublished. Confi
 | `npm run format` | Format source and tests |
 | `npm run verify` | Run the complete build, test, and browser workflow |
 
-Browser checks use Google Chrome through Playwright. Install Chrome locally, or provision it with `npx playwright install chrome`, before running `npm run verify`. Verification starts its own server; results are written to the ignored `qa/native/latest/` folder.
+Browser checks use Google Chrome through Playwright. Install Chrome locally, or provision it with `npx playwright install chrome`, before running `npm run verify`. Required test inputs live in `test/fixtures/` and must be committed; `qa/` contains disposable output only. Before pushing, run the CI commands from a clean checkout on the Node version in `.nvmrc` so ignored local files cannot hide missing inputs.
+
+Verification starts its own server; results are written to the ignored `qa/native/latest/` folder.
 
 The runtime uses TypeScript, PixiJS, WebGL, and Web Audio. It shares one gameplay implementation across Studio previews and ad exports. Effects use bounded geometry and particle counts; playback pauses when hidden and supports reduced motion. Test representative mobile devices as well as desktop browsers before release.
 

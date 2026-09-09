@@ -9,7 +9,7 @@ interface Sample {
   center: [number, number];
 }
 const evidence = JSON.parse(
-  readFileSync(new URL('../qa/native/reference-yellow-exact-pts.json', import.meta.url), 'utf8'),
+  readFileSync(new URL('./fixtures/reference-yellow-exact-pts.json', import.meta.url), 'utf8'),
 ) as { samples: Sample[] };
 
 test('calibrated first yellow shot agrees with measured direction, impact time and bounded pre-impact head error', () => {

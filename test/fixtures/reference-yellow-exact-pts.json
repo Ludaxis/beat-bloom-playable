@@ -1,0 +1,293 @@
+{
+  "method": "Every decoded frame in3.7\u20134.7sec range, pairedexactFFprobetimestamps. Color mask+closing+filling andmaximalinscribedheadcircle. 2pxtypicalcentertolerancebeforeimpact; overlapcaninvalidateafterimpact.",
+  "samples": [
+    {
+      "videoTime": 3.720022,
+      "center": [364, 992],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-001.jpg"
+    },
+    {
+      "videoTime": 3.736178,
+      "center": [364, 992],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-002.jpg"
+    },
+    {
+      "videoTime": 3.753067,
+      "center": [364, 992],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-003.jpg"
+    },
+    {
+      "videoTime": 3.8204,
+      "center": [363, 987],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-006.jpg"
+    },
+    {
+      "videoTime": 3.836722,
+      "center": [362, 977],
+      "inscribedRadius": 24.4,
+      "frame": "exact-launch-007.jpg"
+    },
+    {
+      "videoTime": 3.8709,
+      "center": [357, 944],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-009.jpg"
+    },
+    {
+      "videoTime": 3.887767,
+      "center": [351, 897],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-010.jpg"
+    },
+    {
+      "videoTime": 3.920244,
+      "center": [347, 870],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-011.jpg"
+    },
+    {
+      "videoTime": 3.9383,
+      "center": [337, 810],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-012.jpg"
+    },
+    {
+      "videoTime": 3.970133,
+      "center": [333, 779],
+      "inscribedRadius": 23.9,
+      "frame": "exact-launch-013.jpg"
+    },
+    {
+      "videoTime": 3.986833,
+      "center": [328, 747],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-014.jpg"
+    },
+    {
+      "videoTime": 4.0038,
+      "center": [323, 716],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-015.jpg"
+    },
+    {
+      "videoTime": 4.020822,
+      "center": [318, 684],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-016.jpg"
+    },
+    {
+      "videoTime": 4.0375,
+      "center": [313, 655],
+      "inscribedRadius": 24.2,
+      "frame": "exact-launch-017.jpg"
+    },
+    {
+      "videoTime": 4.054667,
+      "center": [304, 600],
+      "inscribedRadius": 24.2,
+      "frame": "exact-launch-018.jpg"
+    },
+    {
+      "videoTime": 4.086578,
+      "center": [300, 576],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-019.jpg"
+    },
+    {
+      "videoTime": 4.103022,
+      "center": [296, 556],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-020.jpg"
+    },
+    {
+      "videoTime": 4.119844,
+      "center": [293, 539],
+      "inscribedRadius": 23.8,
+      "frame": "exact-launch-021.jpg"
+    },
+    {
+      "videoTime": 4.136422,
+      "center": [291, 525],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-022.jpg"
+    },
+    {
+      "videoTime": 4.152856,
+      "center": [289, 516],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-023.jpg"
+    },
+    {
+      "videoTime": 4.170289,
+      "center": [288, 511],
+      "inscribedRadius": 24.0,
+      "frame": "exact-launch-024.jpg"
+    },
+    {
+      "videoTime": 4.187022,
+      "center": [288, 511],
+      "inscribedRadius": 23.9,
+      "frame": "exact-launch-025.jpg"
+    },
+    {
+      "videoTime": 4.203256,
+      "center": [288, 512],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-026.jpg"
+    },
+    {
+      "videoTime": 4.221667,
+      "center": [293, 512],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-027.jpg"
+    },
+    {
+      "videoTime": 4.253767,
+      "center": [297, 513],
+      "inscribedRadius": 23.0,
+      "frame": "exact-launch-028.jpg"
+    },
+    {
+      "videoTime": 4.272411,
+      "center": [306, 515],
+      "inscribedRadius": 23.0,
+      "frame": "exact-launch-029.jpg"
+    },
+    {
+      "videoTime": 4.304156,
+      "center": [310, 516],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-030.jpg"
+    },
+    {
+      "videoTime": 4.320689,
+      "center": [314, 517],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-031.jpg"
+    },
+    {
+      "videoTime": 4.337556,
+      "center": [321, 519],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-032.jpg"
+    },
+    {
+      "videoTime": 4.353911,
+      "center": [323, 520],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-033.jpg"
+    },
+    {
+      "videoTime": 4.370767,
+      "center": [329, 522],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-034.jpg"
+    },
+    {
+      "videoTime": 4.387444,
+      "center": [332, 523],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-035.jpg"
+    },
+    {
+      "videoTime": 4.404056,
+      "center": [337, 525],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-036.jpg"
+    },
+    {
+      "videoTime": 4.420689,
+      "center": [341, 527],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-037.jpg"
+    },
+    {
+      "videoTime": 4.437211,
+      "center": [346, 529],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-038.jpg"
+    },
+    {
+      "videoTime": 4.4543,
+      "center": [350, 531],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-039.jpg"
+    },
+    {
+      "videoTime": 4.470967,
+      "center": [350, 531],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-040.jpg"
+    },
+    {
+      "videoTime": 4.487222,
+      "center": [354, 533],
+      "inscribedRadius": 22.6,
+      "frame": "exact-launch-041.jpg"
+    },
+    {
+      "videoTime": 4.504978,
+      "center": [368, 541],
+      "inscribedRadius": 22.4,
+      "frame": "exact-launch-042.jpg"
+    },
+    {
+      "videoTime": 4.536911,
+      "center": [372, 543],
+      "inscribedRadius": 22.4,
+      "frame": "exact-launch-043.jpg"
+    },
+    {
+      "videoTime": 4.553656,
+      "center": [375, 545],
+      "inscribedRadius": 21.8,
+      "frame": "exact-launch-044.jpg"
+    },
+    {
+      "videoTime": 4.570367,
+      "center": [376, 542],
+      "inscribedRadius": 21.2,
+      "frame": "exact-launch-045.jpg"
+    },
+    {
+      "videoTime": 4.586856,
+      "center": [372, 545],
+      "inscribedRadius": 22.2,
+      "frame": "exact-launch-046.jpg"
+    },
+    {
+      "videoTime": 4.604911,
+      "center": [364, 541],
+      "inscribedRadius": 22.8,
+      "frame": "exact-launch-047.jpg"
+    },
+    {
+      "videoTime": 4.636989,
+      "center": [357, 541],
+      "inscribedRadius": 22.7,
+      "frame": "exact-launch-048.jpg"
+    },
+    {
+      "videoTime": 4.653289,
+      "center": [351, 540],
+      "inscribedRadius": 22.5,
+      "frame": "exact-launch-049.jpg"
+    },
+    {
+      "videoTime": 4.670222,
+      "center": [346, 539],
+      "inscribedRadius": 22.5,
+      "frame": "exact-launch-050.jpg"
+    },
+    {
+      "videoTime": 4.687133,
+      "center": [341, 538],
+      "inscribedRadius": 22.6,
+      "frame": "exact-launch-051.jpg"
+    }
+  ]
+}

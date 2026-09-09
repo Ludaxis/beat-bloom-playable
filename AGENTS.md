@@ -11,3 +11,5 @@ This is the standalone web playable, not the Unity project. Read README.md and M
 - Run the relevant tests and type check after changes. Before delivery, run `npm run verify`; it builds all network outputs and runs the browser suites.
 - Do not commit dependencies, exports, local QA captures, credentials, or environment files. Keep package-lock.json and required source assets tracked.
 - Do not claim mobile-device performance or ad-network approval from desktop checks alone.
+
+- Before pushing, run the workflow checks from a clean checkout of the exact staged files using the Node version in `.nvmrc`. Required regression inputs belong in tracked `test/fixtures/`, never ignored `qa/`. Confirm the GitHub Actions result after pushing.
