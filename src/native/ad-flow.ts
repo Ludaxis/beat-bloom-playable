@@ -5,6 +5,8 @@ export interface AdFlowOptions {
 }
 export const AD_FLOW = Object.freeze({
   moveLimit: 8,
+  stemMove: 4,
+  introDegreesPerSecond: 14,
   tagline: 'Harder than you think',
   handSeconds: 1.2,
 });

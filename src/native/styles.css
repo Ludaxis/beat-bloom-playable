@@ -826,3 +826,25 @@ button:focus-visible {
     transform: translateY(-35px);
   }
 }
+
+.ad-intro[data-layout='logo'] .intro-start {
+  animation: intro-bounce 1.6s ease-in-out infinite;
+}
+@keyframes intro-bounce {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  30% {
+    transform: translateY(-7px) scale(1.035);
+  }
+  45% {
+    transform: translateY(0) scale(0.99);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ad-intro[data-layout='logo'] .intro-start {
+    animation: none;
+  }
+}

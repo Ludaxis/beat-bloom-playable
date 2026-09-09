@@ -24,3 +24,25 @@ test('existing levels remain unlimited and invalid options fail validation', () 
   assert.ok(validateAdFlow({ intro: 'logo', tagline: 'x'.repeat(61) }).length);
   assert.deepEqual(validateAdFlow({ intro: 'logo', tagline: 'Find your rhythm' }), []);
 });
+
+test('intro rotation preserves puzzle time and first stem reveal is idempotent', async () => {
+  const { NativeModel } = await import('../src/native/model');
+  const { cloneLevel } = await import('../src/native/config');
+  const level = cloneLevel();
+  level.adFlow = { intro: 'logo', tagline: 'Harder than you think' };
+  const model = new NativeModel(level);
+  const before = model.snapshot();
+  const rotation = model.rotation;
+  model.rotateIntro(0.1);
+  assert.notEqual(model.rotation, rotation);
+  assert.equal(model.time, before.time);
+  assert.equal(model.shots, 0);
+  assert.deepEqual(model.unlockedStems, []);
+  model.unlockIntroStem(level.stemLanes[1].colors[0]);
+  model.unlockIntroStem();
+  assert.equal(model.unlockedStems.length, 1);
+  assert.equal(model.drainEvents().filter((e) => e.type === 'unlock').length, 1);
+  const normal = new NativeModel(cloneLevel());
+  normal.unlockIntroStem();
+  assert.deepEqual(normal.unlockedStems, []);
+});

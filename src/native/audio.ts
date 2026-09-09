@@ -235,7 +235,11 @@ export class NativeAudio {
       origin +
       Math.ceil((ctx.currentTime - origin + AUDIO.lead) / beat) * beat +
       Math.max(0.62, Math.max(1, Math.min(6, Math.round(0.62 / beat))) * beat);
-    const at = origin + Math.ceil((earliest - origin) / bar) * bar;
+    // Short trials reveal on the next beat so the layer is heard before the move limit.
+    const shortTrial = this.level.adFlow && this.level.adFlow.intro !== 'none';
+    const at = shortTrial
+      ? origin + Math.ceil((ctx.currentTime - origin + AUDIO.lead) / beat) * beat
+      : origin + Math.ceil((earliest - origin) / bar) * bar;
     this.gains[stem].gain.setValueAtTime(0, at);
     this.gains[stem].gain.linearRampToValueAtTime(this.stemGain(stem), at + AUDIO.fade);
     this.pending.push({ stem, at });

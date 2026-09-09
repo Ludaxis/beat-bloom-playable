@@ -737,6 +737,30 @@ export class NativeModel {
       }
     });
   }
+  /** Intro motion changes geometry only: no puzzle clock, shots or progress. */
+  rotateIntro(radians: number): void {
+    this.rotation += radians;
+    this.rebuildGeometry();
+  }
+  /** Short ads reveal one musical layer early without changing the authored level. */
+  unlockIntroStem(color?: number): void {
+    if (!this.level.adFlow || this.level.adFlow.intro === 'none' || this.unlockedStems.length)
+      return;
+    const lanes = this.level.stemLanes;
+    const lane =
+      lanes.find((l) => color !== undefined && l.colors.includes(color)) ||
+      lanes.reduce(
+        (best, next) =>
+          this.stemProgress[lanes.indexOf(next)] > this.stemProgress[lanes.indexOf(best)]
+            ? next
+            : best,
+        lanes[0],
+      );
+    if (!lane) return;
+    this.unlockedStems.push(lane.stem);
+    this.stemProgress[lanes.indexOf(lane)] = lane.requiredBreaks;
+    this.emit('unlock', { x: 0, y: 0 }, color ?? lane.colors[0], { stem: lane.stem });
+  }
   private fixedStep(dt: number): void {
     this.time += dt;
     this.beats = Math.max(0, ((this.time - this.level.downbeatOffset) * this.level.bpm) / 60);
@@ -1229,11 +1253,14 @@ export class NativeModel {
         this.level.stemUnlockPolicy === 'half-per-color'
           ? laneUnlockProgress(lane.colors, this.brokenColors, this.unlockTargets)
           : this.stemProgress[i] + 1;
+      if (this.unlockedStems.includes(lane.stem))
+        this.stemProgress[i] = Math.max(this.stemProgress[i], lane.requiredBreaks);
       if (this.stemProgress[i] >= lane.requiredBreaks && !this.unlockedStems.includes(lane.stem)) {
         this.unlockedStems.push(lane.stem);
         this.emit('unlock', position, brokenColor, { stem: lane.stem });
       }
     }
+    this.unlockIntroStem(brokenColor);
     const ring = this.rings[segment.ringId];
     if (ring.segments.every((s) => !s.alive)) {
       this.emit('ringClear', position, brokenColor, { ringId: ring.id });

@@ -139,7 +139,12 @@ function syncIntro() {
   $('.game').inert = !adFlow.started || !$('.result').hidden || renderFailed;
 }
 function countMove(ok: boolean) {
-  if (adFlow.accept(ok)) showEndCard('Keep playing');
+  const complete = adFlow.accept(ok);
+  if (ok && adFlow.moves >= AD_FLOW.stemMove) {
+    model.unlockIntroStem();
+    drain();
+  }
+  if (complete) showEndCard('Keep playing');
 }
 const adapter = new NetworkAdapter(__NETWORK__, __STORE_URLS__ ?? undefined);
 let ready = false,
@@ -164,6 +169,8 @@ let audible = new Set<number>(),
   visualProgress = [0, 0, 0, 0],
   collectedProgress = [0, 0, 0, 0];
 const featureQueue: number[] = [];
+const audioActive = () =>
+  ready && !renderFailed && !manualPaused && !endCardPreview && adFlow.started && visible;
 const active = () =>
   ready &&
   !renderFailed &&
@@ -253,7 +260,7 @@ function gesture() {
     void current
       .unlock()
       .then(() => {
-        if (current === audio) return current.setPaused(!active());
+        if (current === audio) return current.setPaused(!audioActive());
       })
       .catch(() => {});
 }
@@ -444,7 +451,7 @@ function showEndCard(label: string, preview = false) {
   if (adFlow.complete) $('.result h2').textContent = 'Keep the music going';
   last = performance.now();
   accumulator = 0;
-  void audio.setPaused(!active());
+  void audio.setPaused(!audioActive());
   $('.continue').focus({ preventScroll: true });
 }
 function closeEndCardPreview(): boolean {
@@ -457,7 +464,7 @@ function closeEndCardPreview(): boolean {
   $('.game').inert = renderFailed;
   last = performance.now();
   accumulator = 0;
-  void audio.setPaused(!active());
+  void audio.setPaused(!audioActive());
   const focus = endCardPreviewFocus;
   endCardPreviewFocus = null;
   if (focus?.isConnected && !focus.inert) focus.focus({ preventScroll: true });
@@ -532,7 +539,7 @@ function pause(value: boolean) {
   manualPaused = value;
   last = performance.now();
   accumulator = 0;
-  void audio.setPaused(!active());
+  void audio.setPaused(!audioActive());
   updateTutorial(0);
 }
 function restart(next: NativeLevel = level) {
@@ -636,7 +643,7 @@ adapter.onVisibility = (next) => {
   visible = next;
   last = performance.now();
   accumulator = 0;
-  void audio.setPaused(!active());
+  void audio.setPaused(!audioActive());
   updateTutorial(0);
 };
 adapter.onExit = (status) => {
@@ -783,6 +790,15 @@ function frame(now: number) {
       updateHUD();
       updateBand(dt);
       updateTutorial(dt);
+    } else if (visible && !manualPaused && !endCardPreview && !adFlow.started) {
+      if (!reducedMotion) {
+        model.rotateIntro(((AD_FLOW.introDegreesPerSecond * Math.PI) / 180) * dt);
+        renderer.draw(model, 0, 0);
+      }
+    } else if (audioActive() && adFlow.complete) {
+      // Let a beat-scheduled unlock and the music finish naturally behind the CTA.
+      audio.tick();
+      updateBand(dt);
     }
   } catch {
     showRenderFallback(
@@ -839,7 +855,7 @@ async function initializeRenderer(retry = false) {
     current.draw(model, 0, audio.ready ? audio.phase : (model.time * level.bpm) / 60);
     last = performance.now();
     accumulator = 0;
-    void audio.setPaused(!active());
+    void audio.setPaused(!audioActive());
     frameId = requestAnimationFrame(frame);
     if (retry && $('.result').hidden) $('.queue-ball:not(.future)').focus({ preventScroll: true });
   } catch {

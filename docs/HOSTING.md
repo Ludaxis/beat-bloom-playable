@@ -39,3 +39,5 @@ Studio and shared viewers include Open Graph and large-image card metadata in th
 ## Intro flows
 
 Design → Intro offers None, Footer intro and Logo intro. Intro variants pause the puzzle until Play, then count eight accepted queue/tray moves before showing the install screen. Empty slots, locked slots and the start tap do not count. Install remains an explicit CTA action through the selected network bridge. Replay resets the intro and move count. The optional validated `adFlow` level field travels with JSON saves, shares and exports; old levels remain unlimited. Intro artwork uses the current end-card logo and icon, including uploads.
+
+Logo intros animate the Play button and rotate the background without advancing the puzzle. Reduced motion keeps both still. Play starts the music; short trials reveal a matching stem on the first break, with a fourth-move fallback. That stem enters on the next beat, and music continues behind the install screen. Standard levels retain their usual unlock timing.
