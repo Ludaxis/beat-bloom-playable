@@ -31,6 +31,12 @@ function endCardControls() {
   $('#end-cta-width').value = design.ctaWidth ?? 310;
   $('#end-cta-height').value = design.ctaHeight ?? 56;
   $('#end-replay-enabled').checked = design.replayEnabled !== false;
+  const flow = a.getLevel().adFlow;
+  $('#intro-layout').value = flow?.intro || 'none';
+  $('#intro-tagline').value = flow?.tagline || 'Harder than you think';
+  $('#intro-tagline-field').hidden = flow?.intro !== 'logo';
+  $('#intro-help').hidden = !flow || flow.intro === 'none';
+  $('#preview-intro').hidden = !flow || flow.intro === 'none';
   designSizeLabels();
   if (typeof refreshDesignAssets === 'function') refreshDesignAssets(design);
   $('#design-concept').textContent = profile.startsWith('b-')
@@ -162,3 +168,22 @@ function syncDesignPreview(snapshot) {
 }
 
 $('#preview-finish').onclick = () => api()?.previewFinish?.();
+
+function updateIntro() {
+  try {
+    const a = api();
+    a.setOptions({
+      adFlow: { intro: $('#intro-layout').value, tagline: $('#intro-tagline').value.trim() },
+    });
+    $('#level-json').value = JSON.stringify(a.getLevel(), null, 2);
+    endCardControls();
+  } catch (error) {
+    $('#design-status').textContent = error.message;
+  }
+}
+$('#intro-layout').onchange = updateIntro;
+$('#intro-tagline').onchange = updateIntro;
+$('#preview-intro').onclick = () => {
+  selectStudioTab('gameplay');
+  api()?.restart();
+};

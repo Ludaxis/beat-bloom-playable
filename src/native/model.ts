@@ -1,3 +1,4 @@
+import { validateAdFlow } from './ad-flow';
 import { ballFlightPosition } from './flight';
 import { colorUnlockTargets, laneUnlockProgress } from './stem-unlocks';
 import {
@@ -124,6 +125,7 @@ export function validateNativeLevel(
     !!v && typeof v === 'object' && !Array.isArray(v);
   if (!object(value)) return ['Level must be an object.'];
   const l = value as unknown as NativeLevel;
+  if (l.adFlow !== undefined) errors.push(...validateAdFlow(l.adFlow));
   if (l.endCard !== undefined) errors.push(...validateEndCardDesign(l.endCard));
   if (l.ringAppearance !== undefined) {
     const a = l.ringAppearance;

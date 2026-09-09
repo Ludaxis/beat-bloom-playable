@@ -46,6 +46,7 @@ export interface NativeSection {
   intensity: number;
 }
 export interface NativeLevel {
+  adFlow?: import('./ad-flow').AdFlowOptions;
   /** Approved end-card assets with editable copy, colors and responsive design dimensions. */
   endCard?: EndCardDesign;
   /** Optional non-blocking coaching; omitted settings use the playable defaults. */

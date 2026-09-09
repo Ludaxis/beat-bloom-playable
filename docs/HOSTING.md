@@ -35,3 +35,7 @@ The Vercel firewall limits share creation to 30 requests per minute per IP. Read
 ## Link previews
 
 Studio and shared viewers include Open Graph and large-image card metadata in their initial HTML. They use the approved 1200 × 630 game banner in `review/brand/beat-bloom-share-20260908.jpg` (134 KB). This is website-only artwork and is not embedded in ad exports. Shared pages deliberately omit a fixed `og:url`: each requested level URL stays distinct rather than being canonicalized to Studio. Hash links share `/play` metadata because URL fragments are not sent to servers. Chat apps may retain cached previews for previously posted links.
+
+## Intro flows
+
+Design → Intro offers None, Footer intro and Logo intro. Intro variants pause the puzzle until Play, then count eight accepted queue/tray moves before showing the install screen. Empty slots, locked slots and the start tap do not count. Install remains an explicit CTA action through the selected network bridge. Replay resets the intro and move count. The optional validated `adFlow` level field travels with JSON saves, shares and exports; old levels remain unlimited. Intro artwork uses the current end-card logo and icon, including uploads.

@@ -1,3 +1,4 @@
+import { AdFlow, AD_FLOW } from './ad-flow';
 import { logoHeartbeat, logoReveal } from './logo-motion';
 import { NativeModel, validateNativeLevel } from './model';
 import { NativeRenderer } from './render';
@@ -89,6 +90,11 @@ document.body.innerHTML = `<div class="viewport"><main class="game" aria-label="
  <div class="celebration" hidden><img class="celebration-logo" src="${assets.logo}" alt="Beat Bloom"></div>
  <div class="loading">Loading Beat Bloom…</div>
  </main>
+ <section class="ad-intro" role="dialog" aria-modal="true" aria-label="Start playing" hidden>
+ <div class="intro-brand"><img class="intro-logo" alt="Beat Bloom"><p class="intro-tagline"></p></div>
+ <div class="intro-prompt"><h1>Tap to play</h1><button class="intro-start">Play<img class="intro-hand" alt=""></button></div>
+ <footer class="intro-footer"><img class="intro-icon" alt="Beat Bloom app icon"><strong>FREE TO PLAY</strong><button class="intro-install">Install Now</button></footer>
+ </section>
  <section class="result" data-concept="${concept}" role="dialog" aria-modal="true" aria-label="Level complete" hidden>
   <div class="endcard-content"><h2></h2><div class="endcard-brand"><img src="${assets.logo}" class="result-logo" alt="Beat Bloom"><img src="${assets.icon}" class="result-icon" alt="Beat Bloom app icon"></div></div>
   <footer class="endcard-actions">${concept === 'Footer0FreeToPlay' ? '<div class="free-to-play">FREE TO PLAY</div>' : ''}<button class="continue"></button><button class="result-restart">${END_CARD.replayLabel}</button></footer>
@@ -117,6 +123,24 @@ let band = bindBand();
 let model = new NativeModel(level),
   audio = new NativeAudio(level, assets, () => model.time);
 let renderer: NativeRenderer;
+let adFlow = new AdFlow(level.adFlow?.intro);
+function syncIntro() {
+  const design = resolveEndCardDesign(level, __PROFILE__);
+  const intro = $('.ad-intro');
+  intro.dataset.layout = adFlow.layout;
+  intro.hidden = adFlow.started || renderFailed;
+  ($('.intro-logo') as HTMLImageElement).src = design.logoImage || assets.logo;
+  ($('.intro-icon') as HTMLImageElement).src = design.iconImage || assets.icon;
+  ($('.intro-hand') as HTMLImageElement).src = assets.tutorialHand;
+  $('.intro-tagline').textContent = level.adFlow?.tagline || AD_FLOW.tagline;
+  $('.intro-install').textContent = design.ctaLabel;
+  intro.style.setProperty('--intro-hand-duration', `${AD_FLOW.handSeconds}s`);
+  $('.intro-start').toggleAttribute('disabled', !ready);
+  $('.game').inert = !adFlow.started || !$('.result').hidden || renderFailed;
+}
+function countMove(ok: boolean) {
+  if (adFlow.accept(ok)) showEndCard('Keep playing');
+}
 const adapter = new NetworkAdapter(__NETWORK__, __STORE_URLS__ ?? undefined);
 let ready = false,
   manualPaused = false,
@@ -140,7 +164,14 @@ let audible = new Set<number>(),
   visualProgress = [0, 0, 0, 0],
   collectedProgress = [0, 0, 0, 0];
 const featureQueue: number[] = [];
-const active = () => ready && !renderFailed && !manualPaused && !endCardPreview && visible;
+const active = () =>
+  ready &&
+  !renderFailed &&
+  !manualPaused &&
+  !endCardPreview &&
+  adFlow.started &&
+  !adFlow.complete &&
+  visible;
 const tutorial = new NativeTutorial(),
   tutorialView = new NativeTutorialView($('.game'), assets);
 let tutorialHint: TutorialHint | null = null;
@@ -227,21 +258,25 @@ function gesture() {
       .catch(() => {});
 }
 function fireQueue(column: number) {
-  if (!ready || !visible || !$('.result').hidden) return false;
+  if (!ready || !visible || !adFlow.started || adFlow.complete || !$('.result').hidden)
+    return false;
   tutorialInteraction();
   gesture();
   const ok = model.fireQueue(column);
   drain();
   updateHUD();
+  countMove(ok);
   return ok;
 }
 function fireTray(slot: number) {
-  if (!ready || !visible || !$('.result').hidden) return false;
+  if (!ready || !visible || !adFlow.started || adFlow.complete || !$('.result').hidden)
+    return false;
   tutorialInteraction();
   gesture();
   const ok = model.fireTray(slot);
   drain();
   updateHUD();
+  countMove(ok);
   return ok;
 }
 function updateHUD() {
@@ -405,6 +440,8 @@ function showEndCard(label: string, preview = false) {
   result.setAttribute('aria-label', label);
   result.hidden = false;
   $('.game').inert = true;
+  $('.ad-intro').hidden = true;
+  if (adFlow.complete) $('.result h2').textContent = 'Keep the music going';
   last = performance.now();
   accumulator = 0;
   void audio.setPaused(!active());
@@ -424,6 +461,7 @@ function closeEndCardPreview(): boolean {
   const focus = endCardPreviewFocus;
   endCardPreviewFocus = null;
   if (focus?.isConnected && !focus.inert) focus.focus({ preventScroll: true });
+  syncIntro();
   updateTutorial(0);
   return true;
 }
@@ -477,7 +515,7 @@ function resetEndCardDesign(): EndCardDesign {
   return applyEndCardDesign();
 }
 function step(seconds: number) {
-  if (!ready || endCardPreview) return;
+  if (!ready || endCardPreview || !adFlow.started || adFlow.complete) return;
   const count = Math.ceil(seconds / NATIVE_CONFIG.physics.fixedStep),
     dt = seconds / count;
   for (let i = 0; i < count; i++) {
@@ -502,6 +540,7 @@ function restart(next: NativeLevel = level) {
     nextModel = new NativeModel(nextLevel);
   level = nextLevel;
   model = nextModel;
+  adFlow = new AdFlow(level.adFlow?.intro);
   if (ready) renderer.reset();
   const muted = audio.muted;
   audio.dispose();
@@ -533,6 +572,7 @@ function restart(next: NativeLevel = level) {
   $('.result').hidden = true;
   $('.celebration').hidden = true;
   applyEndCardDesign();
+  syncIntro();
   $('.announcement').hidden = true;
   updateHUD();
   if (ready) renderer.draw(model, 0, 0);
@@ -577,6 +617,16 @@ $('.result-restart').onclick = () => {
   gesture();
   $('.queue-ball:not(.future)').focus({ preventScroll: true });
 };
+$('.intro-start').onclick = () => {
+  if (!ready || !visible) return;
+  adFlow.start();
+  syncIntro();
+  last = performance.now();
+  accumulator = 0;
+  gesture();
+  $('.queue-ball:not(.future)').focus({ preventScroll: true });
+};
+$('.intro-install').onclick = () => adapter.install();
 $('.continue').onclick = () => adapter.install();
 $('.fallback-install').onclick = () => adapter.install();
 $('.fallback-retry').onclick = () => {
@@ -656,6 +706,12 @@ if (__PREVIEW__) {
       setEndCardDesign,
       resetEndCardDesign,
       getEndCardDesign: () => resolveEndCardDesign(level, __PROFILE__),
+      getAdFlow: () => ({
+        layout: adFlow.layout,
+        started: adFlow.started,
+        moves: adFlow.moves,
+        complete: adFlow.complete,
+      }),
       getLevel: () => cloneLevel(level),
       setLevel: (input: unknown) => {
         const next = validate(input);
@@ -778,7 +834,7 @@ async function initializeRenderer(retry = false) {
     $('.loading').hidden = true;
     $('.render-fallback').hidden = true;
     $('.result').inert = false;
-    $('.game').inert = !$('.result').hidden;
+    syncIntro();
     updateHUD();
     current.draw(model, 0, audio.ready ? audio.phase : (model.time * level.bpm) / 60);
     last = performance.now();

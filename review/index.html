@@ -336,6 +336,18 @@
           />
           <p class="control-help">PNG, JPG or WebP. We’ll resize it.</p>
           <p class="control-help" id="design-concept"></p>
+          <label class="field"
+            >Intro<select id="intro-layout">
+              <option value="none">None</option>
+              <option value="footer">Footer intro</option>
+              <option value="logo">Logo intro</option>
+            </select></label
+          >
+          <label class="field" id="intro-tagline-field" hidden
+            >Tagline<input id="intro-tagline" maxlength="60" value="Harder than you think"
+          /></label>
+          <p class="control-help" id="intro-help" hidden>8 moves, then the install screen.</p>
+          <button id="preview-intro" type="button" hidden>Preview intro</button>
           <label class="field" for="end-headline"
             >Headline<textarea
               id="end-headline"
