@@ -675,6 +675,74 @@ try {
       await page.locator('#intro-banner-enabled').uncheck();
       assert.equal(await frame.locator('.intro-footer').isVisible(), false);
       await page.locator('#intro-banner-enabled').check();
+      // Assert rendered effects, not just serialized settings.
+      await page.locator('#intro-design-logoEnabled').check();
+      assert.equal(await frame.locator('.intro-brand').isVisible(), true);
+      await page.locator('#intro-design-logoEnabled').uncheck();
+      assert.equal(await frame.locator('.intro-brand').isVisible(), false);
+      await page.locator('#intro-design-logoEnabled').check();
+      for (const [key, selector, property, low, high] of [
+        ['headlineSize', '.intro-prompt h1', 'fontSize', 20, 50],
+        ['playSize', '.intro-start', 'fontSize', 18, 32],
+        ['playWidth', '.intro-start', 'width', 110, 240],
+        ['playHeight', '.intro-start', 'height', 44, 90],
+        ['logoWidth', '.intro-logo', 'width', 60, 200],
+        ['taglineSize', '.intro-tagline', 'fontSize', 16, 36],
+        ['bannerTextSize', '.intro-footer strong', 'fontSize', 14, 26],
+        ['iconSize', '.intro-icon', 'width', 26, 70],
+        ['installSize', '.intro-install', 'fontSize', 14, 26],
+        ['installWidth', '.intro-install', 'width', 80, 140],
+        ['installHeight', '.intro-install', 'height', 44, 76],
+      ]) {
+        for (const value of [low, high]) {
+          await page.locator('#intro-design-' + key).fill(String(value));
+          const rendered = await frame
+            .locator(selector)
+            .evaluate((el, prop) => parseFloat(getComputedStyle(el)[prop]), property);
+          assert.ok(
+            Math.abs(rendered - value) < 1,
+            `${key}: rendered ${rendered}, expected ${value}`,
+          );
+        }
+      }
+      for (const [key, selector] of [
+        ['playColor', '.intro-start'],
+        ['bannerColor', '.intro-footer'],
+        ['installColor', '.intro-install'],
+      ]) {
+        await page.locator('#intro-design-' + key).fill('#123456');
+        assert.equal(
+          await frame.locator(selector).evaluate((el) => getComputedStyle(el).backgroundColor),
+          'rgb(18, 52, 86)',
+        );
+      }
+      await page.locator('#intro-design-dim').fill('30');
+      assert.equal(
+        await frame.locator('.ad-intro').evaluate((el) => getComputedStyle(el).backgroundColor),
+        'rgba(8, 4, 18, 0.3)',
+      );
+      assert.equal(
+        await page.locator('#intro-tagline').evaluate((el) => getComputedStyle(el).display),
+        'block',
+      );
+      assert.equal(
+        await page
+          .locator('#intro-design-bannerColor')
+          .evaluate((el) => getComputedStyle(el).display),
+        'block',
+      );
+      // Editing must not recreate the running animation (or reset the rotating shape).
+      await frame.evaluate(() => {
+        window.__introAnimation = document.querySelector('.intro-start').getAnimations()[0];
+      });
+      await page.locator('#intro-design-playLabel').fill('Start');
+      assert.equal(
+        await frame.evaluate(
+          () =>
+            window.__introAnimation === document.querySelector('.intro-start').getAnimations()[0],
+        ),
+        true,
+      );
       const introDesign = await frame.evaluate(() => window.__beatBloom.getIntroDesign());
       await page.locator('#intro-enabled').uncheck();
       assert.equal(await frame.locator('.ad-intro').isVisible(), false);

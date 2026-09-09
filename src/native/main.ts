@@ -737,13 +737,20 @@ if (__PREVIEW__) {
       resetEndCardDesign,
       getEndCardDesign: () => resolveEndCardDesign(level, __PROFILE__),
       getIntroDesign: () => resolveIntroDesign(level),
-      setIntroDesign: (options: Partial<IntroDesign>) => {
+      setIntroDesign: (
+        options: Partial<IntroDesign>,
+        tagline = level.adFlow?.tagline || AD_FLOW.tagline,
+      ) => {
         const flow = level.adFlow || { intro: 'none' as const, tagline: AD_FLOW.tagline };
         const next = validate({
           ...cloneLevel(level),
-          adFlow: { ...flow, design: { ...resolveIntroDesign(level), ...options } },
+          adFlow: { ...flow, tagline, design: { ...resolveIntroDesign(level), ...options } },
         });
-        restart(next);
+        // Cosmetic edits keep the rotating preview and its animation clock alive.
+        if (!adFlow.started && !endCardPreview && $('.result').hidden) {
+          level = next;
+          syncIntro();
+        } else restart(next);
         return resolveIntroDesign(level);
       },
       getAdFlow: () => ({

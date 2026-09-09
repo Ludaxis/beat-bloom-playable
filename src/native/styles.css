@@ -827,24 +827,24 @@ button:focus-visible {
   }
 }
 
-.ad-intro[data-layout='logo'] .intro-start {
-  animation: intro-bounce 1.6s ease-in-out infinite;
+/* A single quiet pulse; the hand stays attached to the same target. */
+.ad-intro .intro-start {
+  animation: intro-breathe 2.4s ease-in-out infinite;
 }
-@keyframes intro-bounce {
+.ad-intro .intro-hand {
+  animation: none;
+}
+@keyframes intro-breathe {
   0%,
-  60%,
   100% {
-    transform: translateY(0) scale(1);
+    transform: scale(1);
   }
-  30% {
-    transform: translateY(-7px) scale(1.035);
-  }
-  45% {
-    transform: translateY(0) scale(0.99);
+  50% {
+    transform: scale(1.02);
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .ad-intro[data-layout='logo'] .intro-start {
+  .ad-intro .intro-start {
     animation: none;
   }
 }
@@ -854,23 +854,26 @@ button:focus-visible {
   background: rgb(8 4 18 / var(--intro-dim, 0.65));
 }
 .intro-logo {
-  width: min(var(--intro-logoWidth, 110px), 40vw);
-  max-height: 16vh;
+  width: min(var(--intro-logoWidth, 110px), 80vw);
+  max-height: none;
 }
 .intro-tagline {
-  font-size: min(var(--intro-taglineSize, 24px), 6vw);
+  font-size: var(--intro-taglineSize, 24px);
 }
 .intro-prompt {
   max-width: 100%;
 }
 .intro-prompt h1 {
-  font-size: min(var(--intro-headlineSize, 40px), 10vw);
+  font-size: var(--intro-headlineSize, 40px);
   overflow-wrap: anywhere;
 }
 .intro-start {
-  width: min(var(--intro-playWidth, 150px), 70vw);
+  width: min(var(--intro-playWidth, 150px), calc(100vw - 48px));
   min-width: 0;
-  min-height: var(--intro-playHeight, 56px);
+  height: var(--intro-playHeight, 56px);
+  min-height: 44px;
+  padding: 4px 8px;
+  line-height: 1.1;
   font-size: var(--intro-playSize, 25px);
   background: var(--intro-playColor, #9cec50);
 }
@@ -879,21 +882,23 @@ button:focus-visible {
   gap: 8px;
 }
 .intro-icon {
-  width: min(var(--intro-iconSize, 48px), 15vw);
-  height: min(var(--intro-iconSize, 48px), 15vw);
+  width: min(var(--intro-iconSize, 48px), 22vw);
+  height: min(var(--intro-iconSize, 48px), 22vw);
   flex-shrink: 0;
 }
 .intro-footer strong {
-  font-size: min(var(--intro-bannerTextSize, 18px), 5vw);
+  font-size: var(--intro-bannerTextSize, 18px);
   overflow-wrap: anywhere;
   min-width: 0;
   flex: 1;
 }
 .intro-install {
-  width: min(var(--intro-installWidth, 110px), 32vw);
+  width: min(var(--intro-installWidth, 110px), 44vw);
   flex-shrink: 0;
-  min-height: var(--intro-installHeight, 56px);
-  font-size: min(var(--intro-installSize, 18px), 5vw);
+  height: var(--intro-installHeight, 56px);
+  min-height: 44px;
+  line-height: 1.1;
+  font-size: var(--intro-installSize, 18px);
   background: var(--intro-installColor, #9cec50);
   padding: 8px;
 }

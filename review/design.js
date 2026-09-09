@@ -198,24 +198,27 @@ function updateIntro() {
     const a = api();
     if (!$('#intro-tagline').value.trim()) return;
     introPreview = true;
-    a.setOptions({
-      adFlow: {
-        ...a.getLevel().adFlow,
-        intro: $('#intro-layout').value,
-        tagline: $('#intro-tagline').value,
-        design: {
-          ...a.getIntroDesign(),
-          ...($('#intro-layout').value !== 'none' &&
-          a.getLevel().adFlow?.intro !== 'none' &&
-          $('#intro-layout').value !== a.getLevel().adFlow?.intro
-            ? {
-                logoEnabled: $('#intro-layout').value === 'logo',
-                bannerEnabled: $('#intro-layout').value === 'footer',
-              }
-            : {}),
+    if ($('#intro-layout').value === a.getLevel().adFlow?.intro) {
+      a.setIntroDesign({}, $('#intro-tagline').value);
+    } else
+      a.setOptions({
+        adFlow: {
+          ...a.getLevel().adFlow,
+          intro: $('#intro-layout').value,
+          tagline: $('#intro-tagline').value,
+          design: {
+            ...a.getIntroDesign(),
+            ...($('#intro-layout').value !== 'none' &&
+            a.getLevel().adFlow?.intro !== 'none' &&
+            $('#intro-layout').value !== a.getLevel().adFlow?.intro
+              ? {
+                  logoEnabled: $('#intro-layout').value === 'logo',
+                  bannerEnabled: $('#intro-layout').value === 'footer',
+                }
+              : {}),
+          },
         },
-      },
-    });
+      });
     $('#level-json').value = JSON.stringify(a.getLevel(), null, 2);
     endCardControls();
   } catch (error) {
