@@ -1,3 +1,4 @@
+import { updateIntroPresentation } from './intro-view';
 import { resolveIntroDesign, type IntroDesign } from './intro-settings';
 import { AdFlow, AD_FLOW } from './ad-flow';
 import { logoHeartbeat, logoReveal } from './logo-motion';
@@ -91,10 +92,11 @@ document.body.innerHTML = `<div class="viewport"><main class="game" aria-label="
  <div class="celebration" hidden><img class="celebration-logo" src="${assets.logo}" alt="Beat Bloom"></div>
  <div class="loading">Loading Beat Bloom…</div>
  </main>
- <section class="ad-intro" role="dialog" aria-modal="true" aria-label="Start playing" hidden>
- <div class="intro-brand"><img class="intro-logo" alt="Beat Bloom"><p class="intro-tagline"></p></div>
- <div class="intro-prompt"><h1>Tap to play</h1><button class="intro-start"><span class="intro-play-label">Play</span><img class="intro-hand" alt=""></button></div>
- <footer class="intro-footer"><img class="intro-icon" alt="Beat Bloom app icon"><strong>FREE TO PLAY</strong><button class="intro-install">Install Now</button></footer>
+ <section class="ad-intro bb-intro" role="dialog" aria-modal="true" aria-label="Start playing" hidden>
+ <div class="bb-intro-scrim" aria-hidden="true"></div><div class="bb-intro-content">
+ <div class="intro-brand bb-intro-top"><img class="intro-logo bb-intro-logo" alt="Beat Bloom"><p class="intro-tagline bb-intro-tagline"></p></div>
+ <div class="intro-prompt bb-intro-prompt"><h1 class="bb-intro-headline">Tap to play</h1><div class="bb-intro-start"><button class="intro-start bb-intro-play"><span class="intro-play-label">Play</span></button><span class="bb-intro-hand"><img class="intro-hand" alt=""></span></div></div></div>
+ <footer class="intro-footer bb-intro-install-bar"><img class="intro-icon bb-intro-icon" alt="Beat Bloom app icon"><div class="bb-intro-app"><strong>Beat Bloom</strong><span class="bb-intro-banner"></span></div><button class="intro-install bb-intro-install">Install Now</button></footer>
  </section>
  <section class="result" data-concept="${concept}" role="dialog" aria-modal="true" aria-label="Level complete" hidden>
   <div class="endcard-content"><h2></h2><div class="endcard-brand"><img src="${assets.logo}" class="result-logo" alt="Beat Bloom"><img src="${assets.icon}" class="result-icon" alt="Beat Bloom app icon"></div></div>
@@ -138,21 +140,10 @@ function syncIntro() {
   $('.intro-install').textContent = design.installLabel;
   $('.intro-play-label').textContent = design.playLabel;
   $('.intro-prompt h1').textContent = design.headline;
-  $('.intro-footer strong').textContent = design.bannerText;
-  $('.intro-brand').hidden = !design.logoEnabled;
+  $('.bb-intro-banner').textContent = design.bannerText;
+  $('.intro-logo').hidden = !design.logoEnabled;
   $('.intro-footer').hidden = !design.bannerEnabled;
-  for (const [key, value] of Object.entries(design)) {
-    if (typeof value === 'number')
-      intro.style.setProperty(
-        '--intro-' + key,
-        key.endsWith('Color')
-          ? '#' + value.toString(16).padStart(6, '0')
-          : key === 'dim'
-            ? String(value / 100)
-            : value + 'px',
-      );
-  }
-  intro.style.setProperty('--intro-hand-duration', `${AD_FLOW.handSeconds}s`);
+  updateIntroPresentation(intro, design);
   $('.intro-start').toggleAttribute('disabled', !ready);
   $('.game').inert = !adFlow.started || !$('.result').hidden || renderFailed;
 }
@@ -678,6 +669,7 @@ adapter.onExit = (status) => {
 let layoutAllowed = false;
 addEventListener('resize', () => {
   if (layoutAllowed) fit();
+  if (!$('.ad-intro').hidden) syncIntro();
 });
 $('.canvas').addEventListener(
   'webglcontextlost',

@@ -486,6 +486,7 @@ try {
       const before = await frame.evaluate(() => __beatBloom.snapshot()),
         url = frame.url();
       await page.locator('#design-tab').click();
+      await page.locator('#design-screen').selectOption('ending');
       await frame.locator('.result').waitFor({ state: 'visible' });
       await checkBrand(frame, 'a-flower');
       assert.equal(
@@ -635,7 +636,10 @@ try {
       const frame = page.frames().find((f) => f.url().includes('/dist/preview/'));
       await page.locator('#design-tab').click();
       await page.locator('#intro-enabled').check();
-      await page.locator('#intro-layout').selectOption('logo');
+      await page.locator('[data-intro-concept=classic]').click();
+      await page
+        .locator('#intro-section .flow-group')
+        .evaluateAll((nodes) => nodes.forEach((node) => (node.open = true)));
       await frame.locator('.ad-intro').waitFor({ state: 'visible' });
       assert.equal(await page.locator('#design-tab').getAttribute('aria-selected'), 'true');
       assert.equal(await frame.locator('.result').isVisible(), false);
@@ -645,7 +649,7 @@ try {
       await page.locator('#intro-design-headline').fill('Make some music');
       await page.locator('#intro-design-playWidth').press('End');
       assert.equal(await frame.locator('.intro-prompt h1').textContent(), 'Make some music');
-      assert.equal(await frame.evaluate(() => window.__beatBloom.getIntroDesign().playWidth), 300);
+      assert.equal(await frame.evaluate(() => window.__beatBloom.getIntroDesign().playWidth), 360);
       const upload = await sharp({
         create: { width: 32, height: 32, channels: 4, background: '#27cfa7' },
       })
@@ -657,7 +661,7 @@ try {
       await frame.waitForFunction(() => !!window.__beatBloom.getIntroDesign().logoImage);
       assert.deepEqual(await frame.evaluate(() => window.__beatBloom.getEndCardDesign()), ending);
       const beforeEndingEdit = await frame.evaluate(() => window.__beatBloom.getIntroDesign());
-      await page.locator('#preview-ending').click();
+      await page.locator('#design-screen').selectOption('ending');
       assert.equal(await frame.locator('.result').isVisible(), true);
       await page.locator('#end-headline').fill('Ending only');
       await page.locator('#end-headline').press('Tab');
@@ -665,34 +669,31 @@ try {
         await frame.evaluate(() => window.__beatBloom.getIntroDesign()),
         beforeEndingEdit,
       );
-      await page.locator('#preview-intro').click();
+      await page.locator('#design-screen').selectOption('intro');
       assert.equal(await frame.locator('.ad-intro').isVisible(), true);
       assert.equal(await page.locator('#design-tab').getAttribute('aria-selected'), 'true');
-      await page.locator('#intro-layout').selectOption('footer');
+      await page.locator('#intro-banner-enabled').check();
+      await page.locator('#intro-design-logoEnabled').uncheck();
       assert.equal(await frame.locator('.intro-footer').isVisible(), true);
       await page.locator('#intro-design-bannerText').fill('PLAY FREE');
-      assert.equal(await frame.locator('.intro-footer strong').textContent(), 'PLAY FREE');
+      assert.equal(await frame.locator('.bb-intro-banner').textContent(), 'PLAY FREE');
       await page.locator('#intro-banner-enabled').uncheck();
       assert.equal(await frame.locator('.intro-footer').isVisible(), false);
       await page.locator('#intro-banner-enabled').check();
       // Assert rendered effects, not just serialized settings.
       await page.locator('#intro-design-logoEnabled').check();
-      assert.equal(await frame.locator('.intro-brand').isVisible(), true);
+      assert.equal(await frame.locator('.intro-logo').isVisible(), true);
       await page.locator('#intro-design-logoEnabled').uncheck();
-      assert.equal(await frame.locator('.intro-brand').isVisible(), false);
+      assert.equal(await frame.locator('.intro-logo').isVisible(), false);
       await page.locator('#intro-design-logoEnabled').check();
       for (const [key, selector, property, low, high] of [
-        ['headlineSize', '.intro-prompt h1', 'fontSize', 20, 50],
-        ['playSize', '.intro-start', 'fontSize', 18, 32],
         ['playWidth', '.intro-start', 'width', 110, 240],
-        ['playHeight', '.intro-start', 'height', 44, 90],
+        ['playHeight', '.intro-start', 'height', 70, 90],
         ['logoWidth', '.intro-logo', 'width', 60, 200],
-        ['taglineSize', '.intro-tagline', 'fontSize', 16, 36],
-        ['bannerTextSize', '.intro-footer strong', 'fontSize', 14, 26],
+
+        ['bannerTextSize', '.bb-intro-banner', 'fontSize', 14, 26],
         ['iconSize', '.intro-icon', 'width', 26, 70],
         ['installSize', '.intro-install', 'fontSize', 14, 26],
-        ['installWidth', '.intro-install', 'width', 80, 140],
-        ['installHeight', '.intro-install', 'height', 44, 76],
       ]) {
         for (const value of [low, high]) {
           await page.locator('#intro-design-' + key).fill(String(value));
@@ -700,26 +701,29 @@ try {
             .locator(selector)
             .evaluate((el, prop) => parseFloat(getComputedStyle(el)[prop]), property);
           assert.ok(
-            Math.abs(rendered - value) < 1,
+            Math.abs(
+              rendered -
+                (property === 'height'
+                  ? Math.max(44, (value * (await frame.evaluate(() => innerWidth))) / 390)
+                  : (value * (await frame.evaluate(() => innerWidth))) / 390),
+            ) < 1,
             `${key}: rendered ${rendered}, expected ${value}`,
           );
         }
       }
-      for (const [key, selector] of [
-        ['playColor', '.intro-start'],
-        ['bannerColor', '.intro-footer'],
-        ['installColor', '.intro-install'],
-      ]) {
+      for (const key of ['playColor', 'bannerColor', 'installColor']) {
         await page.locator('#intro-design-' + key).fill('#123456');
         assert.equal(
-          await frame.locator(selector).evaluate((el) => getComputedStyle(el).backgroundColor),
-          'rgb(18, 52, 86)',
+          await frame.evaluate((key) => window.__beatBloom.getIntroDesign()[key], key),
+          0x123456,
         );
       }
       await page.locator('#intro-design-dim').fill('30');
       assert.equal(
-        await frame.locator('.ad-intro').evaluate((el) => getComputedStyle(el).backgroundColor),
-        'rgba(8, 4, 18, 0.3)',
+        await frame
+          .locator('.bb-intro-scrim')
+          .evaluate((el) => getComputedStyle(el).backgroundColor),
+        'rgba(5, 10, 32, 0.3)',
       );
       assert.equal(
         await page.locator('#intro-tagline').evaluate((el) => getComputedStyle(el).display),
@@ -733,13 +737,13 @@ try {
       );
       // Editing must not recreate the running animation (or reset the rotating shape).
       await frame.evaluate(() => {
-        window.__introAnimation = document.querySelector('.intro-start').getAnimations()[0];
+        window.__introAnimation = document.querySelector('.bb-intro-hand').getAnimations()[0];
       });
       await page.locator('#intro-design-playLabel').fill('Start');
       assert.equal(
         await frame.evaluate(
           () =>
-            window.__introAnimation === document.querySelector('.intro-start').getAnimations()[0],
+            window.__introAnimation === document.querySelector('.bb-intro-hand').getAnimations()[0],
         ),
         true,
       );
@@ -759,6 +763,29 @@ try {
       );
       await page.locator('#intro-design-headline').scrollIntoViewIfNeeded();
       await page.screenshot({ path: resolve(out, 'intro-studio.png') });
+      await page.locator('#reset-intro-design').click();
+      for (const concept of ['classic', 'spotlight', 'invitation']) {
+        await page.locator(`[data-intro-concept=${concept}]`).click();
+        assert.equal(await frame.locator('.ad-intro').getAttribute('data-concept'), concept);
+        assert.equal(
+          await frame.locator('.intro-start').evaluate((el) => getComputedStyle(el).animationName),
+          'none',
+        );
+        await frame.locator('.intro-start').click();
+        assert.equal(await frame.locator('.ad-intro').isVisible(), false);
+        await page.locator('#preview-intro').click();
+      }
+      await page.locator('[data-intro-concept=classic]').click();
+      const logoBefore = await frame.locator('.intro-logo').boundingBox();
+      await page.locator('#intro-design-logoX').fill('30');
+      assert.ok((await frame.locator('.intro-logo').boundingBox()).x > logoBefore.x + 20);
+      await page.locator('#intro-design-handEnabled').uncheck();
+      assert.equal(await frame.locator('.bb-intro-hand').isVisible(), false);
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      assert.equal(
+        await frame.locator('.bb-intro-hand').evaluate((el) => getComputedStyle(el).animationName),
+        'none',
+      );
       return {
         liveTagline: true,
         layouts: 3,

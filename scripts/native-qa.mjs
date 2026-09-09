@@ -632,6 +632,7 @@ try {
         await setControl(page, '#layers', 6);
         await setControl(page, '#ball-size', 95);
         await page.locator('#design-tab').click();
+        await page.locator('#design-screen').selectOption('ending');
         await page.locator('#end-headline').fill('Keep my design');
         await page.locator('#end-headline').press('Tab');
         await page.locator('#gameplay-tab').click();

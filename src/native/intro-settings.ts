@@ -1,38 +1,59 @@
 import type { NativeLevel } from './types';
 export const INTRO_DEFAULTS = {
+  concept: 'classic' as 'classic' | 'spotlight' | 'invitation',
+  handEnabled: true,
+  textColor: 0xffffff,
+  logoX: 0,
+  logoY: 0,
+  taglineX: 0,
+  taglineY: 0,
+  headlineX: 0,
+  headlineY: 0,
+  playX: 0,
+  playY: 0,
+  bannerHeight: 90,
   headline: 'Tap to play',
   playLabel: 'Play',
-  headlineSize: 40,
-  playSize: 25,
-  playWidth: 150,
-  playHeight: 56,
-  playColor: 0x9cec50,
-  dim: 65,
-  logoWidth: 110,
-  taglineSize: 24,
+  headlineSize: 41,
+  playSize: 30,
+  playWidth: 275,
+  playHeight: 64,
+  playColor: 0x8bea55,
+  dim: 48,
+  logoWidth: 116,
+  taglineSize: 27,
   logoEnabled: true,
   bannerEnabled: false,
   bannerText: 'FREE TO PLAY',
-  bannerTextSize: 18,
+  bannerTextSize: 14,
   bannerColor: 0x201436,
-  iconSize: 48,
+  iconSize: 60,
   installLabel: 'Install Now',
   installSize: 18,
   installWidth: 110,
   installHeight: 56,
-  installColor: 0x9cec50,
+  installColor: 0x8bea55,
 };
 export type IntroDesign = typeof INTRO_DEFAULTS & { logoImage?: string; iconImage?: string };
 export const INTRO_RANGES: Record<string, [number, number]> = {
+  logoX: [-160, 160],
+  logoY: [-260, 260],
+  taglineX: [-160, 160],
+  taglineY: [-240, 240],
+  headlineX: [-160, 160],
+  headlineY: [-240, 240],
+  playX: [-160, 160],
+  playY: [-240, 240],
+  bannerHeight: [64, 160],
   headlineSize: [18, 64],
   playSize: [16, 40],
-  playWidth: [100, 300],
+  playWidth: [100, 360],
   playHeight: [44, 100],
   dim: [0, 90],
-  logoWidth: [48, 240],
+  logoWidth: [48, 340],
   taglineSize: [14, 40],
-  bannerTextSize: [12, 28],
-  iconSize: [24, 80],
+  bannerTextSize: [10, 28],
+  iconSize: [24, 96],
   installSize: [12, 28],
   installWidth: [72, 160],
   installHeight: [44, 80],
@@ -65,14 +86,17 @@ export function validateIntroDesign(value: unknown): string[] {
           !/^data:image\/webp;base64,UklGR[A-Za-z0-9+/]+={0,2}$/.test(val))
       )
         errors.push('Choose a WebP image under 80 KB.');
-    } else if (INTRO_RANGES[key]) {
+    } else if (Object.hasOwn(INTRO_RANGES, key)) {
       const [min, max] = INTRO_RANGES[key];
       if (typeof val !== 'number' || !Number.isFinite(val) || val < min || val > max)
         errors.push(`${key} must be ${min}–${max}.`);
     } else if (key.endsWith('Color') && key in INTRO_DEFAULTS) {
       if (!Number.isInteger(val) || Number(val) < 0 || Number(val) > 0xffffff)
         errors.push('Choose a valid color.');
-    } else if (key === 'logoEnabled' || key === 'bannerEnabled') {
+    } else if (key === 'concept') {
+      if (!['classic', 'spotlight', 'invitation'].includes(String(val)))
+        errors.push('Choose an intro layout.');
+    } else if (key === 'logoEnabled' || key === 'bannerEnabled' || key === 'handEnabled') {
       if (typeof val !== 'boolean') errors.push('Choose on or off.');
     } else if (['headline', 'playLabel', 'bannerText', 'installLabel'].includes(key)) {
       if (

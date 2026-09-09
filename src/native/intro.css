@@ -1,0 +1,371 @@
+/* All dimensions follow the same 390px reference width as the portrait game stage.
+   One flat scrim; no blur, particles, new artwork, or per-frame JavaScript. */
+.bb-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  overflow: hidden;
+  isolation: isolate;
+  color: var(--bb-intro-text, #fff);
+  font-family: 'Lilita One', Arial, sans-serif;
+  text-align: center;
+  --bb-intro-footer: 0px;
+  --bb-intro-copy-scale: 1;
+  --bb-intro-stage-width: 390px;
+  --bb-intro-shadow: #172456;
+  -webkit-tap-highlight-color: transparent;
+}
+.bb-intro,
+.bb-intro * {
+  box-sizing: border-box;
+}
+.bb-intro[hidden],
+.bb-intro [hidden] {
+  display: none !important;
+}
+.bb-intro[data-install-bar='true'] {
+  --bb-intro-footer: max(64px, calc(var(--bb-intro-banner-height, 90px) * var(--bb-scale)));
+}
+.bb-intro-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgb(5 10 32 / var(--bb-intro-dim, 0.48));
+  pointer-events: none;
+}
+.bb-intro-content {
+  position: absolute;
+  inset: 0 0 var(--bb-intro-footer);
+}
+.bb-intro-top {
+  position: absolute;
+  inset: 5% 6% auto;
+}
+.bb-intro-logo {
+  display: block;
+  width: min(100%, calc(var(--bb-intro-logo-width, 116px) * var(--bb-scale)));
+  height: auto;
+  max-height: calc(140px * var(--bb-scale));
+  object-fit: contain;
+  object-position: left center;
+}
+.bb-intro-tagline {
+  color: inherit;
+  margin: calc(24px * var(--bb-scale)) auto 0;
+  max-width: 100%;
+  font:
+    400
+      max(
+        12px,
+        calc(var(--bb-intro-tagline-size, 27px) * var(--bb-scale) * var(--bb-intro-copy-scale))
+      )/1.15
+      'Lilita One',
+    Arial,
+    sans-serif;
+  text-wrap: balance;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-shadow:
+    0 calc(2px * var(--bb-scale)) 0 var(--bb-intro-shadow),
+    0 2px 8px #06172d80;
+}
+.bb-intro-prompt {
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  top: 45%;
+  transform: translateY(-10%);
+}
+.bb-intro-headline {
+  margin: 0 auto calc(22px * var(--bb-scale));
+  max-width: 100%;
+  font:
+    400
+      max(
+        16px,
+        calc(var(--bb-intro-headline-size, 41px) * var(--bb-scale) * var(--bb-intro-copy-scale))
+      )/1.04
+      'Lilita One',
+    Arial,
+    sans-serif;
+  letter-spacing: 0;
+  white-space: normal;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+  text-shadow:
+    0 calc(3px * var(--bb-scale)) 0 var(--bb-intro-shadow),
+    0 3px 12px #05142680;
+}
+.bb-intro-start {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(
+    calc(var(--bb-intro-button-width, 275px) * var(--bb-scale)),
+    calc(var(--bb-intro-stage-width) - 24px)
+  );
+  margin: 0;
+}
+.bb-intro button {
+  appearance: none;
+  display: block;
+  border: calc(2px * var(--bb-scale)) solid #efffc48c;
+  color: var(--bb-intro-button-text, #193511);
+  background: linear-gradient(
+    var(--bb-intro-button-top, #a9f272),
+    var(--bb-intro-button-color, #72da48)
+  );
+  font-family: 'Lilita One', Arial, sans-serif;
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-align: center;
+  cursor: pointer;
+  touch-action: manipulation;
+  box-shadow:
+    0 calc(5px * var(--bb-scale)) 0 var(--bb-intro-button-shadow, #2b772d),
+    inset 0 calc(2px * var(--bb-scale)) 0 #ffffff70;
+}
+.bb-intro button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+.bb-intro button:hover:not(:disabled) {
+  background: linear-gradient(
+    var(--bb-intro-button-top, #a9f272),
+    var(--bb-intro-button-color, #72da48)
+  );
+  border-color: #fff9;
+}
+.bb-intro button:active:not(:disabled) {
+  transform: translateY(calc(3px * var(--bb-scale)));
+  box-shadow: 0 calc(2px * var(--bb-scale)) 0 var(--bb-intro-button-shadow, #2b772d);
+}
+.bb-intro button:disabled {
+  opacity: 1;
+  cursor: default;
+}
+.bb-intro[data-ready='false'] .bb-intro-play {
+  color: #d8e7cd;
+  background: #50734c;
+  border-color: #cee5bf55;
+  box-shadow: 0 calc(5px * var(--bb-scale)) 0 #253c2e;
+}
+.bb-intro-play {
+  width: 100%;
+  min-height: max(44px, calc(var(--bb-intro-button-height, 64px) * var(--bb-scale)));
+  padding: calc(12px * var(--bb-scale)) calc(15px * var(--bb-scale));
+  border-radius: calc(22px * var(--bb-scale));
+  font-size: max(
+    16px,
+    calc(var(--bb-intro-button-size, 30px) * var(--bb-scale) * var(--bb-intro-copy-scale))
+  );
+  overflow-wrap: anywhere;
+}
+.bb-intro-hand {
+  position: absolute;
+  left: 65%;
+  top: 68%;
+  width: calc(99px * var(--bb-scale));
+  pointer-events: none;
+  transform-origin: 20% 18%;
+  animation: bb-intro-point 1.8s ease-in-out infinite;
+}
+.bb-intro-hand img {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.bb-intro-install-bar {
+  position: absolute;
+  inset: auto 0 0;
+  min-height: var(--bb-intro-footer);
+  display: flex;
+  align-items: center;
+  gap: calc(10px * var(--bb-scale));
+  padding: calc(12px * var(--bb-scale)) calc(14px * var(--bb-scale));
+  color: var(--bb-intro-banner-text, #fff);
+  background: var(--bb-intro-banner-color, #142454);
+  border-top: 1px solid #a7d1ff40;
+  text-align: left;
+}
+.bb-intro-icon {
+  display: block;
+  width: min(
+    calc(var(--bb-intro-banner-icon-size, 60px) * var(--bb-scale)),
+    calc(var(--bb-intro-footer) - 24px * var(--bb-scale))
+  );
+  height: min(
+    calc(var(--bb-intro-banner-icon-size, 60px) * var(--bb-scale)),
+    calc(var(--bb-intro-footer) - 24px * var(--bb-scale))
+  );
+  object-fit: contain;
+  border-radius: 22%;
+  flex: none;
+}
+.bb-intro-app {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: calc(4px * var(--bb-scale));
+}
+.bb-intro-app strong {
+  font-size: max(13px, calc(var(--bb-intro-banner-text-size, 14px) * 1.5 * var(--bb-scale)));
+  font-weight: 400;
+  line-height: 1.05;
+}
+.bb-intro-banner {
+  color: inherit;
+  font:
+    400 max(10px, calc(var(--bb-intro-banner-text-size, 14px) * var(--bb-scale)))/1.15 'Lilita One',
+    Arial,
+    sans-serif;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.bb-intro-install {
+  --bb-intro-button-color: var(--bb-intro-banner-button-color);
+  --bb-intro-button-top: var(--bb-intro-banner-button-top);
+  --bb-intro-button-shadow: var(--bb-intro-banner-button-shadow);
+  --bb-intro-button-text: var(--bb-intro-banner-button-text);
+  flex: 0 0 30%;
+  min-width: 0;
+  min-height: max(44px, calc(48px * var(--bb-scale)));
+  padding: calc(9px * var(--bb-scale)) calc(7px * var(--bb-scale));
+  border-radius: calc(14px * var(--bb-scale));
+  font-size: max(12px, calc(var(--bb-intro-banner-button-size, 18px) * var(--bb-scale)));
+  overflow-wrap: anywhere;
+}
+
+/* First tap: the small corner brand leaves room for the opening board to do the selling. */
+.bb-intro[data-concept='classic'] .bb-intro-top {
+  min-height: 25%;
+}
+.bb-intro[data-concept='classic'] .bb-intro-tagline {
+  margin-top: calc(31px * var(--bb-scale));
+}
+
+/* Spotlight: one dominant logo, then a short invitation and a compact tactile start. */
+.bb-intro[data-concept='spotlight'] .bb-intro-content {
+  inset: 9% 7% calc(var(--bb-intro-footer) + 12%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bb-intro[data-concept='spotlight'] .bb-intro-top {
+  position: static;
+  width: 100%;
+  flex-shrink: 0;
+}
+.bb-intro[data-concept='spotlight'] .bb-intro-logo {
+  margin: auto;
+  object-position: center;
+  max-height: calc(220px * var(--bb-scale));
+}
+.bb-intro[data-concept='spotlight'] .bb-intro-tagline {
+  margin-top: calc(20px * var(--bb-scale));
+}
+.bb-intro[data-concept='spotlight'] .bb-intro-prompt {
+  position: static;
+  transform: none;
+  width: 100%;
+  flex-shrink: 0;
+  margin-top: calc(22px * var(--bb-scale));
+}
+.bb-intro[data-concept='spotlight'] .bb-intro-headline {
+  margin-bottom: calc(17px * var(--bb-scale));
+}
+
+/* Invitation: a branded lower panel reserves the upper half for the real puzzle. */
+.bb-intro[data-concept='invitation'] .bb-intro-content {
+  inset: auto 4% calc(var(--bb-intro-footer) + 5%);
+  padding: calc(20px * var(--bb-scale));
+  background: linear-gradient(145deg, #145f9c, #222366 80%);
+  border: calc(2px * var(--bb-scale)) solid #8fdaff9e;
+  border-radius: calc(27px * var(--bb-scale));
+  box-shadow: 0 calc(7px * var(--bb-scale)) 0 #071b4b70;
+}
+.bb-intro[data-concept='invitation'] .bb-intro-top {
+  position: static;
+  display: flex;
+  align-items: center;
+  gap: calc(14px * var(--bb-scale));
+  text-align: left;
+}
+.bb-intro[data-concept='invitation'] .bb-intro-logo {
+  flex: 0 1 auto;
+  min-width: 0;
+  max-height: calc(120px * var(--bb-scale));
+}
+.bb-intro[data-concept='invitation'] .bb-intro-tagline {
+  margin: 0;
+  min-width: 0;
+  flex: 1 1 50%;
+}
+.bb-intro[data-concept='invitation'] .bb-intro-prompt {
+  position: static;
+  transform: none;
+  margin-top: calc(20px * var(--bb-scale));
+}
+.bb-intro[data-concept='invitation'] .bb-intro-headline {
+  margin-bottom: calc(18px * var(--bb-scale));
+}
+.bb-intro[data-concept='invitation'] .bb-intro-hand {
+  width: calc(74px * var(--bb-scale));
+  left: 77%;
+  top: 10%;
+}
+.bb-intro[data-concept='invitation'][data-logo='false'] .bb-intro-tagline {
+  width: 100%;
+  text-align: center;
+}
+
+/* Only the hand moves: a gentle approach toward the real Play button, then a rest. */
+@keyframes bb-intro-point {
+  0%,
+  65%,
+  100% {
+    transform: translate(calc(5px * var(--bb-scale)), calc(7px * var(--bb-scale))) rotate(3deg);
+  }
+  22%,
+  36% {
+    transform: translate(0, 0) rotate(0);
+  }
+}
+.bb-intro[hidden] *,
+.bb-intro[data-paused='true'] *,
+.bb-intro[data-ready='false'] * {
+  animation-play-state: paused !important;
+}
+.bb-intro[data-reduced-motion='true'] .bb-intro-hand {
+  animation: none;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bb-intro-hand {
+    animation: none;
+    transform: none;
+  }
+}
+
+/* Preserve existing authored banner button dimensions. */
+.bb-intro-install {
+  flex: 0 0 auto;
+  width: min(calc(var(--bb-intro-install-width, 110px) * var(--bb-scale)), 44%);
+  min-height: max(44px, calc(var(--bb-intro-install-height, 56px) * var(--bb-scale)));
+}
+
+/* Keep the portrait composition when an ad host supplies a landscape viewport. */
+@media (orientation: landscape) {
+  .bb-intro {
+    width: min(100vw, calc(100dvh * 390 / 694));
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 100vmax rgb(5 10 32 / var(--bb-intro-dim, 0.48));
+  }
+}

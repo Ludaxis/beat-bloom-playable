@@ -297,7 +297,7 @@ export async function createNativePackage(input, { allowPreview = false } = {}) 
   const effectiveLevel = contract.getPlayableLevel(profile, level),
     concept = contract.conceptForProfile(profile);
   const styles = await Promise.all(
-    ['styles.css', 'tutorial-view.css'].map((file) =>
+    ['styles.css', 'tutorial-view.css', 'intro.css'].map((file) =>
       readFile(resolve(root, 'src/native', file), 'utf8'),
     ),
   );

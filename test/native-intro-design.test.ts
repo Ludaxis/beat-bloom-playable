@@ -26,6 +26,10 @@ test('intro design rejects invalid controls and unsafe assets', () => {
     { installLabel: 'x'.repeat(25) },
     { logoImage: 'https://example.com/logo.svg' },
     { unknown: 1 },
+    { concept: 'other' },
+    { logoX: 999 },
+    { handEnabled: 'yes' },
+    { toString: 2 },
   ]) {
     assert.ok(validateIntroDesign(value).length, JSON.stringify(value));
   }
@@ -33,4 +37,25 @@ test('intro design rejects invalid controls and unsafe assets', () => {
     validateIntroDesign({ headline: 'Tap to play', bannerEnabled: true, iconSize: 48 }),
     [],
   );
+});
+
+test('intro concepts, positions and banner settings survive sharing JSON', () => {
+  for (const concept of ['classic', 'spotlight', 'invitation'] as const) {
+    const level = cloneLevel();
+    level.adFlow = {
+      intro: 'logo',
+      tagline: 'Find your rhythm',
+      design: {
+        concept,
+        logoX: 30,
+        playY: -20,
+        bannerHeight: 100,
+        textColor: 0xffffff,
+        handEnabled: false,
+      },
+    };
+    const restored = JSON.parse(JSON.stringify(level));
+    assert.deepEqual(validateNativeLevel(restored), []);
+    assert.deepEqual(resolveIntroDesign(restored), resolveIntroDesign(level));
+  }
 });

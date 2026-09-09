@@ -1,5 +1,5 @@
 let studioTab = 'gameplay';
-let introPreview = false;
+let introPreview = true;
 let lastIntroLayout = 'logo';
 const studioTabs = ['gameplay', 'design', 'export'];
 const designFields = [
@@ -38,11 +38,12 @@ function endCardControls() {
   else if (flow?.design)
     lastIntroLayout = flow.design.bannerEnabled && !flow.design.logoEnabled ? 'footer' : 'logo';
   $('#intro-enabled').checked = !!flow && flow.intro !== 'none';
-  $('#intro-controls').hidden = !$('#intro-enabled').checked;
+  $('#intro-controls').hidden = false;
+  $('#intro-controls').disabled = !$('#intro-enabled').checked;
   if (typeof refreshIntroDesign === 'function') refreshIntroDesign();
   $('#intro-layout').value = flow?.intro || 'none';
   $('#intro-tagline').value = flow?.tagline || 'Harder than you think';
-  $('#intro-tagline-field').hidden = !a.getIntroDesign().logoEnabled;
+  $('#intro-tagline-field').hidden = false;
   $('#intro-help').hidden = !flow || flow.intro === 'none';
   $('#preview-intro').hidden = !flow || flow.intro === 'none';
   designSizeLabels();
@@ -52,10 +53,16 @@ function endCardControls() {
     : 'Free to play footer';
   if (studioTab === 'design') {
     if (!introPreview) a.previewEndCard();
+    else a.closeEndCardPreview();
     updateDesignPreviewTitle();
   }
 }
 function updateDesignPreviewTitle() {
+  $('#design-screen').value = introPreview ? 'intro' : 'ending';
+  $('#intro-section').hidden = !introPreview;
+  $('#ending-section').hidden = introPreview;
+  $('#design-heading').textContent = introPreview ? 'Start with a smile.' : 'Make it yours.';
+  $('#design-lead').hidden = introPreview;
   $('#preview-title').textContent = introPreview ? 'Intro preview' : 'Ending preview';
   $('#preview-intro').setAttribute('aria-pressed', String(introPreview));
   $('#preview-ending').setAttribute('aria-pressed', String(!introPreview));
@@ -241,4 +248,13 @@ $('#preview-ending').onclick = () => {
 $('#intro-enabled').onchange = () => {
   $('#intro-layout').value = $('#intro-enabled').checked ? lastIntroLayout : 'none';
   updateIntro();
+};
+
+$('#design-screen').onchange = () => {
+  introPreview = $('#design-screen').value === 'intro';
+  if (introPreview) {
+    api().restart();
+    refreshIntroDesign();
+  } else api().previewEndCard();
+  updateDesignPreviewTitle();
 };

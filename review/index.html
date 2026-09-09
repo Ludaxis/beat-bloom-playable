@@ -311,14 +311,20 @@
           <p class="edit-note">Ring edits update the balls and restart play.</p>
         </section>
         <section id="design-panel" role="tabpanel" aria-labelledby="design-tab" hidden>
-          <h1>Make it yours.</h1>
-          <p class="lead">Design your intro and ending.</p>
+          <label class="field design-screen"
+            >Screen<select id="design-screen">
+              <option value="intro">Intro</option>
+              <option value="ending">Ending</option>
+            </select></label
+          >
+          <h1 id="design-heading">Start with a smile.</h1>
+          <p class="lead" id="design-lead" hidden>Edit the ending. See it live.</p>
           <details id="intro-section" open>
             <summary>Intro</summary>
             <label class="pattern-toggle"
               ><input id="intro-enabled" type="checkbox" />Show intro</label
             >
-            <div id="intro-controls" hidden>
+            <fieldset id="intro-controls" disabled>
               <label class="field"
                 >Layout<select id="intro-layout">
                   <option value="none" hidden>None</option>
@@ -346,9 +352,9 @@
                 <div id="intro-banner-fields"></div>
               </details>
               <button id="reset-intro-design" type="button" class="design-reset">
-                Reset intro
+                Reset intro design
               </button>
-            </div>
+            </fieldset>
           </details>
           <details id="ending-section" open>
             <summary>Ending</summary>
