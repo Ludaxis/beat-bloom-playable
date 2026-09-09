@@ -634,24 +634,71 @@ try {
       await page.waitForFunction(() => document.querySelector('#fullscreen')?.disabled === false);
       const frame = page.frames().find((f) => f.url().includes('/dist/preview/'));
       await page.locator('#design-tab').click();
+      await page.locator('#intro-enabled').check();
       await page.locator('#intro-layout').selectOption('logo');
       await frame.locator('.ad-intro').waitFor({ state: 'visible' });
       assert.equal(await page.locator('#design-tab').getAttribute('aria-selected'), 'true');
       assert.equal(await frame.locator('.result').isVisible(), false);
       await page.locator('#intro-tagline').fill('Find your rhythm');
       assert.equal(await frame.locator('.intro-tagline').textContent(), 'Find your rhythm');
+      const ending = await frame.evaluate(() => window.__beatBloom.getEndCardDesign());
+      await page.locator('#intro-design-headline').fill('Make some music');
+      await page.locator('#intro-design-playWidth').press('End');
+      assert.equal(await frame.locator('.intro-prompt h1').textContent(), 'Make some music');
+      assert.equal(await frame.evaluate(() => window.__beatBloom.getIntroDesign().playWidth), 300);
+      const upload = await sharp({
+        create: { width: 32, height: 32, channels: 4, background: '#27cfa7' },
+      })
+        .webp()
+        .toBuffer();
+      await page
+        .locator('#intro-logo-file')
+        .setInputFiles({ name: 'logo.webp', mimeType: 'image/webp', buffer: upload });
+      await frame.waitForFunction(() => !!window.__beatBloom.getIntroDesign().logoImage);
+      assert.deepEqual(await frame.evaluate(() => window.__beatBloom.getEndCardDesign()), ending);
+      const beforeEndingEdit = await frame.evaluate(() => window.__beatBloom.getIntroDesign());
       await page.locator('#preview-ending').click();
       assert.equal(await frame.locator('.result').isVisible(), true);
+      await page.locator('#end-headline').fill('Ending only');
+      await page.locator('#end-headline').press('Tab');
+      assert.deepEqual(
+        await frame.evaluate(() => window.__beatBloom.getIntroDesign()),
+        beforeEndingEdit,
+      );
       await page.locator('#preview-intro').click();
       assert.equal(await frame.locator('.ad-intro').isVisible(), true);
       assert.equal(await page.locator('#design-tab').getAttribute('aria-selected'), 'true');
       await page.locator('#intro-layout').selectOption('footer');
       assert.equal(await frame.locator('.intro-footer').isVisible(), true);
-      await page.locator('#intro-layout').selectOption('none');
+      await page.locator('#intro-design-bannerText').fill('PLAY FREE');
+      assert.equal(await frame.locator('.intro-footer strong').textContent(), 'PLAY FREE');
+      await page.locator('#intro-banner-enabled').uncheck();
+      assert.equal(await frame.locator('.intro-footer').isVisible(), false);
+      await page.locator('#intro-banner-enabled').check();
+      const introDesign = await frame.evaluate(() => window.__beatBloom.getIntroDesign());
+      await page.locator('#intro-enabled').uncheck();
       assert.equal(await frame.locator('.ad-intro').isVisible(), false);
       assert.equal(await frame.locator('.result').isVisible(), false);
       assert.equal(await page.locator('#design-tab').getAttribute('aria-selected'), 'true');
-      return { liveTagline: true, layouts: 3, previewSwitching: true };
+      await page.locator('#intro-enabled').check();
+      assert.deepEqual(
+        await frame.evaluate(() => window.__beatBloom.getIntroDesign()),
+        introDesign,
+      );
+      await writeFile(
+        resolve(out, 'intro-level.json'),
+        JSON.stringify(await frame.evaluate(() => window.__beatBloom.getLevel())),
+      );
+      await page.locator('#intro-design-headline').scrollIntoViewIfNeeded();
+      await page.screenshot({ path: resolve(out, 'intro-studio.png') });
+      return {
+        liveTagline: true,
+        layouts: 3,
+        previewSwitching: true,
+        independentDesign: true,
+        banner: true,
+        upload: true,
+      };
     } finally {
       await context.close();
     }

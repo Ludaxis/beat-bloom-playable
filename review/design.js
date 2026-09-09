@@ -1,5 +1,6 @@
 let studioTab = 'gameplay';
 let introPreview = false;
+let lastIntroLayout = 'logo';
 const studioTabs = ['gameplay', 'design', 'export'];
 const designFields = [
   'end-headline',
@@ -33,9 +34,15 @@ function endCardControls() {
   $('#end-cta-height').value = design.ctaHeight ?? 56;
   $('#end-replay-enabled').checked = design.replayEnabled !== false;
   const flow = a.getLevel().adFlow;
+  if (flow?.intro && flow.intro !== 'none') lastIntroLayout = flow.intro;
+  else if (flow?.design)
+    lastIntroLayout = flow.design.bannerEnabled && !flow.design.logoEnabled ? 'footer' : 'logo';
+  $('#intro-enabled').checked = !!flow && flow.intro !== 'none';
+  $('#intro-controls').hidden = !$('#intro-enabled').checked;
+  if (typeof refreshIntroDesign === 'function') refreshIntroDesign();
   $('#intro-layout').value = flow?.intro || 'none';
   $('#intro-tagline').value = flow?.tagline || 'Harder than you think';
-  $('#intro-tagline-field').hidden = flow?.intro !== 'logo';
+  $('#intro-tagline-field').hidden = !a.getIntroDesign().logoEnabled;
   $('#intro-help').hidden = !flow || flow.intro === 'none';
   $('#preview-intro').hidden = !flow || flow.intro === 'none';
   designSizeLabels();
@@ -138,6 +145,9 @@ function applyDesign(event) {
             ? Number(raw)
             : raw;
   try {
+    introPreview = false;
+    a.previewEndCard();
+    updateDesignPreviewTitle();
     a.setEndCardDesign({ [keys[id]]: value });
     $('#level-json').value = JSON.stringify(a.getLevel(), null, 2);
     designSizeLabels();
@@ -189,7 +199,22 @@ function updateIntro() {
     if (!$('#intro-tagline').value.trim()) return;
     introPreview = true;
     a.setOptions({
-      adFlow: { intro: $('#intro-layout').value, tagline: $('#intro-tagline').value },
+      adFlow: {
+        ...a.getLevel().adFlow,
+        intro: $('#intro-layout').value,
+        tagline: $('#intro-tagline').value,
+        design: {
+          ...a.getIntroDesign(),
+          ...($('#intro-layout').value !== 'none' &&
+          a.getLevel().adFlow?.intro !== 'none' &&
+          $('#intro-layout').value !== a.getLevel().adFlow?.intro
+            ? {
+                logoEnabled: $('#intro-layout').value === 'logo',
+                bannerEnabled: $('#intro-layout').value === 'footer',
+              }
+            : {}),
+        },
+      },
     });
     $('#level-json').value = JSON.stringify(a.getLevel(), null, 2);
     endCardControls();
@@ -208,4 +233,9 @@ $('#preview-ending').onclick = () => {
   introPreview = false;
   api()?.previewEndCard();
   updateDesignPreviewTitle();
+};
+
+$('#intro-enabled').onchange = () => {
+  $('#intro-layout').value = $('#intro-enabled').checked ? lastIntroLayout : 'none';
+  updateIntro();
 };

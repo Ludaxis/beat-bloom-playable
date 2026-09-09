@@ -784,8 +784,8 @@ button:focus-visible {
   padding: 10px 14px;
   font-size: 18px;
 }
-.ad-intro[data-layout='footer'] .intro-brand,
-.ad-intro[data-layout='logo'] .intro-footer {
+.intro-brand[hidden],
+.intro-footer[hidden] {
   display: none;
 }
 @keyframes intro-tap {
@@ -846,5 +846,82 @@ button:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .ad-intro[data-layout='logo'] .intro-start {
     animation: none;
+  }
+}
+
+/* Intro design is independent of the end card; sizes still fit small screens. */
+.ad-intro {
+  background: rgb(8 4 18 / var(--intro-dim, 0.65));
+}
+.intro-logo {
+  width: min(var(--intro-logoWidth, 110px), 40vw);
+  max-height: 16vh;
+}
+.intro-tagline {
+  font-size: min(var(--intro-taglineSize, 24px), 6vw);
+}
+.intro-prompt {
+  max-width: 100%;
+}
+.intro-prompt h1 {
+  font-size: min(var(--intro-headlineSize, 40px), 10vw);
+  overflow-wrap: anywhere;
+}
+.intro-start {
+  width: min(var(--intro-playWidth, 150px), 70vw);
+  min-width: 0;
+  min-height: var(--intro-playHeight, 56px);
+  font-size: var(--intro-playSize, 25px);
+  background: var(--intro-playColor, #9cec50);
+}
+.intro-footer {
+  background: var(--intro-bannerColor, #201436);
+  gap: 8px;
+}
+.intro-icon {
+  width: min(var(--intro-iconSize, 48px), 15vw);
+  height: min(var(--intro-iconSize, 48px), 15vw);
+  flex-shrink: 0;
+}
+.intro-footer strong {
+  font-size: min(var(--intro-bannerTextSize, 18px), 5vw);
+  overflow-wrap: anywhere;
+  min-width: 0;
+  flex: 1;
+}
+.intro-install {
+  width: min(var(--intro-installWidth, 110px), 32vw);
+  flex-shrink: 0;
+  min-height: var(--intro-installHeight, 56px);
+  font-size: min(var(--intro-installSize, 18px), 5vw);
+  background: var(--intro-installColor, #9cec50);
+  padding: 8px;
+}
+@media (max-height: 450px) {
+  .intro-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    top: 10px;
+  }
+  .intro-logo {
+    max-height: 48px;
+    width: min(var(--intro-logoWidth, 110px), 18vw);
+  }
+  .intro-tagline {
+    font-size: min(var(--intro-taglineSize, 24px), 22px);
+  }
+  .intro-prompt h1 {
+    font-size: min(var(--intro-headlineSize, 40px), 32px);
+  }
+  .intro-start {
+    min-height: min(var(--intro-playHeight, 56px), 64px);
+  }
+  .intro-icon {
+    max-width: 48px;
+    max-height: 48px;
+  }
+  .intro-install {
+    min-height: min(var(--intro-installHeight, 56px), 64px);
   }
 }

@@ -1,3 +1,4 @@
+import { resolveIntroDesign, type IntroDesign } from './intro-settings';
 import { AdFlow, AD_FLOW } from './ad-flow';
 import { logoHeartbeat, logoReveal } from './logo-motion';
 import { NativeModel, validateNativeLevel } from './model';
@@ -92,7 +93,7 @@ document.body.innerHTML = `<div class="viewport"><main class="game" aria-label="
  </main>
  <section class="ad-intro" role="dialog" aria-modal="true" aria-label="Start playing" hidden>
  <div class="intro-brand"><img class="intro-logo" alt="Beat Bloom"><p class="intro-tagline"></p></div>
- <div class="intro-prompt"><h1>Tap to play</h1><button class="intro-start">Play<img class="intro-hand" alt=""></button></div>
+ <div class="intro-prompt"><h1>Tap to play</h1><button class="intro-start"><span class="intro-play-label">Play</span><img class="intro-hand" alt=""></button></div>
  <footer class="intro-footer"><img class="intro-icon" alt="Beat Bloom app icon"><strong>FREE TO PLAY</strong><button class="intro-install">Install Now</button></footer>
  </section>
  <section class="result" data-concept="${concept}" role="dialog" aria-modal="true" aria-label="Level complete" hidden>
@@ -120,12 +121,13 @@ function bindBand() {
   }));
 }
 let band = bindBand();
+if (level.adFlow) level.adFlow.design = resolveIntroDesign(level);
 let model = new NativeModel(level),
   audio = new NativeAudio(level, assets, () => model.time);
 let renderer: NativeRenderer;
 let adFlow = new AdFlow(level.adFlow?.intro);
 function syncIntro() {
-  const design = resolveEndCardDesign(level, __PROFILE__);
+  const design = resolveIntroDesign(level);
   const intro = $('.ad-intro');
   intro.dataset.layout = adFlow.layout;
   intro.hidden = adFlow.started || renderFailed;
@@ -133,7 +135,23 @@ function syncIntro() {
   ($('.intro-icon') as HTMLImageElement).src = design.iconImage || assets.icon;
   ($('.intro-hand') as HTMLImageElement).src = assets.tutorialHand;
   $('.intro-tagline').textContent = level.adFlow?.tagline || AD_FLOW.tagline;
-  $('.intro-install').textContent = design.ctaLabel;
+  $('.intro-install').textContent = design.installLabel;
+  $('.intro-play-label').textContent = design.playLabel;
+  $('.intro-prompt h1').textContent = design.headline;
+  $('.intro-footer strong').textContent = design.bannerText;
+  $('.intro-brand').hidden = !design.logoEnabled;
+  $('.intro-footer').hidden = !design.bannerEnabled;
+  for (const [key, value] of Object.entries(design)) {
+    if (typeof value === 'number')
+      intro.style.setProperty(
+        '--intro-' + key,
+        key.endsWith('Color')
+          ? '#' + value.toString(16).padStart(6, '0')
+          : key === 'dim'
+            ? String(value / 100)
+            : value + 'px',
+      );
+  }
   intro.style.setProperty('--intro-hand-duration', `${AD_FLOW.handSeconds}s`);
   $('.intro-start').toggleAttribute('disabled', !ready);
   $('.game').inert = !adFlow.started || !$('.result').hidden || renderFailed;
@@ -550,6 +568,7 @@ function restart(next: NativeLevel = level) {
   const nextLevel = normalizePlayableQueue(next),
     nextModel = new NativeModel(nextLevel);
   level = nextLevel;
+  if (level.adFlow) level.adFlow.design = resolveIntroDesign(level);
   model = nextModel;
   adFlow = new AdFlow(level.adFlow?.intro);
   if (ready) renderer.reset();
@@ -717,6 +736,16 @@ if (__PREVIEW__) {
       setEndCardDesign,
       resetEndCardDesign,
       getEndCardDesign: () => resolveEndCardDesign(level, __PROFILE__),
+      getIntroDesign: () => resolveIntroDesign(level),
+      setIntroDesign: (options: Partial<IntroDesign>) => {
+        const flow = level.adFlow || { intro: 'none' as const, tagline: AD_FLOW.tagline };
+        const next = validate({
+          ...cloneLevel(level),
+          adFlow: { ...flow, design: { ...resolveIntroDesign(level), ...options } },
+        });
+        restart(next);
+        return resolveIntroDesign(level);
+      },
       getAdFlow: () => ({
         layout: adFlow.layout,
         started: adFlow.started,

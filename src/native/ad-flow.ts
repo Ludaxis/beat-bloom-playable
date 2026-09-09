@@ -1,7 +1,9 @@
+import { validateIntroDesign, type IntroDesign } from './intro-settings';
 export type IntroLayout = 'none' | 'footer' | 'logo';
 export interface AdFlowOptions {
   intro: IntroLayout;
   tagline: string;
+  design?: Partial<IntroDesign>;
 }
 export const AD_FLOW = Object.freeze({
   moveLimit: 8,
@@ -19,7 +21,9 @@ export function validateAdFlow(value: unknown): string[] {
     v.tagline.trim().length > 0 &&
     v.tagline.length <= 60 &&
     !/[\r\n]/.test(v.tagline)
-    ? []
+    ? v.design === undefined
+      ? []
+      : validateIntroDesign(v.design)
     : ['Choose an intro and a tagline under 60 characters.'];
 }
 /** Counts accepted player moves only; start, misses and install taps never consume a move. */

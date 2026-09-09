@@ -312,95 +312,118 @@
         </section>
         <section id="design-panel" role="tabpanel" aria-labelledby="design-tab" hidden>
           <h1>Make it yours.</h1>
-          <p class="lead">Edit the ending. See it live.</p>
-          <div class="design-assets">
-            <a href="/assets/logo.webp" download="Beat-Bloom-logo.webp" class="design-asset"
-              ><span class="design-asset-image"
-                ><img src="/assets/logo.webp" alt="Approved Beat Bloom logo" /></span
-              ><span>Logo <small>Download ↗</small></span></a
-            ><a href="/assets/icon.webp" download="Beat-Bloom-icon.webp" class="design-asset"
-              ><span class="design-asset-image"
-                ><img src="/assets/icon.webp" alt="Approved Beat Bloom app icon" /></span
-              ><span>App icon <small>Download ↗</small></span></a
+          <p class="lead">Design your intro and ending.</p>
+          <details id="intro-section" open>
+            <summary>Intro</summary>
+            <label class="pattern-toggle"
+              ><input id="intro-enabled" type="checkbox" />Show intro</label
             >
-          </div>
-          <div class="buttons">
-            <button id="upload-logo">Upload logo</button
-            ><button id="upload-icon">Upload icon</button>
-          </div>
-          <input id="logo-file" type="file" accept="image/png,image/jpeg,image/webp" hidden /><input
-            id="icon-file"
-            type="file"
-            accept="image/png,image/jpeg,image/webp"
-            hidden
-          />
-          <p class="control-help">PNG, JPG or WebP. We’ll resize it.</p>
-          <p class="control-help" id="design-concept"></p>
-          <label class="field"
-            >Intro<select id="intro-layout">
-              <option value="none">None</option>
-              <option value="footer">Footer intro</option>
-              <option value="logo">Logo intro</option>
-            </select></label
-          >
-          <label class="field" id="intro-tagline-field" hidden
-            >Tagline<input id="intro-tagline" maxlength="60" value="Harder than you think"
-          /></label>
-          <p class="control-help" id="intro-help" hidden>8 moves, then the install screen.</p>
-          <div class="buttons">
-            <button id="preview-intro" type="button" hidden>Preview intro</button>
+            <div id="intro-controls" hidden>
+              <label class="field"
+                >Layout<select id="intro-layout">
+                  <option value="none" hidden>None</option>
+                  <option value="footer">Footer intro</option>
+                  <option value="logo">Logo intro</option>
+                </select></label
+              >
+              <label class="field" id="intro-tagline-field" hidden
+                >Tagline<input id="intro-tagline" maxlength="60" value="Harder than you think"
+              /></label>
+              <p class="control-help" id="intro-help" hidden>8 moves, then the install screen.</p>
+              <div class="buttons">
+                <button id="preview-intro" type="button" hidden>Preview intro</button>
+              </div>
+              <div id="intro-fields"></div>
+              <details id="intro-banner-section" open>
+                <summary>Banner</summary>
+                <label class="pattern-toggle"
+                  ><input id="intro-banner-enabled" type="checkbox" />Show banner</label
+                >
+                <div id="intro-banner-fields"></div>
+              </details>
+              <button id="reset-intro-design" type="button" class="design-reset">
+                Reset intro
+              </button>
+            </div>
+          </details>
+          <details id="ending-section" open>
+            <summary>Ending</summary>
             <button id="preview-ending" type="button">Preview ending</button>
-          </div>
-          <label class="field" for="end-headline"
-            >Headline<textarea
-              id="end-headline"
-              maxlength="80"
-              rows="2"
-              spellcheck="true"
-            ></textarea>
-          </label>
-          <label class="field" for="end-cta-label"
-            >Button text<input id="end-cta-label" type="text" maxlength="24" value="Install Now"
-          /></label>
-          <label class="field slider"
-            >Headline size<output id="end-headline-size-value">38 px</output
-            ><input id="end-headline-size" type="range" min="18" max="64" value="38"
-          /></label>
-          <label class="field slider"
-            >Button text size<output id="end-cta-size-value">25 px</output
-            ><input id="end-cta-size" type="range" min="16" max="40" value="25"
-          /></label>
-          <label class="field slider"
-            >Button width<output id="end-cta-width-value">310 px</output
-            ><input id="end-cta-width" type="range" min="140" max="360" value="310"
-          /></label>
-          <label class="field slider"
-            >Button height<output id="end-cta-height-value">56 px</output
-            ><input id="end-cta-height" type="range" min="44" max="100" value="56"
-          /></label>
-          <p class="control-help">Auto-fits the screen.</p>
-          <label class="pattern-toggle"
-            ><input id="end-replay-enabled" type="checkbox" checked />Show Replay</label
-          >
 
-          <div class="design-color-fields">
-            <label class="field" for="end-cta-color"
-              >Button color<input id="end-cta-color" type="color" value="#69d442" /></label
-            ><label class="field" for="end-background"
-              >Background<input id="end-background" type="color" value="#19102e"
+            <div class="design-assets">
+              <a href="/assets/logo.webp" download="Beat-Bloom-logo.webp" class="design-asset"
+                ><span class="design-asset-image"
+                  ><img src="/assets/logo.webp" alt="Approved Beat Bloom logo" /></span
+                ><span>Logo <small>Download ↗</small></span></a
+              ><a href="/assets/icon.webp" download="Beat-Bloom-icon.webp" class="design-asset"
+                ><span class="design-asset-image"
+                  ><img src="/assets/icon.webp" alt="Approved Beat Bloom app icon" /></span
+                ><span>App icon <small>Download ↗</small></span></a
+              >
+            </div>
+            <div class="buttons">
+              <button id="upload-logo">Upload logo</button
+              ><button id="upload-icon">Upload icon</button>
+            </div>
+            <input
+              id="logo-file"
+              type="file"
+              accept="image/png,image/jpeg,image/webp"
+              hidden
+            /><input id="icon-file" type="file" accept="image/png,image/jpeg,image/webp" hidden />
+            <p class="control-help">PNG, JPG or WebP. We’ll resize it.</p>
+            <p class="control-help" id="design-concept"></p>
+            <label class="field" for="end-headline"
+              >Headline<textarea
+                id="end-headline"
+                maxlength="80"
+                rows="2"
+                spellcheck="true"
+              ></textarea>
+            </label>
+            <label class="field" for="end-cta-label"
+              >Button text<input id="end-cta-label" type="text" maxlength="24" value="Install Now"
             /></label>
-          </div>
-          <label class="field slider" for="end-logo-width"
-            >Logo width<output id="end-logo-width-value">290 px</output
-            ><input id="end-logo-width" type="range" min="120" max="340" step="1" value="290"
-          /></label>
-          <label class="field slider" for="end-icon-size"
-            >Icon size<output id="end-icon-size-value">156 px</output
-            ><input id="end-icon-size" type="range" min="64" max="180" step="1" value="156"
-          /></label>
+            <label class="field slider"
+              >Headline size<output id="end-headline-size-value">38 px</output
+              ><input id="end-headline-size" type="range" min="18" max="64" value="38"
+            /></label>
+            <label class="field slider"
+              >Button text size<output id="end-cta-size-value">25 px</output
+              ><input id="end-cta-size" type="range" min="16" max="40" value="25"
+            /></label>
+            <label class="field slider"
+              >Button width<output id="end-cta-width-value">310 px</output
+              ><input id="end-cta-width" type="range" min="140" max="360" value="310"
+            /></label>
+            <label class="field slider"
+              >Button height<output id="end-cta-height-value">56 px</output
+              ><input id="end-cta-height" type="range" min="44" max="100" value="56"
+            /></label>
+            <p class="control-help">Auto-fits the screen.</p>
+            <label class="pattern-toggle"
+              ><input id="end-replay-enabled" type="checkbox" checked />Show Replay</label
+            >
 
-          <button id="preview-finish" type="button" class="design-reset">Preview finish</button
-          ><button id="reset-end-design" type="button" class="design-reset">Reset design</button>
+            <div class="design-color-fields">
+              <label class="field" for="end-cta-color"
+                >Button color<input id="end-cta-color" type="color" value="#69d442" /></label
+              ><label class="field" for="end-background"
+                >Background<input id="end-background" type="color" value="#19102e"
+              /></label>
+            </div>
+            <label class="field slider" for="end-logo-width"
+              >Logo width<output id="end-logo-width-value">290 px</output
+              ><input id="end-logo-width" type="range" min="120" max="340" step="1" value="290"
+            /></label>
+            <label class="field slider" for="end-icon-size"
+              >Icon size<output id="end-icon-size-value">156 px</output
+              ><input id="end-icon-size" type="range" min="64" max="180" step="1" value="156"
+            /></label>
+
+            <button id="preview-finish" type="button" class="design-reset">Preview finish</button
+            ><button id="reset-end-design" type="button" class="design-reset">Reset design</button>
+          </details>
           <p id="design-status" role="status" class="control-help"></p>
         </section>
         <section
@@ -559,5 +582,6 @@
     <script src="/review/pattern.js"></script>
     <script src="/review/design.js"></script>
     <script src="/review/design-assets.js"></script>
+    <script src="/review/intro-design.js"></script>
   </body>
 </html>
