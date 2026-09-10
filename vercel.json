@@ -24,7 +24,7 @@
   "functions": {
     "api/export.js": {
       "maxDuration": 60,
-      "includeFiles": "{assets/{native/**,encoded-audio/**,music/*.m4a,music/encoded/**,music/catalog.json,music/performers/**,*.mp3,*.webp,*.ttf,provenance.json},src/**,scripts/**,content/music/*.json,THIRD_PARTY_NOTICES.txt,node_modules/{pixi.js,@pixi,earcut,eventemitter3,gifuct-js,ismobilejs,parse-svg-path,tiny-lru,js-binary-schema-parser,@xmldom}/**}",
+      "includeFiles": "{assets/{native,encoded-audio,music}/**,assets/*.{mp3,webp,ttf,json},src/**,scripts/**,content/**,THIRD_PARTY_NOTICES.txt,node_modules/{pixi.js,@pixi,earcut,eventemitter3,gifuct-js,ismobilejs,parse-svg-path,tiny-lru,js-binary-schema-parser,@xmldom}/**}",
       "excludeFiles": "assets/music/fallback/**"
     },
     "api/share.js": {
