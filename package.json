@@ -22,7 +22,8 @@
     "format:check": "prettier --check src review scripts test api",
     "assets:audio": "node scripts/prepare-audio-variants.mjs",
     "qa:music": "node scripts/native-music-qa.mjs",
-    "assets:music": "node scripts/import-song-library.mjs && node scripts/prepare-song-audio.mjs"
+    "assets:music": "node scripts/import-song-library.mjs && node scripts/prepare-song-audio.mjs",
+    "qa:responsive": "node --import tsx scripts/qa-responsive.mjs"
   },
   "dependencies": {
     "@vercel/blob": "2.8.0",

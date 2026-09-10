@@ -1881,3 +1881,56 @@ summary {
 .stem-bed-preview button[aria-pressed='true'] {
   color: var(--color-accent);
 }
+
+/* Shared preview tools use the Studio typography; creative fonts stay inside the ad. */
+.preview-size-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin: 0 0 16px;
+  flex: none;
+  font: inherit;
+}
+.preview-size-controls label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: var(--muted, #a7abb5);
+  font-size: 12px;
+}
+.preview-size-controls select {
+  min-width: 175px;
+  margin: 0;
+  font: inherit;
+}
+.preview-size-controls button {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 7px;
+  border: 1px solid var(--line, #292930);
+  border-radius: 10px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.preview-size-controls button:hover {
+  border-color: #38ddb0;
+}
+.preview-size-controls button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+.preview-size-controls svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

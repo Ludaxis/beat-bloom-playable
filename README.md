@@ -102,3 +102,11 @@ See [Hosting](docs/HOSTING.md) for routes, export behavior and verification. Stu
 ## Ownership
 
 Beat Bloom branding, artwork, audio, and game content are not granted an open-source license by this repository. Use them only with the appropriate permissions. Preserve third-party notices when distributing builds.
+
+## Preview screen sizes
+
+Use **Screen** above the live preview to switch between phone (9:16), tall phone (9:19.5), tablet (3:4), square (1:1), and landscape (16:9). **Rotate preview** swaps the orientation. This preference stays in this browser and does not reset gameplay, change the project, or lock the export to a size. The preview scales to fit the editor; these are aspect-ratio previews, not device-performance emulation.
+
+Exported intros and install banners fill their host viewport. Landscape intros place branding beside the play prompt; short square endings keep the logo and icon in a row so the install action remains visible. Existing game runtimes keep their authored gameplay composition. Previously downloaded ads need to be exported again to receive layout updates.
+
+Run `npm run qa:responsive` after building to check screen selection, rotation persistence, and the actual offline intro/banner and ending layouts across six viewport sizes. Ending geometry is inspected independently of puzzle completion; the existing gameplay suites verify the flow.

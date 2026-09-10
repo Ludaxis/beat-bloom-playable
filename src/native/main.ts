@@ -458,14 +458,22 @@ function applyEndCardDesign(): EndCardDesign {
   $('.celebration-logo').style.width = `${(design.logoWidth * 400) / 290}px`;
   ($('.result-icon') as HTMLImageElement).src = design.iconImage ?? assets.icon;
   $('.result h2').style.fontSize =
-    design.headlineSize === undefined ? '' : `${design.headlineSize}px`;
+    design.headlineSize === undefined
+      ? ''
+      : `min(${design.headlineSize}px, var(--endcard-headline-cap, 64px))`;
   $('.result-restart').hidden = design.replayEnabled === false;
   $('.continue').style.width =
     design.ctaWidth === undefined ? '' : `min(100%, ${design.ctaWidth}px)`;
   $('.continue').style.alignSelf = design.ctaWidth === undefined ? '' : 'center';
-  $('.continue').style.minHeight = design.ctaHeight === undefined ? '' : `${design.ctaHeight}px`;
+  $('.continue').style.minHeight =
+    design.ctaHeight === undefined
+      ? ''
+      : `min(${design.ctaHeight}px, var(--endcard-button-cap, 100px))`;
   $('.continue').style.padding = design.ctaHeight === undefined ? '' : '8px 20px';
-  $('.continue').style.fontSize = design.ctaSize === undefined ? '' : `${design.ctaSize}px`;
+  $('.continue').style.fontSize =
+    design.ctaSize === undefined
+      ? ''
+      : `min(${design.ctaSize}px, var(--endcard-button-font-cap, 40px))`;
   for (const [name, value] of Object.entries(endCardCssVariables(design)))
     result.style.setProperty(name, value);
   return design;
@@ -647,6 +655,10 @@ function validate(input: unknown): NativeLevel {
   return normalizePlayableQueue(l);
 }
 function fit() {
+  $('.result').classList.toggle(
+    'endcard-short',
+    innerHeight <= 480 && innerWidth / innerHeight >= 0.8 && innerWidth / innerHeight < 1.25,
+  );
   const scale = Math.min(innerWidth / view.width, innerHeight / view.height);
   $('.game').style.transform = `scale(${scale})`;
   $('.game').style.setProperty('--game-scale', String(scale));

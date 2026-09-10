@@ -736,3 +736,43 @@ button:focus-visible {
   outline: 2px solid #38ddb0;
   outline-offset: 2px;
 }
+
+/* Short square placements keep branding in a row and reserve room for the real CTA. */
+.result.endcard-short[data-concept] {
+  --endcard-headline-cap: 32px;
+  --endcard-button-cap: 56px;
+  --endcard-button-font-cap: 25px;
+  gap: 12px;
+  padding: max(12px, env(safe-area-inset-top)) max(18px, env(safe-area-inset-right))
+    max(12px, env(safe-area-inset-bottom)) max(18px, env(safe-area-inset-left));
+}
+.result.endcard-short[data-concept] .endcard-brand {
+  flex-direction: row;
+  gap: 16px;
+}
+.result.endcard-short[data-concept] .result-logo {
+  width: min(42vw, var(--endcard-logo-width, 150px), 150px);
+  max-height: 90px;
+}
+.result.endcard-short[data-concept] .result-icon {
+  width: min(var(--endcard-icon-size, 64px), 64px);
+  height: auto;
+  max-height: 64px;
+}
+.result.endcard-short[data-concept] .endcard-content,
+.result.endcard-short[data-concept] .endcard-actions {
+  margin: 0;
+  flex: none;
+}
+.result.endcard-short[data-concept] h2 {
+  margin: 10px 0 0;
+}
+.result.endcard-short[data-concept] .endcard-actions {
+  border-top: 0;
+  padding-top: 0;
+  gap: 6px;
+}
+.result.endcard-short[data-concept] .continue {
+  min-height: 44px;
+  padding: 8px 16px;
+}

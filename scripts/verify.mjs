@@ -30,6 +30,7 @@ try {
     ['qa:endcard', 'endcard'],
     ['qa:patterns', 'patterns'],
     ['qa:music', 'music'],
+    ['qa:responsive', 'responsive'],
   ])
     await run(script, [], qaEnv(folder));
 } finally {

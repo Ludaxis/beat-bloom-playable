@@ -63,8 +63,14 @@ export function updateIntroPresentation(root: HTMLElement, design: IntroDesign) 
   }
   const fit = () => {
     if (root.hidden) return;
-    const bounds = root.getBoundingClientRect(),
-      scale = bounds.width / 390;
+    const bounds = root.getBoundingClientRect();
+    const wide = bounds.width / bounds.height >= 1.2;
+    const scale = Math.min(
+      bounds.width / (wide ? 780 : 390),
+      bounds.height / (wide ? 390 : 560),
+      1.6,
+    );
+    root.dataset.layout = wide ? 'wide' : 'portrait';
     root.style.setProperty('--bb-scale', String(scale));
     set('stage-width', bounds.width + 'px');
     const positioned = [
@@ -90,8 +96,9 @@ export function updateIntroPresentation(root: HTMLElement, design: IntroDesign) 
       const header = top.getBoundingClientRect(),
         prompt = headline.getBoundingClientRect();
       const bottom = (design.handEnabled ? hand : play).getBoundingClientRect().bottom;
-      const copyFits =
-        design.concept === 'invitation'
+      const copyFits = wide
+        ? true
+        : design.concept === 'invitation'
           ? content.getBoundingClientRect().top >= bounds.top + bounds.height * 0.28
           : header.bottom + gap <= prompt.top;
       if (bottom <= bounds.bottom - footer - gap && copyFits) break;

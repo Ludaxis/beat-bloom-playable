@@ -359,13 +359,48 @@
   min-height: max(44px, calc(var(--bb-intro-install-height, 56px) * var(--bb-scale)));
 }
 
-/* Keep the portrait composition when an ad host supplies a landscape viewport. */
-@media (orientation: landscape) {
-  .bb-intro {
-    width: min(100vw, calc(100dvh * 390 / 694));
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-    box-shadow: 0 0 0 100vmax rgb(5 10 32 / var(--bb-intro-dim, 0.48));
-  }
+/* Wide ads give branding and the play prompt their own columns. The banner spans the host. */
+.bb-intro[data-layout='wide'][data-concept] .bb-intro-content {
+  inset: 5% 5% calc(var(--bb-intro-footer) + 5%);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 6%;
+  padding: 3%;
+  min-height: 0;
+}
+.bb-intro[data-layout='wide'][data-concept] .bb-intro-top {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 0;
+  text-align: center;
+}
+.bb-intro[data-layout='wide'][data-concept] .bb-intro-logo {
+  margin: 0 auto;
+  object-position: center;
+  max-height: calc(150px * var(--bb-scale));
+}
+.bb-intro[data-layout='wide'][data-concept] .bb-intro-tagline {
+  margin: calc(16px * var(--bb-scale)) 0 0;
+  flex: none;
+  width: 100%;
+}
+.bb-intro[data-layout='wide'][data-concept] .bb-intro-prompt {
+  position: static;
+  transform: none;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+}
+.bb-intro[data-layout='wide'][data-concept] .bb-intro-start {
+  max-width: 100%;
+}
+.bb-intro-install-bar {
+  padding-bottom: max(env(safe-area-inset-bottom), calc(12px * var(--bb-scale)));
+  padding-left: max(env(safe-area-inset-left), calc(14px * var(--bb-scale)));
+  padding-right: max(env(safe-area-inset-right), calc(14px * var(--bb-scale)));
 }
