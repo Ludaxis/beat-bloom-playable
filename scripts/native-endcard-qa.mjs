@@ -786,6 +786,38 @@ try {
         await frame.locator('.bb-intro-hand').evaluate((el) => getComputedStyle(el).animationName),
         'none',
       );
+      await page.locator('#gameplay-tab').click();
+      await page.locator('#gameplay-play-limit').fill('3');
+      await page.locator('#gameplay-play-limit').press('Tab');
+      await page.locator('#gameplay-intro-enabled').uncheck();
+      assert.equal(await frame.locator('.ad-intro').isVisible(), false);
+      assert.equal(await frame.evaluate(() => window.__beatBloom.getAdFlow().limit), 3);
+      const savedDesign = await frame.evaluate(() => window.__beatBloom.getIntroDesign());
+      for (let i = 0; i < 3; i++) {
+        const tray = frame.locator('.tray-slot.occupied').first();
+        if (await tray.count()) await tray.click();
+        else await frame.locator('.queue-ball:not([disabled])').first().click();
+        await frame.waitForFunction(
+          (expected) => window.__beatBloom.getAdFlow().moves === expected,
+          i + 1,
+        );
+        await page.waitForTimeout(400);
+      }
+      await frame.locator('.result').waitFor({ state: 'visible' });
+      assert.equal(await frame.evaluate(() => window.__beatBloom.getAdFlow().moves), 3);
+      await page.locator('#design-tab').click();
+      await page.locator('#design-screen').selectOption('intro');
+      assert.equal(await page.locator('#design-play-limit').inputValue(), '3');
+      await page.locator('#intro-enabled').check();
+      assert.deepEqual(
+        await frame.evaluate(() => window.__beatBloom.getIntroDesign()),
+        savedDesign,
+      );
+      await page.locator('#design-play-limit').fill('0');
+      await page.locator('#design-play-limit').press('Tab');
+      await page.locator('#gameplay-tab').click();
+      assert.equal(await page.locator('#gameplay-play-limit').inputValue(), '0');
+      assert.equal(await page.locator('#gameplay-intro-enabled').isChecked(), true);
       return {
         liveTagline: true,
         layouts: 3,

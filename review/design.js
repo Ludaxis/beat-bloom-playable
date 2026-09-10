@@ -37,7 +37,8 @@ function endCardControls() {
   if (flow?.intro && flow.intro !== 'none') lastIntroLayout = flow.intro;
   else if (flow?.design)
     lastIntroLayout = flow.design.bannerEnabled && !flow.design.logoEnabled ? 'footer' : 'logo';
-  $('#intro-enabled').checked = !!flow && flow.intro !== 'none';
+  $('#intro-enabled').checked = !!flow && flow.intro !== 'none' && flow.enabled !== false;
+  syncPlayableFlow();
   $('#intro-controls').hidden = false;
   $('#intro-controls').disabled = !$('#intro-enabled').checked;
   if (typeof refreshIntroDesign === 'function') refreshIntroDesign();
@@ -245,10 +246,7 @@ $('#preview-ending').onclick = () => {
   updateDesignPreviewTitle();
 };
 
-$('#intro-enabled').onchange = () => {
-  $('#intro-layout').value = $('#intro-enabled').checked ? lastIntroLayout : 'none';
-  updateIntro();
-};
+$('#intro-enabled').onchange = () => setPlayableIntro($('#intro-enabled').checked);
 
 $('#design-screen').onchange = () => {
   introPreview = $('#design-screen').value === 'intro';
@@ -258,3 +256,52 @@ $('#design-screen').onchange = () => {
   } else api().previewEndCard();
   updateDesignPreviewTitle();
 };
+
+function syncPlayableFlow() {
+  const flow = api()?.getLevel().adFlow;
+  if (!api()) return;
+  const enabled = !!flow && flow.intro !== 'none' && flow.enabled !== false;
+  const limit = flow?.interactionLimit ?? (flow?.intro && flow.intro !== 'none' ? 8 : 0);
+  $('#gameplay-intro-enabled').checked = enabled;
+  const help =
+    limit > 0
+      ? `Finish after ${limit} ${limit === 1 ? 'action' : 'actions'}.`
+      : '0 plays the full level.';
+  for (const section of ['gameplay', 'design']) {
+    $('#' + section + '-play-limit').value = limit;
+    $('#' + section + '-play-limit-help').textContent = help;
+  }
+  $('#intro-help').textContent = help;
+}
+function setPlayableFlow(patch) {
+  const a = api();
+  if (!a) return;
+  const current = a.getLevel().adFlow;
+  const flow = {
+    intro: 'none',
+    tagline: 'Harder than you think',
+    interactionLimit: current?.intro && current.intro !== 'none' ? 8 : 0,
+    ...current,
+    ...patch,
+  };
+  a.setOptions({ adFlow: flow });
+  $('#level-json').value = JSON.stringify(a.getLevel(), null, 2);
+  endCardControls();
+}
+function setPlayableIntro(enabled) {
+  const flow = api().getLevel().adFlow;
+  introPreview = true;
+  setPlayableFlow({
+    enabled,
+    ...(enabled && (!flow || flow.intro === 'none') ? { intro: lastIntroLayout } : {}),
+  });
+}
+$('#gameplay-intro-enabled').onchange = () =>
+  setPlayableIntro($('#gameplay-intro-enabled').checked);
+for (const section of ['gameplay', 'design'])
+  $('#' + section + '-play-limit').onchange = (event) => {
+    const value = Number(event.target.value);
+    setPlayableFlow({
+      interactionLimit: Number.isFinite(value) ? Math.max(0, Math.min(30, Math.round(value))) : 0,
+    });
+  };

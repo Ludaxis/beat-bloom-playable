@@ -127,7 +127,7 @@ if (level.adFlow) level.adFlow.design = resolveIntroDesign(level);
 let model = new NativeModel(level),
   audio = new NativeAudio(level, assets, () => model.time);
 let renderer: NativeRenderer;
-let adFlow = new AdFlow(level.adFlow?.intro);
+let adFlow = new AdFlow(level.adFlow?.intro, level.adFlow?.interactionLimit, level.adFlow?.enabled);
 function syncIntro() {
   const design = resolveIntroDesign(level);
   const intro = $('.ad-intro');
@@ -561,7 +561,7 @@ function restart(next: NativeLevel = level) {
   level = nextLevel;
   if (level.adFlow) level.adFlow.design = resolveIntroDesign(level);
   model = nextModel;
-  adFlow = new AdFlow(level.adFlow?.intro);
+  adFlow = new AdFlow(level.adFlow?.intro, level.adFlow?.interactionLimit, level.adFlow?.enabled);
   if (ready) renderer.reset();
   const muted = audio.muted;
   audio.dispose();
@@ -747,6 +747,7 @@ if (__PREVIEW__) {
       },
       getAdFlow: () => ({
         layout: adFlow.layout,
+        limit: adFlow.limit,
         started: adFlow.started,
         moves: adFlow.moves,
         complete: adFlow.complete,

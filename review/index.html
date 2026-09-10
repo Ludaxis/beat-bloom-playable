@@ -95,6 +95,22 @@
         <section id="gameplay-panel" role="tabpanel" aria-labelledby="gameplay-tab">
           <h1>Shape your level.</h1>
           <p class="lead">Pick a song. Make it yours.</p>
+          <section class="playable-flow">
+            <h3>Playable flow</h3>
+            <label class="pattern-toggle"
+              ><input id="gameplay-intro-enabled" type="checkbox" />Enable intro</label
+            >
+            <label class="field"
+              >Play limit<input
+                id="gameplay-play-limit"
+                type="number"
+                min="0"
+                max="30"
+                step="1"
+                aria-describedby="gameplay-play-limit-help"
+            /></label>
+            <p id="gameplay-play-limit-help" class="control-help">0 plays the full level.</p>
+          </section>
           <label class="field" for="profile"
             >Song<select id="profile" aria-label="Song">
               <option value="native">Kiss Me More</option>
@@ -355,6 +371,16 @@
                 Reset intro design
               </button>
             </fieldset>
+            <label class="field"
+              >Play limit<input
+                id="design-play-limit"
+                type="number"
+                min="0"
+                max="30"
+                step="1"
+                aria-describedby="design-play-limit-help"
+            /></label>
+            <p id="design-play-limit-help" class="control-help">0 plays the full level.</p>
           </details>
           <details id="ending-section" open>
             <summary>Ending</summary>

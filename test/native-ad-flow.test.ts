@@ -46,3 +46,21 @@ test('intro rotation preserves puzzle time and first stem reveal is idempotent',
   normal.unlockIntroStem();
   assert.deepEqual(normal.unlockedStems, []);
 });
+
+test('play limit works independently of the intro and rejects invalid limits', () => {
+  for (const layout of ['none', 'logo'] as const) {
+    const flow = new AdFlow(layout, 3, false);
+    assert.equal(flow.started, true);
+    assert.equal(flow.accept(false), false);
+    assert.equal(flow.accept(true), false);
+    assert.equal(flow.accept(true), false);
+    assert.equal(flow.accept(true), true);
+    flow.accept(true);
+    assert.equal(flow.moves, 3);
+  }
+  const unlimited = new AdFlow('logo', 0);
+  unlimited.start();
+  for (let i = 0; i < 40; i++) assert.equal(unlimited.accept(true), false);
+  for (const interactionLimit of [-1, 31, 1.5, NaN])
+    assert.ok(validateAdFlow({ intro: 'none', tagline: 'Hi', interactionLimit }).length);
+});
