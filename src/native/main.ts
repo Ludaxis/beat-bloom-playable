@@ -96,7 +96,7 @@ const bandHTML = () =>
     )
     .join('');
 document.body.innerHTML = `<div class="viewport"><main class="game" aria-label="Beat Bloom playable">
- <div class="canvas"></div><div class="hud"><div class="band">${bandHTML()}</div><div class="capacity" aria-live="off">0/3</div>
+ <div class="canvas"></div><div class="hud"><button class="bb-sound" type="button" aria-label="Turn sound on" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 5 6 9H3v6h3l5 4z"/><g class="sound-on"><path d="M15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14"/></g><path class="sound-off" d="m16 9 6 6m0-6-6 6"/></svg></button><div class="band">${bandHTML()}</div><div class="capacity" aria-live="off">0/3</div>
  <div class="tray" aria-label="Ball storage">${view.trayX.map((x, i) => `<button class="tray-slot ${i >= 3 ? 'locked' : ''}" data-tray="${i}" aria-label="${i >= 3 ? 'Locked' : 'Empty'} storage slot ${i + 1}" style="left:${x - 134}px">${i >= 3 ? `<img src="${assets.lock}" alt="">` : ''}</button>`).join('')}</div>
  <div class="queue" aria-label="Ball queue"></div><div class="warning" role="status" hidden></div>
  </div>
@@ -308,7 +308,16 @@ function fireTray(slot: number) {
   countMove(ok);
   return ok;
 }
+let soundAudible: boolean | undefined;
+function syncSoundButton() {
+  const audible = audio.active;
+  if (soundAudible === audible) return;
+  soundAudible = audible;
+  $('.bb-sound').setAttribute('aria-pressed', String(!audible));
+  $('.bb-sound').setAttribute('aria-label', audible ? 'Mute sound' : 'Turn sound on');
+}
 function updateHUD() {
+  syncSoundButton();
   if (introEnabled) {
     const t = Math.max(0, Math.min(1, (model.time - 0.288) / 1.312));
     const ease = 1 - (1 - t) ** 3;
@@ -640,7 +649,15 @@ function validate(input: unknown): NativeLevel {
 function fit() {
   const scale = Math.min(innerWidth / view.width, innerHeight / view.height);
   $('.game').style.transform = `scale(${scale})`;
+  $('.game').style.setProperty('--game-scale', String(scale));
 }
+$('.bb-sound').addEventListener('pointerdown', (event) => event.stopPropagation());
+$('.bb-sound').addEventListener('click', (event) => {
+  event.stopPropagation();
+  audio.setMuted(audio.active);
+  if (!audio.muted) gesture();
+  syncSoundButton();
+});
 $('.queue').addEventListener('click', (e) => {
   const b = (e.target as HTMLElement).closest<HTMLElement>('[data-column]');
   if (b) fireQueue(Number(b.dataset.column));
@@ -804,6 +821,7 @@ if (__PREVIEW__) {
       setMuted: (value: boolean) => {
         audio.setMuted(value);
         if (!value) gesture();
+        syncSoundButton();
       },
       restart: () => restart(),
       pause,

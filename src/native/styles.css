@@ -699,3 +699,40 @@ button:focus-visible {
   background-size: contain;
   background-position: center !important;
 }
+
+/* Keep a 44 CSS-pixel touch target even when the logical game board scales down. */
+.bb-sound {
+  position: absolute;
+  top: 2.2%;
+  right: 4%;
+  z-index: 4;
+  width: calc(44px / var(--game-scale, 1));
+  height: calc(44px / var(--game-scale, 1));
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #38ddb0;
+  display: grid;
+  place-items: center;
+}
+.bb-sound svg {
+  width: calc(24px / var(--game-scale, 1));
+  height: calc(24px / var(--game-scale, 1));
+  opacity: 0.85;
+  pointer-events: none;
+}
+.bb-sound[aria-pressed='true'] {
+  color: #9ca3af;
+}
+.bb-sound .sound-off,
+.bb-sound[aria-pressed='true'] .sound-on {
+  display: none;
+}
+.bb-sound[aria-pressed='true'] .sound-off {
+  display: block;
+}
+.bb-sound:focus-visible {
+  outline: 2px solid #38ddb0;
+  outline-offset: 2px;
+}

@@ -227,6 +227,24 @@ async function verifyOfflineExport(html, network, level, referenceMask, ios = fa
     await page.waitForFunction(() => __host.contexts[0].state === 'suspended');
     await page.evaluate(() => __host.visibility(true));
     await page.waitForFunction(() => __host.contexts[0].state === 'running');
+    const sound = page.locator('.bb-sound');
+    await page.waitForFunction(
+      () => document.querySelector('.bb-sound').getAttribute('aria-pressed') === 'false',
+    );
+    for (const muted of [true, false]) {
+      await sound.click();
+      assert.equal(await sound.getAttribute('aria-pressed'), String(muted));
+      assert.equal(await sound.textContent(), '');
+      assert.equal(
+        await sound.evaluate((el) => getComputedStyle(el).backgroundColor),
+        'rgba(0, 0, 0, 0)',
+      );
+      assert.equal(
+        await sound.evaluate((el) => getComputedStyle(el).color),
+        muted ? 'rgb(156, 163, 175)' : 'rgb(56, 221, 176)',
+      );
+      assert((await sound.boundingBox()).width >= 43.9);
+    }
     // This isolates the already-existing CTA route, without claiming that this export reached a win.
     // The separate native harness checks ordinary full gameplay completion.
     await page.locator('.result').evaluate((el) => {

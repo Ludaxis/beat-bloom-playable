@@ -150,6 +150,44 @@ try {
     null,
     { timeout: 60000 },
   );
+  const sound = gameFrame.locator('.bb-sound');
+  await page.waitForFunction(
+    () =>
+      document
+        .querySelector('#game')
+        .contentDocument.querySelector('.bb-sound')
+        .getAttribute('aria-pressed') === 'false',
+  );
+  const beforeSound = await page.evaluate(
+    () => document.querySelector('#game').contentWindow.__beatBloom.snapshot().shots,
+  );
+  for (const muted of [true, false]) {
+    await sound.click();
+    await page.waitForFunction(
+      (value) =>
+        document.querySelector('#game').contentWindow.__beatBloom.snapshot().music.muted === value,
+      muted,
+    );
+    assert.equal(await sound.getAttribute('aria-pressed'), String(muted));
+    assert.equal(await sound.textContent(), '');
+    assert.equal(
+      await sound.evaluate((el) => getComputedStyle(el).backgroundColor),
+      'rgba(0, 0, 0, 0)',
+    );
+    assert.equal(
+      await sound.evaluate((el) => getComputedStyle(el).color),
+      muted ? 'rgb(156, 163, 175)' : 'rgb(56, 221, 176)',
+    );
+    assert.equal(
+      await page.evaluate(
+        () => document.querySelector('#game').contentWindow.__beatBloom.snapshot().shots,
+      ),
+      beforeSound,
+    );
+  }
+  report.cases.push(
+    'In-game transparent speaker changes gray/green, mutes actual music, and uses no shot.',
+  );
   const gameplayRequests = audioRequests.slice(gameplayStart),
     selectedSources = imported.stems
       .flatMap((stem) => [stem.source, stem.fallbackSource])
