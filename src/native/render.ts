@@ -1,3 +1,4 @@
+import { getEarnableStems } from './music';
 import { makeContour, rotate } from './geometry';
 import { ballFlightPosition } from './flight';
 import { makeLineShards, shardPose, type LineShard } from './shatter';
@@ -423,7 +424,7 @@ export class NativeRenderer {
           this.lineShards = this.lineShards.slice(-VFX.shatter.maxConcurrent);
         }
       }
-      this.makeFlight(e, position, color, timing);
+      if (this.colorTargets.has(e.color)) this.makeFlight(e, position, color, timing);
     }
     if (e.type === 'ringClear') {
       if (!this.reducedMotion && this.lastModel) {
@@ -466,13 +467,18 @@ export class NativeRenderer {
     if (e.type === 'unlock') {
       this.stageStart = e.time;
       this.stageStem = e.stem ?? e.color;
-      this.tier = Math.max(this.tier, e.stem ?? this.tier + 1);
       this.cameraImpulse.trigger('unlock', e.time, { x: 0, y: -1 }, this.reducedMotion);
-      for (const [colorIndex, laneIndex] of this.colorTargets) {
-        if (laneIndex === (e.stem ?? e.color + 1) - 1)
-          this.equalizerActivation.set(colorIndex, e.time);
-      }
-      const target = this.instrumentTarget(e.color);
+      const sourceLevel = this.lastModel?.level;
+      const lane = sourceLevel?.stemLanes.find((part) => part.stem === e.stem);
+      for (const colorIndex of lane?.colors ?? []) this.equalizerActivation.set(colorIndex, e.time);
+      const performerIndex = sourceLevel
+        ? getEarnableStems(sourceLevel.songId).findIndex((part) => part.index === e.stem)
+        : -1;
+      this.tier = Math.max(this.tier, performerIndex < 0 ? this.tier + 1 : performerIndex + 1);
+      const target =
+        performerIndex < 0
+          ? this.instrumentTarget(e.color)
+          : { x: this.config.view.instrumentX[performerIndex], y: this.config.view.instrumentY };
       this.bursts.push({ position: target, time: e.time, color, radius: 39, kind: 'absorb' });
     }
     if (e.type === 'win') {
@@ -489,9 +495,12 @@ export class NativeRenderer {
     this.arenaRingCapacity = model.level.arenaRingCapacity;
     this.remainingRingCount = model.rings.length - model.removedInnerRings;
     this.colorTargets.clear();
-    model.level.stemLanes.forEach((lane, index) =>
-      lane.colors.forEach((color) => this.colorTargets.set(color, index)),
-    );
+    const performers = getEarnableStems(model.level.songId);
+    for (const lane of model.level.stemLanes) {
+      const index = performers.findIndex((part) => part.index === lane.stem);
+      for (const color of lane.colors)
+        if (!this.colorTargets.has(color)) this.colorTargets.set(color, index);
+    }
     this.clock = model.time;
     // Presentation only needs these counters, not snapshot's queue/tray/progress array copies.
     let total = 0,
@@ -1302,7 +1311,7 @@ export class NativeRenderer {
   }
 
   private instrumentTarget(colorIndex: number): Vec2 {
-    // Level 6 color lanes map red/green/blue/yellow to ukulele/violin/piano/drum.
+    // Palette bindings resolve to registry performer positions, independently of raw stem IDs.
     const view = this.config.view;
     const lane = this.colorTargets.get(colorIndex) ?? colorIndex;
     return { x: view.instrumentX[lane % view.instrumentX.length], y: view.instrumentY };

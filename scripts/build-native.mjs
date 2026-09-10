@@ -21,16 +21,17 @@ await build({
 });
 // Publish the Studio and its self-contained shared-link viewer beside the playables.
 await cp(resolve(root, 'review'), resolve(dist, 'review'), { recursive: true });
-await mkdir(resolve(dist, 'assets'), { recursive: true });
-for (const name of ['icon.webp', 'logo.webp']) {
-  await copyFile(resolve(root, 'assets', name), resolve(dist, 'assets', name));
-}
+// Hosted previews share prepared URL assets; offline exports still embed selected-song assets only.
+await cp(resolve(root, 'assets'), resolve(dist, 'assets'), { recursive: true });
 for (const network of previewOnly ? ['preview'] : ['preview', 'unity', 'applovin', 'meta']) {
   await mkdir(resolve(dist, network), { recursive: true });
   for (const profile of network === 'preview'
     ? EXPORT_PROFILES
     : EXPORT_PROFILES.filter((p) => p !== 'native')) {
-    const result = await createNativePackage({ network, profile }, { allowPreview: true });
+    const result = await createNativePackage(
+      { network, profile },
+      { allowPreview: true, hosted: network === 'preview' },
+    );
     await writeFile(resolve(dist, network, `${profile}.html`), result.html);
     await writeFile(resolve(dist, network, `${profile}.zip`), result.zip);
     const { htmlBytes, zipBytes, limitBytes, withinLimit, sha256, zipSha256 } = result;

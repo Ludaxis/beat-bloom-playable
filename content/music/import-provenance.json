@@ -1,0 +1,4113 @@
+{
+  "version": 1,
+  "sourceCatalog": "Drop Sort public/data/songs.json",
+  "sourceCatalogSha256": "00efdfe0d59feec5487c73984c8258bb004181bf166a6397db196129aab355d6",
+  "arrangements": 72,
+  "importedArrangements": 69,
+  "files": [
+    {
+      "path": "assets/music/0076a2507015ee904b81e7da.m4a",
+      "source": "/assets/audio-compact/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage3.m4a",
+      "sha256": "0076a2507015ee904b81e7da16778153b509c328835ea4ca1f22433eb6c0b3fd",
+      "bytes": 180234
+    },
+    {
+      "path": "assets/music/00ea350b6533260e2ad19df0.m4a",
+      "source": "/assets/audio-meta/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage2.m4a",
+      "sha256": "00ea350b6533260e2ad19df0deb095e9df5f75546579d3642cc1fd95ffbedfac",
+      "bytes": 97059
+    },
+    {
+      "path": "assets/music/027470a93e8bb50ac084bebc.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sayso/drum-0c2a66fff6db.m4a",
+      "sha256": "027470a93e8bb50ac084bebc98a4f00b5a79a54a2706984f1a3b9f4c207f5bae",
+      "bytes": 100393
+    },
+    {
+      "path": "assets/music/02b5b2e2b922a35846e26bbc.m4a",
+      "source": "/assets/audio-meta/Songs/WakeMeUp/WakeMeUp_Stage0.m4a",
+      "sha256": "02b5b2e2b922a35846e26bbcf1861878481fd123d43dc5e3cc1052c21cb525b0",
+      "bytes": 150424
+    },
+    {
+      "path": "assets/music/03daea1fa7807678a3f4fe4e.m4a",
+      "source": "/assets/audio-meta/Songs/StressedOut/StressedOut_Stage4.m4a",
+      "sha256": "03daea1fa7807678a3f4fe4e02cc934428ae563d4685e1bdd6e6bed19120effc",
+      "bytes": 103886
+    },
+    {
+      "path": "assets/music/03e10df53d5b53cd6a6e07f7.m4a",
+      "source": "/assets/audio-meta/Songs/ThisLove/ThisLove_Stage0.m4a",
+      "sha256": "03e10df53d5b53cd6a6e07f775cb8366d18696bab864e86f1ff5561d3b55f339",
+      "bytes": 130747
+    },
+    {
+      "path": "assets/music/042c03c2dce332b6ffd04943.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/blindinglights/violin-9d51ee490b69.m4a",
+      "sha256": "042c03c2dce332b6ffd0494307eebec1f37f02376091fa90d93a6364cbca671f",
+      "bytes": 115624
+    },
+    {
+      "path": "assets/music/04996bacf0005f1908968df6.m4a",
+      "source": "/assets/audio-compact/Songs/KissMeMore/KissMeMore_Stage0.m4a",
+      "sha256": "04996bacf0005f1908968df6992217773ae96a8ee83d72895eef91943fbdb42e",
+      "bytes": 187608
+    },
+    {
+      "path": "assets/music/051ec98a40bc569a67ba249a.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/losvoltaje/violin-2012874ce199.m4a",
+      "sha256": "051ec98a40bc569a67ba249a78b6642a64f946687cf84dee8940b2fcb206170f",
+      "bytes": 136347
+    },
+    {
+      "path": "assets/music/05229c3c884f40fff0af6f43.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/montagemtomada/guitar-471fa19b4c2f.m4a",
+      "sha256": "05229c3c884f40fff0af6f43052a5ffe6d9049b3d4db595c0c1f44b4499257d3",
+      "bytes": 137236
+    },
+    {
+      "path": "assets/music/066c21bd49c10110b805ac23.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/nobatidao/piano-5d657d29a6e1.m4a",
+      "sha256": "066c21bd49c10110b805ac2324817c72853a1028cdec671800a55fb5587a2601",
+      "bytes": 69792
+    },
+    {
+      "path": "assets/music/07fc5dd7e9b24e56bc32b94d.m4a",
+      "source": "/assets/audio-compact/Songs/DeathBed/DeathBed_Stage1.m4a",
+      "sha256": "07fc5dd7e9b24e56bc32b94d6e2d6a90c8d74f7e82e972a13f31f35ea7605dfe",
+      "bytes": 284359
+    },
+    {
+      "path": "assets/music/08c1d4da0a9f735e8ac36817.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/losvoltaje/drum-bb37ab581d63.m4a",
+      "sha256": "08c1d4da0a9f735e8ac36817bdc723b64ffaa1031c35fb437936e173a3feeeef",
+      "bytes": 139156
+    },
+    {
+      "path": "assets/music/0985568f4a27859587f52f81.m4a",
+      "source": "/assets/audio-compact/Songs/StressedOut/StressedOut_Stage3.m4a",
+      "sha256": "0985568f4a27859587f52f81e4924f20930eb2c2a7026b60fbd5d03af161707f",
+      "bytes": 182529
+    },
+    {
+      "path": "assets/music/09ea4c5a6e4e08a5bbd656a0.m4a",
+      "source": "/assets/audio-compact/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage1.m4a",
+      "sha256": "09ea4c5a6e4e08a5bbd656a0cf8d84f14d85ff0f7b962876cef197f05328bec8",
+      "bytes": 146794
+    },
+    {
+      "path": "assets/music/0a10ba676170930da37106b7.m4a",
+      "source": "/assets/audio-meta/Songs/WakeMeUp/WakeMeUp_Stage4.m4a",
+      "sha256": "0a10ba676170930da37106b74b3546077667da8e53a67e2474af671cb6a9a7b1",
+      "bytes": 146181
+    },
+    {
+      "path": "assets/music/0ab78d349bb09db4a8d1dddc.m4a",
+      "source": "/assets/audio-compact/Songs/Perfect/Perfect_Stage4.m4a",
+      "sha256": "0ab78d349bb09db4a8d1dddc16d90bf223bd0a9b72f16f1a8dd83e33e66ddcd5",
+      "bytes": 243383
+    },
+    {
+      "path": "assets/music/0b551951efaccf96ae711067.m4a",
+      "source": "/assets/audio-meta/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage2.m4a",
+      "sha256": "0b551951efaccf96ae71106742d6b6cdec2f7cb50a22a686c55ab77924a8669c",
+      "bytes": 105202
+    },
+    {
+      "path": "assets/music/0bcac4efe31f746d298f5c53.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/takeonme/xylophone-7cdb61e85d51.m4a",
+      "sha256": "0bcac4efe31f746d298f5c53476c6cbd231ede69f9741b0db06ffaae8fbd302d",
+      "bytes": 142982
+    },
+    {
+      "path": "assets/music/0c4f7ae894089496703c5672.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/takeonme/drum-0f246c7d4013.m4a",
+      "sha256": "0c4f7ae894089496703c56724c7ec76b81f6680d337bfa505d47ffa09dd875a4",
+      "bytes": 87011
+    },
+    {
+      "path": "assets/music/0c7455e2e9457ec1d47857cd.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/takeonme/drum-0f246c7d4013.m4a",
+      "sha256": "0c7455e2e9457ec1d47857cd9886511c9804a49f06c84e863948785bb6afe894",
+      "bytes": 145437
+    },
+    {
+      "path": "assets/music/0d658d850141f189ed6f05ac.m4a",
+      "source": "/assets/audio-compact/Songs/Perfect/Perfect_Stage0.m4a",
+      "sha256": "0d658d850141f189ed6f05acb0cc6a0aeb74588888ea93988d32c5c2e245d438",
+      "bytes": 238663
+    },
+    {
+      "path": "assets/music/0e080d33f435951358407b50.m4a",
+      "source": "/assets/audio-compact/Songs/DeathBed/DeathBed_Stage4.m4a",
+      "sha256": "0e080d33f435951358407b500ec1ea9048c0c7976038eef255583d33074c6d3d",
+      "bytes": 282418
+    },
+    {
+      "path": "assets/music/0ebd6be6af2a09353b901cf8.m4a",
+      "source": "/assets/audio-compact/Songs/DeathBed/DeathBed_Stage0.m4a",
+      "sha256": "0ebd6be6af2a09353b901cf8b58e3746390462e7313c9bf483c45bbc7bf2fa0a",
+      "bytes": 280805
+    },
+    {
+      "path": "assets/music/0fe50d732434f47a7b484547.m4a",
+      "source": "/assets/audio-compact/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage4.m4a",
+      "sha256": "0fe50d732434f47a7b484547f9b2dbc75c7c0b02b2fce10ab2efa2c88746868b",
+      "bytes": 103052
+    },
+    {
+      "path": "assets/music/1010ed69664c1a5555f2dc14.m4a",
+      "source": "/assets/audio-meta/Songs/IWantItThatWay/IWantItThatWay_Stage0.m4a",
+      "sha256": "1010ed69664c1a5555f2dc1487b6aaa040eb66567a6543a30306712c153bb471",
+      "bytes": 125135
+    },
+    {
+      "path": "assets/music/1055fe4168a890bd7f0efb2f.m4a",
+      "source": "/assets/audio-meta/Songs/Shallow/Shallow_Stage0.m4a",
+      "sha256": "1055fe4168a890bd7f0efb2f3a1a5bda78aaa5df40c4f57afae27b2b39ee7df9",
+      "bytes": 196836
+    },
+    {
+      "path": "assets/music/10a296ee5718fb7ac92ff611.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/astronautintheocean/xylophone-0c9d98c27698.m4a",
+      "sha256": "10a296ee5718fb7ac92ff611df545f241ce55fca6802c96dc163d636ae81345b",
+      "bytes": 74770
+    },
+    {
+      "path": "assets/music/10c5a472e02e1739ed87daa2.m4a",
+      "source": "/assets/audio-meta/Songs/Perfect/Perfect_Stage4.m4a",
+      "sha256": "10c5a472e02e1739ed87daa25c526ded55aaaa6c2f10530af8cc07f2857deef1",
+      "bytes": 143436
+    },
+    {
+      "path": "assets/music/11494af9df6a6d2dad9dd790.m4a",
+      "source": "/assets/audio-compact/Songs/NoBatidao/NoBatidao_Stage1.m4a",
+      "sha256": "11494af9df6a6d2dad9dd790585b4818dab270995b2175469f575aa6fbf51677",
+      "bytes": 116732
+    },
+    {
+      "path": "assets/music/117aad8e8fe8b6027c13772a.m4a",
+      "source": "/assets/audio-meta/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage4.m4a",
+      "sha256": "117aad8e8fe8b6027c13772ac7d5cafb2fa6bdd19c6e67bbe21ac85f7d113066",
+      "bytes": 79815
+    },
+    {
+      "path": "assets/music/13027a696af32de78c909409.m4a",
+      "source": "/assets/audio-compact/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage0.m4a",
+      "sha256": "13027a696af32de78c909409078faf422ce3987be39478e8ea150cf60da7c931",
+      "bytes": 144188
+    },
+    {
+      "path": "assets/music/140141dc7595f2b5efa328a2.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/astronautintheocean/piano-60c918225ceb.m4a",
+      "sha256": "140141dc7595f2b5efa328a24d266fe3c69de143c65388ba409234dd58f4f46a",
+      "bytes": 82032
+    },
+    {
+      "path": "assets/music/143dde33059b4aee00712a75.m4a",
+      "source": "/assets/audio-meta/Songs/DeathBed/DeathBed_Stage4.m4a",
+      "sha256": "143dde33059b4aee00712a75d511b139dacd7866f9ac1697351e182ff83e4ed7",
+      "bytes": 159948
+    },
+    {
+      "path": "assets/music/1588700a2247fac35dd1d684.m4a",
+      "source": "/assets/audio-compact/Songs/PlayingWithFire/PlayingWithFire_Stage0.m4a",
+      "sha256": "1588700a2247fac35dd1d6848c6923137474cfa3bc180795293cecb9d29f9025",
+      "bytes": 119271
+    },
+    {
+      "path": "assets/music/15b7f97914acfd08996f46ae.m4a",
+      "source": "/assets/audio-meta/Songs/DeathBed/DeathBed_Stage2.m4a",
+      "sha256": "15b7f97914acfd08996f46ae5dba9920b8f98eb4f9c9cbf13658617f090ade67",
+      "bytes": 172487
+    },
+    {
+      "path": "assets/music/15d33a9a441d9e3032a49998.m4a",
+      "source": "/assets/audio-compact/Songs/Flower/Flower_Stage1.m4a",
+      "sha256": "15d33a9a441d9e3032a499988bc0a110174251aa6a8cf6bdefa60c9a30b3fe7a",
+      "bytes": 164160
+    },
+    {
+      "path": "assets/music/15e0e757025812aa66c49136.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/takeonme/violin-b2bc622331d2.m4a",
+      "sha256": "15e0e757025812aa66c49136103849a7a23e963afbe11229e42b0ab6661fe77d",
+      "bytes": 140989
+    },
+    {
+      "path": "assets/music/177a45ed86714c8c2cd2ef95.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/saveyourtears/piano-df9be8098b0c.m4a",
+      "sha256": "177a45ed86714c8c2cd2ef955ff502591f90f8c48e869ab6841a9ea189f04d96",
+      "bytes": 101948
+    },
+    {
+      "path": "assets/music/180830e43141183b8e7cbb2f.m4a",
+      "source": "/assets/audio-compact/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage4.m4a",
+      "sha256": "180830e43141183b8e7cbb2fe8e24e3cf921760050b5a67c276f2101fd5d93d9",
+      "bytes": 145390
+    },
+    {
+      "path": "assets/music/187fc2d9284cbced28021e91.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/deathbed/piano-8abac6b6e9f2.m4a",
+      "sha256": "187fc2d9284cbced28021e910eb79d659a5f1610486cddce1edd5cb5877a631c",
+      "bytes": 166343
+    },
+    {
+      "path": "assets/music/1889f44be749df2a8a9c7a50.m4a",
+      "source": "/assets/audio-compact/Songs/AtMyWorst/AtMyWorst_Stage2.m4a",
+      "sha256": "1889f44be749df2a8a9c7a5019d01989005a949a2ab295e4d1858051c4d4db07",
+      "bytes": 109640
+    },
+    {
+      "path": "assets/music/18ce72246eb5afc050d09fe2.m4a",
+      "source": "/assets/audio-meta/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage2.m4a",
+      "sha256": "18ce72246eb5afc050d09fe2f6a14bcbc4285e7ed12bd289ff3bfbe1f97d08ad",
+      "bytes": 150113
+    },
+    {
+      "path": "assets/music/191416d2d7336ccd7d41117d.m4a",
+      "source": "/assets/audio-meta/Creative/NoBatidaoFourInstruments/NoBatidaoCreative_Xylophone.m4a",
+      "sha256": "191416d2d7336ccd7d41117dc7a43914e3d234aa6ed1e75d47fb4c62de521700",
+      "bytes": 63036
+    },
+    {
+      "path": "assets/music/19dd252876ed32b6dc37944b.m4a",
+      "source": "/assets/audio-meta/Songs/IAintWorried/IAintWorried_Stage0.m4a",
+      "sha256": "19dd252876ed32b6dc37944baa1c095540f44d8ddcef428e2d4814c2dc44fa8f",
+      "bytes": 103795
+    },
+    {
+      "path": "assets/music/1a1e85e6d849529f93753116.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/nobatidao/drum-0fb0276d2827.m4a",
+      "sha256": "1a1e85e6d849529f9375311623e463bc1988d1a4f14af3b68d94cbaf293baff3",
+      "bytes": 70933
+    },
+    {
+      "path": "assets/music/1ad194930e456e3a43178310.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/heartbreakanniversary/piano-67a953f7907a.m4a",
+      "sha256": "1ad194930e456e3a4317831069362fcfa2534fb44594a920b1f05d9273d6e513",
+      "bytes": 146196
+    },
+    {
+      "path": "assets/music/1af789c781053af95d225c02.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/lunabala/violin-1e3fcb11f88c.m4a",
+      "sha256": "1af789c781053af95d225c02f71c0fd4556479c9f55e1b7f87b3d2ecde432713",
+      "bytes": 85533
+    },
+    {
+      "path": "assets/music/1b34ebb12008cdc93313465c.m4a",
+      "source": "/assets/audio-compact/Songs/PlayingWithFire/PlayingWithFire_Stage2.m4a",
+      "sha256": "1b34ebb12008cdc93313465c87de54b38c2d5c3d9f5eef43f067032e84004258",
+      "bytes": 118539
+    },
+    {
+      "path": "assets/music/1b5e62a503aadf150a35398f.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/lunabala/piano-8b8eb56fef07.m4a",
+      "sha256": "1b5e62a503aadf150a35398f9ce856e8e693893f9d49decc98c8e272447514eb",
+      "bytes": 85930
+    },
+    {
+      "path": "assets/music/1b92ad478fbfdd445ae504db.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/montagemtomada/xylophone-8e31f67b73c5.m4a",
+      "sha256": "1b92ad478fbfdd445ae504db08d32f4b0c44e3236c30c1267092a99c830af895",
+      "bytes": 135720
+    },
+    {
+      "path": "assets/music/1d708bed9359cb0d62274c5b.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/deathbed/piano-8abac6b6e9f2.m4a",
+      "sha256": "1d708bed9359cb0d62274c5b021c03db9d6c3ef29d6a3fafe3fc53fd56169c17",
+      "bytes": 272910
+    },
+    {
+      "path": "assets/music/1e2902f5f83761a685293433.m4a",
+      "source": "/assets/audio-meta/Songs/PlayingWithFire/PlayingWithFire_Stage2.m4a",
+      "sha256": "1e2902f5f83761a685293433f5396a8e68f696f62b66f967068933efdff1d442",
+      "bytes": 73023
+    },
+    {
+      "path": "assets/music/1e50507e5573aab3ac677592.m4a",
+      "source": "/assets/audio-compact/Songs/Lovely/Lovely_Stage2.m4a",
+      "sha256": "1e50507e5573aab3ac6775922ea077b0816ec8ba1fbba569bff5e6135d0273b8",
+      "bytes": 185182
+    },
+    {
+      "path": "assets/music/200bafbc48f29fbdc4a612d5.m4a",
+      "source": "/assets/audio-meta/Songs/DeathBed/DeathBed_Stage1.m4a",
+      "sha256": "200bafbc48f29fbdc4a612d5a0fc3bb46c6ff27d2ba4367fb0e319ade7c9ade3",
+      "bytes": 169086
+    },
+    {
+      "path": "assets/music/204b6ce0924dc086a6a9494a.m4a",
+      "source": "/assets/audio-compact/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage0.m4a",
+      "sha256": "204b6ce0924dc086a6a9494ae7c22b8188d5a5adffdfe136f7863886e77e1c9c",
+      "bytes": 246333
+    },
+    {
+      "path": "assets/music/20a5deecb70e2d0cefe44b54.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/perfect/guitar-07463457c023.m4a",
+      "sha256": "20a5deecb70e2d0cefe44b54fdb50f8f08693feb050d0275de41f420ed5ef759",
+      "bytes": 95303
+    },
+    {
+      "path": "assets/music/20a813b4d83b2c9724c6986b.m4a",
+      "source": "/assets/audio-compact/Songs/KissMeMore/KissMeMore_Stage2.m4a",
+      "sha256": "20a813b4d83b2c9724c6986b49a73794483f30fa3f7066445433a05f1fbd7aa2",
+      "bytes": 186854
+    },
+    {
+      "path": "assets/music/20b03cc82091a8ef6ecc8509.m4a",
+      "source": "/assets/audio-meta/Songs/ThisLove/ThisLove_Stage3.m4a",
+      "sha256": "20b03cc82091a8ef6ecc8509e6932698d80e819dc5ae4eb377d1b0c9d620ba3c",
+      "bytes": 130260
+    },
+    {
+      "path": "assets/music/20eb3e0bdcad0511ddba376f.m4a",
+      "source": "/assets/audio-compact/Songs/StressedOut/StressedOut_Stage1.m4a",
+      "sha256": "20eb3e0bdcad0511ddba376fc1636da816adfcf64c087f1bba250316986e818b",
+      "bytes": 180570
+    },
+    {
+      "path": "assets/music/213d97a2f3157799f94980c1.m4a",
+      "source": "/assets/audio-compact/Songs/PlayingWithFire/PlayingWithFire_Stage4.m4a",
+      "sha256": "213d97a2f3157799f94980c1251af7103a8861998d22228d8fefbd6c498345bd",
+      "bytes": 122430
+    },
+    {
+      "path": "assets/music/21848f7e07e41d6cc08d7b2e.m4a",
+      "source": "/assets/audio-meta/Songs/Lovely/Lovely_Stage2.m4a",
+      "sha256": "21848f7e07e41d6cc08d7b2e511d56a73ca999eb74fdf6cd53d3e320c4d38997",
+      "bytes": 108972
+    },
+    {
+      "path": "assets/music/21b782d37b022f7f8cad6999.m4a",
+      "source": "/assets/audio-meta/Songs/NoBatidao/NoBatidao_Stage1.m4a",
+      "sha256": "21b782d37b022f7f8cad6999e95d7c24b936999854ad17ebc1ec76ce14f2b6c6",
+      "bytes": 69473
+    },
+    {
+      "path": "assets/music/22230fffdd8a2eab787c6486.m4a",
+      "source": "/assets/audio-meta/Songs/Unity/Unity_Stage1.m4a",
+      "sha256": "22230fffdd8a2eab787c6486de1f9b2287e6044ce40d6a718ab9b6918b700997",
+      "bytes": 115372
+    },
+    {
+      "path": "assets/music/22b17441c7b095578464c68c.m4a",
+      "source": "/assets/audio-meta/Songs/ThisLove/ThisLove_Stage1.m4a",
+      "sha256": "22b17441c7b095578464c68ced74e6d31f67426d33f6226f3e8a1da5d0a32040",
+      "bytes": 131886
+    },
+    {
+      "path": "assets/music/22e147cb366d9daa04ad5424.m4a",
+      "source": "/assets/audio-meta/Songs/Perfect/Perfect_Stage0.m4a",
+      "sha256": "22e147cb366d9daa04ad54248364d3778912bc0d6cd3b99150e67d7b88696d4b",
+      "bytes": 146960
+    },
+    {
+      "path": "assets/music/22fd196aacc8705a1e2bf33f.m4a",
+      "source": "/assets/audio-meta/Songs/LovesickGirls/LovesickGirls_Stage3.m4a",
+      "sha256": "22fd196aacc8705a1e2bf33fd1e65c8dc68f3f20df8582e6c3a3567e0cfe7801",
+      "bytes": 94249
+    },
+    {
+      "path": "assets/music/241eda595f4a0c7b254719cd.m4a",
+      "source": "/assets/audio-compact/Songs/WakeMeUp/WakeMeUp_Stage0.m4a",
+      "sha256": "241eda595f4a0c7b254719cdb62146afd275c002d9a3ae5a240f32a8e2d475ee",
+      "bytes": 244257
+    },
+    {
+      "path": "assets/music/249db0662cf7dbd5b4288bf6.m4a",
+      "source": "/assets/audio-compact/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage0.m4a",
+      "sha256": "249db0662cf7dbd5b4288bf6f49d5c81d9b7f22b5b7404d346b855a75a773427",
+      "bytes": 157329
+    },
+    {
+      "path": "assets/music/257d136f89e7068343e1ef53.m4a",
+      "source": "/assets/audio-compact/Songs/PlayingWithFire/PlayingWithFire_Stage1.m4a",
+      "sha256": "257d136f89e7068343e1ef53426b27028cb5f66c1a38a1c95fe90156a4a354ce",
+      "bytes": 119971
+    },
+    {
+      "path": "assets/music/26628995d988565c21187555.m4a",
+      "source": "/assets/audio-compact/Songs/StressedOut/StressedOut_Stage2.m4a",
+      "sha256": "26628995d988565c21187555c83d7f0b602bf3208cb39035cf4c2e2538087f28",
+      "bytes": 177575
+    },
+    {
+      "path": "assets/music/26a463a6270bdba25c4719a3.m4a",
+      "source": "/assets/audio-meta/Songs/BlindingLights/BlindingLights_Stage0.m4a",
+      "sha256": "26a463a6270bdba25c4719a33dfeb2d6720b73d45cab07159e2a7bb066de1b52",
+      "bytes": 72868
+    },
+    {
+      "path": "assets/music/26b66dd2b927e74e7f571a35.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/saveyourtears/drum-9f13d2afd460.m4a",
+      "sha256": "26b66dd2b927e74e7f571a35d670ac274c252c46e6c624f9f7ee24645062bb1e",
+      "bytes": 174188
+    },
+    {
+      "path": "assets/music/26c8330a44b20d9258805706.m4a",
+      "source": "/assets/audio-compact/Songs/IWantItThatWay/IWantItThatWay_Stage0.m4a",
+      "sha256": "26c8330a44b20d9258805706e7ff1f7383d084a8313a800edf7f94e6356f5b35",
+      "bytes": 203404
+    },
+    {
+      "path": "assets/music/282b9ecbb74b58bfe3550bdc.m4a",
+      "source": "/assets/audio-meta/Songs/IAintWorried/IAintWorried_Stage3.m4a",
+      "sha256": "282b9ecbb74b58bfe3550bdcf59574fcd825d17d2f042320e93c23becdbe13a1",
+      "bytes": 96902
+    },
+    {
+      "path": "assets/music/2954075df5a0e4ebbf6c6c18.m4a",
+      "source": "/assets/audio-meta/Songs/IWantItThatWay/IWantItThatWay_Stage1.m4a",
+      "sha256": "2954075df5a0e4ebbf6c6c18e63e9ef017753b0642697fd4a0823f3aed6e6ad4",
+      "bytes": 126282
+    },
+    {
+      "path": "assets/music/299816045b47f9abb0698de2.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/saveyourtears/guitar-251be58ea302.m4a",
+      "sha256": "299816045b47f9abb0698de20eba28bcc5330879dc77d2fc29716dcd25c3b269",
+      "bytes": 168539
+    },
+    {
+      "path": "assets/music/2a6120cfb3c0d65d4d490ad0.m4a",
+      "source": "/assets/audio-compact/Songs/ThereforeIAm/ThereforeIAm_Stage1.m4a",
+      "sha256": "2a6120cfb3c0d65d4d490ad0f7084772eddade7c170642da64d1675c1487e933",
+      "bytes": 218650
+    },
+    {
+      "path": "assets/music/2aba152209845154f5e40828.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/losvoltaje/piano-4942e7f9ca5d.m4a",
+      "sha256": "2aba152209845154f5e4082821b5207f35b72b7b45caf3bfa6e9e5620c7f05d4",
+      "bytes": 223374
+    },
+    {
+      "path": "assets/music/2cb173cd83c30ea62a085ead.m4a",
+      "source": "/assets/audio-compact/Songs/Starboy/Starboy_Stage1.m4a",
+      "sha256": "2cb173cd83c30ea62a085eaddf73d6b88f5065e3a9997a72daddc718ea7e983f",
+      "bytes": 261233
+    },
+    {
+      "path": "assets/music/2ce86801e97db0389c905228.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/saveyourtears/piano-df9be8098b0c.m4a",
+      "sha256": "2ce86801e97db0389c905228cf797536cffd2949bde29410ea0462bd3ea56a06",
+      "bytes": 166936
+    },
+    {
+      "path": "assets/music/2dfe5505b1bc84514f4437e3.m4a",
+      "source": "/assets/audio-compact/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage3.m4a",
+      "sha256": "2dfe5505b1bc84514f4437e34cd128a5b8a50f0c80d4f0a04327c6d1d2a49166",
+      "bytes": 109560
+    },
+    {
+      "path": "assets/music/2e7e2d04a40cd59fc4ef76eb.m4a",
+      "source": "/assets/audio-compact/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage0.m4a",
+      "sha256": "2e7e2d04a40cd59fc4ef76eb777d9690456fa9df91c0354d5c9ccc8e2bbcca97",
+      "bytes": 102256
+    },
+    {
+      "path": "assets/music/2e8454224235a1915bc1062a.m4a",
+      "source": "/assets/audio-compact/Songs/KissMeMore/KissMeMore_Stage4.m4a",
+      "sha256": "2e8454224235a1915bc1062a15ad6a6d1e3f27364cd14960067814881ba04550",
+      "bytes": 192532
+    },
+    {
+      "path": "assets/music/2efcbd080e9914c16dfe6ed7.m4a",
+      "source": "/assets/audio-compact/Songs/LeaveALightOn/LeaveALightOn_Stage4.m4a",
+      "sha256": "2efcbd080e9914c16dfe6ed7bea6d852e97e8974c66cf70cb93b302f434f9d81",
+      "bytes": 154575
+    },
+    {
+      "path": "assets/music/2fbde1da9ac01dee2d8c06e3.m4a",
+      "source": "/assets/audio-meta/Songs/StressedOut/StressedOut_Stage0.m4a",
+      "sha256": "2fbde1da9ac01dee2d8c06e3197aba7da027ee8ebb773290e8754250423a3d13",
+      "bytes": 106809
+    },
+    {
+      "path": "assets/music/2fc55a6f9b650d85dd16902a.m4a",
+      "source": "/assets/audio-meta/Songs/Mistletoe/Mistletoe_Stage4.m4a",
+      "sha256": "2fc55a6f9b650d85dd16902a09917a52f71db50f97e3ab47fb770f8ea30be20c",
+      "bytes": 74058
+    },
+    {
+      "path": "assets/music/310e858566df3c34c26ad653.m4a",
+      "source": "/assets/audio-meta/Songs/IAintWorried/IAintWorried_Stage1.m4a",
+      "sha256": "310e858566df3c34c26ad653856ee37f0929443f6b250da37ea4ee96c0374d14",
+      "bytes": 102872
+    },
+    {
+      "path": "assets/music/3201ea19ce5ddf7105e9cc85.m4a",
+      "source": "/assets/audio-compact/Songs/AtMyWorst/AtMyWorst_Stage0.m4a",
+      "sha256": "3201ea19ce5ddf7105e9cc852c6c6092b55e66c1e854c07bd1015cfcc8ffc2ae",
+      "bytes": 110199
+    },
+    {
+      "path": "assets/music/32137097655d9b4a53a76e5b.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/saveyourtears/drum-9f13d2afd460.m4a",
+      "sha256": "32137097655d9b4a53a76e5b927e9b4f4f3798abc97d22dc40b94689e46a8e12",
+      "bytes": 103382
+    },
+    {
+      "path": "assets/music/328bdf7d10612fbb414c3b24.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/despacito/xylophone-baa48454ef81.m4a",
+      "sha256": "328bdf7d10612fbb414c3b24137ecaa227fe4a63d229df04878ce9869f304c77",
+      "bytes": 111779
+    },
+    {
+      "path": "assets/music/33664761b9e293be3c8d665d.m4a",
+      "source": "/assets/audio-compact/Songs/IWantItThatWay/IWantItThatWay_Stage3.m4a",
+      "sha256": "33664761b9e293be3c8d665d1d232c88d1bca75b829dcd61228544a99fefa95b",
+      "bytes": 205455
+    },
+    {
+      "path": "assets/music/34606848e68f9eda29021542.m4a",
+      "source": "/assets/audio-meta/Songs/AtMyWorst/AtMyWorst_Stage3.m4a",
+      "sha256": "34606848e68f9eda290215429d400ffe67f767a3839600f4fae5df98246aa7c4",
+      "bytes": 64193
+    },
+    {
+      "path": "assets/music/34615a75c9f0681a77b2c6d4.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/babyonemoretime/xylophone-1d269005a506.m4a",
+      "sha256": "34615a75c9f0681a77b2c6d429691a5ce92f87437acdd347d916fdd9dc6014d8",
+      "bytes": 94710
+    },
+    {
+      "path": "assets/music/34dff382e318bf0e7e3318ed.m4a",
+      "source": "/assets/audio-compact/Songs/BadHabits/BadHabits_Stage2.m4a",
+      "sha256": "34dff382e318bf0e7e3318ed83ebb9a7362eececdac8f5db090b62ae589038fb",
+      "bytes": 159683
+    },
+    {
+      "path": "assets/music/3535575664660f3c1187b534.m4a",
+      "source": "/assets/audio-compact/Songs/Shallow/Shallow_Stage1.m4a",
+      "sha256": "3535575664660f3c1187b53406747e0cbd764bce4d909cf7e8084e4fe30cbdbf",
+      "bytes": 323433
+    },
+    {
+      "path": "assets/music/3631d12e2d7416adc972e84d.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sad/guitar-f36fecfd430d.m4a",
+      "sha256": "3631d12e2d7416adc972e84d1b9bda9f0839eaaabddbc9b065a34689d674f34e",
+      "bytes": 133251
+    },
+    {
+      "path": "assets/music/369ff5811099b405d3009020.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sunflower/piano-dff76502f65d.m4a",
+      "sha256": "369ff5811099b405d300902023e2daa10437cfa87400444223d809b5fc9e66cb",
+      "bytes": 109977
+    },
+    {
+      "path": "assets/music/36f7256b5e69d6110921e5ba.m4a",
+      "source": "/assets/audio-compact/Songs/ThereforeIAm/ThereforeIAm_Stage2.m4a",
+      "sha256": "36f7256b5e69d6110921e5badfd7bee12c8c7385e216bc801ddfe0b4066aedaf",
+      "bytes": 213766
+    },
+    {
+      "path": "assets/music/3843e9a0ca8e3606c90f5299.m4a",
+      "source": "/assets/audio-compact/Songs/DanceMonkey/DanceMonkey_Stage2.m4a",
+      "sha256": "3843e9a0ca8e3606c90f529910b3a3b56ca0cb1f439e97b38f6bfedb8998a806",
+      "bytes": 103205
+    },
+    {
+      "path": "assets/music/385fe15c1d9be995f29b33cb.m4a",
+      "source": "/assets/audio-meta/Songs/LovesickGirls/LovesickGirls_Stage1.m4a",
+      "sha256": "385fe15c1d9be995f29b33cb3489bb05a7dfd48d0051703bfea58cdc7a5e3dfe",
+      "bytes": 97307
+    },
+    {
+      "path": "assets/music/3892cd51328784495adbfa5c.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/montagemtomada/piano-451b375fcea3.m4a",
+      "sha256": "3892cd51328784495adbfa5c97ddd0d40666f700b5f50563dc676affb680e3ec",
+      "bytes": 82649
+    },
+    {
+      "path": "assets/music/38b4d7f0a6d7b44145c7cba4.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/perfect/piano-1033098c366c.m4a",
+      "sha256": "38b4d7f0a6d7b44145c7cba47dc470b29baaa5b52552f4400af8f7e5c6d9905a",
+      "bytes": 95005
+    },
+    {
+      "path": "assets/music/395d0d08e135577c4ca99bc0.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/blindinglights/guitar-d4a8debd6552.m4a",
+      "sha256": "395d0d08e135577c4ca99bc070364721d3f2cdddd48021b774a74d26c5534525",
+      "bytes": 115996
+    },
+    {
+      "path": "assets/music/397140a872b781cc74b41623.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/astronautintheocean/xylophone-0c9d98c27698.m4a",
+      "sha256": "397140a872b781cc74b416232cd83a71112137465b38d4770f0f5544f589b167",
+      "bytes": 123448
+    },
+    {
+      "path": "assets/music/39dc61b3c769f70b06fe20a3.m4a",
+      "source": "/assets/audio-compact/Songs/LeaveALightOn/LeaveALightOn_Stage0.m4a",
+      "sha256": "39dc61b3c769f70b06fe20a389fad8706778b605056858f8b5eff8efc4e63c4a",
+      "bytes": 152742
+    },
+    {
+      "path": "assets/music/3b5d06ff8c46997aab829ad4.m4a",
+      "source": "/assets/audio-compact/Songs/BadHabits/BadHabits_Stage0.m4a",
+      "sha256": "3b5d06ff8c46997aab829ad4a286fb0b4120e8678b12826cae7b08f0ad3cd78c",
+      "bytes": 160540
+    },
+    {
+      "path": "assets/music/3be19634f7db7d5a35d54056.m4a",
+      "source": "/assets/audio-compact/Songs/WakeMeUp/WakeMeUp_Stage1.m4a",
+      "sha256": "3be19634f7db7d5a35d54056bae6a49aad0b2d8e3d6e86875d457206e842213f",
+      "bytes": 246154
+    },
+    {
+      "path": "assets/music/3c6b82976f0c28cddb6a11b2.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sad/xylophone-842aef7765fe.m4a",
+      "sha256": "3c6b82976f0c28cddb6a11b267b935ca186ff763368e6045637e93e8d1441a1c",
+      "bytes": 134187
+    },
+    {
+      "path": "assets/music/3cd3fe7c0a5e17fb571c32f2.m4a",
+      "source": "/assets/audio-compact/Songs/Mistletoe/Mistletoe_Stage3.m4a",
+      "sha256": "3cd3fe7c0a5e17fb571c32f2384b73d53212a3952996d3d6a64b2337fd635f45",
+      "bytes": 129456
+    },
+    {
+      "path": "assets/music/3d295ae4ca70a5b265f0c143.m4a",
+      "source": "/assets/audio-meta/Songs/BadHabits/BadHabits_Stage3.m4a",
+      "sha256": "3d295ae4ca70a5b265f0c14359bcb103699e056224a5627106645754a7b6944e",
+      "bytes": 90538
+    },
+    {
+      "path": "assets/music/3e87d7eb425aaef6746b71b7.m4a",
+      "source": "/assets/audio-meta/Songs/Shallow/Shallow_Stage4.m4a",
+      "sha256": "3e87d7eb425aaef6746b71b770f485bbc69c08bfde7e1eeeb1b9958b82da2e9d",
+      "bytes": 190499
+    },
+    {
+      "path": "assets/music/409472fbb339dae4763ff8af.m4a",
+      "source": "/assets/audio-compact/Songs/Starboy/Starboy_Stage0.m4a",
+      "sha256": "409472fbb339dae4763ff8af05940520845c741880396352bfeaf74e4d71bb29",
+      "bytes": 257729
+    },
+    {
+      "path": "assets/music/40a0ed8d0fd1f941a0114e5f.m4a",
+      "source": "/assets/audio-meta/Songs/Shallow/Shallow_Stage1.m4a",
+      "sha256": "40a0ed8d0fd1f941a0114e5f215d48b03f4644bb3cecdea4bdb9abb6390a94ae",
+      "bytes": 198499
+    },
+    {
+      "path": "assets/music/40dec677d9f0c05b1412d1b4.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/heartbreakanniversary/violin-b9b1cbe9929d.m4a",
+      "sha256": "40dec677d9f0c05b1412d1b443ff7a6f49165511d407d550d17b2e01456beda1",
+      "bytes": 239576
+    },
+    {
+      "path": "assets/music/4182750f7f40b2f59d68b898.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/blindinglights/piano-67aca1e89ebd.m4a",
+      "sha256": "4182750f7f40b2f59d68b898cf1d862043e80fef1dc7fa8292a9660d4d44f1b5",
+      "bytes": 70777
+    },
+    {
+      "path": "assets/music/41bc0133bc274f15617392ce.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/lunabala/xylophone-59cc6d4b4098.m4a",
+      "sha256": "41bc0133bc274f15617392ce7ece35f8f53f400369a937e40e7d49a1e1df5ce0",
+      "bytes": 86461
+    },
+    {
+      "path": "assets/music/41bd6feb6c8d30bbb65ce542.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/heartbreakanniversary/drum-77b688d36f4b.m4a",
+      "sha256": "41bd6feb6c8d30bbb65ce542334f05efc801c7422477d16dffa72d941dc04ea6",
+      "bytes": 219326
+    },
+    {
+      "path": "assets/music/41c313a5a7da9c9f44199aec.m4a",
+      "source": "/assets/audio-compact/Songs/LeaveALightOn/LeaveALightOn_Stage2.m4a",
+      "sha256": "41c313a5a7da9c9f44199aecb72c146a1216a3bee2185fc6f1639f2f0a102f9c",
+      "bytes": 152397
+    },
+    {
+      "path": "assets/music/41d218d1521ebf537524e9af.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/montagemtomada/drum-ce132996b5b5.m4a",
+      "sha256": "41d218d1521ebf537524e9af905a8a78d05b58351dd0bb69da1902eed53a55fb",
+      "bytes": 141845
+    },
+    {
+      "path": "assets/music/42db79f523cdf428c92ee40d.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sad/drum-773cefcafa78.m4a",
+      "sha256": "42db79f523cdf428c92ee40d465aa371f899c092fadb79ffa565af09340a2b04",
+      "bytes": 81542
+    },
+    {
+      "path": "assets/music/42e7ed2c511405088b65c765.m4a",
+      "source": "/assets/audio-meta/Songs/ThereforeIAm/ThereforeIAm_Stage0.m4a",
+      "sha256": "42e7ed2c511405088b65c7654d6a16549c1647d36984a4f3944e1e5867e321cd",
+      "bytes": 132135
+    },
+    {
+      "path": "assets/music/43d5dfa9123b40a6de3339af.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/despacito/drum-4df454847b04.m4a",
+      "sha256": "43d5dfa9123b40a6de3339aff49f6b3e515b2920684e894456fa89a077b27f22",
+      "bytes": 113720
+    },
+    {
+      "path": "assets/music/444b5eaf8571dbf268bcbe79.m4a",
+      "source": "/assets/audio-meta/Songs/LovesickGirls/LovesickGirls_Stage0.m4a",
+      "sha256": "444b5eaf8571dbf268bcbe7947ec1addaa5074fe328429be7e46893dcfc0f5d4",
+      "bytes": 97736
+    },
+    {
+      "path": "assets/music/446d17d83bc69e2a3e36c74b.m4a",
+      "source": "/assets/audio-compact/Songs/Perfect/Perfect_Stage2.m4a",
+      "sha256": "446d17d83bc69e2a3e36c74b33f2a1657314721175fcb9c885a8dd6afd7d184a",
+      "bytes": 238482
+    },
+    {
+      "path": "assets/music/44852b5d1723f31359378224.m4a",
+      "source": "/assets/audio-compact/Songs/ThisLove/ThisLove_Stage0.m4a",
+      "sha256": "44852b5d1723f313593782247c762ae68b8f8f08f1d34896cf8effc98f7b983a",
+      "bytes": 213870
+    },
+    {
+      "path": "assets/music/457201d9abcc40ab05aee92b.m4a",
+      "source": "/assets/audio-meta/Songs/LeaveALightOn/LeaveALightOn_Stage1.m4a",
+      "sha256": "457201d9abcc40ab05aee92b3fa0a839785f84373006dae3b2cb452c42aa8d20",
+      "bytes": 93226
+    },
+    {
+      "path": "assets/music/45d80ff7538fd014edbc2842.m4a",
+      "source": "/assets/audio-compact/Songs/Flower/Flower_Stage0.m4a",
+      "sha256": "45d80ff7538fd014edbc284285974c11b61b60e1056f447bba0ba432049cc4e1",
+      "bytes": 162597
+    },
+    {
+      "path": "assets/music/46093ca43309b2d9a8114bce.m4a",
+      "source": "/assets/audio-compact/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage1.m4a",
+      "sha256": "46093ca43309b2d9a8114bce66220705c4aa497a841190cda83b9df6f2751355",
+      "bytes": 103889
+    },
+    {
+      "path": "assets/music/47c04bc18129502237b126bb.m4a",
+      "source": "/assets/audio-meta/Songs/KissMeMore/KissMeMore_Stage0.m4a",
+      "sha256": "47c04bc18129502237b126bbd1480b3d263ee77ff7094583042aef7b47b8ed1c",
+      "bytes": 115680
+    },
+    {
+      "path": "assets/music/4812348d04a56ac1447c8333.m4a",
+      "source": "/assets/audio-compact/Songs/Starboy/Starboy_Stage2.m4a",
+      "sha256": "4812348d04a56ac1447c8333b9371495ce9d958a0c7e744ba847953eaad41f58",
+      "bytes": 257772
+    },
+    {
+      "path": "assets/music/4839c00f8b00ab72597c431a.m4a",
+      "source": "/assets/audio-meta/Songs/Lovely/Lovely_Stage3.m4a",
+      "sha256": "4839c00f8b00ab72597c431a83e5f6ad350b1245bb653f71b521eb51b2f9e63e",
+      "bytes": 108534
+    },
+    {
+      "path": "assets/music/48a39996bd8df38955c2dff1.m4a",
+      "source": "/assets/audio-meta/Songs/Starboy/Starboy_Stage3.m4a",
+      "sha256": "48a39996bd8df38955c2dff142bf8c82b85ca855b254bffdd29273f273179ee0",
+      "bytes": 160052
+    },
+    {
+      "path": "assets/music/48ab06619aa351f8643b35e1.m4a",
+      "source": "/assets/audio-meta/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage0.m4a",
+      "sha256": "48ab06619aa351f8643b35e1e7193d565cc87002c7121393ae6094aa83cfbad3",
+      "bytes": 105240
+    },
+    {
+      "path": "assets/music/48c94a97b049f2fc5fe76e1f.m4a",
+      "source": "/assets/audio-compact/Songs/Unity/Unity_Stage1.m4a",
+      "sha256": "48c94a97b049f2fc5fe76e1ff0ee8444f8e713549982f5b35cbc2ee4e20fac66",
+      "bytes": 194293
+    },
+    {
+      "path": "assets/music/48d980a8b3df2ef4aba5429d.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/nobatidao/drum-0fb0276d2827.m4a",
+      "sha256": "48d980a8b3df2ef4aba5429da1cd8d5f8c1fbad2837b417e48397ff1f645b473",
+      "bytes": 120139
+    },
+    {
+      "path": "assets/music/4a620c513c135a8965743f23.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/passobemsolto/violin-7781139a17a6.m4a",
+      "sha256": "4a620c513c135a8965743f23573e778ae370ed9c21150f422032c7234468b192",
+      "bytes": 169955
+    },
+    {
+      "path": "assets/music/4a7205dfa1bedc782e4c7042.m4a",
+      "source": "/assets/audio-compact/Songs/ThereforeIAm/ThereforeIAm_Stage0.m4a",
+      "sha256": "4a7205dfa1bedc782e4c7042166493a8fd5f4fe94cf723b6d19b604c5799edc8",
+      "bytes": 215469
+    },
+    {
+      "path": "assets/music/4ab044c8e83bc8da389ef5db.m4a",
+      "source": "/assets/audio-meta/Songs/KissMeMore/KissMeMore_Stage2.m4a",
+      "sha256": "4ab044c8e83bc8da389ef5db907cc10f5cc4dd4a98507398827c9fc12e66f3b7",
+      "bytes": 115004
+    },
+    {
+      "path": "assets/music/4b5aa94f26c1c9a8aaa1bcf3.m4a",
+      "source": "/assets/audio-compact/Songs/DeathBed/DeathBed_Stage5.m4a",
+      "sha256": "4b5aa94f26c1c9a8aaa1bcf3b02b073141d964788d4fecf1da6dc8920a1f235d",
+      "bytes": 278988
+    },
+    {
+      "path": "assets/music/4bc4821831ac96c544b4ffdd.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/montagemtomada/piano-451b375fcea3.m4a",
+      "sha256": "4bc4821831ac96c544b4ffdd48d28c6c8fbbcd2a6d741da04a9682edd0d318ed",
+      "bytes": 135315
+    },
+    {
+      "path": "assets/music/4c04938057705ec158577a30.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/deathbed/violin-5ee7952244c1.m4a",
+      "sha256": "4c04938057705ec158577a30cc4f6406b6989abdecf441508ed47c928af66c4f",
+      "bytes": 166328
+    },
+    {
+      "path": "assets/music/4c0fdafa90b79a4bd6e57efd.m4a",
+      "source": "/assets/audio-compact/Songs/Flower/Flower_Stage2.m4a",
+      "sha256": "4c0fdafa90b79a4bd6e57efdab4ca9384115d74f758e49e51ac2a68268e3fdbc",
+      "bytes": 162386
+    },
+    {
+      "path": "assets/music/4c4401ba0622b533f786a359.m4a",
+      "source": "/assets/audio-compact/Songs/Unity/Unity_Stage0.m4a",
+      "sha256": "4c4401ba0622b533f786a359ce8fa1478c0e621281a6df439544a22f5c05e3bd",
+      "bytes": 193394
+    },
+    {
+      "path": "assets/music/4c97c8f2c6571030803c9885.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/takeonme/xylophone-7cdb61e85d51.m4a",
+      "sha256": "4c97c8f2c6571030803c9885f0f33c379fd152b8afcd4133e638efebedf4bdce",
+      "bytes": 86904
+    },
+    {
+      "path": "assets/music/4e0d52b3a552b71866b83a30.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sunflower/drum-314375658cb6.m4a",
+      "sha256": "4e0d52b3a552b71866b83a30b61e0bfaba1c849f5b94032f67d99a15c7c88591",
+      "bytes": 70225
+    },
+    {
+      "path": "assets/music/4ea2a6b6ef8c8c3f11fdeb9a.m4a",
+      "source": "/assets/audio-compact/Songs/Shallow/Shallow_Stage4.m4a",
+      "sha256": "4ea2a6b6ef8c8c3f11fdeb9ab0adeaf5b7f24b671d2436b21519df0c68bc50de",
+      "bytes": 329136
+    },
+    {
+      "path": "assets/music/4f12787a939a49c5138aa5ff.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sayso/violin-33cafef77b1a.m4a",
+      "sha256": "4f12787a939a49c5138aa5ffd83f3d83985c0fe69f8c746a40feea8c88bffc0e",
+      "bytes": 54719
+    },
+    {
+      "path": "assets/music/507dffc3a0f7aad9bef580d0.m4a",
+      "source": "/assets/audio-meta/Songs/WakeMeUp/WakeMeUp_Stage1.m4a",
+      "sha256": "507dffc3a0f7aad9bef580d0a35c8210ea52bde7d1f9375ab7e255297468b74e",
+      "bytes": 151193
+    },
+    {
+      "path": "assets/music/50e4434401fa19a9300933af.m4a",
+      "source": "/assets/audio-compact/Songs/BlindingLights/BlindingLights_Stage0.m4a",
+      "sha256": "50e4434401fa19a9300933afd73314bc56ad34e1543fc56549962370507ca677",
+      "bytes": 118249
+    },
+    {
+      "path": "assets/music/513e67ce1f8d5b2ecaad9876.m4a",
+      "source": "/assets/audio-meta/Songs/KissMeMore/KissMeMore_Stage4.m4a",
+      "sha256": "513e67ce1f8d5b2ecaad9876af9e79203158c5bb6f64390218925a8aedb2e644",
+      "bytes": 106825
+    },
+    {
+      "path": "assets/music/51dd474f775efbf2b3bb6b34.m4a",
+      "source": "/assets/audio-compact/Songs/IWantItThatWay/IWantItThatWay_Stage4.m4a",
+      "sha256": "51dd474f775efbf2b3bb6b340ebe89551a59b3034e84c86520492d92f1de77f2",
+      "bytes": 204841
+    },
+    {
+      "path": "assets/music/526964db59894df95a26ef97.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/despacito/guitar-35bfaa2d938c.m4a",
+      "sha256": "526964db59894df95a26ef97f44c80a762a3df542f38d9359dc81825ad3e7621",
+      "bytes": 67700
+    },
+    {
+      "path": "assets/music/5319194039b96d20089d2f04.m4a",
+      "source": "/assets/audio-compact/Songs/AtMyWorst/AtMyWorst_Stage4.m4a",
+      "sha256": "5319194039b96d20089d2f04e98b3c06e63f7712cfaa575277f2bdf6400904f0",
+      "bytes": 110875
+    },
+    {
+      "path": "assets/music/53a6e1e62889aaabd572d47d.m4a",
+      "source": "/assets/audio-meta/Songs/BlindingLights/BlindingLights_Stage5.m4a",
+      "sha256": "53a6e1e62889aaabd572d47dc9a55ddffe5bf83fdb42c760520b38b2a42cf54a",
+      "bytes": 72873
+    },
+    {
+      "path": "assets/music/54018b9f896cae7222413f5a.m4a",
+      "source": "/assets/audio-meta/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage1.m4a",
+      "sha256": "54018b9f896cae7222413f5ac1452b9995618513df9c8a4cdaee01bf9224d038",
+      "bytes": 61245
+    },
+    {
+      "path": "assets/music/541f37ce4fe422ab8413ed5f.m4a",
+      "source": "/assets/audio-meta/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage2.m4a",
+      "sha256": "541f37ce4fe422ab8413ed5f8f425924fab09f2b3c2065b95b722c9300487ca2",
+      "bytes": 63134
+    },
+    {
+      "path": "assets/music/543b2e116d2561fbc893ca95.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sad/violin-ba931734b371.m4a",
+      "sha256": "543b2e116d2561fbc893ca951031f5945393600ed3ebfbf737c546cd216e4efd",
+      "bytes": 131582
+    },
+    {
+      "path": "assets/music/54ed6c609d9f2f3e7d722697.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/passobemsolto/drum-575c926bbfc2.m4a",
+      "sha256": "54ed6c609d9f2f3e7d7226971acc2663457cf0e7e26fdfbbb1df948f30509812",
+      "bytes": 105186
+    },
+    {
+      "path": "assets/music/55590265b8afaf38227e4a96.m4a",
+      "source": "/assets/audio-compact/Songs/BlindingLights/BlindingLights_Stage5.m4a",
+      "sha256": "55590265b8afaf38227e4a966febc5a3c680436c6e543e52219e7477f034344a",
+      "bytes": 118676
+    },
+    {
+      "path": "assets/music/5566ac9cf98cf3df82aa1650.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/astronautintheocean/piano-60c918225ceb.m4a",
+      "sha256": "5566ac9cf98cf3df82aa16502d16b732ee7bdd5d58c9fc3d12e052e797ba914f",
+      "bytes": 134003
+    },
+    {
+      "path": "assets/music/570e826d0fef33031cdb84bd.m4a",
+      "source": "/assets/audio-meta/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage1.m4a",
+      "sha256": "570e826d0fef33031cdb84bde0f2adf5932e4c702746336f5d246a78c9003845",
+      "bytes": 104809
+    },
+    {
+      "path": "assets/music/57c0d7c78301f55cc39bc7e5.m4a",
+      "source": "/assets/audio-meta/Songs/AtMyWorst/AtMyWorst_Stage0.m4a",
+      "sha256": "57c0d7c78301f55cc39bc7e5a432eefbc12dd2c9dc1125bd60b5074aa10a6fdb",
+      "bytes": 67687
+    },
+    {
+      "path": "assets/music/581cf021b55855ae11217425.m4a",
+      "source": "/assets/audio-meta/Songs/Mistletoe/Mistletoe_Stage3.m4a",
+      "sha256": "581cf021b55855ae112174258e9547cb811f7acc0a81fa277f8a8938c5b58ad0",
+      "bytes": 72795
+    },
+    {
+      "path": "assets/music/584237ff615f00fdff34295b.m4a",
+      "source": "/assets/audio-compact/Songs/LovesickGirls/LovesickGirls_Stage2.m4a",
+      "sha256": "584237ff615f00fdff34295bb252b9c3e1ac29d5811eecfac5c9186e6d81409f",
+      "bytes": 157159
+    },
+    {
+      "path": "assets/music/598377d62eab0b1a9743d64e.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/deathbed/violin-5ee7952244c1.m4a",
+      "sha256": "598377d62eab0b1a9743d64eeb4ace5d628f7ea97565cb519017592b2ec14704",
+      "bytes": 273221
+    },
+    {
+      "path": "assets/music/59b89073b3fefa30ca00432c.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/babyonemoretime/drum-ac9474aaf3de.m4a",
+      "sha256": "59b89073b3fefa30ca00432c1da0446893ddfd82ee23e1b7bfb5c1c1b6c549e4",
+      "bytes": 157916
+    },
+    {
+      "path": "assets/music/59db5c65a1b6a863612db8bd.m4a",
+      "source": "/assets/audio-compact/Songs/NoBatidao/NoBatidao_Stage2.m4a",
+      "sha256": "59db5c65a1b6a863612db8bd678f6d8c916059955744f57c226fff5d18b151aa",
+      "bytes": 116428
+    },
+    {
+      "path": "assets/music/5a9b9d3df030ac2a429d9f88.m4a",
+      "source": "/assets/audio-compact/Songs/AtMyWorst/AtMyWorst_Stage3.m4a",
+      "sha256": "5a9b9d3df030ac2a429d9f88cb36ec7db394544aa695aec21215c8219b882876",
+      "bytes": 110425
+    },
+    {
+      "path": "assets/music/5c17e6525e7956dcf8d162e1.m4a",
+      "source": "/assets/audio-compact/Songs/ThisLove/ThisLove_Stage1.m4a",
+      "sha256": "5c17e6525e7956dcf8d162e18c167a3948e0fb408151d504580036fb6b49ba7e",
+      "bytes": 215301
+    },
+    {
+      "path": "assets/music/5c2e9aee29d505e71dbdfaba.m4a",
+      "source": "/assets/audio-compact/Songs/BlindingLights/BlindingLights_Stage4.m4a",
+      "sha256": "5c2e9aee29d505e71dbdfaba10b6c8d3cadf94e642a44617158194c792cbdc0b",
+      "bytes": 119145
+    },
+    {
+      "path": "assets/music/5c554eea3697efb1b3024639.m4a",
+      "source": "/assets/audio-compact/Songs/IAintWorried/IAintWorried_Stage2.m4a",
+      "sha256": "5c554eea3697efb1b3024639ea3d723a4e7427874871e54db087d6fcadd9a184",
+      "bytes": 167643
+    },
+    {
+      "path": "assets/music/5d43c9eda60bacea4bce407d.m4a",
+      "source": "/assets/audio-compact/Songs/KissMeMore/KissMeMore_Stage1.m4a",
+      "sha256": "5d43c9eda60bacea4bce407de5de9c8c674410f017ac0971e6bb175cfaf0da69",
+      "bytes": 190391
+    },
+    {
+      "path": "assets/music/5de5a651787d8d736be9326d.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/passobemsolto/piano-a42d862cd0af.m4a",
+      "sha256": "5de5a651787d8d736be9326dc9f705a1bdbd8f652dd5110d3fda10d5519fb755",
+      "bytes": 103765
+    },
+    {
+      "path": "assets/music/5e700b4497238d86fc418d63.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/perfect/piano-1033098c366c.m4a",
+      "sha256": "5e700b4497238d86fc418d636dd2f7941bca386ece64f45b6d4ecedb294be573",
+      "bytes": 155564
+    },
+    {
+      "path": "assets/music/5f9dc698d0e754bfa46cd464.m4a",
+      "source": "/assets/audio-meta/Songs/Mistletoe/Mistletoe_Stage0.m4a",
+      "sha256": "5f9dc698d0e754bfa46cd464cfab3b04df3e44b3dcd5ec026f4805cade51a09c",
+      "bytes": 77013
+    },
+    {
+      "path": "assets/music/5fb8cb6af3aaf092100e6e01.m4a",
+      "source": "/assets/audio-compact/Songs/PlayingWithFire/PlayingWithFire_Stage3.m4a",
+      "sha256": "5fb8cb6af3aaf092100e6e018ed0e8e26db909ece66e4b5766ab5edce5c52fea",
+      "bytes": 122107
+    },
+    {
+      "path": "assets/music/5fe73254a3d15146dc5d4927.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sayso/guitar-cb56f00b39b8.m4a",
+      "sha256": "5fe73254a3d15146dc5d492734e4a45a3226cff2860cabc49d937efaa9218ec0",
+      "bytes": 89923
+    },
+    {
+      "path": "assets/music/6002539d2432fedcb053b186.m4a",
+      "source": "/assets/audio-meta/Songs/AtMyWorst/AtMyWorst_Stage2.m4a",
+      "sha256": "6002539d2432fedcb053b1868af46a2a355e88e8b1f56484767d4777d7c96e92",
+      "bytes": 67686
+    },
+    {
+      "path": "assets/music/60730f3504c762f8b79abf63.m4a",
+      "source": "/assets/audio-meta/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage3.m4a",
+      "sha256": "60730f3504c762f8b79abf63c340180b5077621f2b52c23f882e0c207b1552d9",
+      "bytes": 103860
+    },
+    {
+      "path": "assets/music/60b1a5417d6d8c813b9588b2.m4a",
+      "source": "/assets/audio-meta/Songs/IAintWorried/IAintWorried_Stage2.m4a",
+      "sha256": "60b1a5417d6d8c813b9588b28de456d0544f01e954aec9d8af4559f99618c530",
+      "bytes": 103396
+    },
+    {
+      "path": "assets/music/629391040fd8d1cfabacb684.m4a",
+      "source": "/assets/audio-compact/Songs/Unity/Unity_Stage3.m4a",
+      "sha256": "629391040fd8d1cfabacb68422e1054531165963049f4aba090f8ff74ff635ff",
+      "bytes": 194927
+    },
+    {
+      "path": "assets/music/62dd59e335debbb248342efe.m4a",
+      "source": "/assets/audio-meta/Songs/Unity/Unity_Stage3.m4a",
+      "sha256": "62dd59e335debbb248342efe58fce7c96e7b4ddbbdccf9bd338100ccb5814917",
+      "bytes": 117176
+    },
+    {
+      "path": "assets/music/62fc34beafe07b38731e140f.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sunflower/drum-314375658cb6.m4a",
+      "sha256": "62fc34beafe07b38731e140f9c72b2ab7ffa576efcad77eaee0fb8759501d403",
+      "bytes": 115405
+    },
+    {
+      "path": "assets/music/649111873d07565838788749.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/takeonme/violin-b2bc622331d2.m4a",
+      "sha256": "649111873d075658387887499a10960acb9a043fc4922db34e078f6668a0878e",
+      "bytes": 86090
+    },
+    {
+      "path": "assets/music/64b38e5914d6b59410225d48.m4a",
+      "source": "/assets/audio-meta/Songs/Unity/Unity_Stage0.m4a",
+      "sha256": "64b38e5914d6b59410225d48ebacaf4d1ea5f77a3ffc4ed08c6570ae86de2cfd",
+      "bytes": 118318
+    },
+    {
+      "path": "assets/music/64f48e3933de9de423d1b25c.m4a",
+      "source": "/assets/audio-compact/Songs/IAintWorried/IAintWorried_Stage1.m4a",
+      "sha256": "64f48e3933de9de423d1b25c8b5a1f3ae56e50451d907156b14b2bc82fbeb034",
+      "bytes": 169352
+    },
+    {
+      "path": "assets/music/6605afa4465efceef062fd56.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/losvoltaje/guitar-fbfae15e8ee4.m4a",
+      "sha256": "6605afa4465efceef062fd567f7b939102b0d141452c10788bf087ed8d88ae26",
+      "bytes": 226678
+    },
+    {
+      "path": "assets/music/6695780b695a126f015f7754.m4a",
+      "source": "/assets/audio-meta/Songs/PlayingWithFire/PlayingWithFire_Stage4.m4a",
+      "sha256": "6695780b695a126f015f7754acf45b775ea124ff45f816260ef4692c91faa29c",
+      "bytes": 72677
+    },
+    {
+      "path": "assets/music/66a92a06763ec9454befe465.m4a",
+      "source": "/assets/audio-meta/Songs/Lovely/Lovely_Stage4.m4a",
+      "sha256": "66a92a06763ec9454befe4653815773ea32c5ad5b5a01fffbd8a5fdd9cd0f995",
+      "bytes": 114219
+    },
+    {
+      "path": "assets/music/6837f697b2117bd77fedb67c.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sayso/piano-00218458ecba.m4a",
+      "sha256": "6837f697b2117bd77fedb67c250052e2faa89e3a3f56d70f5c02275cc491d53b",
+      "bytes": 89350
+    },
+    {
+      "path": "assets/music/685bb67326ee1f5e877b964a.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/montagemtomada/violin-ebd9af627473.m4a",
+      "sha256": "685bb67326ee1f5e877b964a7310d12af8af87d8a68027b6d253e08778e23ff7",
+      "bytes": 135321
+    },
+    {
+      "path": "assets/music/6880007c36cbd2c9ec33f2dc.m4a",
+      "source": "/assets/audio-compact/Songs/Unity/Unity_Stage2.m4a",
+      "sha256": "6880007c36cbd2c9ec33f2dc97de604362e442637657d19b3761485ec8384f70",
+      "bytes": 191592
+    },
+    {
+      "path": "assets/music/6890e8e382419b9ec0f37ef8.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/babyonemoretime/guitar-b60934024ccc.m4a",
+      "sha256": "6890e8e382419b9ec0f37ef8672a4c18b91f4308c8663c2e9902d4c871e4d1cf",
+      "bytes": 154746
+    },
+    {
+      "path": "assets/music/69f62b38e7d0b2c5167cee65.m4a",
+      "source": "/assets/audio-compact/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage1.m4a",
+      "sha256": "69f62b38e7d0b2c5167cee65638f2bb0cd8ca0ca1cca083fa442dbcca3da85f9",
+      "bytes": 160074
+    },
+    {
+      "path": "assets/music/6a93e81cae56f377b82e779b.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sad/xylophone-842aef7765fe.m4a",
+      "sha256": "6a93e81cae56f377b82e779b88d65353034045dd79d3cd0a91b7be3ca2884e67",
+      "bytes": 81130
+    },
+    {
+      "path": "assets/music/6afcc665ffade2026a76013d.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sad/piano-c141b1fbedae.m4a",
+      "sha256": "6afcc665ffade2026a76013ded62fb31676d6d410fe6569a0b94dcdf5eccd132",
+      "bytes": 80415
+    },
+    {
+      "path": "assets/music/6bc821d9bccbeaabdb8871ff.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/lunabala/piano-8b8eb56fef07.m4a",
+      "sha256": "6bc821d9bccbeaabdb8871ff5c0e636f5d693068545e0665902d226beec8350e",
+      "bytes": 140904
+    },
+    {
+      "path": "assets/music/6bf19f35ea66eb75ea7b9eda.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/blindinglights/piano-67aca1e89ebd.m4a",
+      "sha256": "6bf19f35ea66eb75ea7b9eda842f3251620b13d956f1465e059498e337f9bb7b",
+      "bytes": 115699
+    },
+    {
+      "path": "assets/music/6c6aa201cba09f34564dca56.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/perfect/violin-667ae38e6a77.m4a",
+      "sha256": "6c6aa201cba09f34564dca56ed5583942037de34c8bd2eb90a2357ae50753c5c",
+      "bytes": 155400
+    },
+    {
+      "path": "assets/music/6ca5b885adbcae5821963f48.m4a",
+      "source": "/assets/audio-compact/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage3.m4a",
+      "sha256": "6ca5b885adbcae5821963f48546565851c03ddfbc4e37d579014108d37791d58",
+      "bytes": 248586
+    },
+    {
+      "path": "assets/music/6d49d4ca2aa3bdc6a1f557ea.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/blindinglights/drum-d94d8d745a79.m4a",
+      "sha256": "6d49d4ca2aa3bdc6a1f557ea97063fa1a31725d899c40c2e98b57c495775c5e5",
+      "bytes": 71588
+    },
+    {
+      "path": "assets/music/6d56c2f0867553f850a843a3.m4a",
+      "source": "/assets/audio-meta/Songs/Flower/Flower_Stage3.m4a",
+      "sha256": "6d56c2f0867553f850a843a3c348d4eb7e8de9fe1e9d1d029ed583f0a4ce5d79",
+      "bytes": 91818
+    },
+    {
+      "path": "assets/music/6d91ef4b9a7cdf7594995f66.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/babyonemoretime/guitar-b60934024ccc.m4a",
+      "sha256": "6d91ef4b9a7cdf7594995f6687f5a1d4672b6c4e48acd1fcfce20df66e633a1a",
+      "bytes": 94635
+    },
+    {
+      "path": "assets/music/6e7d6953acabeba5eedf274f.m4a",
+      "source": "/assets/audio-compact/Songs/ThisLove/ThisLove_Stage2.m4a",
+      "sha256": "6e7d6953acabeba5eedf274feae81f8a6e1dfcc256183460fa339da044e3b575",
+      "bytes": 211507
+    },
+    {
+      "path": "assets/music/6e9aa922a74a3cd824d8b3d6.m4a",
+      "source": "/assets/audio-meta/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage3.m4a",
+      "sha256": "6e9aa922a74a3cd824d8b3d62049177c3d805864b3069522b475ad7a68c93123",
+      "bytes": 152656
+    },
+    {
+      "path": "assets/music/6ea8681ded6edf78bdd9c72f.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/nobatidao/violin-7e28ff48b549.m4a",
+      "sha256": "6ea8681ded6edf78bdd9c72fe1a2198613974460617ba268276eaf48102ef1d4",
+      "bytes": 69737
+    },
+    {
+      "path": "assets/music/70667f5a83e0673fd2bd2778.m4a",
+      "source": "/assets/audio-compact/Songs/BlindingLights/BlindingLights_Stage3.m4a",
+      "sha256": "70667f5a83e0673fd2bd277880b2fc250983da8dc94cb8f8c6c8ef9e63edb402",
+      "bytes": 118536
+    },
+    {
+      "path": "assets/music/70a52a40b8ba3e60e2eca501.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/heartbreakanniversary/violin-b9b1cbe9929d.m4a",
+      "sha256": "70a52a40b8ba3e60e2eca5013f4fc9ca3c586d6591c32356b5ee5a6015df1886",
+      "bytes": 146071
+    },
+    {
+      "path": "assets/music/70a9fdfff84f5571bd57034f.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/takeonme/piano-c16eb6e861ab.m4a",
+      "sha256": "70a9fdfff84f5571bd57034f6f7b3b61ed73aabf4d0383bee3d7f92870942916",
+      "bytes": 140881
+    },
+    {
+      "path": "assets/music/70e427dd71d79c7083952cf3.m4a",
+      "source": "/assets/audio-meta/Songs/Unity/Unity_Stage4.m4a",
+      "sha256": "70e427dd71d79c7083952cf385161875a011d9bf4d9531b596ed47cd3619ec29",
+      "bytes": 114785
+    },
+    {
+      "path": "assets/music/70f631c78afeb235d1457fc0.m4a",
+      "source": "/assets/audio-meta/Songs/NoBatidao/NoBatidao_Stage2.m4a",
+      "sha256": "70f631c78afeb235d1457fc0cbf5ddea44e348b4a2b473697608ccf33d768394",
+      "bytes": 69931
+    },
+    {
+      "path": "assets/music/71aca58954b21da17523683a.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/deathbed/drum-63ed59af1982.m4a",
+      "sha256": "71aca58954b21da17523683a3404844d6e90cb9de7c572a4952e74e2aaa27d51",
+      "bytes": 167484
+    },
+    {
+      "path": "assets/music/7206ce0c0c0f6c7d93175828.m4a",
+      "source": "/assets/audio-meta/Songs/LeaveALightOn/LeaveALightOn_Stage4.m4a",
+      "sha256": "7206ce0c0c0f6c7d93175828e8a27b42e712aa81e2d3194bea986d086f6e4b1f",
+      "bytes": 93156
+    },
+    {
+      "path": "assets/music/73f40f130e4e69f901573f39.m4a",
+      "source": "/assets/audio-meta/Songs/ThereforeIAm/ThereforeIAm_Stage1.m4a",
+      "sha256": "73f40f130e4e69f901573f39fbd312c4d174dc9bbf288ba4080742c3ada6076b",
+      "bytes": 132858
+    },
+    {
+      "path": "assets/music/751e7a2bf49b2d377f68fd3c.m4a",
+      "source": "/assets/audio-compact/Songs/NoBatidao/NoBatidao_Stage0.m4a",
+      "sha256": "751e7a2bf49b2d377f68fd3cbf2e8ad6a85f5d4704200db75f33d3fb5a063c73",
+      "bytes": 116268
+    },
+    {
+      "path": "assets/music/753c75ec054fde37d175d143.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sad/violin-ba931734b371.m4a",
+      "sha256": "753c75ec054fde37d175d143a299f70e73a1a007e3ccdb7ea58bbe28e8681823",
+      "bytes": 80409
+    },
+    {
+      "path": "assets/music/769f126c109e267da15ae711.m4a",
+      "source": "/assets/audio-meta/Songs/LeaveALightOn/LeaveALightOn_Stage2.m4a",
+      "sha256": "769f126c109e267da15ae7111a0c07900cab67140c116c00bd03944965c1784e",
+      "bytes": 94059
+    },
+    {
+      "path": "assets/music/76accace92c1abc801f1c3f8.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/deathbed/guitar-a044fb5b0a0a.m4a",
+      "sha256": "76accace92c1abc801f1c3f828926c06f82afc5edf1a1af1967b35896f702223",
+      "bytes": 275343
+    },
+    {
+      "path": "assets/music/7711933850e0e9d29e731bee.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sunflower/guitar-80ce01ddd5d4.m4a",
+      "sha256": "7711933850e0e9d29e731bee3faca5788f4451ef1b2df0e6d316a17a63966a1d",
+      "bytes": 67738
+    },
+    {
+      "path": "assets/music/7727398626e8141b9591958c.m4a",
+      "source": "/assets/audio-compact/Songs/KissMeMore/KissMeMore_Stage3.m4a",
+      "sha256": "7727398626e8141b9591958c2f7d0b3b14f7e4205d890f24d2ee50de47e4070a",
+      "bytes": 188494
+    },
+    {
+      "path": "assets/music/7784ff7688ae93ffb65187de.m4a",
+      "source": "/assets/audio-compact/Songs/WakeMeUp/WakeMeUp_Stage4.m4a",
+      "sha256": "7784ff7688ae93ffb65187defbbf808d273eebd735156fef1e74e16d122665e3",
+      "bytes": 248662
+    },
+    {
+      "path": "assets/music/77a91d89d2d42e8a807469d8.m4a",
+      "source": "/assets/audio-meta/Songs/Starboy/Starboy_Stage1.m4a",
+      "sha256": "77a91d89d2d42e8a807469d85c816dda46836c0ed1624a027c7f3109b5d98d0b",
+      "bytes": 161477
+    },
+    {
+      "path": "assets/music/785dbc1534b8b8216250d2fe.m4a",
+      "source": "/assets/audio-meta/Songs/Starboy/Starboy_Stage0.m4a",
+      "sha256": "785dbc1534b8b8216250d2fe1f88d294ab9ce1b26cb8af429cdce7abbeef489c",
+      "bytes": 158931
+    },
+    {
+      "path": "assets/music/78d6ee9ede7ff930b79a55ca.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/heartbreakanniversary/xylophone-6cfb92c473ea.m4a",
+      "sha256": "78d6ee9ede7ff930b79a55cafbc058bbe692e778c147b21a8549a1813963f634",
+      "bytes": 147097
+    },
+    {
+      "path": "assets/music/7b8539c9f82af7581f949cbb.m4a",
+      "source": "/assets/audio-meta/Songs/BadHabits/BadHabits_Stage0.m4a",
+      "sha256": "7b8539c9f82af7581f949cbb1ac86ee6d4ce4a349cfd9e6f1fe213cca42a14e4",
+      "bytes": 99028
+    },
+    {
+      "path": "assets/music/7b9a199c27e90f18aac22603.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/saveyourtears/guitar-251be58ea302.m4a",
+      "sha256": "7b9a199c27e90f18aac22603547c23a383cc0c88057223bee5beaa2d4fef5dba",
+      "bytes": 102731
+    },
+    {
+      "path": "assets/music/7d12e2f013dc6516652a940c.m4a",
+      "source": "/assets/audio-compact/Songs/BadHabits/BadHabits_Stage4.m4a",
+      "sha256": "7d12e2f013dc6516652a940c57bc16124ec147250bc613a6493448577503c552",
+      "bytes": 163992
+    },
+    {
+      "path": "assets/music/7d71402fe53a81373214fbfa.m4a",
+      "source": "/assets/audio-compact/Songs/Flower/Flower_Stage4.m4a",
+      "sha256": "7d71402fe53a81373214fbfaf7fb36949766c2dec8e9fbf83f4100b2bde153a0",
+      "bytes": 164675
+    },
+    {
+      "path": "assets/music/7dbec8838fa1392988f2d153.m4a",
+      "source": "/assets/audio-meta/Songs/Shallow/Shallow_Stage2.m4a",
+      "sha256": "7dbec8838fa1392988f2d153fd7dfaf54201873923f6185cf7efb9e6fd650006",
+      "bytes": 197486
+    },
+    {
+      "path": "assets/music/7e1613c519f50e625b10b682.m4a",
+      "source": "/assets/audio-compact/Songs/LovesickGirls/LovesickGirls_Stage4.m4a",
+      "sha256": "7e1613c519f50e625b10b6824ebe7598183dd4445892a5800dc4e0f1627a548b",
+      "bytes": 158767
+    },
+    {
+      "path": "assets/music/7e1c3c1b65973704ef500496.m4a",
+      "source": "/assets/audio-meta/Creative/NoBatidaoFourInstruments/NoBatidaoCreative_Drums.m4a",
+      "sha256": "7e1c3c1b65973704ef50049664b068e05102baeb71858c06bd779b1f92f5bcd8",
+      "bytes": 70316
+    },
+    {
+      "path": "assets/music/7e2a8e9702348499bdf21524.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/deathbed/drum-63ed59af1982.m4a",
+      "sha256": "7e2a8e9702348499bdf21524e6914be429bc03361097f7b04111a8597956501b",
+      "bytes": 283592
+    },
+    {
+      "path": "assets/music/7e6061593b6b5990c4476ccc.m4a",
+      "source": "/assets/audio-compact/Songs/Perfect/Perfect_Stage3.m4a",
+      "sha256": "7e6061593b6b5990c4476ccc65b595d429a1614c00548668d7afc0195147a6ef",
+      "bytes": 238421
+    },
+    {
+      "path": "assets/music/7eb57289f4ac5666d48e7bef.m4a",
+      "source": "/assets/audio-meta/Songs/Mistletoe/Mistletoe_Stage1.m4a",
+      "sha256": "7eb57289f4ac5666d48e7bef7b1dc454dc37452f15ecaab9fdb0faad284f9d68",
+      "bytes": 77563
+    },
+    {
+      "path": "assets/music/801407225c8d7df27c3d1ee7.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/nobatidao/guitar-dc81af2705fc.m4a",
+      "sha256": "801407225c8d7df27c3d1ee7903dfc08360f57dc694cd6a41a3cb6b1680804f6",
+      "bytes": 115062
+    },
+    {
+      "path": "assets/music/80e2aef144fe0cf7e435b008.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sayso/xylophone-8124a762983f.m4a",
+      "sha256": "80e2aef144fe0cf7e435b008693283145593bdec3af8ba4ce3b55883c6b960df",
+      "bytes": 55054
+    },
+    {
+      "path": "assets/music/8182ad9a2003b4344ff10b5f.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sunflower/violin-b1737b0582c7.m4a",
+      "sha256": "8182ad9a2003b4344ff10b5f9efe37e8b8ca0721b26eeb5b40ad9fa308a39030",
+      "bytes": 67131
+    },
+    {
+      "path": "assets/music/81b9c014c4510af4be853a24.m4a",
+      "source": "/assets/audio-compact/Songs/BadHabits/BadHabits_Stage3.m4a",
+      "sha256": "81b9c014c4510af4be853a24924fcd7dfc417ece0509a99c3ec39b8e683c8983",
+      "bytes": 162162
+    },
+    {
+      "path": "assets/music/8302fb4dc37c26055d99951b.m4a",
+      "source": "/assets/audio-meta/Songs/Starboy/Starboy_Stage2.m4a",
+      "sha256": "8302fb4dc37c26055d99951bebb7d0a89213228d6b6a0b3266e8a2b70157ee19",
+      "bytes": 159035
+    },
+    {
+      "path": "assets/music/83104c769908d357619ede45.m4a",
+      "source": "/assets/audio-meta/Songs/LovesickGirls/LovesickGirls_Stage4.m4a",
+      "sha256": "83104c769908d357619ede45fbcc0cd05f398bae8bdfc84c0907db5c6f617e80",
+      "bytes": 97361
+    },
+    {
+      "path": "assets/music/83e7ff992c737d13fe8f1b69.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/saveyourtears/violin-d72f139edb15.m4a",
+      "sha256": "83e7ff992c737d13fe8f1b6982421283c1899381a50906a952f98459ee1f194a",
+      "bytes": 101724
+    },
+    {
+      "path": "assets/music/8406efec00610d822a3b2ee1.m4a",
+      "source": "/assets/audio-meta/Songs/ThereforeIAm/ThereforeIAm_Stage2.m4a",
+      "sha256": "8406efec00610d822a3b2ee1fd49edf41e2949c661e99a0f89354864bd91939c",
+      "bytes": 131338
+    },
+    {
+      "path": "assets/music/84f4829073824b899d0ff7c0.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/astronautintheocean/guitar-e0a581604de8.m4a",
+      "sha256": "84f4829073824b899d0ff7c0809093308f61079d590fdba9fb57968613e995e6",
+      "bytes": 81072
+    },
+    {
+      "path": "assets/music/85233c7fd2a77ba0f01033c5.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/despacito/piano-6811acc66599.m4a",
+      "sha256": "85233c7fd2a77ba0f01033c5d28f22c508c070df4abdcbec62056720bb7f1908",
+      "bytes": 67214
+    },
+    {
+      "path": "assets/music/854bd0d593d9dca634f6297e.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/passobemsolto/piano-a42d862cd0af.m4a",
+      "sha256": "854bd0d593d9dca634f6297ec164cc7ab00faf8d55066b5c782bb90efbbc5345",
+      "bytes": 169848
+    },
+    {
+      "path": "assets/music/8590fea70b58c7587863cadc.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/montagemtomada/violin-ebd9af627473.m4a",
+      "sha256": "8590fea70b58c7587863cadcd2ec269a81da560ed1b4cdd4be3bd2fe11990dc7",
+      "bytes": 82540
+    },
+    {
+      "path": "assets/music/8620077a9ba407d165846876.m4a",
+      "source": "/assets/audio-meta/Songs/LovesickGirls/LovesickGirls_Stage2.m4a",
+      "sha256": "8620077a9ba407d1658468764e48dbd29256946cd02ce1bbbabf22cfa4025106",
+      "bytes": 96991
+    },
+    {
+      "path": "assets/music/87b5e260a5648a66591b5fa5.m4a",
+      "source": "/assets/audio-meta/Songs/Flower/Flower_Stage4.m4a",
+      "sha256": "87b5e260a5648a66591b5fa5adee53ca0e018c7e4ef19d766fccdc060899470d",
+      "bytes": 100091
+    },
+    {
+      "path": "assets/music/880d72ee48f314532ac88840.m4a",
+      "source": "/assets/audio-compact/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage2.m4a",
+      "sha256": "880d72ee48f314532ac888408c1cb01f1e88806569b204649b704a228b9535ed",
+      "bytes": 157522
+    },
+    {
+      "path": "assets/music/883484b957c189c4c5e0265e.m4a",
+      "source": "/assets/audio-compact/Songs/BlindingLights/BlindingLights_Stage1.m4a",
+      "sha256": "883484b957c189c4c5e0265ea640e715fa70a750c89d0556d9279ba091780523",
+      "bytes": 117957
+    },
+    {
+      "path": "assets/music/89991a90535dd9a640cb3c30.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sunflower/guitar-80ce01ddd5d4.m4a",
+      "sha256": "89991a90535dd9a640cb3c3037aafcbd0cfd8accd28134e3d3a6cd79cd2b14e4",
+      "bytes": 111088
+    },
+    {
+      "path": "assets/music/8a2c6f1f855e08e15300a362.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/nobatidao/violin-7e28ff48b549.m4a",
+      "sha256": "8a2c6f1f855e08e15300a362581b89fe6377cd1c21bcaa3ace0978e5879748e2",
+      "bytes": 114060
+    },
+    {
+      "path": "assets/music/8a2cb38f2523127ca8f7b936.m4a",
+      "source": "/assets/audio-meta/Songs/ThereforeIAm/ThereforeIAm_Stage3.m4a",
+      "sha256": "8a2cb38f2523127ca8f7b936f92c0a797056b8f9be0854dd74c5bd21981b19f4",
+      "bytes": 130523
+    },
+    {
+      "path": "assets/music/8a49f3b75528a5d1c78bfa83.m4a",
+      "source": "/assets/audio-compact/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage4.m4a",
+      "sha256": "8a49f3b75528a5d1c78bfa8396c46a65747119f8e9508fc5b567e8cca09c6917",
+      "bytes": 169789
+    },
+    {
+      "path": "assets/music/8ab8965be5dde026b9d191c5.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/montagemtomada/guitar-471fa19b4c2f.m4a",
+      "sha256": "8ab8965be5dde026b9d191c509a3cfddf0cd7a584a4f873619b005f91e57404a",
+      "bytes": 83747
+    },
+    {
+      "path": "assets/music/8beb49cf89977a5af482f782.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/perfect/xylophone-c012893626a4.m4a",
+      "sha256": "8beb49cf89977a5af482f782199dbadd9d4a85423c664b0e9289b85fb567c3a3",
+      "bytes": 95224
+    },
+    {
+      "path": "assets/music/8c1f64bfc3d2e33211e5d928.m4a",
+      "source": "/assets/audio-compact/Songs/DanceMonkey/DanceMonkey_Stage4.m4a",
+      "sha256": "8c1f64bfc3d2e33211e5d92840468b79c658dc04d52aae0b7f5848f7888046e3",
+      "bytes": 105498
+    },
+    {
+      "path": "assets/music/8d071cb33068dd17c3d451ba.m4a",
+      "source": "/assets/audio-compact/Songs/DeathBed/DeathBed_Stage3.m4a",
+      "sha256": "8d071cb33068dd17c3d451ba53f2628553a27dca2a92e57f9283683044e3bcc1",
+      "bytes": 281358
+    },
+    {
+      "path": "assets/music/8d96ee3c98f0d207e8b76789.m4a",
+      "source": "/assets/audio-compact/Songs/Lovely/Lovely_Stage1.m4a",
+      "sha256": "8d96ee3c98f0d207e8b767899d64e19f7e7d105727f5e6cfe8c5bddd87a06e1a",
+      "bytes": 187352
+    },
+    {
+      "path": "assets/music/8e0a9b6abd54f099da81834e.m4a",
+      "source": "/assets/audio-compact/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage3.m4a",
+      "sha256": "8e0a9b6abd54f099da81834eb0681e82d5fe0a5843c9dc227f2e096a3d56f556",
+      "bytes": 158897
+    },
+    {
+      "path": "assets/music/8e45a1b3f673f9dcc4ecc14a.m4a",
+      "source": "/assets/audio-meta/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage0.m4a",
+      "sha256": "8e45a1b3f673f9dcc4ecc14a49db78fdf171c656b775952a55b3ba4355a7ba0a",
+      "bytes": 96678
+    },
+    {
+      "path": "assets/music/8eaa706c0550b6f66594b371.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/heartbreakanniversary/xylophone-6cfb92c473ea.m4a",
+      "sha256": "8eaa706c0550b6f66594b3717db9b302a49bfdcf56f5f1491597dafe8ba45eeb",
+      "bytes": 242737
+    },
+    {
+      "path": "assets/music/8eca41175cbe49cc7c67426c.m4a",
+      "source": "/assets/audio-meta/Songs/PlayingWithFire/PlayingWithFire_Stage1.m4a",
+      "sha256": "8eca41175cbe49cc7c67426cc2e9154def952959034fddf423bc34bcf137d555",
+      "bytes": 74261
+    },
+    {
+      "path": "assets/music/8eceb7fca8f2a406b9b4ba40.m4a",
+      "source": "/assets/audio-meta/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage0.m4a",
+      "sha256": "8eceb7fca8f2a406b9b4ba4084d439565f29ff1c9c53a8ff1d62d8c1463d3294",
+      "bytes": 62271
+    },
+    {
+      "path": "assets/music/8fd3a613dd48d4352ff6d97e.m4a",
+      "source": "/assets/audio-compact/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage5.m4a",
+      "sha256": "8fd3a613dd48d4352ff6d97e383bd1b60d2e0feca309409976296dc18429828c",
+      "bytes": 245309
+    },
+    {
+      "path": "assets/music/901a99f8753836e7944805d0.m4a",
+      "source": "/assets/audio-meta/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage4.m4a",
+      "sha256": "901a99f8753836e7944805d0b32cea9855284bda60805366e34c59417937de23",
+      "bytes": 97062
+    },
+    {
+      "path": "assets/music/909daffce8ac3b548bd2acc9.m4a",
+      "source": "/assets/audio-compact/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage1.m4a",
+      "sha256": "909daffce8ac3b548bd2acc997748d8a854f5d21cecfa47f900a05a446544f4b",
+      "bytes": 173178
+    },
+    {
+      "path": "assets/music/9174501ab84bbdaf66079520.m4a",
+      "source": "/assets/audio-meta/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage4.m4a",
+      "sha256": "9174501ab84bbdaf6607952005fe7bea550f4b90a858cf07b584509183b57f28",
+      "bytes": 149158
+    },
+    {
+      "path": "assets/music/91b657eb597e68d6ec31a334.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/astronautintheocean/violin-1170c19db4e2.m4a",
+      "sha256": "91b657eb597e68d6ec31a334fede544e0896da82e134de8f49a5fadaa6f58ee0",
+      "bytes": 133610
+    },
+    {
+      "path": "assets/music/92e37c26f1f6ae794412406c.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sayso/drum-0c2a66fff6db.m4a",
+      "sha256": "92e37c26f1f6ae794412406c05b5143baf3620265bfe07ca00edb366b44e32d8",
+      "bytes": 56158
+    },
+    {
+      "path": "assets/music/92f65ac143df8ecdfb76cd62.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/perfect/violin-667ae38e6a77.m4a",
+      "sha256": "92f65ac143df8ecdfb76cd62d8a0e8ca6feb48f00f58c8f58c8d65eee46bc91c",
+      "bytes": 94846
+    },
+    {
+      "path": "assets/music/931c59be573f0bcae843b6b3.m4a",
+      "source": "/assets/audio-meta/Songs/BlindingLights/BlindingLights_Stage3.m4a",
+      "sha256": "931c59be573f0bcae843b6b395486f2a2efaf48e565a74effe8338390713d311",
+      "bytes": 71526
+    },
+    {
+      "path": "assets/music/938cc523a43ed48ec7283408.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/heartbreakanniversary/guitar-eb7dc2952349.m4a",
+      "sha256": "938cc523a43ed48ec72834083783920715c952a0e1043c0869353f2833ce3539",
+      "bytes": 242010
+    },
+    {
+      "path": "assets/music/9456043157b1991087549ade.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/passobemsolto/violin-7781139a17a6.m4a",
+      "sha256": "9456043157b1991087549ade127f8dc44be099214ef189b14b974f8f4ace5cf9",
+      "bytes": 103782
+    },
+    {
+      "path": "assets/music/955025e144c704345be6b93d.m4a",
+      "source": "/assets/audio-compact/Songs/Flower/Flower_Stage3.m4a",
+      "sha256": "955025e144c704345be6b93df20d6e4150579aac709ecd4d9373013744fb0d1b",
+      "bytes": 163248
+    },
+    {
+      "path": "assets/music/9669b078387c096cdf9f8d17.m4a",
+      "source": "/assets/audio-meta/Songs/AtMyWorst/AtMyWorst_Stage4.m4a",
+      "sha256": "9669b078387c096cdf9f8d17cfbf422457f190c43eec9409b13c713a63a18e51",
+      "bytes": 63813
+    },
+    {
+      "path": "assets/music/96ab461454bd130910f2953e.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/blindinglights/xylophone-f528a4d96ad4.m4a",
+      "sha256": "96ab461454bd130910f2953e8eeeb274c8048c787403a9e52bf8c43d0eb7469e",
+      "bytes": 71119
+    },
+    {
+      "path": "assets/music/96ade6c6d64c76c98584128d.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/losvoltaje/xylophone-d2cd0078ec81.m4a",
+      "sha256": "96ade6c6d64c76c98584128d2d379e1e18b74a8ec6d93ae25de584e328e66334",
+      "bytes": 137151
+    },
+    {
+      "path": "assets/music/972c60f74cb8db9a25f5cff9.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/astronautintheocean/guitar-e0a581604de8.m4a",
+      "sha256": "972c60f74cb8db9a25f5cff90dbb154c6b69cec3358b4c3d5238fb49e51c99e6",
+      "bytes": 132506
+    },
+    {
+      "path": "assets/music/97f315063feee8165d66eb59.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/lunabala/drum-7925978711b9.m4a",
+      "sha256": "97f315063feee8165d66eb59a63f20de3e2555b0a9238dce218631c90d59df3b",
+      "bytes": 145912
+    },
+    {
+      "path": "assets/music/9812af1b67da1e6ae5c5f247.m4a",
+      "source": "/assets/audio-compact/Songs/Mistletoe/Mistletoe_Stage1.m4a",
+      "sha256": "9812af1b67da1e6ae5c5f247a7ea89b537a87dc7e27d31658389619cb50fbba5",
+      "bytes": 125902
+    },
+    {
+      "path": "assets/music/98404414bb8f708dbb9cdf32.m4a",
+      "source": "/assets/audio-meta/Songs/StressedOut/StressedOut_Stage3.m4a",
+      "sha256": "98404414bb8f708dbb9cdf32e280421059a68368196daad2f2d4ebf36e9b593c",
+      "bytes": 102286
+    },
+    {
+      "path": "assets/music/99143ff1dabc967991fe44a9.m4a",
+      "source": "/assets/audio-compact/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage1.m4a",
+      "sha256": "99143ff1dabc967991fe44a93523806dd4f1d4a20f43bd49375b581328acb73d",
+      "bytes": 247336
+    },
+    {
+      "path": "assets/music/992ccfb10abb7ee427906df9.m4a",
+      "source": "/assets/audio-compact/Songs/Unity/Unity_Stage4.m4a",
+      "sha256": "992ccfb10abb7ee427906df9f8292106ed8bf59701876bdcfc8a642b8b8ba9ea",
+      "bytes": 194400
+    },
+    {
+      "path": "assets/music/996eb040aa2ceffe9468d005.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/despacito/violin-01bd2b95146e.m4a",
+      "sha256": "996eb040aa2ceffe9468d005141f5b46c062318322969fd63d4ca504246bdb67",
+      "bytes": 109767
+    },
+    {
+      "path": "assets/music/9aad5fd43bc4a793be73301a.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/losvoltaje/xylophone-d2cd0078ec81.m4a",
+      "sha256": "9aad5fd43bc4a793be73301a016f541f39450254d43c7597eb2637ac9bde9586",
+      "bytes": 224197
+    },
+    {
+      "path": "assets/music/9aed19efdc6c416f28acce0d.m4a",
+      "source": "/assets/audio-meta/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage0.m4a",
+      "sha256": "9aed19efdc6c416f28acce0d28a3a61b652b02372ea4f7a3dcd5871462868e99",
+      "bytes": 89020
+    },
+    {
+      "path": "assets/music/9b31ac0b481095654df8e361.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/babyonemoretime/drum-ac9474aaf3de.m4a",
+      "sha256": "9b31ac0b481095654df8e361e7602379fe88a4691f03a2296c36cdb7a8578219",
+      "bytes": 94348
+    },
+    {
+      "path": "assets/music/9b4b57780c6bd70751897ea4.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/deathbed/xylophone-a554921f8735.m4a",
+      "sha256": "9b4b57780c6bd70751897ea4605c96b769e7f8f8a0791562598bdc544cfdb52f",
+      "bytes": 277118
+    },
+    {
+      "path": "assets/music/a00b32393242d1465c30c80e.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/takeonme/guitar-b72ae677c0d2.m4a",
+      "sha256": "a00b32393242d1465c30c80e62d2e0cc4c7666e743a964db810c3af3cf7dbc8f",
+      "bytes": 141732
+    },
+    {
+      "path": "assets/music/a05e3e5b39ac47eea0eca774.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/heartbreakanniversary/piano-67a953f7907a.m4a",
+      "sha256": "a05e3e5b39ac47eea0eca7746b4f16691e088f2c865074877be3eeb04d83827c",
+      "bytes": 239624
+    },
+    {
+      "path": "assets/music/a0949d95009c97e04107f0d5.m4a",
+      "source": "/assets/audio-compact/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage0.m4a",
+      "sha256": "a0949d95009c97e04107f0d54837d6af1e9717a461c3a027f1589b9b8f785adf",
+      "bytes": 170379
+    },
+    {
+      "path": "assets/music/a252258f25901c6abe50888e.m4a",
+      "source": "/assets/audio-meta/Songs/PlayingWithFire/PlayingWithFire_Stage3.m4a",
+      "sha256": "a252258f25901c6abe50888e24d6892d52853bb040001546b4d1cf85b95faa68",
+      "bytes": 69226
+    },
+    {
+      "path": "assets/music/a2526ad0114f3d931ddf827a.m4a",
+      "source": "/assets/audio-meta/Songs/NoBatidao/NoBatidao_Stage0.m4a",
+      "sha256": "a2526ad0114f3d931ddf827aaa8acfbd2202ec0452c142e86967a4f28a40a598",
+      "bytes": 71433
+    },
+    {
+      "path": "assets/music/a3a7a7cffaf27c9da31cf22d.m4a",
+      "source": "/assets/audio-meta/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage4.m4a",
+      "sha256": "a3a7a7cffaf27c9da31cf22d01e960103bc5756689397c81f9fe18e1c532cbb3",
+      "bytes": 59863
+    },
+    {
+      "path": "assets/music/a4017eb05c8494ab0a2c5045.m4a",
+      "source": "/assets/audio-meta/Songs/ThereforeIAm/ThereforeIAm_Stage4.m4a",
+      "sha256": "a4017eb05c8494ab0a2c50455f7eeae7622b889f9610cdaef2c033be1a9bc9b7",
+      "bytes": 130227
+    },
+    {
+      "path": "assets/music/a4317b509ed445a76730ac9b.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/lunabala/violin-1e3fcb11f88c.m4a",
+      "sha256": "a4317b509ed445a76730ac9b9404a97cc26df93c3eeed6fb624df12785695c06",
+      "bytes": 141008
+    },
+    {
+      "path": "assets/music/a4d2ce90f878f9f034aea1e1.m4a",
+      "source": "/assets/audio-compact/Songs/ThereforeIAm/ThereforeIAm_Stage4.m4a",
+      "sha256": "a4d2ce90f878f9f034aea1e1201e90652e1d7971687e0e0db9645c8d3e5afd9d",
+      "bytes": 218782
+    },
+    {
+      "path": "assets/music/a560e01b9784317fb7d98882.m4a",
+      "source": "/assets/audio-compact/Songs/DanceMonkey/DanceMonkey_Stage0.m4a",
+      "sha256": "a560e01b9784317fb7d98882733e97580ad167eb49e8ff6c10beceef4be8a00b",
+      "bytes": 103572
+    },
+    {
+      "path": "assets/music/a56c2766b7e5777dae954c3e.m4a",
+      "source": "/assets/audio-compact/Songs/WakeMeUp/WakeMeUp_Stage2.m4a",
+      "sha256": "a56c2766b7e5777dae954c3e4ad52bd537b1a859043226895def5cf144db5568",
+      "bytes": 242983
+    },
+    {
+      "path": "assets/music/a6307193d0db6c7a3a67fa67.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/passobemsolto/xylophone-c80e9c930165.m4a",
+      "sha256": "a6307193d0db6c7a3a67fa67df6c202280ab14e9c60c11a0d28be063ac48d798",
+      "bytes": 170400
+    },
+    {
+      "path": "assets/music/a7486209e047b4c1fecba939.m4a",
+      "source": "/assets/audio-compact/Songs/LovesickGirls/LovesickGirls_Stage1.m4a",
+      "sha256": "a7486209e047b4c1fecba93949641ee0476427ae603b423f3c18bd40323b2730",
+      "bytes": 158270
+    },
+    {
+      "path": "assets/music/a79f7eccf00ed9ce4214e5d6.m4a",
+      "source": "/assets/audio-meta/Songs/ThisLove/ThisLove_Stage2.m4a",
+      "sha256": "a79f7eccf00ed9ce4214e5d6012e6e22f5cfcd5b87ffce34835c33e15a78f932",
+      "bytes": 130264
+    },
+    {
+      "path": "assets/music/a7bf86a89e7d15c1024c731c.m4a",
+      "source": "/assets/audio-meta/Songs/IWantItThatWay/IWantItThatWay_Stage2.m4a",
+      "sha256": "a7bf86a89e7d15c1024c731cfd948a0b190eb52eab60ea2ac193ddd37768e6bc",
+      "bytes": 125032
+    },
+    {
+      "path": "assets/music/a8e66a5c34d943fe6b8cc276.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sunflower/xylophone-4831d5d8ee58.m4a",
+      "sha256": "a8e66a5c34d943fe6b8cc2763394d7bffabe74e086855915eaddd87cfc6b05e7",
+      "bytes": 111998
+    },
+    {
+      "path": "assets/music/a9078ba3de8941f881ff3de9.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/despacito/violin-01bd2b95146e.m4a",
+      "sha256": "a9078ba3de8941f881ff3de9d1cb4ec26e8be13a9e6484d3cc5f3b6642373afa",
+      "bytes": 67120
+    },
+    {
+      "path": "assets/music/aa0ab5880d76aac9172dc1d2.m4a",
+      "source": "/assets/audio-meta/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage3.m4a",
+      "sha256": "aa0ab5880d76aac9172dc1d2af058f14e765280a7d67514fdbb4b5f8e1fd9a20",
+      "bytes": 59536
+    },
+    {
+      "path": "assets/music/aa1181c972a3fed76810e34a.m4a",
+      "source": "/assets/audio-meta/Songs/IWantItThatWay/IWantItThatWay_Stage3.m4a",
+      "sha256": "aa1181c972a3fed76810e34aa4ea8bcf3dd8149eba6786d83aabc8fbafe2bad4",
+      "bytes": 119868
+    },
+    {
+      "path": "assets/music/aa289adf81718c1bc4c5d28a.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/saveyourtears/xylophone-a1f7d81115e3.m4a",
+      "sha256": "aa289adf81718c1bc4c5d28a5e49959f6ce3d8d3db1c92d8baebcb8a15501fb5",
+      "bytes": 170733
+    },
+    {
+      "path": "assets/music/aa5248cb0c8633f3eea6809f.m4a",
+      "source": "/assets/audio-compact/Songs/Perfect/Perfect_Stage1.m4a",
+      "sha256": "aa5248cb0c8633f3eea6809f729cdd056ec637cd1f4c3816f4ffa2fa2710d5ef",
+      "bytes": 240867
+    },
+    {
+      "path": "assets/music/ab2711618b68cdef7bc0c419.m4a",
+      "source": "/assets/audio-compact/Songs/LeaveALightOn/LeaveALightOn_Stage3.m4a",
+      "sha256": "ab2711618b68cdef7bc0c419bcb10f727e44870d2b2b982e20089d26ca40a2a3",
+      "bytes": 154620
+    },
+    {
+      "path": "assets/music/aeb9504496b794080095b2d0.m4a",
+      "source": "/assets/audio-meta/Songs/BlindingLights/BlindingLights_Stage2.m4a",
+      "sha256": "aeb9504496b794080095b2d02a443b1cb09db2604f6f7d631c37e1426e69c4d5",
+      "bytes": 67621
+    },
+    {
+      "path": "assets/music/aebbed80658d8082ff2abb70.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/saveyourtears/xylophone-a1f7d81115e3.m4a",
+      "sha256": "aebbed80658d8082ff2abb702710d6f6ba939158a43736b12e3e002ac1fe0d7d",
+      "bytes": 103292
+    },
+    {
+      "path": "assets/music/aec7402b4679fd2b78be29d5.m4a",
+      "source": "/assets/audio-meta/Songs/LeaveALightOn/LeaveALightOn_Stage0.m4a",
+      "sha256": "aec7402b4679fd2b78be29d5eb9cc56bd918191de023d264ca00548a54304af7",
+      "bytes": 94410
+    },
+    {
+      "path": "assets/music/b090c34129540bd2579fdce1.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/lunabala/drum-7925978711b9.m4a",
+      "sha256": "b090c34129540bd2579fdce1597ec103b3219a0cdbe74eb56e224dc391e67f13",
+      "bytes": 86367
+    },
+    {
+      "path": "assets/music/b158a6fc33c3b0dcedfa62b4.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/blindinglights/drum-d94d8d745a79.m4a",
+      "sha256": "b158a6fc33c3b0dcedfa62b4e574d32b86ce1e1224361711d26e0bb410296c21",
+      "bytes": 125206
+    },
+    {
+      "path": "assets/music/b15f12a68b944384a1d52986.m4a",
+      "source": "/assets/audio-meta/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage1.m4a",
+      "sha256": "b15f12a68b944384a1d52986b6df9c79de0110265812a85e0818daaa8d86faed",
+      "bytes": 96889
+    },
+    {
+      "path": "assets/music/b1de91cc750e05b9f4056912.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/passobemsolto/xylophone-c80e9c930165.m4a",
+      "sha256": "b1de91cc750e05b9f4056912e63abeeb5fb85c38ada061bb4c574d708f38995b",
+      "bytes": 104234
+    },
+    {
+      "path": "assets/music/b1f97a5f5c432e07ee077c66.m4a",
+      "source": "/assets/audio-meta/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage1.m4a",
+      "sha256": "b1f97a5f5c432e07ee077c66f8f7f3529ced8368acfe73fc7cda43bb6551107c",
+      "bytes": 150986
+    },
+    {
+      "path": "assets/music/b1fd0d7e0308f0154e204cf6.m4a",
+      "source": "/assets/audio-meta/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage3.m4a",
+      "sha256": "b1fd0d7e0308f0154e204cf6b864235b8663ffdffc3a6e17c135f6c6e0cab799",
+      "bytes": 85738
+    },
+    {
+      "path": "assets/music/b4239ba0db55221453170eda.m4a",
+      "source": "/assets/audio-compact/Songs/DeathBed/DeathBed_Stage2.m4a",
+      "sha256": "b4239ba0db55221453170eda793a7f1744bb9b429c551f32b6e566b07560a9f2",
+      "bytes": 282362
+    },
+    {
+      "path": "assets/music/b45e998845f24006bcf8eb1f.m4a",
+      "source": "/assets/audio-meta/Songs/Starboy/Starboy_Stage4.m4a",
+      "sha256": "b45e998845f24006bcf8eb1f930d7b029748f2e2181ea37f37cffbd9bf1b7d15",
+      "bytes": 142589
+    },
+    {
+      "path": "assets/music/b465082077c80b420c8b7a56.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/perfect/drum-838b0d7438b7.m4a",
+      "sha256": "b465082077c80b420c8b7a5658696026b83721dda9f113710cdb600c859c57ba",
+      "bytes": 96366
+    },
+    {
+      "path": "assets/music/b4ab6ab8f0a836abf0d2bd20.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/passobemsolto/guitar-bd2e13c3d491.m4a",
+      "sha256": "b4ab6ab8f0a836abf0d2bd201367070fd52dd10dcecdbcb64696208300b134d8",
+      "bytes": 104478
+    },
+    {
+      "path": "assets/music/b4d46f7cd283540fd117b806.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sad/guitar-f36fecfd430d.m4a",
+      "sha256": "b4d46f7cd283540fd117b8067abcb3556b3aa51e4770c050bd77453787c67bcf",
+      "bytes": 81060
+    },
+    {
+      "path": "assets/music/b5e57084376539a59a74f7ff.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/perfect/xylophone-c012893626a4.m4a",
+      "sha256": "b5e57084376539a59a74f7ffb5d86d5d75cd1e0302395e82dfd70b32981e500c",
+      "bytes": 155733
+    },
+    {
+      "path": "assets/music/b5f951ed8a0b8718b2e595f1.m4a",
+      "source": "/assets/audio-meta/Songs/StressedOut/StressedOut_Stage1.m4a",
+      "sha256": "b5f951ed8a0b8718b2e595f101654d3ad7527b8ccb329a518b917279d1a8059c",
+      "bytes": 110415
+    },
+    {
+      "path": "assets/music/b737afd06ac94fb6da8f2b18.m4a",
+      "source": "/assets/audio-compact/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage4.m4a",
+      "sha256": "b737afd06ac94fb6da8f2b183958a0ad2689342408a7e524e1bfdbcaffc512b8",
+      "bytes": 248462
+    },
+    {
+      "path": "assets/music/b853cf93e2d99c081e3a13d6.m4a",
+      "source": "/assets/audio-meta/Songs/IWantItThatWay/IWantItThatWay_Stage4.m4a",
+      "sha256": "b853cf93e2d99c081e3a13d66a0384b3ecb56eab5857492fb78e9a42d88bb4e5",
+      "bytes": 119625
+    },
+    {
+      "path": "assets/music/b8957a374275933bf4fe27f4.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/blindinglights/violin-9d51ee490b69.m4a",
+      "sha256": "b8957a374275933bf4fe27f4145466739f4159d431e9579d3ee63de4dfee3ead",
+      "bytes": 70635
+    },
+    {
+      "path": "assets/music/b967309bc7723ada337936e7.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sayso/piano-00218458ecba.m4a",
+      "sha256": "b967309bc7723ada337936e72cbc0d884931db9befba67c241345602a9fac46b",
+      "bytes": 54727
+    },
+    {
+      "path": "assets/music/b9767cb91c6d8cb2779033ea.m4a",
+      "source": "/assets/audio-compact/Songs/DanceMonkey/DanceMonkey_Stage3.m4a",
+      "sha256": "b9767cb91c6d8cb2779033eaedb93b8d5e92fc16ad7410ecb36349f6f74d0dbf",
+      "bytes": 105458
+    },
+    {
+      "path": "assets/music/b97e4e356af8e226f63f350a.m4a",
+      "source": "/assets/audio-meta/Songs/DanceMonkey/DanceMonkey_Stage1.m4a",
+      "sha256": "b97e4e356af8e226f63f350a7d768d783c7f29723f710b94622d7e7f87ab8784",
+      "bytes": 60035
+    },
+    {
+      "path": "assets/music/ba405cd8bc9c643126ac5e51.m4a",
+      "source": "/assets/audio-meta/Songs/StressedOut/StressedOut_Stage2.m4a",
+      "sha256": "ba405cd8bc9c643126ac5e51c1341eb7e2e3e3f26787cc76174868471c37adcf",
+      "bytes": 109539
+    },
+    {
+      "path": "assets/music/ba8bba3809e6bd15fb9a7cef.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/nobatidao/piano-5d657d29a6e1.m4a",
+      "sha256": "ba8bba3809e6bd15fb9a7cefa90756da49e64caf71536f85de1960e17fc876f6",
+      "bytes": 114120
+    },
+    {
+      "path": "assets/music/bb17954b4326b85abc8eaf9a.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/deathbed/guitar-a044fb5b0a0a.m4a",
+      "sha256": "bb17954b4326b85abc8eaf9a3bdc4688c79b01d6870c76f21642ba993770c537",
+      "bytes": 167398
+    },
+    {
+      "path": "assets/music/bb827f5ce0ec8122f467d275.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/nobatidao/xylophone-98489d969bd5.m4a",
+      "sha256": "bb827f5ce0ec8122f467d275730ce6589b47a687d8da17fbf1acf5a2dd018c19",
+      "bytes": 115526
+    },
+    {
+      "path": "assets/music/bc8a88caf39b443ad5ab648a.m4a",
+      "source": "/assets/audio-compact/Songs/BlindingLights/BlindingLights_Stage2.m4a",
+      "sha256": "bc8a88caf39b443ad5ab648aad150d733209d60c4de63c7b085b1a77a231d8b5",
+      "bytes": 118681
+    },
+    {
+      "path": "assets/music/bcc6aa6237f6279ef9abc38b.m4a",
+      "source": "/assets/audio-meta/Songs/DanceMonkey/DanceMonkey_Stage0.m4a",
+      "sha256": "bcc6aa6237f6279ef9abc38b66d3e21e800f97ff592fbd337347887568a33e8e",
+      "bytes": 63962
+    },
+    {
+      "path": "assets/music/bd6a756d4e05ce28b9a179d2.m4a",
+      "source": "/assets/audio-compact/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage4.m4a",
+      "sha256": "bd6a756d4e05ce28b9a179d2b25d2958bed7aa8d1c568b2659bf23b095242fb1",
+      "bytes": 160760
+    },
+    {
+      "path": "assets/music/bdaa48c2d56d42a6d6e74a8a.m4a",
+      "source": "/assets/audio-compact/Songs/Shallow/Shallow_Stage3.m4a",
+      "sha256": "bdaa48c2d56d42a6d6e74a8a3f334bac935f59b8d03781401446a14ec5247a5a",
+      "bytes": 326817
+    },
+    {
+      "path": "assets/music/beec9df884b941d161f561f2.m4a",
+      "source": "/assets/audio-compact/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage3.m4a",
+      "sha256": "beec9df884b941d161f561f21bf415e104ccc8e46f138a08d92b2a67ddcf37e9",
+      "bytes": 150185
+    },
+    {
+      "path": "assets/music/bef46c9373751c100c4a2307.m4a",
+      "source": "/assets/audio-meta/Songs/BadHabits/BadHabits_Stage4.m4a",
+      "sha256": "bef46c9373751c100c4a2307607e659fd52f7d443c7144321c871ef32dac392d",
+      "bytes": 96620
+    },
+    {
+      "path": "assets/music/bf2109748fd8e2868854b1e9.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/despacito/piano-6811acc66599.m4a",
+      "sha256": "bf2109748fd8e2868854b1e99100f94b81048850392e6a796ef3d969c847532f",
+      "bytes": 109822
+    },
+    {
+      "path": "assets/music/bf5905ce44f45940a0b60719.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/despacito/guitar-35bfaa2d938c.m4a",
+      "sha256": "bf5905ce44f45940a0b60719adc5af0383c4a204f40cb4019c72c74e03ea7e9b",
+      "bytes": 110711
+    },
+    {
+      "path": "assets/music/c164dee57789e86c3c81ed02.m4a",
+      "source": "/assets/audio-compact/Songs/IWantItThatWay/IWantItThatWay_Stage1.m4a",
+      "sha256": "c164dee57789e86c3c81ed0278c14a40da3c0a2e318dc7bd86fc92ccae615eed",
+      "bytes": 206453
+    },
+    {
+      "path": "assets/music/c2442389de315f40d5cc4401.m4a",
+      "source": "/assets/audio-meta/Songs/BadHabits/BadHabits_Stage1.m4a",
+      "sha256": "c2442389de315f40d5cc44011cc0ff02cf9a17ecd7f75f1941fd6264e43a0aae",
+      "bytes": 99541
+    },
+    {
+      "path": "assets/music/c2fd1165b9035cb9bd6009e2.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sayso/xylophone-8124a762983f.m4a",
+      "sha256": "c2fd1165b9035cb9bd6009e2b4a56f4bdfd346578d27e06da8f6ed4cc7725e27",
+      "bytes": 91279
+    },
+    {
+      "path": "assets/music/c35e83ff66872664b1066b31.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/nobatidao/guitar-dc81af2705fc.m4a",
+      "sha256": "c35e83ff66872664b1066b31610fab59b6cba4fb7691c7f5293bc630ef5b9c8d",
+      "bytes": 70329
+    },
+    {
+      "path": "assets/music/c37513cfb1d5a80dd9ca823f.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/montagemtomada/drum-ce132996b5b5.m4a",
+      "sha256": "c37513cfb1d5a80dd9ca823f51cfd145786c736b373436a4043fd9c8aca78592",
+      "bytes": 84082
+    },
+    {
+      "path": "assets/music/c3d242a5ac6ede3e7ba11a3c.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/takeonme/guitar-b72ae677c0d2.m4a",
+      "sha256": "c3d242a5ac6ede3e7ba11a3c2c835b71a45f589ffe880d83fa0ce368bc5403db",
+      "bytes": 86898
+    },
+    {
+      "path": "assets/music/c40b6ef14fff7dc5be660ad5.m4a",
+      "source": "/assets/audio-compact/Songs/IAintWorried/IAintWorried_Stage0.m4a",
+      "sha256": "c40b6ef14fff7dc5be660ad551ea6da61ad7d36464a0c9578cfbfccfcfac7cc1",
+      "bytes": 168231
+    },
+    {
+      "path": "assets/music/c483b88f0a5e52aa151ded1b.m4a",
+      "source": "/assets/audio-meta/Songs/Flower/Flower_Stage2.m4a",
+      "sha256": "c483b88f0a5e52aa151ded1b2a973f5533e910187ec869e58b850ec9c4456e03",
+      "bytes": 100039
+    },
+    {
+      "path": "assets/music/c4dea5dbcb560193bab69671.m4a",
+      "source": "/assets/audio-compact/Songs/AtMyWorst/AtMyWorst_Stage1.m4a",
+      "sha256": "c4dea5dbcb560193bab69671f32efaa318eab1e2f5e80384ef75363cd2130b60",
+      "bytes": 110550
+    },
+    {
+      "path": "assets/music/c52a218dbfcb805479f666c2.m4a",
+      "source": "/assets/audio-compact/Songs/Lovely/Lovely_Stage4.m4a",
+      "sha256": "c52a218dbfcb805479f666c27700695be4dfea3ec84a7909120538935e53f973",
+      "bytes": 188015
+    },
+    {
+      "path": "assets/music/c5ad28fc520f16d55a624c6d.m4a",
+      "source": "/assets/audio-compact/Songs/StressedOut/StressedOut_Stage4.m4a",
+      "sha256": "c5ad28fc520f16d55a624c6d67be2beef2709cf8e9494b463b6333662c64269d",
+      "bytes": 178249
+    },
+    {
+      "path": "assets/music/c718e96853a37fc9e0912daa.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/despacito/drum-4df454847b04.m4a",
+      "sha256": "c718e96853a37fc9e0912daaf74b5bb7501e9e2083b89752ad802328e2e723ef",
+      "bytes": 68369
+    },
+    {
+      "path": "assets/music/c7d0264bbbb7a16e3d2cc31f.m4a",
+      "source": "/assets/audio-meta/Songs/Lovely/Lovely_Stage1.m4a",
+      "sha256": "c7d0264bbbb7a16e3d2cc31fdf15f507272d0a64ac8f56852fc0b5ca682a6371",
+      "bytes": 108496
+    },
+    {
+      "path": "assets/music/c84f5252f3635ac3fe04a1e8.m4a",
+      "source": "/assets/audio-compact/Songs/StressedOut/StressedOut_Stage0.m4a",
+      "sha256": "c84f5252f3635ac3fe04a1e89b2616a335c144a14562678ff17a3ce625efefff",
+      "bytes": 177817
+    },
+    {
+      "path": "assets/music/c870bfad792cf6e633fcd265.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sad/piano-c141b1fbedae.m4a",
+      "sha256": "c870bfad792cf6e633fcd26500f1ee731f124046cd3cc71442adcb42f5e6ef9a",
+      "bytes": 131747
+    },
+    {
+      "path": "assets/music/c8a7ee1ea1d651e74cfa8d18.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/losvoltaje/violin-2012874ce199.m4a",
+      "sha256": "c8a7ee1ea1d651e74cfa8d188ba048a04d8629c6eff959bcdb93e9a4a7c7e46c",
+      "bytes": 223410
+    },
+    {
+      "path": "assets/music/c8b4dfceb1342b0b8184cf60.m4a",
+      "source": "/assets/audio-compact/Songs/WakeMeUp/WakeMeUp_Stage3.m4a",
+      "sha256": "c8b4dfceb1342b0b8184cf602fd979ae0945d9bd370526f6560503ba5d8c58dc",
+      "bytes": 249848
+    },
+    {
+      "path": "assets/music/ca1f6a12c5a54892515025f7.m4a",
+      "source": "/assets/audio-compact/Songs/LovesickGirls/LovesickGirls_Stage0.m4a",
+      "sha256": "ca1f6a12c5a54892515025f7b86261e82d4f615fdb346269f5739bb5dad7278d",
+      "bytes": 158104
+    },
+    {
+      "path": "assets/music/cbb2f7f7c53b01cf67d21bea.m4a",
+      "source": "/assets/audio-meta/Songs/Flower/Flower_Stage1.m4a",
+      "sha256": "cbb2f7f7c53b01cf67d21bea2af4de71d6d194151fd1da64136bdb035bae3c66",
+      "bytes": 100641
+    },
+    {
+      "path": "assets/music/cc8d342f08b07b65a6b8a75f.m4a",
+      "source": "/assets/audio-meta/Songs/Lovely/Lovely_Stage0.m4a",
+      "sha256": "cc8d342f08b07b65a6b8a75f271e0fea6592109f54bad229a38d8dc7920ef75e",
+      "bytes": 114165
+    },
+    {
+      "path": "assets/music/cceab46bd73b296e3f84a43c.m4a",
+      "source": "/assets/audio-compact/Songs/Shallow/Shallow_Stage2.m4a",
+      "sha256": "cceab46bd73b296e3f84a43c85b3b1afefa15d0e043a4cea243138cdb10e8797",
+      "bytes": 320171
+    },
+    {
+      "path": "assets/music/cd457efd19062651e3d62e8e.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/losvoltaje/drum-bb37ab581d63.m4a",
+      "sha256": "cd457efd19062651e3d62e8ef377dc8612527e8be9c26b5a72301f76a9162a2a",
+      "bytes": 236411
+    },
+    {
+      "path": "assets/music/cd8164f81507b73ede5f4f83.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/losvoltaje/guitar-fbfae15e8ee4.m4a",
+      "sha256": "cd8164f81507b73ede5f4f83e321475e2f8c460ad2d9be5796612fba3169fedb",
+      "bytes": 137854
+    },
+    {
+      "path": "assets/music/cdf5a15bb36e8c02e4ddafef.m4a",
+      "source": "/assets/audio-meta/Songs/Perfect/Perfect_Stage1.m4a",
+      "sha256": "cdf5a15bb36e8c02e4ddafef1c08259e105b6fada0a22a1fffd419e9f37d3d89",
+      "bytes": 146992
+    },
+    {
+      "path": "assets/music/ceeea1d4df796f1214faacf3.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/despacito/xylophone-baa48454ef81.m4a",
+      "sha256": "ceeea1d4df796f1214faacf3bce99b5b82f641c76e57e01da277d7113bca46b0",
+      "bytes": 67857
+    },
+    {
+      "path": "assets/music/cf0b581410a8ad86a4f4134f.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/heartbreakanniversary/drum-77b688d36f4b.m4a",
+      "sha256": "cf0b581410a8ad86a4f4134fd21df18bfa10ace94453c6d499d4c6d2e488fe77",
+      "bytes": 127910
+    },
+    {
+      "path": "assets/music/cf7d7ef00fa14a70b0fab242.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/lunabala/guitar-6d626c75333a.m4a",
+      "sha256": "cf7d7ef00fa14a70b0fab242e03027ff30712e90ef7bd53ca2a45860b5e566ae",
+      "bytes": 141782
+    },
+    {
+      "path": "assets/music/d01e04416698b8a8cd0798a3.m4a",
+      "source": "/assets/audio-compact/Songs/Lovely/Lovely_Stage0.m4a",
+      "sha256": "d01e04416698b8a8cd0798a336a9bf2f0e2f6f4ca3fa5330af4ad75640975a0f",
+      "bytes": 185194
+    },
+    {
+      "path": "assets/music/d076a77baa33afdceba1a45a.m4a",
+      "source": "/assets/audio-compact/Songs/Starboy/Starboy_Stage3.m4a",
+      "sha256": "d076a77baa33afdceba1a45a6f69a42195c718840c6d63fde80b44b3729a8178",
+      "bytes": 258768
+    },
+    {
+      "path": "assets/music/d0e3017bc703282fec62f417.m4a",
+      "source": "/assets/audio-meta/Songs/Unity/Unity_Stage2.m4a",
+      "sha256": "d0e3017bc703282fec62f4178fbcc70ada5eb20eee845beb8f78bb5c2a598549",
+      "bytes": 118188
+    },
+    {
+      "path": "assets/music/d1cf2e9da757286b634f4123.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sayso/violin-33cafef77b1a.m4a",
+      "sha256": "d1cf2e9da757286b634f41236eb9176bf1e8a78cdf0f31110688cd3e6550a374",
+      "bytes": 89325
+    },
+    {
+      "path": "assets/music/d38e48057b8e0b12ea2abae4.m4a",
+      "source": "/assets/audio-meta/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage5.m4a",
+      "sha256": "d38e48057b8e0b12ea2abae4d873c2e8de28267af3566595a42967be322a4120",
+      "bytes": 151069
+    },
+    {
+      "path": "assets/music/d3d64725fb375be531a2f3a4.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sunflower/violin-b1737b0582c7.m4a",
+      "sha256": "d3d64725fb375be531a2f3a4cc9acb5c24e2edaee1de560de5dc454fa2941003",
+      "bytes": 109810
+    },
+    {
+      "path": "assets/music/d4220c4f4857b5556e74e0c7.m4a",
+      "source": "/assets/audio-meta/Songs/LeaveALightOn/LeaveALightOn_Stage3.m4a",
+      "sha256": "d4220c4f4857b5556e74e0c7b9b64a9a1ceb1fd73d1797268a43b9453cc91b33",
+      "bytes": 91287
+    },
+    {
+      "path": "assets/music/d4430efe6c07e12995b3b817.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/saveyourtears/violin-d72f139edb15.m4a",
+      "sha256": "d4430efe6c07e12995b3b817b9eba40830962a38d884b1bd76d43a3d3eda6df1",
+      "bytes": 166842
+    },
+    {
+      "path": "assets/music/d4f64ca522b64b8ca2c95ed0.m4a",
+      "source": "/assets/audio-compact/Songs/IAintWorried/IAintWorried_Stage3.m4a",
+      "sha256": "d4f64ca522b64b8ca2c95ed0e69e1df7d2c60504fad8b6e547f3a0a1def0bdff",
+      "bytes": 170489
+    },
+    {
+      "path": "assets/music/d5883681b6896c8f9097bf58.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/blindinglights/xylophone-f528a4d96ad4.m4a",
+      "sha256": "d5883681b6896c8f9097bf5803a00c33b0cad602d7500f6b3175b4acbfc2a7b1",
+      "bytes": 116021
+    },
+    {
+      "path": "assets/music/d5c93249ce3ba8785263ace2.m4a",
+      "source": "/assets/audio-meta/Songs/WakeMeUp/WakeMeUp_Stage2.m4a",
+      "sha256": "d5c93249ce3ba8785263ace27be0e6bc3268ffcf4f20bf8f17fab4f4f2b6c061",
+      "bytes": 149595
+    },
+    {
+      "path": "assets/music/d5e71072e11a24eeedc004b6.m4a",
+      "source": "/assets/audio-compact/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage2.m4a",
+      "sha256": "d5e71072e11a24eeedc004b669b80275bb2295f6a2a64424ddace436d7dd6197",
+      "bytes": 102346
+    },
+    {
+      "path": "assets/music/d6802d51cfd9f5ec5ea7d164.m4a",
+      "source": "/assets/audio-meta/Songs/WakeMeUp/WakeMeUp_Stage3.m4a",
+      "sha256": "d6802d51cfd9f5ec5ea7d1647de56200ab7d7dfb04993d3832d546fdca8ec3bf",
+      "bytes": 137689
+    },
+    {
+      "path": "assets/music/d70adddd9ec0a35111c37a30.m4a",
+      "source": "/assets/audio-meta/Songs/DanceMonkey/DanceMonkey_Stage4.m4a",
+      "sha256": "d70adddd9ec0a35111c37a30d63a4780f0474c087a5da45e5bd8b0592bcfa77c",
+      "bytes": 63917
+    },
+    {
+      "path": "assets/music/d7199ecea172ea022977eb42.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/babyonemoretime/piano-6e5828535238.m4a",
+      "sha256": "d7199ecea172ea022977eb42c558191fcf85aef0b154585d6a75694a38beebda",
+      "bytes": 153936
+    },
+    {
+      "path": "assets/music/d8065683cb0e9db454163160.m4a",
+      "source": "/assets/audio-meta/Songs/BlindingLights/BlindingLights_Stage4.m4a",
+      "sha256": "d8065683cb0e9db4541631602278101dc46d55d8b429d342b168332cb2d0d90a",
+      "bytes": 67624
+    },
+    {
+      "path": "assets/music/d80b3188447ead15f67aaaf6.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/passobemsolto/guitar-bd2e13c3d491.m4a",
+      "sha256": "d80b3188447ead15f67aaaf67ef69e4a04aa3a17129929c3313930e5c3a6d774",
+      "bytes": 171336
+    },
+    {
+      "path": "assets/music/d8f38ee2e71403f7564d7419.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/blindinglights/guitar-d4a8debd6552.m4a",
+      "sha256": "d8f38ee2e71403f7564d7419ecf84d3a3d15e74ccb4277989996e3351560a387",
+      "bytes": 71018
+    },
+    {
+      "path": "assets/music/da1d67ae2e643668661ecf88.m4a",
+      "source": "/assets/audio-compact/Creative/NoBatidaoFourInstruments/NoBatidaoCreative_Xylophone.m4a",
+      "sha256": "da1d67ae2e643668661ecf8895fdfc2740a28b1f227df1d8b68fc3422763ea3c",
+      "bytes": 106851
+    },
+    {
+      "path": "assets/music/dae9ff1d980eaf65864e2b92.m4a",
+      "source": "/assets/audio-compact/Songs/IAintWorried/IAintWorried_Stage4.m4a",
+      "sha256": "dae9ff1d980eaf65864e2b928274edda2350d6066a6a7d3f4cf38db119e76daa",
+      "bytes": 170173
+    },
+    {
+      "path": "assets/music/daedc21175d4b6eb31df4fb3.m4a",
+      "source": "/assets/audio-compact/Songs/ThereforeIAm/ThereforeIAm_Stage3.m4a",
+      "sha256": "daedc21175d4b6eb31df4fb3ff05d4fd80546320dfc61d11c7edf1697ea029d7",
+      "bytes": 218569
+    },
+    {
+      "path": "assets/music/db7057a9be7df7d90cd348bf.m4a",
+      "source": "/assets/audio-meta/Songs/Perfect/Perfect_Stage2.m4a",
+      "sha256": "db7057a9be7df7d90cd348bf8f735b2d009de35b347028371c3f9ae43537c508",
+      "bytes": 146996
+    },
+    {
+      "path": "assets/music/dbbad0fdbef0c0d563b737cb.m4a",
+      "source": "/assets/audio-compact/Songs/DanceMonkey/DanceMonkey_Stage1.m4a",
+      "sha256": "dbbad0fdbef0c0d563b737cb9f886a301fb29047eb048f177e37b6eafcdac150",
+      "bytes": 103000
+    },
+    {
+      "path": "assets/music/dbbe63fe7197c3f97d92346b.m4a",
+      "source": "/assets/audio-compact/Songs/Mistletoe/Mistletoe_Stage4.m4a",
+      "sha256": "dbbe63fe7197c3f97d92346b663147cad835f4e9be31f0277fc6a82ef44c092b",
+      "bytes": 128362
+    },
+    {
+      "path": "assets/music/dc627f937d5e6346152e9a5b.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/lunabala/guitar-6d626c75333a.m4a",
+      "sha256": "dc627f937d5e6346152e9a5b07be4e665026a5e49b07ee084de5c8b7346430b0",
+      "bytes": 86561
+    },
+    {
+      "path": "assets/music/dcb2398d746df5b15ab32068.m4a",
+      "source": "/assets/audio-meta/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage3.m4a",
+      "sha256": "dcb2398d746df5b15ab32068c9cdb46298a95f0ac374e19a2030c97d3ce5583f",
+      "bytes": 92886
+    },
+    {
+      "path": "assets/music/dcce9c8dfb9d274dd3f708eb.m4a",
+      "source": "/assets/audio-compact/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage2.m4a",
+      "sha256": "dcce9c8dfb9d274dd3f708ebe20eb084dfb0932ea95d68569e7d20dc5426a8a1",
+      "bytes": 170832
+    },
+    {
+      "path": "assets/music/dd8525e57a231b0e1f8d95c8.m4a",
+      "source": "/assets/audio-meta/Songs/Perfect/Perfect_Stage3.m4a",
+      "sha256": "dd8525e57a231b0e1f8d95c8f97518ecf04a1c7268fe7c8fcdc821c914af1271",
+      "bytes": 147356
+    },
+    {
+      "path": "assets/music/dec41b14ec44abde0952f878.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/sad/drum-773cefcafa78.m4a",
+      "sha256": "dec41b14ec44abde0952f878a286c0eeb8881fb5471002ff44a83912c6e55a38",
+      "bytes": 136203
+    },
+    {
+      "path": "assets/music/dfd23da96c6805bba741b27e.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/babyonemoretime/xylophone-1d269005a506.m4a",
+      "sha256": "dfd23da96c6805bba741b27eee0656b37329616e080986884b3999ad9f4a62db",
+      "bytes": 156483
+    },
+    {
+      "path": "assets/music/e04a4cb6d3102cd5b3d1f88b.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/heartbreakanniversary/guitar-eb7dc2952349.m4a",
+      "sha256": "e04a4cb6d3102cd5b3d1f88bfb7cec7c476caf914af7b6e30034f6a965104ba1",
+      "bytes": 147610
+    },
+    {
+      "path": "assets/music/e266235b3973b66db321188a.m4a",
+      "source": "/assets/audio-meta/Songs/ThisLove/ThisLove_Stage4.m4a",
+      "sha256": "e266235b3973b66db321188adb249e34a4311ca240d94448be6106d9fc6c4282",
+      "bytes": 131455
+    },
+    {
+      "path": "assets/music/e58723db2fee027ed0977e53.m4a",
+      "source": "/assets/audio-meta/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage0.m4a",
+      "sha256": "e58723db2fee027ed0977e535d6a6afe1fbff901181f44f76252eb0e8e80356e",
+      "bytes": 151338
+    },
+    {
+      "path": "assets/music/e63cf1be4b52948d666f1993.m4a",
+      "source": "/assets/audio-meta/Songs/Flower/Flower_Stage0.m4a",
+      "sha256": "e63cf1be4b52948d666f1993df1dddf74e0385f428d293613e3e26c552f02502",
+      "bytes": 100319
+    },
+    {
+      "path": "assets/music/e6d8b91c794bf3b643553ca1.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/takeonme/piano-c16eb6e861ab.m4a",
+      "sha256": "e6d8b91c794bf3b643553ca1e7f81a50a97e459079ffbdf3af93c52b55bc0729",
+      "bytes": 86030
+    },
+    {
+      "path": "assets/music/e7776b5ed337bd575b878684.m4a",
+      "source": "/assets/audio-compact/Songs/ThisLove/ThisLove_Stage3.m4a",
+      "sha256": "e7776b5ed337bd575b878684fe89a9ce908690cee495256be5049235e96c20ca",
+      "bytes": 216003
+    },
+    {
+      "path": "assets/music/e7d48f009e9e194b5a680b50.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sunflower/xylophone-4831d5d8ee58.m4a",
+      "sha256": "e7d48f009e9e194b5a680b5078e34e70f49a346b7bbbb9ace04175cb7dbf9fc6",
+      "bytes": 67811
+    },
+    {
+      "path": "assets/music/e801c83e5d19c0af559939d8.m4a",
+      "source": "/assets/audio-compact/Songs/IWantItThatWay/IWantItThatWay_Stage2.m4a",
+      "sha256": "e801c83e5d19c0af559939d86eaeb17cf1f9c9702c6a3ad36073596503628b54",
+      "bytes": 203017
+    },
+    {
+      "path": "assets/music/e8447d542c4cb2fe59a4fb90.m4a",
+      "source": "/assets/audio-meta/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage1.m4a",
+      "sha256": "e8447d542c4cb2fe59a4fb900ec0e4c95a01371fd3f14efad1d1645955c223be",
+      "bytes": 88714
+    },
+    {
+      "path": "assets/music/e84ba4d4c80781a380412f81.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/perfect/drum-838b0d7438b7.m4a",
+      "sha256": "e84ba4d4c80781a380412f81f9c5ab15d5f70c98967a959d8663d488bf3a6b58",
+      "bytes": 161109
+    },
+    {
+      "path": "assets/music/e868d4236776e085875ba9f1.m4a",
+      "source": "/assets/audio-compact/Songs/Mistletoe/Mistletoe_Stage0.m4a",
+      "sha256": "e868d4236776e085875ba9f16966d1ad317615bbb316ba4cee182bc8ebb31b87",
+      "bytes": 124572
+    },
+    {
+      "path": "assets/music/e8a95c3c5476408aeb621c93.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/babyonemoretime/violin-2520c8bd1835.m4a",
+      "sha256": "e8a95c3c5476408aeb621c93307e4653a1e135fb02955b4f8d6a709844a42164",
+      "bytes": 93817
+    },
+    {
+      "path": "assets/music/e8c878d3d48a143a22e26b51.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/astronautintheocean/drum-dd7693ae4029.m4a",
+      "sha256": "e8c878d3d48a143a22e26b51cad3be5a05548ad1ad73870836c4da2259aedce6",
+      "bytes": 134190
+    },
+    {
+      "path": "assets/music/e8ce348a468afe08182816a0.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/lunabala/xylophone-59cc6d4b4098.m4a",
+      "sha256": "e8ce348a468afe08182816a0b5d011b1ef3386ef4fc54bcb4e6a7411c54b7a77",
+      "bytes": 142221
+    },
+    {
+      "path": "assets/music/e99def591300cc98efe918fc.m4a",
+      "source": "/assets/audio-compact/Creative/NoBatidaoFourInstruments/NoBatidaoCreative_Drums.m4a",
+      "sha256": "e99def591300cc98efe918fc5213334a9a7e1a657a13d034da4ea9d54454a35b",
+      "bytes": 120857
+    },
+    {
+      "path": "assets/music/e9d003e89044af8121f680fa.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/montagemtomada/xylophone-8e31f67b73c5.m4a",
+      "sha256": "e9d003e89044af8121f680fa73e3142e8ff635beb1a83b6c72dac3519dc5cd68",
+      "bytes": 82908
+    },
+    {
+      "path": "assets/music/ea74d8a1df5b39c383cf3b01.m4a",
+      "source": "/assets/audio-meta/Songs/DeathBed/DeathBed_Stage3.m4a",
+      "sha256": "ea74d8a1df5b39c383cf3b0111ed887c3307f19d9d62a7f42bd843b589a48285",
+      "bytes": 160604
+    },
+    {
+      "path": "assets/music/eb70660fce00b0e9179e5584.m4a",
+      "source": "/assets/audio-meta/Songs/BlindingLights/BlindingLights_Stage1.m4a",
+      "sha256": "eb70660fce00b0e9179e5584825ce689cca5c803b391fd693e5bbbfbd3356b61",
+      "bytes": 69377
+    },
+    {
+      "path": "assets/music/eecd0c17ba1d289cb952dce0.m4a",
+      "source": "/assets/audio-meta/Songs/IAintWorried/IAintWorried_Stage4.m4a",
+      "sha256": "eecd0c17ba1d289cb952dce0527e67914f0ff66e3d3702c923baacd0fa5b820f",
+      "bytes": 99573
+    },
+    {
+      "path": "assets/music/eedaed2859ed52190c725382.m4a",
+      "source": "/assets/audio-meta/Songs/BadHabits/BadHabits_Stage2.m4a",
+      "sha256": "eedaed2859ed52190c72538293eb576228699a751fe3a3d3c4abcc55c821cbf0",
+      "bytes": 97747
+    },
+    {
+      "path": "assets/music/ef2b953c3370e879b3d6728c.m4a",
+      "source": "/assets/audio-meta/Songs/AtMyWorst/AtMyWorst_Stage1.m4a",
+      "sha256": "ef2b953c3370e879b3d6728c5bf4a2f6af873a8722ae18e19047c1580b5073bd",
+      "bytes": 68055
+    },
+    {
+      "path": "assets/music/ef801adda5e78449e72917ea.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/nobatidao/xylophone-98489d969bd5.m4a",
+      "sha256": "ef801adda5e78449e72917ea14434829ab830850660b9e5f5555badcc4f89314",
+      "bytes": 70458
+    },
+    {
+      "path": "assets/music/f0fd358953ddd5b3e348fc7d.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/babyonemoretime/violin-2520c8bd1835.m4a",
+      "sha256": "f0fd358953ddd5b3e348fc7d2c7d581de41c6dc09a6ae697be402ae0f97ff5ad",
+      "bytes": 153930
+    },
+    {
+      "path": "assets/music/f1bb3d945811523856f3a793.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/losvoltaje/piano-4942e7f9ca5d.m4a",
+      "sha256": "f1bb3d945811523856f3a79387b3e55e233169cf5cdc0fd0723002f30a80047f",
+      "bytes": 136212
+    },
+    {
+      "path": "assets/music/f24d442bd114d9a23b2ab77a.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/passobemsolto/drum-575c926bbfc2.m4a",
+      "sha256": "f24d442bd114d9a23b2ab77aba614b3af1aee833afd600ccfdd2cb146d1ecef1",
+      "bytes": 181571
+    },
+    {
+      "path": "assets/music/f28c0c6ac9d3ee2a7cf5f55a.m4a",
+      "source": "/assets/audio-meta/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage4.m4a",
+      "sha256": "f28c0c6ac9d3ee2a7cf5f55a5b67f1e929bede2f37ac1d03faec8b612f22d750",
+      "bytes": 97982
+    },
+    {
+      "path": "assets/music/f3a45d9a98506dcdeff091e4.m4a",
+      "source": "/assets/audio-compact/Supplied20260910/perfect/guitar-07463457c023.m4a",
+      "sha256": "f3a45d9a98506dcdeff091e4ce071ba292d03d4e7ff22a9f8787d58b94e3b697",
+      "bytes": 155845
+    },
+    {
+      "path": "assets/music/f3f674148441e071d297394c.m4a",
+      "source": "/assets/audio-compact/Songs/Lovely/Lovely_Stage3.m4a",
+      "sha256": "f3f674148441e071d297394cc9d6e876fcfdc971abdf0dc4cb4a81a0a6a6e141",
+      "bytes": 187305
+    },
+    {
+      "path": "assets/music/f4475e79ffbaa921d1e70611.m4a",
+      "source": "/assets/audio-compact/Songs/Starboy/Starboy_Stage4.m4a",
+      "sha256": "f4475e79ffbaa921d1e70611cd0e0ce2e5fa42f43c42187c0052a8e0d9891249",
+      "bytes": 240001
+    },
+    {
+      "path": "assets/music/f466ce5cb2bdfbf7a23a2fc2.m4a",
+      "source": "/assets/audio-meta/Songs/PlayingWithFire/PlayingWithFire_Stage0.m4a",
+      "sha256": "f466ce5cb2bdfbf7a23a2fc2ff7a48b3f640157e91638b17e9c520b4c363ec14",
+      "bytes": 73452
+    },
+    {
+      "path": "assets/music/f48100c22611c12ff67f67e5.m4a",
+      "source": "/assets/audio-meta/Songs/Shallow/Shallow_Stage3.m4a",
+      "sha256": "f48100c22611c12ff67f67e5322fd8c4a0332a906a082228a9467730283d9a43",
+      "bytes": 186066
+    },
+    {
+      "path": "assets/music/f4add350f91391c8280af92f.m4a",
+      "source": "/assets/audio-meta/Songs/DeathBed/DeathBed_Stage0.m4a",
+      "sha256": "f4add350f91391c8280af92fa366b4407622dcd3efc9e9176c72ca36e7296395",
+      "bytes": 172138
+    },
+    {
+      "path": "assets/music/f62686ad3f3185199000dabf.m4a",
+      "source": "/assets/audio-meta/Songs/DeathBed/DeathBed_Stage5.m4a",
+      "sha256": "f62686ad3f3185199000dabf548210c96bb7be8f68131f6d79d09c2e35ccb715",
+      "bytes": 171980
+    },
+    {
+      "path": "assets/music/f6fb7ffd0bf6217efb3a0c19.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/astronautintheocean/violin-1170c19db4e2.m4a",
+      "sha256": "f6fb7ffd0bf6217efb3a0c1972a50c48156ef9aecea311ceef7ae3ab629dd084",
+      "bytes": 81547
+    },
+    {
+      "path": "assets/music/f7ec2fc62e506ae5d4cca187.m4a",
+      "source": "/assets/audio-meta/Songs/KissMeMore/KissMeMore_Stage3.m4a",
+      "sha256": "f7ec2fc62e506ae5d4cca187e0f7ec0dba32f419e8409693d2147adcf6298c27",
+      "bytes": 108236
+    },
+    {
+      "path": "assets/music/f7f44aa9932fad03d2bdc56a.m4a",
+      "source": "/assets/audio-compact/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage2.m4a",
+      "sha256": "f7f44aa9932fad03d2bdc56a3656ad954fea4a3968fb8c378c6e0f3ce733a10b",
+      "bytes": 246774
+    },
+    {
+      "path": "assets/music/f88c049d15fab1a812bfe3c6.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/babyonemoretime/piano-6e5828535238.m4a",
+      "sha256": "f88c049d15fab1a812bfe3c6e6b43b7d207198ab64db02c1d6d6c1a2fb921798",
+      "bytes": 93977
+    },
+    {
+      "path": "assets/music/f98598445410a5b62e47565c.m4a",
+      "source": "/assets/audio-compact/Songs/Mistletoe/Mistletoe_Stage2.m4a",
+      "sha256": "f98598445410a5b62e47565ca563f83e3e3a0ecdc840f46919f88bba582c312f",
+      "bytes": 124348
+    },
+    {
+      "path": "assets/music/f9d8247f8f23e8d49ef1f69d.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/deathbed/xylophone-a554921f8735.m4a",
+      "sha256": "f9d8247f8f23e8d49ef1f69d61932e11d0ee0a539e05f67dd873b99edf076e38",
+      "bytes": 168080
+    },
+    {
+      "path": "assets/music/fallback/00218458ecba342cbf131724.ogg",
+      "source": "/assets/audio/Supplied20260910/sayso/piano-00218458ecba.ogg",
+      "sha256": "00218458ecba342cbf1317247eef383f68c301ce0ef7c7564a07fcaf8e32b46a",
+      "bytes": 179195
+    },
+    {
+      "path": "assets/music/fallback/01bd2b95146e1291342497f7.ogg",
+      "source": "/assets/audio/Supplied20260910/despacito/violin-01bd2b95146e.ogg",
+      "sha256": "01bd2b95146e1291342497f7d8fe723bddd81695c646de31ae02624b0b4de2b9",
+      "bytes": 219541
+    },
+    {
+      "path": "assets/music/fallback/031e3d066af6165ca2ef67da.ogg",
+      "source": "/assets/audio/Songs/PlayingWithFire/PlayingWithFire_Stage2.ogg",
+      "sha256": "031e3d066af6165ca2ef67da06504488383ee31d98bfd8bcd247a713b18b5dfd",
+      "bytes": 232104
+    },
+    {
+      "path": "assets/music/fallback/07463457c02343150ff37005.ogg",
+      "source": "/assets/audio/Supplied20260910/perfect/guitar-07463457c023.ogg",
+      "sha256": "07463457c02343150ff3700536ac9b392a14271cbe3a4cfb1438113716793c51",
+      "bytes": 310748
+    },
+    {
+      "path": "assets/music/fallback/07754aef2f18dcd393458675.ogg",
+      "source": "/assets/audio/Songs/DeathBed/DeathBed_Stage3.ogg",
+      "sha256": "07754aef2f18dcd393458675d03a20ed849e7674407442f073e841576a13380d",
+      "bytes": 870252
+    },
+    {
+      "path": "assets/music/fallback/083cffcab65cd6453cffc666.ogg",
+      "source": "/assets/audio/Songs/Mistletoe/Mistletoe_Stage3.ogg",
+      "sha256": "083cffcab65cd6453cffc666762659dbfb22b23fd76dae01dfe75fff31905205",
+      "bytes": 243925
+    },
+    {
+      "path": "assets/music/fallback/0857777e7a689a635f3f1f2c.ogg",
+      "source": "/assets/audio/Songs/LeaveALightOn/LeaveALightOn_Stage0.ogg",
+      "sha256": "0857777e7a689a635f3f1f2c26510440af912825a2a6b10c6bb7e9ac40540adf",
+      "bytes": 298248
+    },
+    {
+      "path": "assets/music/fallback/0b2d090f25bb5259be93ac41.ogg",
+      "source": "/assets/audio/Songs/Unity/Unity_Stage4.ogg",
+      "sha256": "0b2d090f25bb5259be93ac41276fea5cefcb88dd96a8ec64a69398e0d33b5792",
+      "bytes": 374191
+    },
+    {
+      "path": "assets/music/fallback/0c2a66fff6dbde90b9ebbce2.ogg",
+      "source": "/assets/audio/Supplied20260910/sayso/drum-0c2a66fff6db.ogg",
+      "sha256": "0c2a66fff6dbde90b9ebbce206fb389595f4a065e7391924a08773496af8339e",
+      "bytes": 173769
+    },
+    {
+      "path": "assets/music/fallback/0c43e50e30ee0e7b23cc3f92.ogg",
+      "source": "/assets/audio/Songs/Perfect/Perfect_Stage1.ogg",
+      "sha256": "0c43e50e30ee0e7b23cc3f92f63c2623c9d0c0f2e1e942e3a93b22562f6c8c23",
+      "bytes": 661302
+    },
+    {
+      "path": "assets/music/fallback/0c9d98c27698200b5a456a0b.ogg",
+      "source": "/assets/audio/Supplied20260910/astronautintheocean/xylophone-0c9d98c27698.ogg",
+      "sha256": "0c9d98c27698200b5a456a0b52828eca2812672fa0a1e626781dfff9e5462d40",
+      "bytes": 267709
+    },
+    {
+      "path": "assets/music/fallback/0f246c7d401348fefb457149.ogg",
+      "source": "/assets/audio/Supplied20260910/takeonme/drum-0f246c7d4013.ogg",
+      "sha256": "0f246c7d401348fefb457149d22a2f0a79fda31bdefb48d3109264983ea552a3",
+      "bytes": 282226
+    },
+    {
+      "path": "assets/music/fallback/0fb0276d28274fd7e67f2e76.ogg",
+      "source": "/assets/audio/Supplied20260910/nobatidao/drum-0fb0276d2827.ogg",
+      "sha256": "0fb0276d28274fd7e67f2e761ace35a31f6732b90b56e52fdf98879a505f31e8",
+      "bytes": 228538
+    },
+    {
+      "path": "assets/music/fallback/10157707d701d8a1eed0c451.ogg",
+      "source": "/assets/audio/Songs/DeathBed/DeathBed_Stage4.ogg",
+      "sha256": "10157707d701d8a1eed0c4513fbf9a78db19e362303bb1637b119dd54ebcf900",
+      "bytes": 871347
+    },
+    {
+      "path": "assets/music/fallback/1033098c366cfe075e23aecf.ogg",
+      "source": "/assets/audio/Supplied20260910/perfect/piano-1033098c366c.ogg",
+      "sha256": "1033098c366cfe075e23aecff6bcee06e49615d2106f3f5015de7d107179454e",
+      "bytes": 310086
+    },
+    {
+      "path": "assets/music/fallback/1170c19db4e246950bc315ce.ogg",
+      "source": "/assets/audio/Supplied20260910/astronautintheocean/violin-1170c19db4e2.ogg",
+      "sha256": "1170c19db4e246950bc315ce72af4691e84d203132e043a761d7c0a78bad1474",
+      "bytes": 266682
+    },
+    {
+      "path": "assets/music/fallback/11721ab9d26f984e9b013beb.ogg",
+      "source": "/assets/audio/Songs/PlayingWithFire/PlayingWithFire_Stage3.ogg",
+      "sha256": "11721ab9d26f984e9b013beb4d86fdd3895d83654f5016cc10346de42216d29f",
+      "bytes": 232998
+    },
+    {
+      "path": "assets/music/fallback/11eeaa1a57105acdd0dd7765.ogg",
+      "source": "/assets/audio/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage1.ogg",
+      "sha256": "11eeaa1a57105acdd0dd7765c1a585f5be9283db8ae0bd05501c21791fe48db5",
+      "bytes": 469169
+    },
+    {
+      "path": "assets/music/fallback/1626ed4fd60837ca431b0046.ogg",
+      "source": "/assets/audio/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage3.ogg",
+      "sha256": "1626ed4fd60837ca431b0046ee1057eae6ee06d147285cad33e6f5a516fe3346",
+      "bytes": 408775
+    },
+    {
+      "path": "assets/music/fallback/166dbc9b355b8b93bca449dd.ogg",
+      "source": "/assets/audio/Songs/BadHabits/BadHabits_Stage2.ogg",
+      "sha256": "166dbc9b355b8b93bca449dd910f7d1a91e62c418b2a6e590f1f0e067d781245",
+      "bytes": 311894
+    },
+    {
+      "path": "assets/music/fallback/1685459d67c4205e41d7adcf.ogg",
+      "source": "/assets/audio/Songs/PlayingWithFire/PlayingWithFire_Stage4.ogg",
+      "sha256": "1685459d67c4205e41d7adcf29a029827f67504f1b9210ed595d380d83f5dc56",
+      "bytes": 232509
+    },
+    {
+      "path": "assets/music/fallback/1a8043536f3bcb36920e45c2.ogg",
+      "source": "/assets/audio/Songs/KissMeMore/KissMeMore_Stage0.ogg",
+      "sha256": "1a8043536f3bcb36920e45c24546d536da128a4c4bb7a1649ecaa07d7fe5523b",
+      "bytes": 364688
+    },
+    {
+      "path": "assets/music/fallback/1d269005a5062d81c2b4862e.ogg",
+      "source": "/assets/audio/Supplied20260910/babyonemoretime/xylophone-1d269005a506.ogg",
+      "sha256": "1d269005a5062d81c2b4862e7e71bbf40d0f4629c22df5aa8eefc2c4ef04f93c",
+      "bytes": 307731
+    },
+    {
+      "path": "assets/music/fallback/1e10713241ee8b3a331b396f.ogg",
+      "source": "/assets/audio/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage0.ogg",
+      "sha256": "1e10713241ee8b3a331b396f256d856273ff4ee5ed5411fc13e5bd40b7cdd2a3",
+      "bytes": 763262
+    },
+    {
+      "path": "assets/music/fallback/1e3fcb11f88cb11437fc7cd2.ogg",
+      "source": "/assets/audio/Supplied20260910/lunabala/violin-1e3fcb11f88c.ogg",
+      "sha256": "1e3fcb11f88cb11437fc7cd2c5081f40c6ccbf02134f01e9d66d6ae3bd788713",
+      "bytes": 280968
+    },
+    {
+      "path": "assets/music/fallback/2012874ce199b88672a5568e.ogg",
+      "source": "/assets/audio/Supplied20260910/losvoltaje/violin-2012874ce199.ogg",
+      "sha256": "2012874ce199b88672a5568e9e47d29aa64c3a917b69c25f9e067cd12e262ec5",
+      "bytes": 444811
+    },
+    {
+      "path": "assets/music/fallback/2485c201b89bf3334e61ac9d.ogg",
+      "source": "/assets/audio/Songs/KissMeMore/KissMeMore_Stage3.ogg",
+      "sha256": "2485c201b89bf3334e61ac9df33a91baf8e4e4ccab335d484f877de3a25348c3",
+      "bytes": 365048
+    },
+    {
+      "path": "assets/music/fallback/251be58ea3020feee9815975.ogg",
+      "source": "/assets/audio/Supplied20260910/saveyourtears/guitar-251be58ea302.ogg",
+      "sha256": "251be58ea3020feee9815975f4f0f1317ad1266bd3250187f0e8a1fd014c1bfe",
+      "bytes": 333761
+    },
+    {
+      "path": "assets/music/fallback/2520c8bd1835d8fbb4d9ff7f.ogg",
+      "source": "/assets/audio/Supplied20260910/babyonemoretime/violin-2520c8bd1835.ogg",
+      "sha256": "2520c8bd1835d8fbb4d9ff7f2c0dfd2a8545312c91bacbb13a22ba0b3c3f7da4",
+      "bytes": 307069
+    },
+    {
+      "path": "assets/music/fallback/297876001cdd56d7a8cabe0a.ogg",
+      "source": "/assets/audio/Songs/Flower/Flower_Stage2.ogg",
+      "sha256": "297876001cdd56d7a8cabe0a450d4e3050713805b879857e949a64cb93502ce1",
+      "bytes": 316757
+    },
+    {
+      "path": "assets/music/fallback/2f8586c638044f17f7d3a0f2.ogg",
+      "source": "/assets/audio/Songs/IAintWorried/IAintWorried_Stage2.ogg",
+      "sha256": "2f8586c638044f17f7d3a0f218d53603fed6fddfd435c77855b85530de110ba5",
+      "bytes": 327368
+    },
+    {
+      "path": "assets/music/fallback/314375658cb6929ef70f7f2f.ogg",
+      "source": "/assets/audio/Supplied20260910/sunflower/drum-314375658cb6.ogg",
+      "sha256": "314375658cb6929ef70f7f2f04f31a86588824408e40e52459acd3d433311c77",
+      "bytes": 218177
+    },
+    {
+      "path": "assets/music/fallback/31d318b20751fb7fab419921.ogg",
+      "source": "/assets/audio/Songs/Starboy/Starboy_Stage0.ogg",
+      "sha256": "31d318b20751fb7fab419921e8a062f7cb035a8134325875ced70a3ac4fb29e5",
+      "bytes": 501631
+    },
+    {
+      "path": "assets/music/fallback/32c776cb3a4760b98409bd62.ogg",
+      "source": "/assets/audio/Songs/Perfect/Perfect_Stage0.ogg",
+      "sha256": "32c776cb3a4760b98409bd62d9462264596e91408793b8d6921b6aea2318376a",
+      "bytes": 609545
+    },
+    {
+      "path": "assets/music/fallback/334dd9a3e66f3e96ef55addf.ogg",
+      "source": "/assets/audio/Songs/AtMyWorst/AtMyWorst_Stage1.ogg",
+      "sha256": "334dd9a3e66f3e96ef55addf81ce00152eb27876a9fc710d9ca9010a90e187aa",
+      "bytes": 343136
+    },
+    {
+      "path": "assets/music/fallback/33cafef77b1a7ce20450ccd5.ogg",
+      "source": "/assets/audio/Supplied20260910/sayso/violin-33cafef77b1a.ogg",
+      "sha256": "33cafef77b1a7ce20450ccd5364d43826200602e5f98a058536e10cf46ed8610",
+      "bytes": 178726
+    },
+    {
+      "path": "assets/music/fallback/33ed6f9880c1a29a257f2f5f.ogg",
+      "source": "/assets/audio/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage3.ogg",
+      "sha256": "33ed6f9880c1a29a257f2f5fe2721653e42832dea627c5eb81188bd95e5b4c3b",
+      "bytes": 328866
+    },
+    {
+      "path": "assets/music/fallback/359ae8ba23a35415e49f1bb7.ogg",
+      "source": "/assets/audio/Songs/IWantItThatWay/IWantItThatWay_Stage2.ogg",
+      "sha256": "359ae8ba23a35415e49f1bb731ece25e7c23c5ecbf70f86c01270b4a4f30d6d6",
+      "bytes": 395853
+    },
+    {
+      "path": "assets/music/fallback/35bfaa2d938c3d6269570d3f.ogg",
+      "source": "/assets/audio/Supplied20260910/despacito/guitar-35bfaa2d938c.ogg",
+      "sha256": "35bfaa2d938c3d6269570d3fc8bb907e2fcdc1fcd51143a0e06d6a2632dffdb4",
+      "bytes": 220303
+    },
+    {
+      "path": "assets/music/fallback/369ed71fce1de47b3b0e0a96.ogg",
+      "source": "/assets/audio/Songs/LovesickGirls/LovesickGirls_Stage4.ogg",
+      "sha256": "369ed71fce1de47b3b0e0a966b561bc32335faeccae548c147c50f32d9defb67",
+      "bytes": 307448
+    },
+    {
+      "path": "assets/music/fallback/36e64ffa91b48a07ce0d21d7.ogg",
+      "source": "/assets/audio/Songs/Perfect/Perfect_Stage3.ogg",
+      "sha256": "36e64ffa91b48a07ce0d21d738434b95c4d23e1fd6cdc2698aba8a5b7a5e9415",
+      "bytes": 523811
+    },
+    {
+      "path": "assets/music/fallback/3a409a11ca69e9aea83bd8b6.ogg",
+      "source": "/assets/audio/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage1.ogg",
+      "sha256": "3a409a11ca69e9aea83bd8b69f9776cc137d0ad8b765d2aa4ae33bf811d94b0e",
+      "bytes": 332288
+    },
+    {
+      "path": "assets/music/fallback/3a637a22aa6106d35aa9ece1.ogg",
+      "source": "/assets/audio/Songs/Unity/Unity_Stage2.ogg",
+      "sha256": "3a637a22aa6106d35aa9ece1641955957c71ee03c8295ca1e30e284f80e894b3",
+      "bytes": 373592
+    },
+    {
+      "path": "assets/music/fallback/3b91bd2cdc18eaf6fcd895ca.ogg",
+      "source": "/assets/audio/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage3.ogg",
+      "sha256": "3b91bd2cdc18eaf6fcd895cab6d17e64164f2bafed705b4225ef21cf6f604c6e",
+      "bytes": 764178
+    },
+    {
+      "path": "assets/music/fallback/3d24fe29a127d683d30451dd.ogg",
+      "source": "/assets/audio/Songs/DeathBed/DeathBed_Stage2.ogg",
+      "sha256": "3d24fe29a127d683d30451dd012d0c9a8b1994a85cab0c6409efee12f2606f7d",
+      "bytes": 869865
+    },
+    {
+      "path": "assets/music/fallback/3d8a1d26a496efa8e37704a6.ogg",
+      "source": "/assets/audio/Songs/Unity/Unity_Stage3.ogg",
+      "sha256": "3d8a1d26a496efa8e37704a6a1fb2b534fcc3f855ab549e303b1622a6177721c",
+      "bytes": 373966
+    },
+    {
+      "path": "assets/music/fallback/3fb909b9a017eb06bb8aee42.ogg",
+      "source": "/assets/audio/Songs/LeaveALightOn/LeaveALightOn_Stage3.ogg",
+      "sha256": "3fb909b9a017eb06bb8aee426623c624c06f0ce41a1c9d9dfad472d87e44adb3",
+      "bytes": 298464
+    },
+    {
+      "path": "assets/music/fallback/42814f7d95ddaec93c7d541d.ogg",
+      "source": "/assets/audio/Songs/ThereforeIAm/ThereforeIAm_Stage0.ogg",
+      "sha256": "42814f7d95ddaec93c7d541d90e96e6412aef559739e58ca59db16178e09cd4a",
+      "bytes": 417048
+    },
+    {
+      "path": "assets/music/fallback/44de69d3fd2440c94766d756.ogg",
+      "source": "/assets/audio/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage5.ogg",
+      "sha256": "44de69d3fd2440c94766d7567b68ff97292f9d998ae1cea40c85049b5c33d062",
+      "bytes": 763223
+    },
+    {
+      "path": "assets/music/fallback/451b375fcea3664c69378e9f.ogg",
+      "source": "/assets/audio/Supplied20260910/montagemtomada/piano-451b375fcea3.ogg",
+      "sha256": "451b375fcea3664c69378e9f987c571ff48e87861b397bd1484911257f463241",
+      "bytes": 270171
+    },
+    {
+      "path": "assets/music/fallback/471fa19b4c2fece2205549aa.ogg",
+      "source": "/assets/audio/Supplied20260910/montagemtomada/guitar-471fa19b4c2f.ogg",
+      "sha256": "471fa19b4c2fece2205549aa48c9ed891ece9709bbbfe1109e3b1ab796aa8981",
+      "bytes": 271731
+    },
+    {
+      "path": "assets/music/fallback/4813d26392ad554e5fadf098.ogg",
+      "source": "/assets/audio/Songs/ThisLove/ThisLove_Stage3.ogg",
+      "sha256": "4813d26392ad554e5fadf098067eff20360312e97cfcbd8342637db31ab2e079",
+      "bytes": 413370
+    },
+    {
+      "path": "assets/music/fallback/4831d5d8ee58b19bd62676ba.ogg",
+      "source": "/assets/audio/Supplied20260910/sunflower/xylophone-4831d5d8ee58.ogg",
+      "sha256": "4831d5d8ee58b19bd62676baf3dde6985e85dc44acd559ac5b201e72804bdd30",
+      "bytes": 220631
+    },
+    {
+      "path": "assets/music/fallback/4942e7f9ca5d4a2a9ae610b5.ogg",
+      "source": "/assets/audio/Supplied20260910/losvoltaje/piano-4942e7f9ca5d.ogg",
+      "sha256": "4942e7f9ca5d4a2a9ae610b5683cc7641500289f57df151f4839abd3fbb73005",
+      "bytes": 444701
+    },
+    {
+      "path": "assets/music/fallback/4d1613ffe444d1d1b4ae74b5.ogg",
+      "source": "/assets/audio/Songs/BlindingLights/BlindingLights_Stage5.ogg",
+      "sha256": "4d1613ffe444d1d1b4ae74b5acf61564aad86ab0a55851f76b23aaf51e897b31",
+      "bytes": 368807
+    },
+    {
+      "path": "assets/music/fallback/4df454847b04bef33cc5d748.ogg",
+      "source": "/assets/audio/Supplied20260910/despacito/drum-4df454847b04.ogg",
+      "sha256": "4df454847b04bef33cc5d748accbbf202edf7cd1f577d68577e99e1e4c931d56",
+      "bytes": 220388
+    },
+    {
+      "path": "assets/music/fallback/4ea6cb03f78b1f75e24233a8.ogg",
+      "source": "/assets/audio/Songs/ThisLove/ThisLove_Stage1.ogg",
+      "sha256": "4ea6cb03f78b1f75e24233a82ddb1e4de4b8bf84725b8a8cc7c8667c1d02a4d4",
+      "bytes": 413982
+    },
+    {
+      "path": "assets/music/fallback/51af297b06c440a2aa8dd9bb.ogg",
+      "source": "/assets/audio/Songs/IAintWorried/IAintWorried_Stage0.ogg",
+      "sha256": "51af297b06c440a2aa8dd9bbfc88d4e446cffebdba0d9b050ec04d0eb45c76b8",
+      "bytes": 327434
+    },
+    {
+      "path": "assets/music/fallback/51fde82a8c68f9f131e67d24.ogg",
+      "source": "/assets/audio/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage2.ogg",
+      "sha256": "51fde82a8c68f9f131e67d24bdc48a4220da6a19c6cb062b259872fb38566ff6",
+      "bytes": 538471
+    },
+    {
+      "path": "assets/music/fallback/52420ee51580413396bf369d.ogg",
+      "source": "/assets/audio/Songs/Shallow/Shallow_Stage0.ogg",
+      "sha256": "52420ee51580413396bf369dadc349446c7610a9177db0c6703ed8e302ec96c6",
+      "bytes": 623237
+    },
+    {
+      "path": "assets/music/fallback/536506d49de2d3a7cab828fa.ogg",
+      "source": "/assets/audio/Songs/Flower/Flower_Stage1.ogg",
+      "sha256": "536506d49de2d3a7cab828fa74b76343b93107ee6840254b22d32998063804c2",
+      "bytes": 317767
+    },
+    {
+      "path": "assets/music/fallback/55ed3c7fdf2bc735bbb2075c.ogg",
+      "source": "/assets/audio/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage3.ogg",
+      "sha256": "55ed3c7fdf2bc735bbb2075cec6862fd73a1d07482ee04f373689e91e9743311",
+      "bytes": 465426
+    },
+    {
+      "path": "assets/music/fallback/575c926bbfc2fda00185c357.ogg",
+      "source": "/assets/audio/Supplied20260910/passobemsolto/drum-575c926bbfc2.ogg",
+      "sha256": "575c926bbfc2fda00185c357f87e916759bff1fe4ff980e237c65495a0fbf812",
+      "bytes": 339498
+    },
+    {
+      "path": "assets/music/fallback/585d1829c5ef58b0631478db.ogg",
+      "source": "/assets/audio/Songs/Shallow/Shallow_Stage3.ogg",
+      "sha256": "585d1829c5ef58b0631478dbf1e1f7c9c3f7fbcfeff4091ebcfff14de8cab511",
+      "bytes": 624589
+    },
+    {
+      "path": "assets/music/fallback/59cc6d4b40983fee77417707.ogg",
+      "source": "/assets/audio/Supplied20260910/lunabala/xylophone-59cc6d4b4098.ogg",
+      "sha256": "59cc6d4b40983fee774177079fc19473ee32911d811e8d6159a1339af8a989d2",
+      "bytes": 281592
+    },
+    {
+      "path": "assets/music/fallback/59cfcaaa781b7a9dd2af62b9.ogg",
+      "source": "/assets/audio/Songs/DeathBed/DeathBed_Stage5.ogg",
+      "sha256": "59cfcaaa781b7a9dd2af62b987db678fadddbc8d5715988873265ab796db9651",
+      "bytes": 869051
+    },
+    {
+      "path": "assets/music/fallback/5a7e55f0e510efad7a3059e0.ogg",
+      "source": "/assets/audio/Songs/BlindingLights/BlindingLights_Stage2.ogg",
+      "sha256": "5a7e55f0e510efad7a3059e077fbc91ae14a00bb00940cfb980e266b18e95c54",
+      "bytes": 369077
+    },
+    {
+      "path": "assets/music/fallback/5bb2e70d86d48a38e4e3492f.ogg",
+      "source": "/assets/audio/Songs/LovesickGirls/LovesickGirls_Stage0.ogg",
+      "sha256": "5bb2e70d86d48a38e4e3492f8f936e648f521a657989c7d5066a269903f75839",
+      "bytes": 307493
+    },
+    {
+      "path": "assets/music/fallback/5c70d11e046d1838f301e970.ogg",
+      "source": "/assets/audio/Songs/PlayingWithFire/PlayingWithFire_Stage0.ogg",
+      "sha256": "5c70d11e046d1838f301e9704edd1119b8abb3931f056d65e36547227e033df7",
+      "bytes": 232519
+    },
+    {
+      "path": "assets/music/fallback/5d657d29a6e10496e425391a.ogg",
+      "source": "/assets/audio/Supplied20260910/nobatidao/piano-5d657d29a6e1.ogg",
+      "sha256": "5d657d29a6e10496e425391a3dc53c8407a69f8582ad6fb24b031fa6285dc4cd",
+      "bytes": 227953
+    },
+    {
+      "path": "assets/music/fallback/5e224cea45ee675bbd41046e.ogg",
+      "source": "/assets/audio/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage4.ogg",
+      "sha256": "5e224cea45ee675bbd41046e18da68cdd23952bb644fc34652b4db69ab61d7d0",
+      "bytes": 757296
+    },
+    {
+      "path": "assets/music/fallback/5e32b62c4f80bb30b6cf52e7.ogg",
+      "source": "/assets/audio/Songs/Lovely/Lovely_Stage0.ogg",
+      "sha256": "5e32b62c4f80bb30b6cf52e7398ddf4c662ed08565cd8c0cc4642ec8dddc94d4",
+      "bytes": 360131
+    },
+    {
+      "path": "assets/music/fallback/5ee7952244c1225bab02358c.ogg",
+      "source": "/assets/audio/Supplied20260910/deathbed/violin-5ee7952244c1.ogg",
+      "sha256": "5ee7952244c1225bab02358ca8b2d498e2d7af74c7001ce6f23527ed28e4e942",
+      "bytes": 542679
+    },
+    {
+      "path": "assets/music/fallback/6052d881b33d09d414d4f3f7.ogg",
+      "source": "/assets/audio/Songs/Mistletoe/Mistletoe_Stage2.ogg",
+      "sha256": "6052d881b33d09d414d4f3f7a2c376a9f8475e60c6e8ed94a3c32b4861072419",
+      "bytes": 243566
+    },
+    {
+      "path": "assets/music/fallback/60c918225ceb702073093182.ogg",
+      "source": "/assets/audio/Supplied20260910/astronautintheocean/piano-60c918225ceb.ogg",
+      "sha256": "60c918225ceb70207309318261989e761eaf145a5c88b32d05ae367433d695c2",
+      "bytes": 266829
+    },
+    {
+      "path": "assets/music/fallback/61461fa6dff95e6a8acecef1.ogg",
+      "source": "/assets/audio/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage4.ogg",
+      "sha256": "61461fa6dff95e6a8acecef16ca1bf2cacc1b47a606bbb658277f3a728c4d6ab",
+      "bytes": 791999
+    },
+    {
+      "path": "assets/music/fallback/628d7f137e4b31226046f71e.ogg",
+      "source": "/assets/audio/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage1.ogg",
+      "sha256": "628d7f137e4b31226046f71e5073f50df46974e639639508fc2ebcb733a2b86f",
+      "bytes": 762959
+    },
+    {
+      "path": "assets/music/fallback/6330d2ae82f099c4431a418a.ogg",
+      "source": "/assets/audio/Songs/Perfect/Perfect_Stage4.ogg",
+      "sha256": "6330d2ae82f099c4431a418a8a9021d0969988a54a8cbbcd5b02fcc686c577f7",
+      "bytes": 1215994
+    },
+    {
+      "path": "assets/music/fallback/63ed59af1982bf0569c5c6b3.ogg",
+      "source": "/assets/audio/Supplied20260910/deathbed/drum-63ed59af1982.ogg",
+      "sha256": "63ed59af1982bf0569c5c6b3f6b50517b999b6f8de5986353b37814b4e81fac6",
+      "bytes": 543704
+    },
+    {
+      "path": "assets/music/fallback/667ae38e6a77d84e0f1249b8.ogg",
+      "source": "/assets/audio/Supplied20260910/perfect/violin-667ae38e6a77.ogg",
+      "sha256": "667ae38e6a77d84e0f1249b81a85c304593784961689a3fc8b3d2254ffc20abb",
+      "bytes": 310062
+    },
+    {
+      "path": "assets/music/fallback/669c5ea3b09b3d63fe585ba0.wav",
+      "source": "/assets/audio/Creative/NoBatidaoFourInstruments/NoBatidaoCreative_Drums.wav",
+      "sha256": "669c5ea3b09b3d63fe585ba0967807bd450fab465a9e2ee8a03378fca585b3f3",
+      "bytes": 5862012
+    },
+    {
+      "path": "assets/music/fallback/67a953f7907abcbe5762a46a.ogg",
+      "source": "/assets/audio/Supplied20260910/heartbreakanniversary/piano-67a953f7907a.ogg",
+      "sha256": "67a953f7907abcbe5762a46a27aa75bb6c1d1643af6bfefdfc82c6a9f73a5425",
+      "bytes": 477031
+    },
+    {
+      "path": "assets/music/fallback/67aca1e89ebd2e1890e72b5d.ogg",
+      "source": "/assets/audio/Supplied20260910/blindinglights/piano-67aca1e89ebd.ogg",
+      "sha256": "67aca1e89ebd2e1890e72b5d72a3196c7c9c2899a1edaeb178b75779bfcd0147",
+      "bytes": 230905
+    },
+    {
+      "path": "assets/music/fallback/6811acc6659949559fc75fe1.ogg",
+      "source": "/assets/audio/Supplied20260910/despacito/piano-6811acc66599.ogg",
+      "sha256": "6811acc6659949559fc75fe1f2a4ddbe7e8a3b2d2b4aad53c30941ab47d92c89",
+      "bytes": 219528
+    },
+    {
+      "path": "assets/music/fallback/6a333cc89561f7d28766abb0.wav",
+      "source": "/assets/audio/Songs/NoBatidao/NoBatidao_Stage2.wav",
+      "sha256": "6a333cc89561f7d28766abb07f4b8b28f48ff68283c59ac2909240d1456bdc49",
+      "bytes": 4253584
+    },
+    {
+      "path": "assets/music/fallback/6aa899d2314d61c1bb0a09f1.ogg",
+      "source": "/assets/audio/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage1.ogg",
+      "sha256": "6aa899d2314d61c1bb0a09f1038ddf555c18a75915218d6b3a74de2e74ad98ba",
+      "bytes": 496533
+    },
+    {
+      "path": "assets/music/fallback/6ad8380307aa15cf8bed623e.ogg",
+      "source": "/assets/audio/Songs/WakeMeUp/WakeMeUp_Stage1.ogg",
+      "sha256": "6ad8380307aa15cf8bed623e4156aec6d30774826770bf44e9d430756ac0c4b6",
+      "bytes": 474577
+    },
+    {
+      "path": "assets/music/fallback/6cfb92c473ea522de491d441.ogg",
+      "source": "/assets/audio/Supplied20260910/heartbreakanniversary/xylophone-6cfb92c473ea.ogg",
+      "sha256": "6cfb92c473ea522de491d4413514117232555e91b6a64ee4bed759d36ff3b028",
+      "bytes": 477768
+    },
+    {
+      "path": "assets/music/fallback/6d626c75333a5752f1f936d4.ogg",
+      "source": "/assets/audio/Supplied20260910/lunabala/guitar-6d626c75333a.ogg",
+      "sha256": "6d626c75333a5752f1f936d49d2e5ac94c55dee686fa54b1278485df95619f6a",
+      "bytes": 281813
+    },
+    {
+      "path": "assets/music/fallback/6e4d6ad2e9f9c130e1120a00.wav",
+      "source": "/assets/audio/Songs/NoBatidao/NoBatidao_Stage1.wav",
+      "sha256": "6e4d6ad2e9f9c130e1120a00a54af98376b2e290b670771d30079a4e680ff7c2",
+      "bytes": 4253584
+    },
+    {
+      "path": "assets/music/fallback/6e5828535238336b9aa536c0.ogg",
+      "source": "/assets/audio/Supplied20260910/babyonemoretime/piano-6e5828535238.ogg",
+      "sha256": "6e5828535238336b9aa536c046810153fe8684f8507b1968a49746f3347f1f23",
+      "bytes": 307373
+    },
+    {
+      "path": "assets/music/fallback/700b442f0bcf916d6f74a9c2.ogg",
+      "source": "/assets/audio/Songs/DanceMonkey/DanceMonkey_Stage2.ogg",
+      "sha256": "700b442f0bcf916d6f74a9c2d90b887f2d62642a343531ceba72924ecbd50245",
+      "bytes": 201833
+    },
+    {
+      "path": "assets/music/fallback/7165885c7f7cf7fc8efbda1b.ogg",
+      "source": "/assets/audio/Songs/AtMyWorst/AtMyWorst_Stage2.ogg",
+      "sha256": "7165885c7f7cf7fc8efbda1bf1db7c2a8b1747b8924cbb05c68b2c1c00f3b735",
+      "bytes": 343310
+    },
+    {
+      "path": "assets/music/fallback/71812017d5b043f7923890d7.ogg",
+      "source": "/assets/audio/Songs/LeaveALightOn/LeaveALightOn_Stage1.ogg",
+      "sha256": "71812017d5b043f7923890d73849b708e842e7576abf73729ec2a1aeeb57a1ed",
+      "bytes": 298795
+    },
+    {
+      "path": "assets/music/fallback/7637569dbb2a84a6fec2db92.ogg",
+      "source": "/assets/audio/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage0.ogg",
+      "sha256": "7637569dbb2a84a6fec2db92bfd667d3873ede2ad597a1284940cfaca677f9e7",
+      "bytes": 252655
+    },
+    {
+      "path": "assets/music/fallback/773cefcafa7806ec63dfdf91.ogg",
+      "source": "/assets/audio/Supplied20260910/sad/drum-773cefcafa78.ogg",
+      "sha256": "773cefcafa7806ec63dfdf91da711324f2e9745d401c8db4e7445c7de639d147",
+      "bytes": 263287
+    },
+    {
+      "path": "assets/music/fallback/7781139a17a6b32a3e2462b9.ogg",
+      "source": "/assets/audio/Supplied20260910/passobemsolto/violin-7781139a17a6.ogg",
+      "sha256": "7781139a17a6b32a3e2462b9f052a4afa1420053ea8f948de448131006768a83",
+      "bytes": 338545
+    },
+    {
+      "path": "assets/music/fallback/77b688d36f4b63e2b961a7b2.ogg",
+      "source": "/assets/audio/Supplied20260910/heartbreakanniversary/drum-77b688d36f4b.ogg",
+      "sha256": "77b688d36f4b63e2b961a7b2fc86b8dd3dfb85a1c8f06a57ccfcda68b72bc365",
+      "bytes": 413985
+    },
+    {
+      "path": "assets/music/fallback/78425a3a228eb3628b2aab53.ogg",
+      "source": "/assets/audio/Songs/IAintWorried/IAintWorried_Stage1.ogg",
+      "sha256": "78425a3a228eb3628b2aab5376beab7a4615e5d236093353562ed39cbad0d1f3",
+      "bytes": 328040
+    },
+    {
+      "path": "assets/music/fallback/7925978711b9f431a55ecb4d.ogg",
+      "source": "/assets/audio/Supplied20260910/lunabala/drum-7925978711b9.ogg",
+      "sha256": "7925978711b9f431a55ecb4d49c6ddec154798805d25cb3fac0d8971c24da9c2",
+      "bytes": 281988
+    },
+    {
+      "path": "assets/music/fallback/7a4bbcbbfc155686b46b390b.ogg",
+      "source": "/assets/audio/Songs/IWantItThatWay/IWantItThatWay_Stage4.ogg",
+      "sha256": "7a4bbcbbfc155686b46b390be8c7d4e4e613db5c1ece14829d543ae4b6ddb9d3",
+      "bytes": 396509
+    },
+    {
+      "path": "assets/music/fallback/7c2e559029f65f685743b832.ogg",
+      "source": "/assets/audio/Songs/ThisLove/ThisLove_Stage2.ogg",
+      "sha256": "7c2e559029f65f685743b83297eec21a96a560ca6f75e91836489670782855f7",
+      "bytes": 412315
+    },
+    {
+      "path": "assets/music/fallback/7cdb61e85d5151c543ba483a.ogg",
+      "source": "/assets/audio/Supplied20260910/takeonme/xylophone-7cdb61e85d51.ogg",
+      "sha256": "7cdb61e85d5151c543ba483af191b6f2cd14809231ef470de002782380f3a713",
+      "bytes": 281815
+    },
+    {
+      "path": "assets/music/fallback/7d8b8686c61f35305c1e014a.ogg",
+      "source": "/assets/audio/Songs/DanceMonkey/DanceMonkey_Stage1.ogg",
+      "sha256": "7d8b8686c61f35305c1e014a6ae6ed9d5f966f9e47b9525e39bfa5f633e3bb76",
+      "bytes": 202001
+    },
+    {
+      "path": "assets/music/fallback/7e28ff48b54919d5543d9f67.ogg",
+      "source": "/assets/audio/Supplied20260910/nobatidao/violin-7e28ff48b549.ogg",
+      "sha256": "7e28ff48b54919d5543d9f678b40c92d4797194525ee690eb5a55473e9b0cb64",
+      "bytes": 227938
+    },
+    {
+      "path": "assets/music/fallback/801e70d12e183a8a806cfeb3.ogg",
+      "source": "/assets/audio/Songs/DanceMonkey/DanceMonkey_Stage0.ogg",
+      "sha256": "801e70d12e183a8a806cfeb372582754dcafb5cb4492a51057d6dc83fae907ec",
+      "bytes": 202364
+    },
+    {
+      "path": "assets/music/fallback/80ce01ddd5d46e0da9a487b7.ogg",
+      "source": "/assets/audio/Supplied20260910/sunflower/guitar-80ce01ddd5d4.ogg",
+      "sha256": "80ce01ddd5d46e0da9a487b7be0556fadce6f944479c67ef76c4b10230152a7b",
+      "bytes": 220285
+    },
+    {
+      "path": "assets/music/fallback/8124a762983fcef910351054.ogg",
+      "source": "/assets/audio/Supplied20260910/sayso/xylophone-8124a762983f.ogg",
+      "sha256": "8124a762983fcef91035105472ec896f2b197cb9d9eee854fe00967cf08bf6d3",
+      "bytes": 179025
+    },
+    {
+      "path": "assets/music/fallback/8142263759073c27f1a4318a.ogg",
+      "source": "/assets/audio/Songs/LeaveALightOn/LeaveALightOn_Stage2.ogg",
+      "sha256": "8142263759073c27f1a4318ab585001afb1ef2eba8e1abc6bd43188914c200f7",
+      "bytes": 298283
+    },
+    {
+      "path": "assets/music/fallback/8235a8757f052248dd9b65c7.ogg",
+      "source": "/assets/audio/Songs/WakeMeUp/WakeMeUp_Stage0.ogg",
+      "sha256": "8235a8757f052248dd9b65c78bd70144de638d38ec998a61474c1dd4603172b5",
+      "bytes": 473786
+    },
+    {
+      "path": "assets/music/fallback/835c5924a23a6e5baaa23d8d.ogg",
+      "source": "/assets/audio/Songs/Mistletoe/Mistletoe_Stage1.ogg",
+      "sha256": "835c5924a23a6e5baaa23d8dea10fea06032348052d81055ae292d464052085b",
+      "bytes": 244290
+    },
+    {
+      "path": "assets/music/fallback/838b0d7438b781ecd9e671a2.ogg",
+      "source": "/assets/audio/Supplied20260910/perfect/drum-838b0d7438b7.ogg",
+      "sha256": "838b0d7438b781ecd9e671a2d49f90480e745672cf2bdab3e180684ced833a5b",
+      "bytes": 310431
+    },
+    {
+      "path": "assets/music/fallback/842aef7765fe3167b4743413.ogg",
+      "source": "/assets/audio/Supplied20260910/sad/xylophone-842aef7765fe.ogg",
+      "sha256": "842aef7765fe3167b47434136a381a6c59aa862c8a117109fd5b578903c8fc82",
+      "bytes": 263319
+    },
+    {
+      "path": "assets/music/fallback/8485e4302839d569a6b8f413.ogg",
+      "source": "/assets/audio/Songs/AtMyWorst/AtMyWorst_Stage4.ogg",
+      "sha256": "8485e4302839d569a6b8f41369b20f793e3353ce9470ce694bd67a162aa4042d",
+      "bytes": 343346
+    },
+    {
+      "path": "assets/music/fallback/86d2a4dc731e63410f31e270.ogg",
+      "source": "/assets/audio/Songs/LovesickGirls/LovesickGirls_Stage2.ogg",
+      "sha256": "86d2a4dc731e63410f31e2708231ccd9c8a04f1d53807853764b2bc7400a306c",
+      "bytes": 307103
+    },
+    {
+      "path": "assets/music/fallback/87cb0fe5253eebd46e05b2c0.ogg",
+      "source": "/assets/audio/Songs/ThereforeIAm/ThereforeIAm_Stage4.ogg",
+      "sha256": "87cb0fe5253eebd46e05b2c052ead1b5a509c78578dc82a1044ee23f67489f34",
+      "bytes": 417302
+    },
+    {
+      "path": "assets/music/fallback/87dfa8b73a5815a9a08856a4.wav",
+      "source": "/assets/audio/Creative/NoBatidaoFourInstruments/NoBatidaoCreative_Xylophone.wav",
+      "sha256": "87dfa8b73a5815a9a08856a4545e860d37f1b0edf38ef73bf0db7f77530ece36",
+      "bytes": 5862012
+    },
+    {
+      "path": "assets/music/fallback/8a3ba9065d55badc074b8f6c.ogg",
+      "source": "/assets/audio/Songs/KissMeMore/KissMeMore_Stage2.ogg",
+      "sha256": "8a3ba9065d55badc074b8f6c9510a642c4c8d86cdd115412856760b73a7c811f",
+      "bytes": 364336
+    },
+    {
+      "path": "assets/music/fallback/8abac6b6e9f211bf20f860a4.ogg",
+      "source": "/assets/audio/Supplied20260910/deathbed/piano-8abac6b6e9f2.ogg",
+      "sha256": "8abac6b6e9f211bf20f860a47bb417c8d99507b0d64e251e1800fb4b966072b8",
+      "bytes": 542755
+    },
+    {
+      "path": "assets/music/fallback/8b8eb56fef07b5cece4705d4.ogg",
+      "source": "/assets/audio/Supplied20260910/lunabala/piano-8b8eb56fef07.ogg",
+      "sha256": "8b8eb56fef07b5cece4705d4e192c8976b4288f8ffdd0e03de0b7ab987fcdd64",
+      "bytes": 281401
+    },
+    {
+      "path": "assets/music/fallback/8cba28abbf19a408df8127d2.ogg",
+      "source": "/assets/audio/Songs/DeathBed/DeathBed_Stage1.ogg",
+      "sha256": "8cba28abbf19a408df8127d29d47ff2174b4c2635595ca6e4a8df682162c25fa",
+      "bytes": 870041
+    },
+    {
+      "path": "assets/music/fallback/8d3567e9226a92c7d1019112.ogg",
+      "source": "/assets/audio/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage4.ogg",
+      "sha256": "8d3567e9226a92c7d10191120e6742ed21c606b65f4439367092d93dafb842ce",
+      "bytes": 763910
+    },
+    {
+      "path": "assets/music/fallback/8e31f67b73c5715ecc136223.ogg",
+      "source": "/assets/audio/Supplied20260910/montagemtomada/xylophone-8e31f67b73c5.ogg",
+      "sha256": "8e31f67b73c5715ecc1362231e1d252c809f72f835f83cf37337d9bddbe71a32",
+      "bytes": 270908
+    },
+    {
+      "path": "assets/music/fallback/8ef8ca16c3cf4450236e89b9.ogg",
+      "source": "/assets/audio/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage2.ogg",
+      "sha256": "8ef8ca16c3cf4450236e89b957ed87269295713325218971eaa080180fe59f09",
+      "bytes": 381888
+    },
+    {
+      "path": "assets/music/fallback/901201b7d0df670844638e24.ogg",
+      "source": "/assets/audio/Songs/IWantItThatWay/IWantItThatWay_Stage3.ogg",
+      "sha256": "901201b7d0df670844638e24feb1f21388ee57bd149a7cee4b4aff671cfd85a5",
+      "bytes": 396784
+    },
+    {
+      "path": "assets/music/fallback/9224601d2ce974af5bc62376.ogg",
+      "source": "/assets/audio/Songs/ThisLove/ThisLove_Stage0.ogg",
+      "sha256": "9224601d2ce974af5bc62376340ec076d100c206f223342f197825739a2626cb",
+      "bytes": 412785
+    },
+    {
+      "path": "assets/music/fallback/92fea0c9480662f781252824.ogg",
+      "source": "/assets/audio/Songs/Lovely/Lovely_Stage3.ogg",
+      "sha256": "92fea0c9480662f781252824fe8a2b79d3008010181ea9e5ba1a7e694ec42e54",
+      "bytes": 360338
+    },
+    {
+      "path": "assets/music/fallback/945677bd47213c0dc6e3ada4.ogg",
+      "source": "/assets/audio/Songs/LovesickGirls/LovesickGirls_Stage3.ogg",
+      "sha256": "945677bd47213c0dc6e3ada44df2ba2d30dcbf875bf87ad2dd269073d0a1624e",
+      "bytes": 307993
+    },
+    {
+      "path": "assets/music/fallback/9486e8cb5ce3c821b6751edc.ogg",
+      "source": "/assets/audio/Songs/IAintWorried/IAintWorried_Stage4.ogg",
+      "sha256": "9486e8cb5ce3c821b6751edc11dc6c2d5cf361888bb08b3750e20e6c112018b4",
+      "bytes": 328384
+    },
+    {
+      "path": "assets/music/fallback/95f13a5b851f3e4c2f7f1283.ogg",
+      "source": "/assets/audio/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage2.ogg",
+      "sha256": "95f13a5b851f3e4c2f7f128392001a42794418afb041423ba8f343584c2546a4",
+      "bytes": 695219
+    },
+    {
+      "path": "assets/music/fallback/97c01ecc79934f0acb93492e.ogg",
+      "source": "/assets/audio/Songs/LovesickGirls/LovesickGirls_Stage1.ogg",
+      "sha256": "97c01ecc79934f0acb93492ef149d49af75837e0dfc95b99209ebed90fa91a6e",
+      "bytes": 307678
+    },
+    {
+      "path": "assets/music/fallback/98489d969bd58ad277c7b081.ogg",
+      "source": "/assets/audio/Supplied20260910/nobatidao/xylophone-98489d969bd5.ogg",
+      "sha256": "98489d969bd58ad277c7b08145d6bb0e489419ae82f65f9f51121cd0e92da113",
+      "bytes": 228321
+    },
+    {
+      "path": "assets/music/fallback/9d51ee490b69fc5893e83465.ogg",
+      "source": "/assets/audio/Supplied20260910/blindinglights/violin-9d51ee490b69.ogg",
+      "sha256": "9d51ee490b69fc5893e83465a3f7b394d083ae0367239a89177f23578a65b4a3",
+      "bytes": 230888
+    },
+    {
+      "path": "assets/music/fallback/9db5a4fd665e213d2264a78a.ogg",
+      "source": "/assets/audio/Songs/AtMyWorst/AtMyWorst_Stage3.ogg",
+      "sha256": "9db5a4fd665e213d2264a78a1d94c9e0a56b538387a50a3c2990e0c66d5b2782",
+      "bytes": 215821
+    },
+    {
+      "path": "assets/music/fallback/9f13d2afd460c5f6761d1f25.ogg",
+      "source": "/assets/audio/Supplied20260910/saveyourtears/drum-9f13d2afd460.ogg",
+      "sha256": "9f13d2afd460c5f6761d1f25d4e03aeecab4660dfe5e0c2f13969ca4b1c920e0",
+      "bytes": 333597
+    },
+    {
+      "path": "assets/music/fallback/a044fb5b0a0a8ad03ceaad50.ogg",
+      "source": "/assets/audio/Supplied20260910/deathbed/guitar-a044fb5b0a0a.ogg",
+      "sha256": "a044fb5b0a0a8ad03ceaad50fd886be6cb5dc6d12d93f715355563e099e5fbe5",
+      "bytes": 543846
+    },
+    {
+      "path": "assets/music/fallback/a1f7d81115e3d0f4cacbfd0b.ogg",
+      "source": "/assets/audio/Supplied20260910/saveyourtears/xylophone-a1f7d81115e3.ogg",
+      "sha256": "a1f7d81115e3d0f4cacbfd0b61155ac758108cd1aaab7c6a47756a2a30b8684b",
+      "bytes": 333605
+    },
+    {
+      "path": "assets/music/fallback/a42d862cd0aff8a7f934520d.ogg",
+      "source": "/assets/audio/Supplied20260910/passobemsolto/piano-a42d862cd0af.ogg",
+      "sha256": "a42d862cd0aff8a7f934520d30177344f5ed5af9abe358ae56adc774d502704e",
+      "bytes": 338606
+    },
+    {
+      "path": "assets/music/fallback/a492b63ece06fc1559c05671.ogg",
+      "source": "/assets/audio/Songs/BlindingLights/BlindingLights_Stage3.ogg",
+      "sha256": "a492b63ece06fc1559c05671965feb37290bb2df686047cdc1d3d8dc9d017101",
+      "bytes": 369240
+    },
+    {
+      "path": "assets/music/fallback/a554921f8735ee048b71839a.ogg",
+      "source": "/assets/audio/Supplied20260910/deathbed/xylophone-a554921f8735.ogg",
+      "sha256": "a554921f8735ee048b71839a23b909d8e0d286ac154ab8efb43d04aa8913e4f6",
+      "bytes": 544433
+    },
+    {
+      "path": "assets/music/fallback/a62e414974083943dfc7df8c.ogg",
+      "source": "/assets/audio/Songs/ThereforeIAm/ThereforeIAm_Stage2.ogg",
+      "sha256": "a62e414974083943dfc7df8c4b2d4311cda1a0c756de531247f347531001ae6c",
+      "bytes": 416619
+    },
+    {
+      "path": "assets/music/fallback/a728f6441a978ebda18adeb8.ogg",
+      "source": "/assets/audio/Songs/Flower/Flower_Stage0.ogg",
+      "sha256": "a728f6441a978ebda18adeb8a1af42e6a8e76625da0053fedebb51eae9147c81",
+      "bytes": 317080
+    },
+    {
+      "path": "assets/music/fallback/a7ce80a566e6de84f48e4810.ogg",
+      "source": "/assets/audio/Songs/Flower/Flower_Stage4.ogg",
+      "sha256": "a7ce80a566e6de84f48e48101c663b2560adbf18be54151f4c35980675a378e4",
+      "bytes": 317265
+    },
+    {
+      "path": "assets/music/fallback/aa5d4b73c848ad7f58c29314.ogg",
+      "source": "/assets/audio/Songs/BlindingLights/BlindingLights_Stage0.ogg",
+      "sha256": "aa5d4b73c848ad7f58c29314b3bb014d61e06fe7351406036e543443dffe2ea5",
+      "bytes": 368786
+    },
+    {
+      "path": "assets/music/fallback/ab0ee474d1254fc30216d47c.ogg",
+      "source": "/assets/audio/Songs/WakeMeUp/WakeMeUp_Stage4.ogg",
+      "sha256": "ab0ee474d1254fc30216d47ce5be8b73b1ab65974ebd2a863e022324685e270b",
+      "bytes": 474323
+    },
+    {
+      "path": "assets/music/fallback/ac9474aaf3de7b4e5c25ed8a.ogg",
+      "source": "/assets/audio/Supplied20260910/babyonemoretime/drum-ac9474aaf3de.ogg",
+      "sha256": "ac9474aaf3de7b4e5c25ed8a7447a00135c1dd1ffaede92dde13d87f99662b47",
+      "bytes": 307403
+    },
+    {
+      "path": "assets/music/fallback/aecfebba171dc27a52194378.ogg",
+      "source": "/assets/audio/Songs/BadHabits/BadHabits_Stage1.ogg",
+      "sha256": "aecfebba171dc27a52194378d5b6732037e344b92daaf05caa87a1e9bc2258e4",
+      "bytes": 312885
+    },
+    {
+      "path": "assets/music/fallback/af28143d34b7ce70e7f40a6e.ogg",
+      "source": "/assets/audio/Songs/Mistletoe/Mistletoe_Stage0.ogg",
+      "sha256": "af28143d34b7ce70e7f40a6ef52648983968f83e4e7aa03112c72e7cb46d367c",
+      "bytes": 243589
+    },
+    {
+      "path": "assets/music/fallback/b088cfafc3932b1c9546e532.ogg",
+      "source": "/assets/audio/Songs/DeathBed/DeathBed_Stage0.ogg",
+      "sha256": "b088cfafc3932b1c9546e5321c1d1b0cb8434b1fe57d0653d08e5756eda6e1c2",
+      "bytes": 868992
+    },
+    {
+      "path": "assets/music/fallback/b1737b0582c75a52e78b3d7b.ogg",
+      "source": "/assets/audio/Supplied20260910/sunflower/violin-b1737b0582c7.ogg",
+      "sha256": "b1737b0582c75a52e78b3d7bc14a9dabd6919c1ae9711736961d6c283badaa15",
+      "bytes": 219407
+    },
+    {
+      "path": "assets/music/fallback/b188f3d1b52569eccaf39362.ogg",
+      "source": "/assets/audio/Songs/ThereforeIAm/ThereforeIAm_Stage1.ogg",
+      "sha256": "b188f3d1b52569eccaf39362eed64f1c5c674c4ecd84d5cf441f3aca6bd9e49b",
+      "bytes": 417971
+    },
+    {
+      "path": "assets/music/fallback/b2bc622331d29d0a5fda8d02.ogg",
+      "source": "/assets/audio/Supplied20260910/takeonme/violin-b2bc622331d2.ogg",
+      "sha256": "b2bc622331d29d0a5fda8d02f0b848754be4258b2f44874a7772ae600c0c230b",
+      "bytes": 281071
+    },
+    {
+      "path": "assets/music/fallback/b4bfcca9a0c3db79f390fee6.ogg",
+      "source": "/assets/audio/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage0.ogg",
+      "sha256": "b4bfcca9a0c3db79f390fee623da57a0fda63be3d5438dfffcd39f44ad15ce75",
+      "bytes": 418549
+    },
+    {
+      "path": "assets/music/fallback/b4e0def2b5020d4817f43fbb.ogg",
+      "source": "/assets/audio/Songs/Shallow/Shallow_Stage4.ogg",
+      "sha256": "b4e0def2b5020d4817f43fbb6edf6748e621ff5eeaffd2588e7687c604380b5e",
+      "bytes": 624021
+    },
+    {
+      "path": "assets/music/fallback/b60934024ccc71411ba6d5a8.ogg",
+      "source": "/assets/audio/Supplied20260910/babyonemoretime/guitar-b60934024ccc.ogg",
+      "sha256": "b60934024ccc71411ba6d5a830443a4ddfdf2375a5f4ce4a2b91bef67f6670ea",
+      "bytes": 307984
+    },
+    {
+      "path": "assets/music/fallback/b6fb5d60c35084e5bf57aa3b.ogg",
+      "source": "/assets/audio/Songs/ThisLove/ThisLove_Stage4.ogg",
+      "sha256": "b6fb5d60c35084e5bf57aa3b7fbb3b7544e330d1cbf601cd7fe70cb8dfc80b51",
+      "bytes": 412893
+    },
+    {
+      "path": "assets/music/fallback/b72ae677c0d2856d88963fd2.ogg",
+      "source": "/assets/audio/Supplied20260910/takeonme/guitar-b72ae677c0d2.ogg",
+      "sha256": "b72ae677c0d2856d88963fd25505bb80ab2a92fd1d3526baa2e19e0129c27cbe",
+      "bytes": 282003
+    },
+    {
+      "path": "assets/music/fallback/b9b1cbe9929dcc55f9ebc436.ogg",
+      "source": "/assets/audio/Supplied20260910/heartbreakanniversary/violin-b9b1cbe9929d.ogg",
+      "sha256": "b9b1cbe9929dcc55f9ebc436c93a4a1bd7f35210de777c4e556c468fe10f0af4",
+      "bytes": 476720
+    },
+    {
+      "path": "assets/music/fallback/ba4d08e977952db784645359.ogg",
+      "source": "/assets/audio/Songs/Starboy/Starboy_Stage3.ogg",
+      "sha256": "ba4d08e977952db784645359b011fa4686d7f6a7af053dad1ba16a67146ba8b3",
+      "bytes": 502222
+    },
+    {
+      "path": "assets/music/fallback/ba931734b3718243f994d537.ogg",
+      "source": "/assets/audio/Supplied20260910/sad/violin-ba931734b371.ogg",
+      "sha256": "ba931734b3718243f994d53706232b678c3edd0fe27dc8c31d5ea909d5a9e028",
+      "bytes": 262547
+    },
+    {
+      "path": "assets/music/fallback/baa48454ef813770ca152d49.ogg",
+      "source": "/assets/audio/Supplied20260910/despacito/xylophone-baa48454ef81.ogg",
+      "sha256": "baa48454ef813770ca152d496d7bb1543390b97c1f48fe274f84f0afa3df55c5",
+      "bytes": 220130
+    },
+    {
+      "path": "assets/music/fallback/bb0a4a108a15bf3cf9fe76cc.ogg",
+      "source": "/assets/audio/Songs/IAintWorried/IAintWorried_Stage3.ogg",
+      "sha256": "bb0a4a108a15bf3cf9fe76ccb2e7b0bb54b59867d9f3b347f7690418b5b0fc14",
+      "bytes": 327873
+    },
+    {
+      "path": "assets/music/fallback/bb37ab581d63e99d525824fa.ogg",
+      "source": "/assets/audio/Supplied20260910/losvoltaje/drum-bb37ab581d63.ogg",
+      "sha256": "bb37ab581d63e99d525824fa7b5aaa340c6d70b7bd637c879d247562b66a5d56",
+      "bytes": 446279
+    },
+    {
+      "path": "assets/music/fallback/bc6e64ad6bff11d8499e8f74.ogg",
+      "source": "/assets/audio/Songs/Starboy/Starboy_Stage4.ogg",
+      "sha256": "bc6e64ad6bff11d8499e8f74ddc0a677fe6fa99ee3e579e0fb02e1fa66885398",
+      "bytes": 502122
+    },
+    {
+      "path": "assets/music/fallback/bd2e13c3d4911db686dce284.ogg",
+      "source": "/assets/audio/Supplied20260910/passobemsolto/guitar-bd2e13c3d491.ogg",
+      "sha256": "bd2e13c3d4911db686dce2842137ec89165e4319931f7170840ef314614f0b02",
+      "bytes": 339252
+    },
+    {
+      "path": "assets/music/fallback/bd5c5eb4b76c51eb53865e0c.ogg",
+      "source": "/assets/audio/Songs/KissMeMore/KissMeMore_Stage1.ogg",
+      "sha256": "bd5c5eb4b76c51eb53865e0c22ae98f01249f53c11e0fc5759356bd328a98dac",
+      "bytes": 365516
+    },
+    {
+      "path": "assets/music/fallback/bdae9cf450a8af58d2252d68.ogg",
+      "source": "/assets/audio/Songs/Shallow/Shallow_Stage1.ogg",
+      "sha256": "bdae9cf450a8af58d2252d68999d1bce394fb5097aad8cd7046c51e3b2f25f76",
+      "bytes": 624428
+    },
+    {
+      "path": "assets/music/fallback/be39ceb59fbf3b0dc0e88b73.ogg",
+      "source": "/assets/audio/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage3.ogg",
+      "sha256": "be39ceb59fbf3b0dc0e88b735d8c278183e5ce936d124db22b79b4e5b57579f8",
+      "bytes": 365936
+    },
+    {
+      "path": "assets/music/fallback/be8c2f60f2647b2c235fd467.ogg",
+      "source": "/assets/audio/Songs/Perfect/Perfect_Stage2.ogg",
+      "sha256": "be8c2f60f2647b2c235fd4673e8586c6f2b15a93c5dc04d979159674cc2c713d",
+      "bytes": 885667
+    },
+    {
+      "path": "assets/music/fallback/bfae7731e45e07e4b3660f8a.ogg",
+      "source": "/assets/audio/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage4.ogg",
+      "sha256": "bfae7731e45e07e4b3660f8a5f1491e9e907cf65b8370472f1b76f0eaf36b322",
+      "bytes": 845546
+    },
+    {
+      "path": "assets/music/fallback/c012893626a4f965f6ba7bbc.ogg",
+      "source": "/assets/audio/Supplied20260910/perfect/xylophone-c012893626a4.ogg",
+      "sha256": "c012893626a4f965f6ba7bbc3e7a6c53196e0cd1f8592858cd38385a4b8c1bdd",
+      "bytes": 310520
+    },
+    {
+      "path": "assets/music/fallback/c141b1fbedae85b82047dc29.ogg",
+      "source": "/assets/audio/Supplied20260910/sad/piano-c141b1fbedae.ogg",
+      "sha256": "c141b1fbedae85b82047dc29ba36e8efcf8fa1984c534dad968d92801695cf4e",
+      "bytes": 262824
+    },
+    {
+      "path": "assets/music/fallback/c16eb6e861ab46cd8493cdf0.ogg",
+      "source": "/assets/audio/Supplied20260910/takeonme/piano-c16eb6e861ab.ogg",
+      "sha256": "c16eb6e861ab46cd8493cdf0fb027fd09a2eec0b7dcd619322db91b130a0ba70",
+      "bytes": 281269
+    },
+    {
+      "path": "assets/music/fallback/c1b6c7da05c7fddec34873c7.ogg",
+      "source": "/assets/audio/Songs/Unity/Unity_Stage0.ogg",
+      "sha256": "c1b6c7da05c7fddec34873c7cafde71c5fe55f94df5a3c4d7e667776198091b7",
+      "bytes": 373869
+    },
+    {
+      "path": "assets/music/fallback/c28f919609b5719b53581e7b.ogg",
+      "source": "/assets/audio/Songs/SaySo/LoopReady/SaySo_LoopReady_Stage4.ogg",
+      "sha256": "c28f919609b5719b53581e7b087ac015bc05ebb882e8c27154b3a7e3b3b15df1",
+      "bytes": 513020
+    },
+    {
+      "path": "assets/music/fallback/c80e9c93016598ae9d9e7f90.ogg",
+      "source": "/assets/audio/Supplied20260910/passobemsolto/xylophone-c80e9c930165.ogg",
+      "sha256": "c80e9c93016598ae9d9e7f9001245723a5b7c4a3d0401bbf95436bd4f0a9369b",
+      "bytes": 339064
+    },
+    {
+      "path": "assets/music/fallback/c843036512cc07b2b6686cc9.ogg",
+      "source": "/assets/audio/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage2.ogg",
+      "sha256": "c843036512cc07b2b6686cc91354448c9a9f83f56a29e21571a76f6e382b66f1",
+      "bytes": 664261
+    },
+    {
+      "path": "assets/music/fallback/ca06a86b9c26035371a2695c.ogg",
+      "source": "/assets/audio/Songs/DanceMonkey/DanceMonkey_Stage4.ogg",
+      "sha256": "ca06a86b9c26035371a2695ce7f31f070ade7b004ba4b70e096d6246fd43a9da",
+      "bytes": 202249
+    },
+    {
+      "path": "assets/music/fallback/ca55da30981ac3f83acd22e2.ogg",
+      "source": "/assets/audio/Songs/StressedOut/StressedOut_Stage2.ogg",
+      "sha256": "ca55da30981ac3f83acd22e2daf1c9523066d5bef656e8aca2c3a2b1739ec3e8",
+      "bytes": 346339
+    },
+    {
+      "path": "assets/music/fallback/cb56f00b39b834785dfb1e03.ogg",
+      "source": "/assets/audio/Supplied20260910/sayso/guitar-cb56f00b39b8.ogg",
+      "sha256": "cb56f00b39b834785dfb1e03f33e719b59a81937ddeb694ef242003e7d4526f5",
+      "bytes": 179365
+    },
+    {
+      "path": "assets/music/fallback/cc93907fb6124b9c384d9180.ogg",
+      "source": "/assets/audio/Songs/Flower/Flower_Stage3.ogg",
+      "sha256": "cc93907fb6124b9c384d9180bf95f9160df29bc73c9ff693535d48102f912dc4",
+      "bytes": 317614
+    },
+    {
+      "path": "assets/music/fallback/cdc3578e9ad491465598e1d5.ogg",
+      "source": "/assets/audio/Songs/BadHabits/BadHabits_Stage4.ogg",
+      "sha256": "cdc3578e9ad491465598e1d52d27975b03bec289025c88f5e42877d255602e3c",
+      "bytes": 312634
+    },
+    {
+      "path": "assets/music/fallback/ce132996b5b509871d274c66.ogg",
+      "source": "/assets/audio/Supplied20260910/montagemtomada/drum-ce132996b5b5.ogg",
+      "sha256": "ce132996b5b509871d274c66cac5b52a0fe54efc99c8662fcb1fbe63cb86de36",
+      "bytes": 270946
+    },
+    {
+      "path": "assets/music/fallback/d046888c3b86a6634b289497.ogg",
+      "source": "/assets/audio/Songs/Unity/Unity_Stage1.ogg",
+      "sha256": "d046888c3b86a6634b289497283889cf1c7e7cc6399fc7940a5ca302578622ea",
+      "bytes": 374165
+    },
+    {
+      "path": "assets/music/fallback/d0c3c322b3a2cd9eec14fa4d.ogg",
+      "source": "/assets/audio/Songs/Mistletoe/Mistletoe_Stage4.ogg",
+      "sha256": "d0c3c322b3a2cd9eec14fa4d03b64a086ce33277f83f30f3d44075541ba592ac",
+      "bytes": 244171
+    },
+    {
+      "path": "assets/music/fallback/d1fb1da5ab6087b9d2dcbeaa.ogg",
+      "source": "/assets/audio/Songs/WakeMeUp/WakeMeUp_Stage2.ogg",
+      "sha256": "d1fb1da5ab6087b9d2dcbeaafdb80433cc521718b693e0c87295feafe1ce1232",
+      "bytes": 473227
+    },
+    {
+      "path": "assets/music/fallback/d2cd0078ec814eee4454d96c.ogg",
+      "source": "/assets/audio/Supplied20260910/losvoltaje/xylophone-d2cd0078ec81.ogg",
+      "sha256": "d2cd0078ec814eee4454d96c763f427e7f5a33e0e0c75505f01a749997630f4a",
+      "bytes": 445685
+    },
+    {
+      "path": "assets/music/fallback/d4a50d99a771c0fd6de298b4.ogg",
+      "source": "/assets/audio/Songs/SaveYourTears/LoopReady/SaveYourTears_LoopReady_Stage1.ogg",
+      "sha256": "d4a50d99a771c0fd6de298b4a9f40c096887ba1d649f4532bf0e2df64fd4e8e9",
+      "bytes": 544693
+    },
+    {
+      "path": "assets/music/fallback/d4a8debd65527b1da69c4b94.ogg",
+      "source": "/assets/audio/Supplied20260910/blindinglights/guitar-d4a8debd6552.ogg",
+      "sha256": "d4a8debd65527b1da69c4b946426f3beb9216432c3afed4dc607bf6751e43735",
+      "bytes": 231220
+    },
+    {
+      "path": "assets/music/fallback/d4c0656a76ba0373438c1a4d.ogg",
+      "source": "/assets/audio/Songs/IWantItThatWay/IWantItThatWay_Stage1.ogg",
+      "sha256": "d4c0656a76ba0373438c1a4d735fd042226866e16b8018a47622cc6cc47e0c23",
+      "bytes": 396752
+    },
+    {
+      "path": "assets/music/fallback/d5143807f51c0bf768920ae6.ogg",
+      "source": "/assets/audio/Songs/DanceMonkey/DanceMonkey_Stage3.ogg",
+      "sha256": "d5143807f51c0bf768920ae6ca1367848571310026856d74ce367fb0de0996dd",
+      "bytes": 202508
+    },
+    {
+      "path": "assets/music/fallback/d548889dc1c5fe709c1be379.ogg",
+      "source": "/assets/audio/Songs/StressedOut/StressedOut_Stage4.ogg",
+      "sha256": "d548889dc1c5fe709c1be379135561aa982d256715655db852b0db0c5daa77f8",
+      "bytes": 347176
+    },
+    {
+      "path": "assets/music/fallback/d72f139edb15dc65fe1b07eb.ogg",
+      "source": "/assets/audio/Supplied20260910/saveyourtears/violin-d72f139edb15.ogg",
+      "sha256": "d72f139edb15dc65fe1b07eb44001e48dd76644372b3e9a64190cbf9157ce1f1",
+      "bytes": 332605
+    },
+    {
+      "path": "assets/music/fallback/d92332aa25feeeeb36495864.ogg",
+      "source": "/assets/audio/Songs/PlayingWithFire/PlayingWithFire_Stage1.ogg",
+      "sha256": "d92332aa25feeeeb36495864752719f0385d2acb106c04000b74131026d58c76",
+      "bytes": 232856
+    },
+    {
+      "path": "assets/music/fallback/d94d8d745a797eeebfad4e02.ogg",
+      "source": "/assets/audio/Supplied20260910/blindinglights/drum-d94d8d745a79.ogg",
+      "sha256": "d94d8d745a797eeebfad4e0265315cfa97337e2667c8c8c1e69708aeab2f8f58",
+      "bytes": 231298
+    },
+    {
+      "path": "assets/music/fallback/da416bbf5cb6ecee08eba1c5.ogg",
+      "source": "/assets/audio/Songs/StressedOut/StressedOut_Stage1.ogg",
+      "sha256": "da416bbf5cb6ecee08eba1c54a7dbbdf0343ace1ae8a973f47988908837a0f16",
+      "bytes": 347374
+    },
+    {
+      "path": "assets/music/fallback/daf0b3de516399b01b11dbe2.ogg",
+      "source": "/assets/audio/Songs/BabyOneMoreTime/LoopReady/BabyOneMoreTime_LoopReady_Stage0.ogg",
+      "sha256": "daf0b3de516399b01b11dbe25ee04c519436b2089f1c432c74343ebe1ffb9b56",
+      "bytes": 299863
+    },
+    {
+      "path": "assets/music/fallback/dc1a86239194b9155a1b2fad.ogg",
+      "source": "/assets/audio/Songs/BlindingLights/BlindingLights_Stage1.ogg",
+      "sha256": "dc1a86239194b9155a1b2fad7cb90d527ec083ca8d23fa7c98463c58520c9da1",
+      "bytes": 368719
+    },
+    {
+      "path": "assets/music/fallback/dc81af2705fce62637dde69c.ogg",
+      "source": "/assets/audio/Supplied20260910/nobatidao/guitar-dc81af2705fc.ogg",
+      "sha256": "dc81af2705fce62637dde69ccba762016f4a87b1f133b74025e1b000f12b79b7",
+      "bytes": 228629
+    },
+    {
+      "path": "assets/music/fallback/dd7693ae4029c7823cea8dfc.ogg",
+      "source": "/assets/audio/Supplied20260910/astronautintheocean/drum-dd7693ae4029.ogg",
+      "sha256": "dd7693ae4029c7823cea8dfc9967c0b471b1d97d97c098a1fb0417a5caf163ee",
+      "bytes": 266767
+    },
+    {
+      "path": "assets/music/fallback/dd7c43e98e9855768f7b958f.ogg",
+      "source": "/assets/audio/Songs/Starboy/Starboy_Stage2.ogg",
+      "sha256": "dd7c43e98e9855768f7b958fb610e1b76b2b7862a62e18662ed0de71dfcca81f",
+      "bytes": 501511
+    },
+    {
+      "path": "assets/music/fallback/deb7fc7b9ea9a02a74ddbcf6.ogg",
+      "source": "/assets/audio/Songs/BadHabits/BadHabits_Stage3.ogg",
+      "sha256": "deb7fc7b9ea9a02a74ddbcf674798f94fb032da45256f4cfc1373219900d6e0c",
+      "bytes": 312841
+    },
+    {
+      "path": "assets/music/fallback/df9be8098b0c685ae6298200.ogg",
+      "source": "/assets/audio/Supplied20260910/saveyourtears/piano-df9be8098b0c.ogg",
+      "sha256": "df9be8098b0c685ae62982008c5438d6bfe4923bfdc29808c3f076fb9e0313ac",
+      "bytes": 332872
+    },
+    {
+      "path": "assets/music/fallback/dff76502f65de62f9e102857.ogg",
+      "source": "/assets/audio/Supplied20260910/sunflower/piano-dff76502f65d.ogg",
+      "sha256": "dff76502f65de62f9e102857bb0fd90ff437150709c1236661b392580d90093c",
+      "bytes": 219785
+    },
+    {
+      "path": "assets/music/fallback/dffb4c5282d89e9cba296957.ogg",
+      "source": "/assets/audio/Songs/Lovely/Lovely_Stage2.ogg",
+      "sha256": "dffb4c5282d89e9cba296957f6b6b068484554debcb366720f750fb3abe0a23c",
+      "bytes": 359807
+    },
+    {
+      "path": "assets/music/fallback/e0a581604de8f2ad569b1756.ogg",
+      "source": "/assets/audio/Supplied20260910/astronautintheocean/guitar-e0a581604de8.ogg",
+      "sha256": "e0a581604de8f2ad569b1756039ba1239d8167cee2155c62696a07d757814be2",
+      "bytes": 263521
+    },
+    {
+      "path": "assets/music/fallback/e3096c61ba279abcf7d95816.ogg",
+      "source": "/assets/audio/Songs/WakeMeUp/WakeMeUp_Stage3.ogg",
+      "sha256": "e3096c61ba279abcf7d95816fbc8812a75e2bb727f1227cbec7bec676df17562",
+      "bytes": 474706
+    },
+    {
+      "path": "assets/music/fallback/e645b36b861106dca0475fff.ogg",
+      "source": "/assets/audio/Songs/Starboy/Starboy_Stage1.ogg",
+      "sha256": "e645b36b861106dca0475fffa1c11804e310448242943b96b704b33c0a2b1fc9",
+      "bytes": 502689
+    },
+    {
+      "path": "assets/music/fallback/eb75181c5a9cf8bda6d7aeb3.ogg",
+      "source": "/assets/audio/Songs/KissMeMore/KissMeMore_Stage4.ogg",
+      "sha256": "eb75181c5a9cf8bda6d7aeb3eaa12c10b28704b1e1f52f5c6c94e0f2be5716b7",
+      "bytes": 365091
+    },
+    {
+      "path": "assets/music/fallback/eb7dc2952349690924cae4c6.ogg",
+      "source": "/assets/audio/Supplied20260910/heartbreakanniversary/guitar-eb7dc2952349.ogg",
+      "sha256": "eb7dc2952349690924cae4c67652101791b1ad75c44dc2fcc03a6e7fbf47da06",
+      "bytes": 477677
+    },
+    {
+      "path": "assets/music/fallback/ebd9af627473b4b6320cda59.ogg",
+      "source": "/assets/audio/Supplied20260910/montagemtomada/violin-ebd9af627473.ogg",
+      "sha256": "ebd9af627473b4b6320cda5940ee828409cc4007938a4fc546bcf3e9a7dc791d",
+      "bytes": 269999
+    },
+    {
+      "path": "assets/music/fallback/ec0bbe35bb8ca70505bb537b.wav",
+      "source": "/assets/audio/Songs/NoBatidao/NoBatidao_Stage0.wav",
+      "sha256": "ec0bbe35bb8ca70505bb537b6b522626face4e82ed7372f4074708dda98e939a",
+      "bytes": 4253584
+    },
+    {
+      "path": "assets/music/fallback/f151760579cd783035886954.ogg",
+      "source": "/assets/audio/Songs/BadHabits/BadHabits_Stage0.ogg",
+      "sha256": "f151760579cd783035886954dc1bb5bdbe21153f8449772ad63c989d76ea1db3",
+      "bytes": 312245
+    },
+    {
+      "path": "assets/music/fallback/f178b57cc2cfc4abb393f068.ogg",
+      "source": "/assets/audio/Songs/Lovely/Lovely_Stage4.ogg",
+      "sha256": "f178b57cc2cfc4abb393f068db0c7cf181917f874c9897a262f35317f3ed3387",
+      "bytes": 360350
+    },
+    {
+      "path": "assets/music/fallback/f2cc0c209ef92c6cd191f33d.ogg",
+      "source": "/assets/audio/Songs/AtMyWorst/AtMyWorst_Stage0.ogg",
+      "sha256": "f2cc0c209ef92c6cd191f33da36f1bc435620019ce3f4ee3452912c8838a265e",
+      "bytes": 343243
+    },
+    {
+      "path": "assets/music/fallback/f2ddd8336302917293daef09.ogg",
+      "source": "/assets/audio/Songs/BlindingLights/BlindingLights_Stage4.ogg",
+      "sha256": "f2ddd8336302917293daef0929d4a75d0c19a6a06d3aa353332c8914764d819a",
+      "bytes": 369100
+    },
+    {
+      "path": "assets/music/fallback/f36fecfd430d0c2c14785e90.ogg",
+      "source": "/assets/audio/Supplied20260910/sad/guitar-f36fecfd430d.ogg",
+      "sha256": "f36fecfd430d0c2c14785e90a412362c72e4a68f1fd207aa10608f6ddfcb4584",
+      "bytes": 263413
+    },
+    {
+      "path": "assets/music/fallback/f3daebdc09b43fbf71593be7.ogg",
+      "source": "/assets/audio/Songs/LeaveALightOn/LeaveALightOn_Stage4.ogg",
+      "sha256": "f3daebdc09b43fbf71593be731546718ff7529d4d217b1dfeb6ded94e447207f",
+      "bytes": 298586
+    },
+    {
+      "path": "assets/music/fallback/f4a95982c33edcb2b0f53d53.ogg",
+      "source": "/assets/audio/Songs/ThereforeIAm/ThereforeIAm_Stage3.ogg",
+      "sha256": "f4a95982c33edcb2b0f53d53531c1fb020a95de36c76555606dde1b7fecb7312",
+      "bytes": 417099
+    },
+    {
+      "path": "assets/music/fallback/f516f5f98f3da87a996bcfe7.ogg",
+      "source": "/assets/audio/Songs/Shallow/Shallow_Stage2.ogg",
+      "sha256": "f516f5f98f3da87a996bcfe785cbd9c3c46cec066fadd222e1494b62bce25fc3",
+      "bytes": 623329
+    },
+    {
+      "path": "assets/music/fallback/f528a4d96ad4d0f0ed74abd0.ogg",
+      "source": "/assets/audio/Supplied20260910/blindinglights/xylophone-f528a4d96ad4.ogg",
+      "sha256": "f528a4d96ad4d0f0ed74abd03d432312476bfdbb76dc1f9717397255d93adfac",
+      "bytes": 231310
+    },
+    {
+      "path": "assets/music/fallback/f6837be7ef70af41aab8fe6d.ogg",
+      "source": "/assets/audio/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage0.ogg",
+      "sha256": "f6837be7ef70af41aab8fe6d077ae9118a187a55315c370130b570c06455c5f6",
+      "bytes": 313211
+    },
+    {
+      "path": "assets/music/fallback/f9525b582f2545819d2ed45f.ogg",
+      "source": "/assets/audio/Songs/Lovely/Lovely_Stage1.ogg",
+      "sha256": "f9525b582f2545819d2ed45ffd8c75e44c9f955606d6764d68dc115f6a13561c",
+      "bytes": 360654
+    },
+    {
+      "path": "assets/music/fallback/f9e42835b7328e144a5fdafb.ogg",
+      "source": "/assets/audio/Songs/StressedOut/StressedOut_Stage3.ogg",
+      "sha256": "f9e42835b7328e144a5fdafb5d90fd14df53ec88b15edbb6bb76745a6b7da4d5",
+      "bytes": 347627
+    },
+    {
+      "path": "assets/music/fallback/fa547ba3ef78f73455a2d1ae.ogg",
+      "source": "/assets/audio/Songs/StressedOut/StressedOut_Stage0.ogg",
+      "sha256": "fa547ba3ef78f73455a2d1ae20168be5808bedff4bbf0b506d54b76a40d61fad",
+      "bytes": 346452
+    },
+    {
+      "path": "assets/music/fallback/fbfae15e8ee4a2baaf86a85a.ogg",
+      "source": "/assets/audio/Supplied20260910/losvoltaje/guitar-fbfae15e8ee4.ogg",
+      "sha256": "fbfae15e8ee4a2baaf86a85a06dd83fc4e7ac1f731ee53f15c216ee68f351c99",
+      "bytes": 446095
+    },
+    {
+      "path": "assets/music/fallback/fe60e116a35debf25805304f.ogg",
+      "source": "/assets/audio/Songs/IWantItThatWay/IWantItThatWay_Stage0.ogg",
+      "sha256": "fe60e116a35debf25805304f66b7d24eb84636f5df8964db968df07da9b9759c",
+      "bytes": 395908
+    },
+    {
+      "path": "assets/music/fallback/ff57ff0ee0b31e6bea2907db.ogg",
+      "source": "/assets/audio/Songs/HeartbreakAnniversary/HeartbreakAnniversary_Stage2.ogg",
+      "sha256": "ff57ff0ee0b31e6bea2907db5b5c27c273429def01dc5f27db3ccc9de4626690",
+      "bytes": 763292
+    },
+    {
+      "path": "assets/music/fb31391f00f07379f581e107.m4a",
+      "source": "/assets/audio-meta/Songs/DanceMonkey/DanceMonkey_Stage2.m4a",
+      "sha256": "fb31391f00f07379f581e1074ae99a5f96173daf5f143db372364f5c04534244",
+      "bytes": 57305
+    },
+    {
+      "path": "assets/music/fb3d89322926c3084b7772ee.m4a",
+      "source": "/assets/audio-meta/Songs/DanceMonkey/DanceMonkey_Stage3.m4a",
+      "sha256": "fb3d89322926c3084b7772ee04b35b9e00c7fa939142de1dc3a8859c6695bbb5",
+      "bytes": 61166
+    },
+    {
+      "path": "assets/music/fb4269ecca9b0382dfdc6815.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sayso/guitar-cb56f00b39b8.m4a",
+      "sha256": "fb4269ecca9b0382dfdc6815c4aeace693a5b12499ccbb311fc9d8f6fee04a2e",
+      "bytes": 55319
+    },
+    {
+      "path": "assets/music/fba9f7d43e6cd8cfbaa0f577.m4a",
+      "source": "/assets/audio-compact/Songs/ThisLove/ThisLove_Stage4.m4a",
+      "sha256": "fba9f7d43e6cd8cfbaa0f5772ef9207a53be4dc5091c1610da16c83219eaf1e2",
+      "bytes": 215953
+    },
+    {
+      "path": "assets/music/fcc204c454aa55bb1a170e62.m4a",
+      "source": "/assets/audio-compact/Songs/LeaveALightOn/LeaveALightOn_Stage1.m4a",
+      "sha256": "fcc204c454aa55bb1a170e62563a38e79210af9d34ed0339c8e09fe979720a99",
+      "bytes": 155996
+    },
+    {
+      "path": "assets/music/fcc8e030e3c388ea016bb33d.m4a",
+      "source": "/assets/audio-compact/Songs/LovesickGirls/LovesickGirls_Stage3.m4a",
+      "sha256": "fcc8e030e3c388ea016bb33dae358567450189fe754193ed9202b40d2115372e",
+      "bytes": 161240
+    },
+    {
+      "path": "assets/music/fd0d29db78160a553cc25261.m4a",
+      "source": "/assets/audio-meta/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage2.m4a",
+      "sha256": "fd0d29db78160a553cc252616ab5e0493c153b24276b6b2849e6ed7943a949ed",
+      "bytes": 88627
+    },
+    {
+      "path": "assets/music/fd3975ce336e23c451fe9ecf.m4a",
+      "source": "/assets/audio-meta/Songs/Mistletoe/Mistletoe_Stage2.m4a",
+      "sha256": "fd3975ce336e23c451fe9ecf84556d02fbc6483d47c5e2189196c7a7c34b6af8",
+      "bytes": 76779
+    },
+    {
+      "path": "assets/music/fdb2614f2c860a2284fcb3bf.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/sunflower/piano-dff76502f65d.m4a",
+      "sha256": "fdb2614f2c860a2284fcb3bfb52e43ac114cd1d1a24d570221fe105dc2ddaf21",
+      "bytes": 67340
+    },
+    {
+      "path": "assets/music/fdf488074d9afe3734d430f2.m4a",
+      "source": "/assets/audio-meta/Songs/KissMeMore/KissMeMore_Stage1.m4a",
+      "sha256": "fdf488074d9afe3734d430f200d9e30d3a0ba6de717aaa837affb6fade8e49ef",
+      "bytes": 116932
+    },
+    {
+      "path": "assets/music/fe243d8a985145b74508a49d.m4a",
+      "source": "/assets/audio-meta/Supplied20260910/astronautintheocean/drum-dd7693ae4029.m4a",
+      "sha256": "fe243d8a985145b74508a49db1b0a6568633bab7312a5a322c1a2e446c6d190a",
+      "bytes": 81939
+    },
+    {
+      "path": "assets/music/fe84be1699f470b298ae1b36.m4a",
+      "source": "/assets/audio-compact/Songs/Shallow/Shallow_Stage0.m4a",
+      "sha256": "fe84be1699f470b298ae1b36230c380a563bd268f128f19705f8bf4b04181ddc",
+      "bytes": 320665
+    },
+    {
+      "path": "assets/music/ff02ad086eefcaee22162637.m4a",
+      "source": "/assets/audio-compact/Songs/TakeOnMe/LoopReady/TakeOnMe_LoopReady_Stage2.m4a",
+      "sha256": "ff02ad086eefcaee22162637d2b056e28825376cccd0ef26750524de6abdc515",
+      "bytes": 143876
+    },
+    {
+      "path": "assets/music/ff5b2b1f48c96ea5f637771f.m4a",
+      "source": "/assets/audio-compact/Songs/BadHabits/BadHabits_Stage1.m4a",
+      "sha256": "ff5b2b1f48c96ea5f637771feea43b440d2f7758f2693141a513eb68a5c6f6bc",
+      "bytes": 162658
+    }
+  ]
+}

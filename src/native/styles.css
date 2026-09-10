@@ -689,3 +689,13 @@ button:focus-visible {
     animation: none;
   }
 }
+
+/* Catalog performers preserve their own artwork and fit larger bands. */
+.band-item {
+  transform: translateX(-50%) scale(var(--band-scale, 1));
+  transform-origin: center;
+}
+.performer.performer-image {
+  background-size: contain;
+  background-position: center !important;
+}

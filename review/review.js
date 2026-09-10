@@ -45,19 +45,7 @@ function controls(level) {
   $('#spacing').value = level.lineSpacing * 49;
   $('#petals').value = level.flowerPetals;
   $('#roundness').value = level.roundness;
-  const palette = $('.palette');
-  palette.querySelectorAll('input').forEach((i) => i.remove());
-  level.palette.forEach((color, i) => {
-    const input = document.createElement('input');
-    input.type = 'color';
-    input.setAttribute(
-      'aria-label',
-      ['First color', 'Second color', 'Third color', 'Fourth color'][i] ?? `Color ${i + 1}`,
-    );
-    input.value = '#' + color.toString(16).padStart(6, '0');
-    input.addEventListener('change', change);
-    palette.append(input);
-  });
+  if (typeof musicControls === 'function') musicControls(level);
   $('#level-json').value = JSON.stringify(level, null, 2);
   labels();
   appearanceControls();
@@ -168,7 +156,7 @@ function change(event) {
     const options =
       target.type === 'color'
         ? {
-            palette: [...$('.palette').querySelectorAll('input')].map((i) =>
+            palette: [...$('.palette').querySelectorAll('input[type=color]')].map((i) =>
               parseInt(i.value.slice(1), 16),
             ),
           }
@@ -237,56 +225,6 @@ $('#visible-layers').addEventListener('change', () => {
     controls(api().getLevel());
   }
 });
-$('#profile').onchange = () => {
-  const a = api();
-  pendingSongLevel = pendingSongLevel || a?.getLevel();
-  if (pendingSongLevel && a?.getEndCardDesign) pendingSongLevel.endCard = a.getEndCardDesign();
-  profile = $('#profile').value;
-  controlsInitialized = false;
-  loadProfile(`/dist/preview/${profile}.html`);
-  paused = false;
-  labelTransport('pause', 'Pause');
-  $('#pause').setAttribute('aria-pressed', 'false');
-  message('Loading song…');
-};
-function applyPendingSong(a) {
-  if (!pendingSongLevel) return;
-  const song = a.getLevel(),
-    next = structuredClone(pendingSongLevel);
-  for (const key of [
-    'songId',
-    'name',
-    'bpm',
-    'beatsPerBar',
-    'loopBeats',
-    'downbeatOffset',
-    'sections',
-  ])
-    next[key] = structuredClone(song[key]);
-  const demand = Array(next.palette.length).fill(0);
-  next.rings.flat().forEach((c) => {
-    if (c >= 0) demand[c]++;
-  });
-  next.stemLanes = song.stemLanes.map((lane) => ({
-    ...lane,
-    colors: [...new Set(lane.colors.map((c) => c % next.palette.length))],
-  }));
-  for (let color = 0; color < next.palette.length; color++)
-    if (!next.stemLanes.some((l) => l.colors.includes(color)))
-      next.stemLanes[color % next.stemLanes.length].colors.push(color);
-  for (const lane of next.stemLanes)
-    lane.requiredBreaks = Math.max(
-      1,
-      Math.min(
-        lane.requiredBreaks,
-        lane.colors.reduce((sum, c) => sum + demand[c], 0),
-      ),
-    );
-  const level = a.setLevel(next);
-  pendingSongLevel = null;
-  controls(level);
-  message('Song ready.');
-}
 $('#restart').onclick = () => {
   api()?.restart();
   message('Level restarted.');
@@ -323,9 +261,7 @@ $('#save').onclick = () => {
 $('#load').onclick = () => $('#load-file').click();
 async function applyText(text) {
   try {
-    const l = api().setLevel(JSON.parse(text));
-    controls(l);
-    message('Level loaded.');
+    await loadAuthoredLevel(JSON.parse(text));
   } catch (e) {
     message('Level was not changed: ' + e.message);
   }
@@ -347,6 +283,7 @@ setInterval(() => {
     $('#export-playable').disabled = exportBusy || !s?.ready;
     if (!s?.ready) return;
     if (pendingSongLevel) applyPendingSong(a);
+    if (typeof musicTick === 'function') musicTick(a);
     if (!controlsInitialized) controls(a.getLevel());
     if (typeof syncDesignPreview === 'function') syncDesignPreview(s);
     $('#game-state').textContent =
@@ -478,7 +415,11 @@ $('#fullscreen').onclick = () => {
     if (new TextEncoder().encode(snapshot).length > 256 * 1024)
       throw Error('This level is too large to open. Save its JSON and reduce the level size.');
     localStorage.setItem(`beatbloom:studio-preview:${id}`, snapshot);
-    window.open(`/dist/preview/${profile}.html?studioLevel=${id}`, '_blank', 'noopener');
+    window.open(
+      `${musicPreviewURL(profile, current.getLevel().songId)}${musicPreviewURL(profile, current.getLevel().songId).includes('?') ? '&' : '?'}studioLevel=${id}`,
+      '_blank',
+      'noopener',
+    );
     message('Opened in a new tab.');
   } catch (error) {
     message('Unable to open this level: ' + error.message);

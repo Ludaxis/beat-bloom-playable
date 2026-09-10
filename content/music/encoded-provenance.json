@@ -1,0 +1,1829 @@
+{
+  "version": 1,
+  "files": {
+    "assets/music/encoded/16k/00218458ecba342cbf131724.m4a": {
+      "source": "assets/music/fallback/00218458ecba342cbf131724.ogg",
+      "sourceSha256": "00218458ecba342cbf1317247eef383f68c301ce0ef7c7564a07fcaf8e32b46a",
+      "sha256": "814081c407eb0e2b401167104bd25b3d47aac1406b7ae8a9a23fe9cfefaa8353",
+      "bytes": 37507,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/01bd2b95146e1291342497f7.m4a": {
+      "source": "assets/music/fallback/01bd2b95146e1291342497f7.ogg",
+      "sourceSha256": "01bd2b95146e1291342497f7d8fe723bddd81695c646de31ae02624b0b4de2b9",
+      "sha256": "8aa7ce1cf9341ff739f4e21f4adee8e501140a275bf3c5fb3dcb4639b6e361a6",
+      "bytes": 45824,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/031e3d066af6165ca2ef67da.m4a": {
+      "source": "assets/music/fallback/031e3d066af6165ca2ef67da.ogg",
+      "sourceSha256": "031e3d066af6165ca2ef67da06504488383ee31d98bfd8bcd247a713b18b5dfd",
+      "sha256": "dea9cad18f08020b47b38ef315d6dccb7dbc5de5371a0875dc9ca63690a1f164",
+      "bytes": 48477,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/07463457c02343150ff37005.m4a": {
+      "source": "assets/music/fallback/07463457c02343150ff37005.ogg",
+      "sourceSha256": "07463457c02343150ff3700536ac9b392a14271cbe3a4cfb1438113716793c51",
+      "sha256": "dc863bfc729e619918fb83c7a63999cc9e30f63f48c0a5d93275d18676c6e910",
+      "bytes": 63684,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/07754aef2f18dcd393458675.m4a": {
+      "source": "assets/music/fallback/07754aef2f18dcd393458675.ogg",
+      "sourceSha256": "07754aef2f18dcd393458675d03a20ed849e7674407442f073e841576a13380d",
+      "sha256": "a41fadb5048727867458d7be2b1e7409b7a145c7f59c50286a151ce98128fcf3",
+      "bytes": 114926,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/083cffcab65cd6453cffc666.m4a": {
+      "source": "assets/music/fallback/083cffcab65cd6453cffc666.ogg",
+      "sourceSha256": "083cffcab65cd6453cffc666762659dbfb22b23fd76dae01dfe75fff31905205",
+      "sha256": "55ad55fb16ad1a3a8f14b1ac4a9f498e8d457beeba14bd80e5f270207847774c",
+      "bytes": 51880,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/0857777e7a689a635f3f1f2c.m4a": {
+      "source": "assets/music/fallback/0857777e7a689a635f3f1f2c.ogg",
+      "sourceSha256": "0857777e7a689a635f3f1f2c26510440af912825a2a6b10c6bb7e9ac40540adf",
+      "sha256": "a0f9f77728e9fe0a52964a7a6680be993e08c93bf7b10e59bfd5a35c4e6d9a44",
+      "bytes": 62504,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/0b2d090f25bb5259be93ac41.m4a": {
+      "source": "assets/music/fallback/0b2d090f25bb5259be93ac41.ogg",
+      "sourceSha256": "0b2d090f25bb5259be93ac41276fea5cefcb88dd96a8ec64a69398e0d33b5792",
+      "sha256": "4ad25844d06e0b515743b37effd7df8af2613de03f5508c39e486632a5a12f5f",
+      "bytes": 79061,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/0c2a66fff6dbde90b9ebbce2.m4a": {
+      "source": "assets/music/fallback/0c2a66fff6dbde90b9ebbce2.ogg",
+      "sourceSha256": "0c2a66fff6dbde90b9ebbce206fb389595f4a065e7391924a08773496af8339e",
+      "sha256": "2374bf7746168f59773b45f0f7bb61b9a66e7c49e0cb080f3e869d0ae483dabe",
+      "bytes": 37948,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/0c43e50e30ee0e7b23cc3f92.m4a": {
+      "source": "assets/music/fallback/0c43e50e30ee0e7b23cc3f92.ogg",
+      "sourceSha256": "0c43e50e30ee0e7b23cc3f92f63c2623c9d0c0f2e1e942e3a93b22562f6c8c23",
+      "sha256": "14d1b7469bebea1799975151ab535defcf738220ca7d5b482e0038e8c6db7c3c",
+      "bytes": 91487,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/0c9d98c27698200b5a456a0b.m4a": {
+      "source": "assets/music/fallback/0c9d98c27698200b5a456a0b.ogg",
+      "sourceSha256": "0c9d98c27698200b5a456a0b52828eca2812672fa0a1e626781dfff9e5462d40",
+      "sha256": "d8060c37c839b2cf2ecd239b0f3c770dbd08957b7dafffaa31a00bde69b2c92c",
+      "bytes": 51631,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/0f246c7d401348fefb457149.m4a": {
+      "source": "assets/music/fallback/0f246c7d401348fefb457149.ogg",
+      "sourceSha256": "0f246c7d401348fefb457149d22a2f0a79fda31bdefb48d3109264983ea552a3",
+      "sha256": "27eb1fb4a8e84d658b9f95bd12a110abcc8d3839c3e2ea8fe8e5c7050816d952",
+      "bytes": 59399,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/0fb0276d28274fd7e67f2e76.m4a": {
+      "source": "assets/music/fallback/0fb0276d28274fd7e67f2e76.ogg",
+      "sourceSha256": "0fb0276d28274fd7e67f2e761ace35a31f6732b90b56e52fdf98879a505f31e8",
+      "sha256": "51c34af9fb3ba0f53011f342e48a42da0f117f552ab80fa18f2bd384d347f431",
+      "bytes": 48538,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/10157707d701d8a1eed0c451.m4a": {
+      "source": "assets/music/fallback/10157707d701d8a1eed0c451.ogg",
+      "sourceSha256": "10157707d701d8a1eed0c4513fbf9a78db19e362303bb1637b119dd54ebcf900",
+      "sha256": "ed84ef1de92543f09b32152db89f46f14aee83088308459902093250a60f4751",
+      "bytes": 114417,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/1033098c366cfe075e23aecf.m4a": {
+      "source": "assets/music/fallback/1033098c366cfe075e23aecf.ogg",
+      "sourceSha256": "1033098c366cfe075e23aecff6bcee06e49615d2106f3f5015de7d107179454e",
+      "sha256": "dc8fbc47faaae3617aec916b45748b3b590b01ab9fae59c0c59e59b93f7e986a",
+      "bytes": 64769,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/1170c19db4e246950bc315ce.m4a": {
+      "source": "assets/music/fallback/1170c19db4e246950bc315ce.ogg",
+      "sourceSha256": "1170c19db4e246950bc315ce72af4691e84d203132e043a761d7c0a78bad1474",
+      "sha256": "c1df4aadc2b789e7843f55cb16a4aaa06bc667f56267ad76e55c927b6c8773a4",
+      "bytes": 55689,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/11721ab9d26f984e9b013beb.m4a": {
+      "source": "assets/music/fallback/11721ab9d26f984e9b013beb.ogg",
+      "sourceSha256": "11721ab9d26f984e9b013beb4d86fdd3895d83654f5016cc10346de42216d29f",
+      "sha256": "4f577521a211fceb4deddd667d56e74fcd0331a17e6fa1a772a42ac06b2dfe43",
+      "bytes": 48754,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/11eeaa1a57105acdd0dd7765.m4a": {
+      "source": "assets/music/fallback/11eeaa1a57105acdd0dd7765.ogg",
+      "sourceSha256": "11eeaa1a57105acdd0dd7765c1a585f5be9283db8ae0bd05501c21791fe48db5",
+      "sha256": "58e186f82e2e79995947ffd443413f3fddbfd05e898414125d290272baced844",
+      "bytes": 58700,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/1626ed4fd60837ca431b0046.m4a": {
+      "source": "assets/music/fallback/1626ed4fd60837ca431b0046.ogg",
+      "sourceSha256": "1626ed4fd60837ca431b0046ee1057eae6ee06d147285cad33e6f5a516fe3346",
+      "sha256": "12296029a8a4e3a23b2980fc1518ac1b904c267fb3d53876cb5a0d5b9f89e23a",
+      "bytes": 58855,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/166dbc9b355b8b93bca449dd.m4a": {
+      "source": "assets/music/fallback/166dbc9b355b8b93bca449dd.ogg",
+      "sourceSha256": "166dbc9b355b8b93bca449dd910f7d1a91e62c418b2a6e590f1f0e067d781245",
+      "sha256": "7340a72c947cfc56f26b7bca2cd619c5b3b4d2bf8d8ed6333bb5b3dff2a22b35",
+      "bytes": 65093,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/1685459d67c4205e41d7adcf.m4a": {
+      "source": "assets/music/fallback/1685459d67c4205e41d7adcf.ogg",
+      "sourceSha256": "1685459d67c4205e41d7adcf29a029827f67504f1b9210ed595d380d83f5dc56",
+      "sha256": "0af24d25cd47bf53c374390bdbebd4dbda232b54ba26237d8c22964d0d30430c",
+      "bytes": 48926,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/1a8043536f3bcb36920e45c2.m4a": {
+      "source": "assets/music/fallback/1a8043536f3bcb36920e45c2.ogg",
+      "sourceSha256": "1a8043536f3bcb36920e45c24546d536da128a4c4bb7a1649ecaa07d7fe5523b",
+      "sha256": "752143218b66d0c0e2eaf04647bf171b351044a7bf62784fd325db099b73e76d",
+      "bytes": 76595,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/1d269005a5062d81c2b4862e.m4a": {
+      "source": "assets/music/fallback/1d269005a5062d81c2b4862e.ogg",
+      "sourceSha256": "1d269005a5062d81c2b4862e7e71bbf40d0f4629c22df5aa8eefc2c4ef04f93c",
+      "sha256": "f503c4f49c8c5afa9855f4d9d7b900a91597600337221e8ff1eb484f0c6161da",
+      "bytes": 64947,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/1e10713241ee8b3a331b396f.m4a": {
+      "source": "assets/music/fallback/1e10713241ee8b3a331b396f.ogg",
+      "sourceSha256": "1e10713241ee8b3a331b396f256d856273ff4ee5ed5411fc13e5bd40b7cdd2a3",
+      "sha256": "a3642a933da36e29344144410a8485afb2bf68d36476d02ed6a1b5b4ef3a1c15",
+      "bytes": 99626,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/1e3fcb11f88cb11437fc7cd2.m4a": {
+      "source": "assets/music/fallback/1e3fcb11f88cb11437fc7cd2.ogg",
+      "sourceSha256": "1e3fcb11f88cb11437fc7cd2c5081f40c6ccbf02134f01e9d66d6ae3bd788713",
+      "sha256": "a4e193c7aa42d85cc1ce0b3696669a711c02d80dcebb10ebe2db7bb8f271bb60",
+      "bytes": 58277,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/2012874ce199b88672a5568e.m4a": {
+      "source": "assets/music/fallback/2012874ce199b88672a5568e.ogg",
+      "sourceSha256": "2012874ce199b88672a5568e9e47d29aa64c3a917b69c25f9e067cd12e262ec5",
+      "sha256": "bc947a3749d0a77d107c9576814b5b07dd2f9fe088534d957f443f7efd5da0b0",
+      "bytes": 92909,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/2485c201b89bf3334e61ac9d.m4a": {
+      "source": "assets/music/fallback/2485c201b89bf3334e61ac9d.ogg",
+      "sourceSha256": "2485c201b89bf3334e61ac9df33a91baf8e4e4ccab335d484f877de3a25348c3",
+      "sha256": "94d4f67a94a861b5d52eaca270433f66305dc9b42da636e6b9d51ced235cbd00",
+      "bytes": 77181,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/251be58ea3020feee9815975.m4a": {
+      "source": "assets/music/fallback/251be58ea3020feee9815975.ogg",
+      "sourceSha256": "251be58ea3020feee9815975f4f0f1317ad1266bd3250187f0e8a1fd014c1bfe",
+      "sha256": "92aba088c2abbbd4803d53694a6bb4ca43518ebb1354984e53d27cc850766eed",
+      "bytes": 70257,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/2520c8bd1835d8fbb4d9ff7f.m4a": {
+      "source": "assets/music/fallback/2520c8bd1835d8fbb4d9ff7f.ogg",
+      "sourceSha256": "2520c8bd1835d8fbb4d9ff7f2c0dfd2a8545312c91bacbb13a22ba0b3c3f7da4",
+      "sha256": "40bd8de52820aa4d21956de3d73e3e01ad0635faccca99912e934f015e484b0b",
+      "bytes": 64159,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/297876001cdd56d7a8cabe0a.m4a": {
+      "source": "assets/music/fallback/297876001cdd56d7a8cabe0a.ogg",
+      "sourceSha256": "297876001cdd56d7a8cabe0a450d4e3050713805b879857e949a64cb93502ce1",
+      "sha256": "8e29db18c7f5b33946a5914738b734ef740ced0123fc50c77cbddc2602084ef8",
+      "bytes": 66092,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/2f8586c638044f17f7d3a0f2.m4a": {
+      "source": "assets/music/fallback/2f8586c638044f17f7d3a0f2.ogg",
+      "sourceSha256": "2f8586c638044f17f7d3a0f218d53603fed6fddfd435c77855b85530de110ba5",
+      "sha256": "9b55760078af9adf7a42f0176390cc86032ed2be246c60919fb1bd180ab79230",
+      "bytes": 68290,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/314375658cb6929ef70f7f2f.m4a": {
+      "source": "assets/music/fallback/314375658cb6929ef70f7f2f.ogg",
+      "sourceSha256": "314375658cb6929ef70f7f2f04f31a86588824408e40e52459acd3d433311c77",
+      "sha256": "0e9c1ef215a5fe31599993b9aed4ea345cee98c02461bf42e599dfadf2b1bb4f",
+      "bytes": 47493,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/31d318b20751fb7fab419921.m4a": {
+      "source": "assets/music/fallback/31d318b20751fb7fab419921.ogg",
+      "sourceSha256": "31d318b20751fb7fab419921e8a062f7cb035a8134325875ced70a3ac4fb29e5",
+      "sha256": "a8f8a6970f40cc5ecc1c22039a0652109cd165c1561d0c492d6442e3873d9e30",
+      "bytes": 105040,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/32c776cb3a4760b98409bd62.m4a": {
+      "source": "assets/music/fallback/32c776cb3a4760b98409bd62.ogg",
+      "sourceSha256": "32c776cb3a4760b98409bd62d9462264596e91408793b8d6921b6aea2318376a",
+      "sha256": "0259b1beeccc6c87f7ab1f919562a0dfe233a9ccb1385c436675bd95e4944921",
+      "bytes": 96855,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/334dd9a3e66f3e96ef55addf.m4a": {
+      "source": "assets/music/fallback/334dd9a3e66f3e96ef55addf.ogg",
+      "sourceSha256": "334dd9a3e66f3e96ef55addf81ce00152eb27876a9fc710d9ca9010a90e187aa",
+      "sha256": "042329fe6281a5bf1bbd7b361db95cc9aa40fc9a763d75937f81a78049dcbb94",
+      "bytes": 45070,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/33cafef77b1a7ce20450ccd5.m4a": {
+      "source": "assets/music/fallback/33cafef77b1a7ce20450ccd5.ogg",
+      "sourceSha256": "33cafef77b1a7ce20450ccd5364d43826200602e5f98a058536e10cf46ed8610",
+      "sha256": "de1da3e6bf2836a1f9e7cbe69f888aa73884c2b1a1557a3085f1d3750669e5e9",
+      "bytes": 37443,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/33ed6f9880c1a29a257f2f5f.m4a": {
+      "source": "assets/music/fallback/33ed6f9880c1a29a257f2f5f.ogg",
+      "sourceSha256": "33ed6f9880c1a29a257f2f5fe2721653e42832dea627c5eb81188bd95e5b4c3b",
+      "sha256": "ab133f1439f0f740c24a186db17f277a21669ead37bbd1f40b12bdcf56aed778",
+      "bytes": 64254,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/359ae8ba23a35415e49f1bb7.m4a": {
+      "source": "assets/music/fallback/359ae8ba23a35415e49f1bb7.ogg",
+      "sourceSha256": "359ae8ba23a35415e49f1bb731ece25e7c23c5ecbf70f86c01270b4a4f30d6d6",
+      "sha256": "b265555e677198da5d135d6151e6379ed93d29134aef187bceec8357616a9f2e",
+      "bytes": 82483,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/35bfaa2d938c3d6269570d3f.m4a": {
+      "source": "assets/music/fallback/35bfaa2d938c3d6269570d3f.ogg",
+      "sourceSha256": "35bfaa2d938c3d6269570d3fc8bb907e2fcdc1fcd51143a0e06d6a2632dffdb4",
+      "sha256": "db2d5b8e41c051c17f052230a257842c438437ecb462f2ef7a5bd0d9104283f8",
+      "bytes": 46476,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/369ed71fce1de47b3b0e0a96.m4a": {
+      "source": "assets/music/fallback/369ed71fce1de47b3b0e0a96.ogg",
+      "sourceSha256": "369ed71fce1de47b3b0e0a966b561bc32335faeccae548c147c50f32d9defb67",
+      "sha256": "28b2e600ef47210206d63023c30f0099abcdf03ccc674887cbc77c16d49cc129",
+      "bytes": 64730,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/36e64ffa91b48a07ce0d21d7.m4a": {
+      "source": "assets/music/fallback/36e64ffa91b48a07ce0d21d7.ogg",
+      "sourceSha256": "36e64ffa91b48a07ce0d21d738434b95c4d23e1fd6cdc2698aba8a5b7a5e9415",
+      "sha256": "38a53b6119c35af0de61ddda06ad9467e7bf4bf82751cbb3fac80709b35c86c8",
+      "bytes": 96904,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/3a409a11ca69e9aea83bd8b6.m4a": {
+      "source": "assets/music/fallback/3a409a11ca69e9aea83bd8b6.ogg",
+      "sourceSha256": "3a409a11ca69e9aea83bd8b69f9776cc137d0ad8b765d2aa4ae33bf811d94b0e",
+      "sha256": "11b5878a5014450950e5eae0270c4a9d7cc8919972f9199b12015b017b1ffb2e",
+      "bytes": 41991,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/3a637a22aa6106d35aa9ece1.m4a": {
+      "source": "assets/music/fallback/3a637a22aa6106d35aa9ece1.ogg",
+      "sourceSha256": "3a637a22aa6106d35aa9ece1641955957c71ee03c8295ca1e30e284f80e894b3",
+      "sha256": "35c7f2a2b33343a8029188babef6262c081f7dbf09979acb28a7662f8dad7b8b",
+      "bytes": 77971,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/3b91bd2cdc18eaf6fcd895ca.m4a": {
+      "source": "assets/music/fallback/3b91bd2cdc18eaf6fcd895ca.ogg",
+      "sourceSha256": "3b91bd2cdc18eaf6fcd895cab6d17e64164f2bafed705b4225ef21cf6f604c6e",
+      "sha256": "be262f76081aee91b505ce7bd825acaea59c18264c87c866366cf181d0287e7c",
+      "bytes": 100490,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/3d24fe29a127d683d30451dd.m4a": {
+      "source": "assets/music/fallback/3d24fe29a127d683d30451dd.ogg",
+      "sourceSha256": "3d24fe29a127d683d30451dd012d0c9a8b1994a85cab0c6409efee12f2606f7d",
+      "sha256": "3f8c2c9c2419733d0318190c9a28d5b69f759c41e64d91df2815057b3d48fb1e",
+      "bytes": 114217,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/3d8a1d26a496efa8e37704a6.m4a": {
+      "source": "assets/music/fallback/3d8a1d26a496efa8e37704a6.ogg",
+      "sourceSha256": "3d8a1d26a496efa8e37704a6a1fb2b534fcc3f855ab549e303b1622a6177721c",
+      "sha256": "7903c668924b2c793495205668937e9f28866c145a6d61614d77b147c9cf414b",
+      "bytes": 78669,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/3fb909b9a017eb06bb8aee42.m4a": {
+      "source": "assets/music/fallback/3fb909b9a017eb06bb8aee42.ogg",
+      "sourceSha256": "3fb909b9a017eb06bb8aee426623c624c06f0ce41a1c9d9dfad472d87e44adb3",
+      "sha256": "3ee172ea5f120518b35bdfff6770ed202d8b33483ff554bee59efa5b52f0445a",
+      "bytes": 62726,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/42814f7d95ddaec93c7d541d.m4a": {
+      "source": "assets/music/fallback/42814f7d95ddaec93c7d541d.ogg",
+      "sourceSha256": "42814f7d95ddaec93c7d541d90e96e6412aef559739e58ca59db16178e09cd4a",
+      "sha256": "4fa22c5c525dc1abd1bd3a149e7708ef13fd5f2a408f39f1e9d6563a2f451f4f",
+      "bytes": 87506,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/44de69d3fd2440c94766d756.m4a": {
+      "source": "assets/music/fallback/44de69d3fd2440c94766d756.ogg",
+      "sourceSha256": "44de69d3fd2440c94766d7567b68ff97292f9d998ae1cea40c85049b5c33d062",
+      "sha256": "08114fd645bbd6a1a07381d1f6caee3c579db0105e57e39f1dfa1afba9568550",
+      "bytes": 99554,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/451b375fcea3664c69378e9f.m4a": {
+      "source": "assets/music/fallback/451b375fcea3664c69378e9f.ogg",
+      "sourceSha256": "451b375fcea3664c69378e9f987c571ff48e87861b397bd1484911257f463241",
+      "sha256": "8b5c99a9d3f45a9970c5ef4c6d37be31b06311f82bdf137a19c219cbc7a73478",
+      "bytes": 56454,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/471fa19b4c2fece2205549aa.m4a": {
+      "source": "assets/music/fallback/471fa19b4c2fece2205549aa.ogg",
+      "sourceSha256": "471fa19b4c2fece2205549aa48c9ed891ece9709bbbfe1109e3b1ab796aa8981",
+      "sha256": "9794c343833b0347da2bd77b4494a3ca5bcbda8d0fb847551ae388025491091a",
+      "bytes": 57490,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/4813d26392ad554e5fadf098.m4a": {
+      "source": "assets/music/fallback/4813d26392ad554e5fadf098.ogg",
+      "sourceSha256": "4813d26392ad554e5fadf098067eff20360312e97cfcbd8342637db31ab2e079",
+      "sha256": "2393e166001ba8370cfff018f311195fad25425d080a34ae4c81a1359ac60736",
+      "bytes": 87206,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/4831d5d8ee58b19bd62676ba.m4a": {
+      "source": "assets/music/fallback/4831d5d8ee58b19bd62676ba.ogg",
+      "sourceSha256": "4831d5d8ee58b19bd62676baf3dde6985e85dc44acd559ac5b201e72804bdd30",
+      "sha256": "4d098b5fa45b12e1573f6b83d852a63169c312e54c614e4181fe8b3f00674bcf",
+      "bytes": 46620,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/4942e7f9ca5d4a2a9ae610b5.m4a": {
+      "source": "assets/music/fallback/4942e7f9ca5d4a2a9ae610b5.ogg",
+      "sourceSha256": "4942e7f9ca5d4a2a9ae610b5683cc7641500289f57df151f4839abd3fbb73005",
+      "sha256": "5c38640a8068461bc13e0231a1fbc50e3aba73922ad7171e0147efb4a8ea2c95",
+      "bytes": 92879,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/4d1613ffe444d1d1b4ae74b5.m4a": {
+      "source": "assets/music/fallback/4d1613ffe444d1d1b4ae74b5.ogg",
+      "sourceSha256": "4d1613ffe444d1d1b4ae74b5acf61564aad86ab0a55851f76b23aaf51e897b31",
+      "sha256": "a2deb5809081f8351ac5cf2a82cd5ebfc8c6ecdc30bdb658f11c4b7fe7a82739",
+      "bytes": 48423,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/4df454847b04bef33cc5d748.m4a": {
+      "source": "assets/music/fallback/4df454847b04bef33cc5d748.ogg",
+      "sourceSha256": "4df454847b04bef33cc5d748accbbf202edf7cd1f577d68577e99e1e4c931d56",
+      "sha256": "607ca48c600ae0f5d2e820d3f9a8e8b65208b88788f5f779612266e388d2e9e4",
+      "bytes": 46701,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/4ea6cb03f78b1f75e24233a8.m4a": {
+      "source": "assets/music/fallback/4ea6cb03f78b1f75e24233a8.ogg",
+      "sourceSha256": "4ea6cb03f78b1f75e24233a82ddb1e4de4b8bf84725b8a8cc7c8667c1d02a4d4",
+      "sha256": "942d1ec7c1fcf7a9dbebd0c9617c166d9c5332cfc5fcc3266d6cb1fae4d407a9",
+      "bytes": 87423,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/51af297b06c440a2aa8dd9bb.m4a": {
+      "source": "assets/music/fallback/51af297b06c440a2aa8dd9bb.ogg",
+      "sourceSha256": "51af297b06c440a2aa8dd9bbfc88d4e446cffebdba0d9b050ec04d0eb45c76b8",
+      "sha256": "ae5473eae998f0d9a51aa0bde40cd856b3d225689311f1f9a15b790534bcdbdb",
+      "bytes": 68774,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/51fde82a8c68f9f131e67d24.m4a": {
+      "source": "assets/music/fallback/51fde82a8c68f9f131e67d24.ogg",
+      "sourceSha256": "51fde82a8c68f9f131e67d24bdc48a4220da6a19c6cb062b259872fb38566ff6",
+      "sha256": "ef79d85826478327a1289b274b4bcc6615fdc792f4e3c4c892afb540fe789e0a",
+      "bytes": 58611,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/52420ee51580413396bf369d.m4a": {
+      "source": "assets/music/fallback/52420ee51580413396bf369d.ogg",
+      "sourceSha256": "52420ee51580413396bf369dadc349446c7610a9177db0c6703ed8e302ec96c6",
+      "sha256": "7893a805cdfaaca7ecb8510b303ada4a758ba311f686dda1c303353e0f75b586",
+      "bytes": 130337,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/536506d49de2d3a7cab828fa.m4a": {
+      "source": "assets/music/fallback/536506d49de2d3a7cab828fa.ogg",
+      "sourceSha256": "536506d49de2d3a7cab828fa74b76343b93107ee6840254b22d32998063804c2",
+      "sha256": "0a3c49ee032b8560ceea976949f2bd4126e831e20c7e3ae424ba3665d0897b59",
+      "bytes": 67266,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/55ed3c7fdf2bc735bbb2075c.m4a": {
+      "source": "assets/music/fallback/55ed3c7fdf2bc735bbb2075c.ogg",
+      "sourceSha256": "55ed3c7fdf2bc735bbb2075cec6862fd73a1d07482ee04f373689e91e9743311",
+      "sha256": "dc814e683315de8b957fb781658cc6f00c1c048a79054739387409708013ec27",
+      "bytes": 69816,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/575c926bbfc2fda00185c357.m4a": {
+      "source": "assets/music/fallback/575c926bbfc2fda00185c357.ogg",
+      "sourceSha256": "575c926bbfc2fda00185c357f87e916759bff1fe4ff980e237c65495a0fbf812",
+      "sha256": "610918bbf5fda05a1290700e8f4f3c2d3a32462d01caf716d662f3c6c4ec2a0d",
+      "bytes": 71988,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/585d1829c5ef58b0631478db.m4a": {
+      "source": "assets/music/fallback/585d1829c5ef58b0631478db.ogg",
+      "sourceSha256": "585d1829c5ef58b0631478dbf1e1f7c9c3f7fbcfeff4091ebcfff14de8cab511",
+      "sha256": "c39958d71869f47ba11e8f2243bf414e672376036aa52a1314edb5a0c8177921",
+      "bytes": 131770,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/59cc6d4b40983fee77417707.m4a": {
+      "source": "assets/music/fallback/59cc6d4b40983fee77417707.ogg",
+      "sourceSha256": "59cc6d4b40983fee774177079fc19473ee32911d811e8d6159a1339af8a989d2",
+      "sha256": "3ad797b6feecd99cc727f4e06fc589dd4087ea0086ac31c09b9cd60554267cec",
+      "bytes": 59165,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/59cfcaaa781b7a9dd2af62b9.m4a": {
+      "source": "assets/music/fallback/59cfcaaa781b7a9dd2af62b9.ogg",
+      "sourceSha256": "59cfcaaa781b7a9dd2af62b987db678fadddbc8d5715988873265ab796db9651",
+      "sha256": "9dbc6f415a42baefac733723fef0e4d9c4275dfc8f4e52171b1cb38c3ea58291",
+      "bytes": 107383,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/5a7e55f0e510efad7a3059e0.m4a": {
+      "source": "assets/music/fallback/5a7e55f0e510efad7a3059e0.ogg",
+      "sourceSha256": "5a7e55f0e510efad7a3059e077fbc91ae14a00bb00940cfb980e266b18e95c54",
+      "sha256": "4f00650b707a538526a22ea2b90d8a6e7dbbd854456390c7c86e8b6ad2aac392",
+      "bytes": 48802,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/5bb2e70d86d48a38e4e3492f.m4a": {
+      "source": "assets/music/fallback/5bb2e70d86d48a38e4e3492f.ogg",
+      "sourceSha256": "5bb2e70d86d48a38e4e3492f8f936e648f521a657989c7d5066a269903f75839",
+      "sha256": "f1972f74b47131f710373acdfe2170c2741ea9aec569ec77b15a4a8bba9a9db5",
+      "bytes": 64352,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/5c70d11e046d1838f301e970.m4a": {
+      "source": "assets/music/fallback/5c70d11e046d1838f301e970.ogg",
+      "sourceSha256": "5c70d11e046d1838f301e9704edd1119b8abb3931f056d65e36547227e033df7",
+      "sha256": "dba1ec7ba0205c25c80fa013c81a412317d536b43f2a7a9b93c9bc235f48022a",
+      "bytes": 48630,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/5d657d29a6e10496e425391a.m4a": {
+      "source": "assets/music/fallback/5d657d29a6e10496e425391a.ogg",
+      "sourceSha256": "5d657d29a6e10496e425391a3dc53c8407a69f8582ad6fb24b031fa6285dc4cd",
+      "sha256": "7ffab0b773071436bef75a15a110868ea31a4093080909d018afea772cbbc19e",
+      "bytes": 47604,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/5e224cea45ee675bbd41046e.m4a": {
+      "source": "assets/music/fallback/5e224cea45ee675bbd41046e.ogg",
+      "sourceSha256": "5e224cea45ee675bbd41046e18da68cdd23952bb644fc34652b4db69ab61d7d0",
+      "sha256": "9c1529ae3aab04e340fbef26bad6c104a97ecf8f135d3f1aff126ce15cbadc5c",
+      "bytes": 69900,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/5e32b62c4f80bb30b6cf52e7.m4a": {
+      "source": "assets/music/fallback/5e32b62c4f80bb30b6cf52e7.ogg",
+      "sourceSha256": "5e32b62c4f80bb30b6cf52e7398ddf4c662ed08565cd8c0cc4642ec8dddc94d4",
+      "sha256": "99e8ca634d0e2c9bfd7dda5017f49bc2956a9a83e1c83f22b3ab7ef558223659",
+      "bytes": 75336,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/5ee7952244c1225bab02358c.m4a": {
+      "source": "assets/music/fallback/5ee7952244c1225bab02358c.ogg",
+      "sourceSha256": "5ee7952244c1225bab02358ca8b2d498e2d7af74c7001ce6f23527ed28e4e942",
+      "sha256": "6642c395f25db925bf1d909e2669785ed776c2b03a62bf5b04487dfb5e957a58",
+      "bytes": 113355,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/6052d881b33d09d414d4f3f7.m4a": {
+      "source": "assets/music/fallback/6052d881b33d09d414d4f3f7.ogg",
+      "sourceSha256": "6052d881b33d09d414d4f3f7a2c376a9f8475e60c6e8ed94a3c32b4861072419",
+      "sha256": "605d76729a64da3eff1e61d20f0edbff2be0a365e0ef77915643a9ca1ea80a3d",
+      "bytes": 46794,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/60c918225ceb702073093182.m4a": {
+      "source": "assets/music/fallback/60c918225ceb702073093182.ogg",
+      "sourceSha256": "60c918225ceb70207309318261989e761eaf145a5c88b32d05ae367433d695c2",
+      "sha256": "1d9e49ee801163e0b6a0a5dbdbc97bbf742d2c6e437b5a3810cb73ececf8246c",
+      "bytes": 49656,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/61461fa6dff95e6a8acecef1.m4a": {
+      "source": "assets/music/fallback/61461fa6dff95e6a8acecef1.ogg",
+      "sourceSha256": "61461fa6dff95e6a8acecef16ca1bf2cacc1b47a606bbb658277f3a728c4d6ab",
+      "sha256": "1f9a31b19ab9ce54667a2cdb87afd23eaa0dd30ad55a1405fc49d1090d39f244",
+      "bytes": 63966,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/628d7f137e4b31226046f71e.m4a": {
+      "source": "assets/music/fallback/628d7f137e4b31226046f71e.ogg",
+      "sourceSha256": "628d7f137e4b31226046f71e5073f50df46974e639639508fc2ebcb733a2b86f",
+      "sha256": "b588974158642e6bc49197adc866f3521b8d054b32aa5d1e01a7ec5ec9209f44",
+      "bytes": 99687,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/6330d2ae82f099c4431a418a.m4a": {
+      "source": "assets/music/fallback/6330d2ae82f099c4431a418a.ogg",
+      "sourceSha256": "6330d2ae82f099c4431a418a8a9021d0969988a54a8cbbcd5b02fcc686c577f7",
+      "sha256": "5efa2ae72f58d2259153c8a1620f38d3c71b9515dea649bcc991b220b7fdbc49",
+      "bytes": 97500,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/63ed59af1982bf0569c5c6b3.m4a": {
+      "source": "assets/music/fallback/63ed59af1982bf0569c5c6b3.ogg",
+      "sourceSha256": "63ed59af1982bf0569c5c6b3f6b50517b999b6f8de5986353b37814b4e81fac6",
+      "sha256": "65cbd1cd2e94600d443f197cdc5df2554e88955be29cdab0f1aad27120608ab7",
+      "bytes": 114175,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/667ae38e6a77d84e0f1249b8.m4a": {
+      "source": "assets/music/fallback/667ae38e6a77d84e0f1249b8.ogg",
+      "sourceSha256": "667ae38e6a77d84e0f1249b81a85c304593784961689a3fc8b3d2254ffc20abb",
+      "sha256": "5574b8d5d37eb149a28b85324168c582b43473efe9382b097fac2065ce594e69",
+      "bytes": 64665,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/669c5ea3b09b3d63fe585ba0.m4a": {
+      "source": "assets/music/fallback/669c5ea3b09b3d63fe585ba0.wav",
+      "sourceSha256": "669c5ea3b09b3d63fe585ba0967807bd450fab465a9e2ee8a03378fca585b3f3",
+      "sha256": "596953f86f8f2b4b38d865b6542347199c3e4a4bfb2b986bc7fa9e58d5e43141",
+      "bytes": 52092,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/67a953f7907abcbe5762a46a.m4a": {
+      "source": "assets/music/fallback/67a953f7907abcbe5762a46a.ogg",
+      "sourceSha256": "67a953f7907abcbe5762a46a27aa75bb6c1d1643af6bfefdfc82c6a9f73a5425",
+      "sha256": "a493e1b161cb6834b69dfc81dcf65c83d6535052565e62148bf986e12e3c1f48",
+      "bytes": 99600,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/67aca1e89ebd2e1890e72b5d.m4a": {
+      "source": "assets/music/fallback/67aca1e89ebd2e1890e72b5d.ogg",
+      "sourceSha256": "67aca1e89ebd2e1890e72b5d72a3196c7c9c2899a1edaeb178b75779bfcd0147",
+      "sha256": "4bbc0221cdb47ebfd1e0390374baa3f99d6463bb1e58be8f34c1be87034c5412",
+      "bytes": 48396,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/6811acc6659949559fc75fe1.m4a": {
+      "source": "assets/music/fallback/6811acc6659949559fc75fe1.ogg",
+      "sourceSha256": "6811acc6659949559fc75fe1f2a4ddbe7e8a3b2d2b4aad53c30941ab47d92c89",
+      "sha256": "ddbfbdcd357eecf51dec8d7047f5d61daf0abd428c8772be01b197d6f76e3689",
+      "bytes": 45937,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/6a333cc89561f7d28766abb0.m4a": {
+      "source": "assets/music/fallback/6a333cc89561f7d28766abb0.wav",
+      "sourceSha256": "6a333cc89561f7d28766abb07f4b8b28f48ff68283c59ac2909240d1456bdc49",
+      "sha256": "825f2f43fea91752f8428f752a92509fef256b2ca0c67069b927f5ecf08abd51",
+      "bytes": 47629,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/6aa899d2314d61c1bb0a09f1.m4a": {
+      "source": "assets/music/fallback/6aa899d2314d61c1bb0a09f1.ogg",
+      "sourceSha256": "6aa899d2314d61c1bb0a09f1038ddf555c18a75915218d6b3a74de2e74ad98ba",
+      "sha256": "febc1557e8628b63b9a09e00a405ffbe5b37a684ab2add4fdbcd2aefa1f1d652",
+      "bytes": 64090,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/6ad8380307aa15cf8bed623e.m4a": {
+      "source": "assets/music/fallback/6ad8380307aa15cf8bed623e.ogg",
+      "sourceSha256": "6ad8380307aa15cf8bed623e4156aec6d30774826770bf44e9d430756ac0c4b6",
+      "sha256": "999d2c84b51ffbab60e32b50ef8bd18a9ad0794823770409c9d3aab5fe9c2a53",
+      "bytes": 100078,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/6cfb92c473ea522de491d441.m4a": {
+      "source": "assets/music/fallback/6cfb92c473ea522de491d441.ogg",
+      "sourceSha256": "6cfb92c473ea522de491d4413514117232555e91b6a64ee4bed759d36ff3b028",
+      "sha256": "d02c677fde657ed5835cfcc03d6d1a0b4b3d225384506338983ae17ee6b2b03f",
+      "bytes": 100722,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/6d626c75333a5752f1f936d4.m4a": {
+      "source": "assets/music/fallback/6d626c75333a5752f1f936d4.ogg",
+      "sourceSha256": "6d626c75333a5752f1f936d49d2e5ac94c55dee686fa54b1278485df95619f6a",
+      "sha256": "4b87ff84d8ce976a01bee871b94b316f5907cd3bc4c5802e0039426ebf8cf7d0",
+      "bytes": 59406,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/6e4d6ad2e9f9c130e1120a00.m4a": {
+      "source": "assets/music/fallback/6e4d6ad2e9f9c130e1120a00.wav",
+      "sourceSha256": "6e4d6ad2e9f9c130e1120a00a54af98376b2e290b670771d30079a4e680ff7c2",
+      "sha256": "e1de5c0ce37b82485b3bffce95b742346ed277d8a06fd69f3f77483f1a737308",
+      "bytes": 47557,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/6e5828535238336b9aa536c0.m4a": {
+      "source": "assets/music/fallback/6e5828535238336b9aa536c0.ogg",
+      "sourceSha256": "6e5828535238336b9aa536c046810153fe8684f8507b1968a49746f3347f1f23",
+      "sha256": "e40aca2cdbf7d7a83cf7f0d5404730a10d972da2bc66bfdd399469e1c979a465",
+      "bytes": 64255,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/700b442f0bcf916d6f74a9c2.m4a": {
+      "source": "assets/music/fallback/700b442f0bcf916d6f74a9c2.ogg",
+      "sourceSha256": "700b442f0bcf916d6f74a9c2d90b887f2d62642a343531ceba72924ecbd50245",
+      "sha256": "432434baeca6409e66c0b695ae48753714a5d550658a9764918fd6cfb47de91d",
+      "bytes": 42370,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/7165885c7f7cf7fc8efbda1b.m4a": {
+      "source": "assets/music/fallback/7165885c7f7cf7fc8efbda1b.ogg",
+      "sourceSha256": "7165885c7f7cf7fc8efbda1bf1db7c2a8b1747b8924cbb05c68b2c1c00f3b735",
+      "sha256": "8dd696126b162cce74c2e379eae5f33bd25072d9ea62e4d98532451f6385c75f",
+      "bytes": 44798,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/71812017d5b043f7923890d7.m4a": {
+      "source": "assets/music/fallback/71812017d5b043f7923890d7.ogg",
+      "sourceSha256": "71812017d5b043f7923890d73849b708e842e7576abf73729ec2a1aeeb57a1ed",
+      "sha256": "c66fc71ccfe6a85a4ffc98ffb4da30ae398ad526f2e328d0415e7b1ecc701221",
+      "bytes": 63182,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/7637569dbb2a84a6fec2db92.m4a": {
+      "source": "assets/music/fallback/7637569dbb2a84a6fec2db92.ogg",
+      "sourceSha256": "7637569dbb2a84a6fec2db92bfd667d3873ede2ad597a1284940cfaca677f9e7",
+      "sha256": "591f45a044229f8781de7ed148e33d04ffa29bab0f8dc979366b673480753d3d",
+      "bytes": 41895,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/773cefcafa7806ec63dfdf91.m4a": {
+      "source": "assets/music/fallback/773cefcafa7806ec63dfdf91.ogg",
+      "sourceSha256": "773cefcafa7806ec63dfdf91da711324f2e9745d401c8db4e7445c7de639d147",
+      "sha256": "f1f3d040d646be761a0bc09aea03d9f03551b81d957a5fcb2ad27a06ea1aad59",
+      "bytes": 55632,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/7781139a17a6b32a3e2462b9.m4a": {
+      "source": "assets/music/fallback/7781139a17a6b32a3e2462b9.ogg",
+      "sourceSha256": "7781139a17a6b32a3e2462b9f052a4afa1420053ea8f948de448131006768a83",
+      "sha256": "5636d383f3db176e392deaf9bb12aeb3a6175eb6db0ee9d5a21955bc39f3ab6c",
+      "bytes": 70931,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/77b688d36f4b63e2b961a7b2.m4a": {
+      "source": "assets/music/fallback/77b688d36f4b63e2b961a7b2.ogg",
+      "sourceSha256": "77b688d36f4b63e2b961a7b2fc86b8dd3dfb85a1c8f06a57ccfcda68b72bc365",
+      "sha256": "de9cd927d42f56ab881e09aec1c6ee04a79f585777ae273f160da67e11128f9c",
+      "bytes": 87747,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/78425a3a228eb3628b2aab53.m4a": {
+      "source": "assets/music/fallback/78425a3a228eb3628b2aab53.ogg",
+      "sourceSha256": "78425a3a228eb3628b2aab5376beab7a4615e5d236093353562ed39cbad0d1f3",
+      "sha256": "25949d6404184f029fa23d11bfba791b1664caaac73678adc9eaca112ab42956",
+      "bytes": 69075,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/7925978711b9f431a55ecb4d.m4a": {
+      "source": "assets/music/fallback/7925978711b9f431a55ecb4d.ogg",
+      "sourceSha256": "7925978711b9f431a55ecb4d49c6ddec154798805d25cb3fac0d8971c24da9c2",
+      "sha256": "3b9064686ee284360912185d4ab866cd987630fbcf7c199573fc4ee107660e20",
+      "bytes": 59344,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/7a4bbcbbfc155686b46b390b.m4a": {
+      "source": "assets/music/fallback/7a4bbcbbfc155686b46b390b.ogg",
+      "sourceSha256": "7a4bbcbbfc155686b46b390be8c7d4e4e613db5c1ece14829d543ae4b6ddb9d3",
+      "sha256": "6ed016ce8d84c6ce66508bdfb8d35ed3eea4519fc714d714f42e37c775ba056e",
+      "bytes": 83706,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/7c2e559029f65f685743b832.m4a": {
+      "source": "assets/music/fallback/7c2e559029f65f685743b832.ogg",
+      "sourceSha256": "7c2e559029f65f685743b83297eec21a96a560ca6f75e91836489670782855f7",
+      "sha256": "c192d860a4cf8731e80990844ba7a49bea4a1d56611d35724f624d8d99a15f3a",
+      "bytes": 85917,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/7cdb61e85d5151c543ba483a.m4a": {
+      "source": "assets/music/fallback/7cdb61e85d5151c543ba483a.ogg",
+      "sourceSha256": "7cdb61e85d5151c543ba483af191b6f2cd14809231ef470de002782380f3a713",
+      "sha256": "732bf515a0d46e4716c27bc674ad79f28fe4abdafa95065459a29f9d7f3ea79e",
+      "bytes": 59656,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/7d8b8686c61f35305c1e014a.m4a": {
+      "source": "assets/music/fallback/7d8b8686c61f35305c1e014a.ogg",
+      "sourceSha256": "7d8b8686c61f35305c1e014a6ae6ed9d5f966f9e47b9525e39bfa5f633e3bb76",
+      "sha256": "196c95ae2f1a0f7cf6f6b5c102e3cfe44010e069e27b7bf3d8a2a142911ac6cf",
+      "bytes": 42209,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/7e28ff48b54919d5543d9f67.m4a": {
+      "source": "assets/music/fallback/7e28ff48b54919d5543d9f67.ogg",
+      "sourceSha256": "7e28ff48b54919d5543d9f678b40c92d4797194525ee690eb5a55473e9b0cb64",
+      "sha256": "7686853a49413003d3453b9a16bca7be32275349494a39ec336dc5ff7bdbb97b",
+      "bytes": 47614,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/801e70d12e183a8a806cfeb3.m4a": {
+      "source": "assets/music/fallback/801e70d12e183a8a806cfeb3.ogg",
+      "sourceSha256": "801e70d12e183a8a806cfeb372582754dcafb5cb4492a51057d6dc83fae907ec",
+      "sha256": "529072276c0c641e7ffeaace2a64fa875ff8c70e8d1f3ec6347fc519acb47e1b",
+      "bytes": 42507,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/80ce01ddd5d46e0da9a487b7.m4a": {
+      "source": "assets/music/fallback/80ce01ddd5d46e0da9a487b7.ogg",
+      "sourceSha256": "80ce01ddd5d46e0da9a487b7be0556fadce6f944479c67ef76c4b10230152a7b",
+      "sha256": "e923d4fd40c3a776b053037c5cb217443c77a7d13cb1c6c7f0d36304b891fb71",
+      "bytes": 46494,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/8124a762983fcef910351054.m4a": {
+      "source": "assets/music/fallback/8124a762983fcef910351054.ogg",
+      "sourceSha256": "8124a762983fcef91035105472ec896f2b197cb9d9eee854fe00967cf08bf6d3",
+      "sha256": "083bae07cab82963f45a9ff674f60bf3d901ce5707bfa244033aa0afc7c0c9f6",
+      "bytes": 37919,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/8142263759073c27f1a4318a.m4a": {
+      "source": "assets/music/fallback/8142263759073c27f1a4318a.ogg",
+      "sourceSha256": "8142263759073c27f1a4318ab585001afb1ef2eba8e1abc6bd43188914c200f7",
+      "sha256": "4b824f2ea0614df1d0c5fb1c73157602be65776883be8568f0e002756e7ae63e",
+      "bytes": 62273,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/8235a8757f052248dd9b65c7.m4a": {
+      "source": "assets/music/fallback/8235a8757f052248dd9b65c7.ogg",
+      "sourceSha256": "8235a8757f052248dd9b65c78bd70144de638d38ec998a61474c1dd4603172b5",
+      "sha256": "5d8421572c7ee83cf87da94249b4cc26ffc5619b1d989370ecfcf54d1bc62e98",
+      "bytes": 99276,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/835c5924a23a6e5baaa23d8d.m4a": {
+      "source": "assets/music/fallback/835c5924a23a6e5baaa23d8d.ogg",
+      "sourceSha256": "835c5924a23a6e5baaa23d8dea10fea06032348052d81055ae292d464052085b",
+      "sha256": "8c2411ac4fb378041fea6575bed4b8dce136c5af3f6eef072c019c752f5bc4eb",
+      "bytes": 51407,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/838b0d7438b781ecd9e671a2.m4a": {
+      "source": "assets/music/fallback/838b0d7438b781ecd9e671a2.ogg",
+      "sourceSha256": "838b0d7438b781ecd9e671a2d49f90480e745672cf2bdab3e180684ced833a5b",
+      "sha256": "5297c2440375ea7392a7c585a6490ab023988c8ddc3465755587ad5d65daa870",
+      "bytes": 65911,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/842aef7765fe3167b4743413.m4a": {
+      "source": "assets/music/fallback/842aef7765fe3167b4743413.ogg",
+      "sourceSha256": "842aef7765fe3167b47434136a381a6c59aa862c8a117109fd5b578903c8fc82",
+      "sha256": "87be73215b4477a2d466b9924efa5b516552b394bcdf353ec9ae53204a35cba6",
+      "bytes": 55483,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/8485e4302839d569a6b8f413.m4a": {
+      "source": "assets/music/fallback/8485e4302839d569a6b8f413.ogg",
+      "sourceSha256": "8485e4302839d569a6b8f41369b20f793e3353ce9470ce694bd67a162aa4042d",
+      "sha256": "4689abde13cdced05f0478811f882d45fd7ffeda0f086c393717cae75868ed59",
+      "bytes": 45231,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/86d2a4dc731e63410f31e270.m4a": {
+      "source": "assets/music/fallback/86d2a4dc731e63410f31e270.ogg",
+      "sourceSha256": "86d2a4dc731e63410f31e2708231ccd9c8a04f1d53807853764b2bc7400a306c",
+      "sha256": "8afb652bc349aed6cc5fb9ca9c032f4cb5c8ed2e24c63f386c6cd7d36d4af3fc",
+      "bytes": 64032,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/87cb0fe5253eebd46e05b2c0.m4a": {
+      "source": "assets/music/fallback/87cb0fe5253eebd46e05b2c0.ogg",
+      "sourceSha256": "87cb0fe5253eebd46e05b2c052ead1b5a509c78578dc82a1044ee23f67489f34",
+      "sha256": "8a3f14c38aa4f82a19995c93bb175ca359e1dc0a67aec04d8ea4f1c4812cd903",
+      "bytes": 88246,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/87dfa8b73a5815a9a08856a4.m4a": {
+      "source": "assets/music/fallback/87dfa8b73a5815a9a08856a4.wav",
+      "sourceSha256": "87dfa8b73a5815a9a08856a4545e860d37f1b0edf38ef73bf0db7f77530ece36",
+      "sha256": "6856a5aadc19ed75c8e77dc69634cbd2acd1af799ef336a48d6c9f40d0f06d1c",
+      "bytes": 44777,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/8a3ba9065d55badc074b8f6c.m4a": {
+      "source": "assets/music/fallback/8a3ba9065d55badc074b8f6c.ogg",
+      "sourceSha256": "8a3ba9065d55badc074b8f6c9510a642c4c8d86cdd115412856760b73a7c811f",
+      "sha256": "8d4f095326ce2b48e9574ae3a5985dfafb7cd64f55c69b486e1385c3f1de0c23",
+      "bytes": 76080,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/8abac6b6e9f211bf20f860a4.m4a": {
+      "source": "assets/music/fallback/8abac6b6e9f211bf20f860a4.ogg",
+      "sourceSha256": "8abac6b6e9f211bf20f860a47bb417c8d99507b0d64e251e1800fb4b966072b8",
+      "sha256": "bee3cfc0ff498f562804b05fd16b271c4c8470006a471ffdc69d3400ca5ba5ac",
+      "bytes": 113196,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/8b8eb56fef07b5cece4705d4.m4a": {
+      "source": "assets/music/fallback/8b8eb56fef07b5cece4705d4.ogg",
+      "sourceSha256": "8b8eb56fef07b5cece4705d4e192c8976b4288f8ffdd0e03de0b7ab987fcdd64",
+      "sha256": "09bb0ace5b3e0626aa0b47ea1dcc6009fde9c5ad687c4af1f8db6338fa923070",
+      "bytes": 58698,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/8cba28abbf19a408df8127d2.m4a": {
+      "source": "assets/music/fallback/8cba28abbf19a408df8127d2.ogg",
+      "sourceSha256": "8cba28abbf19a408df8127d29d47ff2174b4c2635595ca6e4a8df682162c25fa",
+      "sha256": "3aca42b8ff605a2252d666ae3697d17ff421a05451f24a8610b6fea6cd86211c",
+      "bytes": 114636,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/8d3567e9226a92c7d1019112.m4a": {
+      "source": "assets/music/fallback/8d3567e9226a92c7d1019112.ogg",
+      "sourceSha256": "8d3567e9226a92c7d10191120e6742ed21c606b65f4439367092d93dafb842ce",
+      "sha256": "cd4fa1df4727b032b933cadd0d55e88ce9b596ebffd55ceef440081429176658",
+      "bytes": 100373,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/8e31f67b73c5715ecc136223.m4a": {
+      "source": "assets/music/fallback/8e31f67b73c5715ecc136223.ogg",
+      "sourceSha256": "8e31f67b73c5715ecc1362231e1d252c809f72f835f83cf37337d9bddbe71a32",
+      "sha256": "f5e6426cb767e70bc519c2aafbaaca063d7c05b2d61a19dc2467034289e55337",
+      "bytes": 56914,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/8ef8ca16c3cf4450236e89b9.m4a": {
+      "source": "assets/music/fallback/8ef8ca16c3cf4450236e89b9.ogg",
+      "sourceSha256": "8ef8ca16c3cf4450236e89b957ed87269295713325218971eaa080180fe59f09",
+      "sha256": "f013e1240cb0a689b6d334dfdbb899b8401e485a707aab153ad28498b6d15da0",
+      "bytes": 40254,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/901201b7d0df670844638e24.m4a": {
+      "source": "assets/music/fallback/901201b7d0df670844638e24.ogg",
+      "sourceSha256": "901201b7d0df670844638e24feb1f21388ee57bd149a7cee4b4aff671cfd85a5",
+      "sha256": "1f8c357000907bca1b353732e9499333211566232536ca4b29d4d97d6da43b6e",
+      "bytes": 83622,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/9224601d2ce974af5bc62376.m4a": {
+      "source": "assets/music/fallback/9224601d2ce974af5bc62376.ogg",
+      "sourceSha256": "9224601d2ce974af5bc62376340ec076d100c206f223342f197825739a2626cb",
+      "sha256": "35d6e8dfe3e92e57ab6adea3f60bd027cf87f4d7f76d958db6bbcfb5b706c5f7",
+      "bytes": 86500,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/92fea0c9480662f781252824.m4a": {
+      "source": "assets/music/fallback/92fea0c9480662f781252824.ogg",
+      "sourceSha256": "92fea0c9480662f781252824fe8a2b79d3008010181ea9e5ba1a7e694ec42e54",
+      "sha256": "a6f7b57ef8a3cc6f4f19c4cf68be1e018e654155347c2ecfe51fa27549b84ccc",
+      "bytes": 75855,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/945677bd47213c0dc6e3ada4.m4a": {
+      "source": "assets/music/fallback/945677bd47213c0dc6e3ada4.ogg",
+      "sourceSha256": "945677bd47213c0dc6e3ada44df2ba2d30dcbf875bf87ad2dd269073d0a1624e",
+      "sha256": "d68619a8175772d87ed6ab9983a4371e2b29168692dd594c3698ac964c5c9761",
+      "bytes": 65113,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/9486e8cb5ce3c821b6751edc.m4a": {
+      "source": "assets/music/fallback/9486e8cb5ce3c821b6751edc.ogg",
+      "sourceSha256": "9486e8cb5ce3c821b6751edc11dc6c2d5cf361888bb08b3750e20e6c112018b4",
+      "sha256": "6d0ad9478561df2e1f72534a133f963fa93bf67a7d4d79016bb014a512bf6452",
+      "bytes": 69105,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/95f13a5b851f3e4c2f7f1283.m4a": {
+      "source": "assets/music/fallback/95f13a5b851f3e4c2f7f1283.ogg",
+      "sourceSha256": "95f13a5b851f3e4c2f7f128392001a42794418afb041423ba8f343584c2546a4",
+      "sha256": "fcb26d152f8acacb2b79117511299c85664b89c94b52aa87a5f14871750c3a8b",
+      "bytes": 64155,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/97c01ecc79934f0acb93492e.m4a": {
+      "source": "assets/music/fallback/97c01ecc79934f0acb93492e.ogg",
+      "sourceSha256": "97c01ecc79934f0acb93492ef149d49af75837e0dfc95b99209ebed90fa91a6e",
+      "sha256": "4f83780f768e9cf9abfa8a89e7f5bd9aee02db596195389caa5834054a4dc262",
+      "bytes": 64681,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/98489d969bd58ad277c7b081.m4a": {
+      "source": "assets/music/fallback/98489d969bd58ad277c7b081.ogg",
+      "sourceSha256": "98489d969bd58ad277c7b08145d6bb0e489419ae82f65f9f51121cd0e92da113",
+      "sha256": "4fd6c39b574acf0b11eededf1aeff03e28c4ff50e59526d957eaabbd9b32dffc",
+      "bytes": 48416,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/9d51ee490b69fc5893e83465.m4a": {
+      "source": "assets/music/fallback/9d51ee490b69fc5893e83465.ogg",
+      "sourceSha256": "9d51ee490b69fc5893e83465a3f7b394d083ae0367239a89177f23578a65b4a3",
+      "sha256": "bfb1501b42e44e68ca0f8dd5879218597e426b2d5fdb5e6121c463d26a77c312",
+      "bytes": 48204,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/9db5a4fd665e213d2264a78a.m4a": {
+      "source": "assets/music/fallback/9db5a4fd665e213d2264a78a.ogg",
+      "sourceSha256": "9db5a4fd665e213d2264a78a1d94c9e0a56b538387a50a3c2990e0c66d5b2782",
+      "sha256": "290a8ee63696a1b7fdffe9c2277d5fcb8c8196d88e2e60a90b73a1d4800addf8",
+      "bytes": 45613,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/9f13d2afd460c5f6761d1f25.m4a": {
+      "source": "assets/music/fallback/9f13d2afd460c5f6761d1f25.ogg",
+      "sourceSha256": "9f13d2afd460c5f6761d1f25d4e03aeecab4660dfe5e0c2f13969ca4b1c920e0",
+      "sha256": "45744809a828a1b1feb274c26fdede8255f8eb4dc524e5c4da5f74430e3d32c8",
+      "bytes": 70597,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/a044fb5b0a0a8ad03ceaad50.m4a": {
+      "source": "assets/music/fallback/a044fb5b0a0a8ad03ceaad50.ogg",
+      "sourceSha256": "a044fb5b0a0a8ad03ceaad50fd886be6cb5dc6d12d93f715355563e099e5fbe5",
+      "sha256": "838e8f20e6fb1ea97b0b86ee8839e730e7e15c5bdac40a725b59397ddfd5bfd7",
+      "bytes": 114460,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/a1f7d81115e3d0f4cacbfd0b.m4a": {
+      "source": "assets/music/fallback/a1f7d81115e3d0f4cacbfd0b.ogg",
+      "sourceSha256": "a1f7d81115e3d0f4cacbfd0b61155ac758108cd1aaab7c6a47756a2a30b8684b",
+      "sha256": "fd077a963b27377cf21f4ecff5c8694208a03d11258d7155401989864d4fd10c",
+      "bytes": 70621,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/a42d862cd0aff8a7f934520d.m4a": {
+      "source": "assets/music/fallback/a42d862cd0aff8a7f934520d.ogg",
+      "sourceSha256": "a42d862cd0aff8a7f934520d30177344f5ed5af9abe358ae56adc774d502704e",
+      "sha256": "498d45862884493f8dbc9944eb938fbd62bc5ec90244f25f08f7f75433578d6f",
+      "bytes": 70905,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/a492b63ece06fc1559c05671.m4a": {
+      "source": "assets/music/fallback/a492b63ece06fc1559c05671.ogg",
+      "sourceSha256": "a492b63ece06fc1559c05671965feb37290bb2df686047cdc1d3d8dc9d017101",
+      "sha256": "ce08c2a1d32779c8a193e49319adef15e00980c1729d8d9966d97ce4500ef947",
+      "bytes": 48861,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/a554921f8735ee048b71839a.m4a": {
+      "source": "assets/music/fallback/a554921f8735ee048b71839a.ogg",
+      "sourceSha256": "a554921f8735ee048b71839a23b909d8e0d286ac154ab8efb43d04aa8913e4f6",
+      "sha256": "aa44b49c7b90da0522132c3489eba2171f33949740cdfc14fa217aba8073bcb0",
+      "bytes": 114812,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/a62e414974083943dfc7df8c.m4a": {
+      "source": "assets/music/fallback/a62e414974083943dfc7df8c.ogg",
+      "sourceSha256": "a62e414974083943dfc7df8c4b2d4311cda1a0c756de531247f347531001ae6c",
+      "sha256": "d4aeba35806a2de17d453b70045bd3479ae1fffb340e21c1b3a3c9f029406f6e",
+      "bytes": 86905,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/a728f6441a978ebda18adeb8.m4a": {
+      "source": "assets/music/fallback/a728f6441a978ebda18adeb8.ogg",
+      "sourceSha256": "a728f6441a978ebda18adeb8a1af42e6a8e76625da0053fedebb51eae9147c81",
+      "sha256": "3d47401c11d90dd8e72d969eb697aef9405276fe318d8731e6931990090990dd",
+      "bytes": 66402,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/a7ce80a566e6de84f48e4810.m4a": {
+      "source": "assets/music/fallback/a7ce80a566e6de84f48e4810.ogg",
+      "sourceSha256": "a7ce80a566e6de84f48e48101c663b2560adbf18be54151f4c35980675a378e4",
+      "sha256": "593ceef187c9a0289224c4e09e8cf5f2fa1d8b539061b399324668dc9125dc87",
+      "bytes": 66891,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/aa5d4b73c848ad7f58c29314.m4a": {
+      "source": "assets/music/fallback/aa5d4b73c848ad7f58c29314.ogg",
+      "sourceSha256": "aa5d4b73c848ad7f58c29314b3bb014d61e06fe7351406036e543443dffe2ea5",
+      "sha256": "49a993c3d37ba4daad6fbbe19116411dac26851e5169b1f52cb6b99685510fa5",
+      "bytes": 48402,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/ab0ee474d1254fc30216d47c.m4a": {
+      "source": "assets/music/fallback/ab0ee474d1254fc30216d47c.ogg",
+      "sourceSha256": "ab0ee474d1254fc30216d47ce5be8b73b1ab65974ebd2a863e022324685e270b",
+      "sha256": "34553af7c010a5b9f4437b74ded2294334b60c9066491391f452b1cbac9c41ee",
+      "bytes": 100193,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/ac9474aaf3de7b4e5c25ed8a.m4a": {
+      "source": "assets/music/fallback/ac9474aaf3de7b4e5c25ed8a.ogg",
+      "sourceSha256": "ac9474aaf3de7b4e5c25ed8a7447a00135c1dd1ffaede92dde13d87f99662b47",
+      "sha256": "0f51d09257e3d878b85e793a34dd06dbfcc4dc23af89380c352916ff1aa41551",
+      "bytes": 64484,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/aecfebba171dc27a52194378.m4a": {
+      "source": "assets/music/fallback/aecfebba171dc27a52194378.ogg",
+      "sourceSha256": "aecfebba171dc27a52194378d5b6732037e344b92daaf05caa87a1e9bc2258e4",
+      "sha256": "15c6d7e2c37315acbb3864cc8dd1729a91542c58b20249b9c7ac0283e8a2c57f",
+      "bytes": 58675,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/af28143d34b7ce70e7f40a6e.m4a": {
+      "source": "assets/music/fallback/af28143d34b7ce70e7f40a6e.ogg",
+      "sourceSha256": "af28143d34b7ce70e7f40a6ef52648983968f83e4e7aa03112c72e7cb46d367c",
+      "sha256": "918eaf1a3a0d57c4cc9d6fca169cb1e623c46719c7eae553cbfbdb1583093ac8",
+      "bytes": 50842,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/b088cfafc3932b1c9546e532.m4a": {
+      "source": "assets/music/fallback/b088cfafc3932b1c9546e532.ogg",
+      "sourceSha256": "b088cfafc3932b1c9546e5321c1d1b0cb8434b1fe57d0653d08e5756eda6e1c2",
+      "sha256": "fa0b7dbdde3e3a0b2168e01e43babad1a6d18a76e0c2137fb781b216abeecead",
+      "bytes": 113283,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/b1737b0582c75a52e78b3d7b.m4a": {
+      "source": "assets/music/fallback/b1737b0582c75a52e78b3d7b.ogg",
+      "sourceSha256": "b1737b0582c75a52e78b3d7bc14a9dabd6919c1ae9711736961d6c283badaa15",
+      "sha256": "9559fda77e9104ab1614ad59a90e06354b926d7a61d6a17b1cadbef6830e4aeb",
+      "bytes": 45756,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/b188f3d1b52569eccaf39362.m4a": {
+      "source": "assets/music/fallback/b188f3d1b52569eccaf39362.ogg",
+      "sourceSha256": "b188f3d1b52569eccaf39362eed64f1c5c674c4ecd84d5cf441f3aca6bd9e49b",
+      "sha256": "59424aeb0d1051fdab8af178a99253ed4b98f8f79764dfd608045120be5e4095",
+      "bytes": 88586,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/b2bc622331d29d0a5fda8d02.m4a": {
+      "source": "assets/music/fallback/b2bc622331d29d0a5fda8d02.ogg",
+      "sourceSha256": "b2bc622331d29d0a5fda8d02f0b848754be4258b2f44874a7772ae600c0c230b",
+      "sha256": "91b92259215d8ae3a6e776bc9a80699fa13f9c95ad701c8f37612df94bba6890",
+      "bytes": 58740,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/b4bfcca9a0c3db79f390fee6.m4a": {
+      "source": "assets/music/fallback/b4bfcca9a0c3db79f390fee6.ogg",
+      "sourceSha256": "b4bfcca9a0c3db79f390fee623da57a0fda63be3d5438dfffcd39f44ad15ce75",
+      "sha256": "6c009e0fb8faf0c6fe3258db5fa13a91eaad3958b4b1e98eb36f9a785828b8fc",
+      "bytes": 69513,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/b4e0def2b5020d4817f43fbb.m4a": {
+      "source": "assets/music/fallback/b4e0def2b5020d4817f43fbb.ogg",
+      "sourceSha256": "b4e0def2b5020d4817f43fbb6edf6748e621ff5eeaffd2588e7687c604380b5e",
+      "sha256": "98c5c4d4e1222885fd890919650b6c767b16c5eb3502e90c5739cacff06b6783",
+      "bytes": 131229,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/b60934024ccc71411ba6d5a8.m4a": {
+      "source": "assets/music/fallback/b60934024ccc71411ba6d5a8.ogg",
+      "sourceSha256": "b60934024ccc71411ba6d5a830443a4ddfdf2375a5f4ce4a2b91bef67f6670ea",
+      "sha256": "c1118e73788d3f47504d687f590071740ae19dacf4a712ae8a9556a772965b7a",
+      "bytes": 64681,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/b6fb5d60c35084e5bf57aa3b.m4a": {
+      "source": "assets/music/fallback/b6fb5d60c35084e5bf57aa3b.ogg",
+      "sourceSha256": "b6fb5d60c35084e5bf57aa3b7fbb3b7544e330d1cbf601cd7fe70cb8dfc80b51",
+      "sha256": "17bc6f568b098af1aea0bbd1f54712b6f97ea9e151e0a9e5a2317cae2f814342",
+      "bytes": 86701,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/b72ae677c0d2856d88963fd2.m4a": {
+      "source": "assets/music/fallback/b72ae677c0d2856d88963fd2.ogg",
+      "sourceSha256": "b72ae677c0d2856d88963fd25505bb80ab2a92fd1d3526baa2e19e0129c27cbe",
+      "sha256": "e44c10f1471400ae1a9ed23e031ffb40b8feb411f0a15dba72ecb96b7d7375e0",
+      "bytes": 59455,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/b9b1cbe9929dcc55f9ebc436.m4a": {
+      "source": "assets/music/fallback/b9b1cbe9929dcc55f9ebc436.ogg",
+      "sourceSha256": "b9b1cbe9929dcc55f9ebc436c93a4a1bd7f35210de777c4e556c468fe10f0af4",
+      "sha256": "9cfdee48a7d13b6ca870b944b3710d212822f6d374fa41c3359495883a1c7ea6",
+      "bytes": 99595,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/ba4d08e977952db784645359.m4a": {
+      "source": "assets/music/fallback/ba4d08e977952db784645359.ogg",
+      "sourceSha256": "ba4d08e977952db784645359b011fa4686d7f6a7af053dad1ba16a67146ba8b3",
+      "sha256": "744bc572517649bf873f9cb19d825e80ebd01e9d3f1440f180d52dcdf26ebc45",
+      "bytes": 105160,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/ba931734b3718243f994d537.m4a": {
+      "source": "assets/music/fallback/ba931734b3718243f994d537.ogg",
+      "sourceSha256": "ba931734b3718243f994d53706232b678c3edd0fe27dc8c31d5ea909d5a9e028",
+      "sha256": "5e10e9a9514047002d37a9609ad5708b9247d1f75e6cd5d2fc17c2be50da49e6",
+      "bytes": 54878,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/baa48454ef813770ca152d49.m4a": {
+      "source": "assets/music/fallback/baa48454ef813770ca152d49.ogg",
+      "sourceSha256": "baa48454ef813770ca152d496d7bb1543390b97c1f48fe274f84f0afa3df55c5",
+      "sha256": "b3e85b268291b6f7b41fe0f02a1b021e81c55dd9b3636fc572aaaf0ce96511ab",
+      "bytes": 46703,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/bb0a4a108a15bf3cf9fe76cc.m4a": {
+      "source": "assets/music/fallback/bb0a4a108a15bf3cf9fe76cc.ogg",
+      "sourceSha256": "bb0a4a108a15bf3cf9fe76ccb2e7b0bb54b59867d9f3b347f7690418b5b0fc14",
+      "sha256": "8e8794596294c7f976d8d04a171788846ca5f2e789fcc19ae17285f4c8d03cdf",
+      "bytes": 69368,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/bb37ab581d63e99d525824fa.m4a": {
+      "source": "assets/music/fallback/bb37ab581d63e99d525824fa.ogg",
+      "sourceSha256": "bb37ab581d63e99d525824fa7b5aaa340c6d70b7bd637c879d247562b66a5d56",
+      "sha256": "b7d6987d6f02d296ff34beabb8c24c11977417b5f78b799949208c418eb89ef7",
+      "bytes": 94569,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/bc6e64ad6bff11d8499e8f74.m4a": {
+      "source": "assets/music/fallback/bc6e64ad6bff11d8499e8f74.ogg",
+      "sourceSha256": "bc6e64ad6bff11d8499e8f74ddc0a677fe6fa99ee3e579e0fb02e1fa66885398",
+      "sha256": "4d941321f2e7633d878389a7363a0aba1da2b7eea4da31f112f79731d72b9834",
+      "bytes": 99934,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/bd2e13c3d4911db686dce284.m4a": {
+      "source": "assets/music/fallback/bd2e13c3d4911db686dce284.ogg",
+      "sourceSha256": "bd2e13c3d4911db686dce2842137ec89165e4319931f7170840ef314614f0b02",
+      "sha256": "6e216d65bb6e1386c156bbceb5940b9cf374b5908c1d056c4ad8564a291ba95a",
+      "bytes": 71470,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/bd5c5eb4b76c51eb53865e0c.m4a": {
+      "source": "assets/music/fallback/bd5c5eb4b76c51eb53865e0c.ogg",
+      "sourceSha256": "bd5c5eb4b76c51eb53865e0c22ae98f01249f53c11e0fc5759356bd328a98dac",
+      "sha256": "42316dc6d75e2735a07e87065bd4201b052f71fa4a2c4dbd35768894570c8ee4",
+      "bytes": 77088,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/bdae9cf450a8af58d2252d68.m4a": {
+      "source": "assets/music/fallback/bdae9cf450a8af58d2252d68.ogg",
+      "sourceSha256": "bdae9cf450a8af58d2252d68999d1bce394fb5097aad8cd7046c51e3b2f25f76",
+      "sha256": "dd381151db7f5140f4139ff38e015b888aa678f7bbc0883cbe19e93e9870b662",
+      "bytes": 131004,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/be39ceb59fbf3b0dc0e88b73.m4a": {
+      "source": "assets/music/fallback/be39ceb59fbf3b0dc0e88b73.ogg",
+      "sourceSha256": "be39ceb59fbf3b0dc0e88b735d8c278183e5ce936d124db22b79b4e5b57579f8",
+      "sha256": "acde569296a4a34fbb65cd2457543dff7199dfebc024b87fe3794743dfb90a44",
+      "bytes": 42121,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/be8c2f60f2647b2c235fd467.m4a": {
+      "source": "assets/music/fallback/be8c2f60f2647b2c235fd467.ogg",
+      "sourceSha256": "be8c2f60f2647b2c235fd4673e8586c6f2b15a93c5dc04d979159674cc2c713d",
+      "sha256": "d2fd958f7c42a6d86d7254d141a25eede71434a615544ddf33178f501ece533b",
+      "bytes": 94760,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/bfae7731e45e07e4b3660f8a.m4a": {
+      "source": "assets/music/fallback/bfae7731e45e07e4b3660f8a.ogg",
+      "sourceSha256": "bfae7731e45e07e4b3660f8a5f1491e9e907cf65b8370472f1b76f0eaf36b322",
+      "sha256": "205d0f4e7724e0b7113858d9c8487ea13ca84aa7ac528f7795a94f21c9e3fc96",
+      "bytes": 58777,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/c012893626a4f965f6ba7bbc.m4a": {
+      "source": "assets/music/fallback/c012893626a4f965f6ba7bbc.ogg",
+      "sourceSha256": "c012893626a4f965f6ba7bbc3e7a6c53196e0cd1f8592858cd38385a4b8c1bdd",
+      "sha256": "dcb22e783f9187001f529f7380ad7700ed317611f95b541f404b9f62595e07a9",
+      "bytes": 64709,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/c141b1fbedae85b82047dc29.m4a": {
+      "source": "assets/music/fallback/c141b1fbedae85b82047dc29.ogg",
+      "sourceSha256": "c141b1fbedae85b82047dc29ba36e8efcf8fa1984c534dad968d92801695cf4e",
+      "sha256": "824fedc0eb2ded85542b5bd7817834f72bcf5e54d24e2398d231caf4d104029a",
+      "bytes": 55027,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/c16eb6e861ab46cd8493cdf0.m4a": {
+      "source": "assets/music/fallback/c16eb6e861ab46cd8493cdf0.ogg",
+      "sourceSha256": "c16eb6e861ab46cd8493cdf0fb027fd09a2eec0b7dcd619322db91b130a0ba70",
+      "sha256": "a7e1786c53411d5297fbb70f66eefd9b69ba0177b64a1a0e4e35b844a5e4012c",
+      "bytes": 58790,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/c1b6c7da05c7fddec34873c7.m4a": {
+      "source": "assets/music/fallback/c1b6c7da05c7fddec34873c7.ogg",
+      "sourceSha256": "c1b6c7da05c7fddec34873c7cafde71c5fe55f94df5a3c4d7e667776198091b7",
+      "sha256": "a1b7f7406e77f5a7f56855c91bb1270bcefc6bcceb9c73672be4e5c1fd8db784",
+      "bytes": 78623,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/c28f919609b5719b53581e7b.m4a": {
+      "source": "assets/music/fallback/c28f919609b5719b53581e7b.ogg",
+      "sourceSha256": "c28f919609b5719b53581e7b087ac015bc05ebb882e8c27154b3a7e3b3b15df1",
+      "sha256": "225f55b387aba3c213eb36cccece1004b78fecf328bfb51be51d5c258ed51643",
+      "bytes": 42561,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/c80e9c93016598ae9d9e7f90.m4a": {
+      "source": "assets/music/fallback/c80e9c93016598ae9d9e7f90.ogg",
+      "sourceSha256": "c80e9c93016598ae9d9e7f9001245723a5b7c4a3d0401bbf95436bd4f0a9369b",
+      "sha256": "75143cebec51b9f9864b10f85d27ae56dbf26a01145ba8c259131326b31532b2",
+      "bytes": 71287,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/c843036512cc07b2b6686cc9.m4a": {
+      "source": "assets/music/fallback/c843036512cc07b2b6686cc9.ogg",
+      "sourceSha256": "c843036512cc07b2b6686cc91354448c9a9f83f56a29e21571a76f6e382b66f1",
+      "sha256": "a7669cf38afb47f35cda4bf0592aea72637227b8a82f121ba3db1135f9929c76",
+      "bytes": 69462,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/ca06a86b9c26035371a2695c.m4a": {
+      "source": "assets/music/fallback/ca06a86b9c26035371a2695c.ogg",
+      "sourceSha256": "ca06a86b9c26035371a2695ce7f31f070ade7b004ba4b70e096d6246fd43a9da",
+      "sha256": "61702b4ffe6d63184024fcb7677c2420c1da112a923b5610bf9a87f4d69f0b38",
+      "bytes": 42417,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/ca55da30981ac3f83acd22e2.m4a": {
+      "source": "assets/music/fallback/ca55da30981ac3f83acd22e2.ogg",
+      "sourceSha256": "ca55da30981ac3f83acd22e2daf1c9523066d5bef656e8aca2c3a2b1739ec3e8",
+      "sha256": "9b30ca48696e13a63402d5fd54ed0ebd226dea67c0abf6130900233e5ff13ad7",
+      "bytes": 72231,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/cb56f00b39b834785dfb1e03.m4a": {
+      "source": "assets/music/fallback/cb56f00b39b834785dfb1e03.ogg",
+      "sourceSha256": "cb56f00b39b834785dfb1e03f33e719b59a81937ddeb694ef242003e7d4526f5",
+      "sha256": "01bf9bb3430ce2f32c455c8aae634e4a93736105f3bed36e2688998d9cf1f133",
+      "bytes": 38005,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/cc93907fb6124b9c384d9180.m4a": {
+      "source": "assets/music/fallback/cc93907fb6124b9c384d9180.ogg",
+      "sourceSha256": "cc93907fb6124b9c384d9180bf95f9160df29bc73c9ff693535d48102f912dc4",
+      "sha256": "acee56004e5e27520220d6201ea0f279579165977714922b1cb89d6a5a5c087a",
+      "bytes": 67208,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/cdc3578e9ad491465598e1d5.m4a": {
+      "source": "assets/music/fallback/cdc3578e9ad491465598e1d5.ogg",
+      "sourceSha256": "cdc3578e9ad491465598e1d52d27975b03bec289025c88f5e42877d255602e3c",
+      "sha256": "7c98b26539e621da73f98408edbc890d90562d5716643404290a8cae843655ce",
+      "bytes": 65883,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/ce132996b5b509871d274c66.m4a": {
+      "source": "assets/music/fallback/ce132996b5b509871d274c66.ogg",
+      "sourceSha256": "ce132996b5b509871d274c66cac5b52a0fe54efc99c8662fcb1fbe63cb86de36",
+      "sha256": "2ff283373007dcdf650cdc36c116b51f94c8cb80ad1c870246104199690339a0",
+      "bytes": 57661,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/d046888c3b86a6634b289497.m4a": {
+      "source": "assets/music/fallback/d046888c3b86a6634b289497.ogg",
+      "sourceSha256": "d046888c3b86a6634b289497283889cf1c7e7cc6399fc7940a5ca302578622ea",
+      "sha256": "14498a31c976c81d94af38c06cd7d1c185bec685489fee1e943ef9982e57a60a",
+      "bytes": 78888,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/d0c3c322b3a2cd9eec14fa4d.m4a": {
+      "source": "assets/music/fallback/d0c3c322b3a2cd9eec14fa4d.ogg",
+      "sourceSha256": "d0c3c322b3a2cd9eec14fa4d03b64a086ce33277f83f30f3d44075541ba592ac",
+      "sha256": "cd5fd791b6a837e7191506a920dc34eadd31de7d5e077e2b0114e50761a23a44",
+      "bytes": 51849,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/d1fb1da5ab6087b9d2dcbeaa.m4a": {
+      "source": "assets/music/fallback/d1fb1da5ab6087b9d2dcbeaa.ogg",
+      "sourceSha256": "d1fb1da5ab6087b9d2dcbeaafdb80433cc521718b693e0c87295feafe1ce1232",
+      "sha256": "935cc4ba21b8d784c995dba2944c0c0c746eec973b1e473216858e3f28e63159",
+      "bytes": 98739,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/d2cd0078ec814eee4454d96c.m4a": {
+      "source": "assets/music/fallback/d2cd0078ec814eee4454d96c.ogg",
+      "sourceSha256": "d2cd0078ec814eee4454d96c763f427e7f5a33e0e0c75505f01a749997630f4a",
+      "sha256": "ea8a982ef2928c4349378c68435f02da6c588e0e42cccb7a9cb1604c85fc5ee3",
+      "bytes": 93659,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/d4a50d99a771c0fd6de298b4.m4a": {
+      "source": "assets/music/fallback/d4a50d99a771c0fd6de298b4.ogg",
+      "sourceSha256": "d4a50d99a771c0fd6de298b4a9f40c096887ba1d649f4532bf0e2df64fd4e8e9",
+      "sha256": "711d3de64beeb8d97ddcb9dd0e17c48aae7259e7adcb12e189861cbce20d1686",
+      "bytes": 69616,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/d4a8debd65527b1da69c4b94.m4a": {
+      "source": "assets/music/fallback/d4a8debd65527b1da69c4b94.ogg",
+      "sourceSha256": "d4a8debd65527b1da69c4b946426f3beb9216432c3afed4dc607bf6751e43735",
+      "sha256": "fd1397ee3b5039f92ba74aad108c1a81ac8fb5b69b5c490e3ab0bcf57b9f02ac",
+      "bytes": 48609,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/d4c0656a76ba0373438c1a4d.m4a": {
+      "source": "assets/music/fallback/d4c0656a76ba0373438c1a4d.ogg",
+      "sourceSha256": "d4c0656a76ba0373438c1a4d735fd042226866e16b8018a47622cc6cc47e0c23",
+      "sha256": "8fd227ee87923f04acc1f2b07c75fb4c9d5bd88b07809349ecb2170cd0568af4",
+      "bytes": 83484,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/d5143807f51c0bf768920ae6.m4a": {
+      "source": "assets/music/fallback/d5143807f51c0bf768920ae6.ogg",
+      "sourceSha256": "d5143807f51c0bf768920ae6ca1367848571310026856d74ce367fb0de0996dd",
+      "sha256": "90559029327465022267541f8cb8f9982befb97fcb3a04da7e18b09789230418",
+      "bytes": 43512,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/d548889dc1c5fe709c1be379.m4a": {
+      "source": "assets/music/fallback/d548889dc1c5fe709c1be379.ogg",
+      "sourceSha256": "d548889dc1c5fe709c1be379135561aa982d256715655db852b0db0c5daa77f8",
+      "sha256": "c19c7b9ec0a49fcf7a6aa56796924bd43498debe1034fe9c30b7fef83640e60b",
+      "bytes": 73442,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/d72f139edb15dc65fe1b07eb.m4a": {
+      "source": "assets/music/fallback/d72f139edb15dc65fe1b07eb.ogg",
+      "sourceSha256": "d72f139edb15dc65fe1b07eb44001e48dd76644372b3e9a64190cbf9157ce1f1",
+      "sha256": "746e15aebfed7652ded7b14530743594acdb66e396f906d2905c4b5568d354a6",
+      "bytes": 69456,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/d92332aa25feeeeb36495864.m4a": {
+      "source": "assets/music/fallback/d92332aa25feeeeb36495864.ogg",
+      "sourceSha256": "d92332aa25feeeeb36495864752719f0385d2acb106c04000b74131026d58c76",
+      "sha256": "f51aa0efdc568319b4050a3164aaa8521f17ba5397fa4794a90feec3707e4be5",
+      "bytes": 49344,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/d94d8d745a797eeebfad4e02.m4a": {
+      "source": "assets/music/fallback/d94d8d745a797eeebfad4e02.ogg",
+      "sourceSha256": "d94d8d745a797eeebfad4e0265315cfa97337e2667c8c8c1e69708aeab2f8f58",
+      "sha256": "f35abd0e122b5045e070af8b00953e55329d016bcf2562dadd150dbe6b5e1f94",
+      "bytes": 48884,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/da416bbf5cb6ecee08eba1c5.m4a": {
+      "source": "assets/music/fallback/da416bbf5cb6ecee08eba1c5.ogg",
+      "sourceSha256": "da416bbf5cb6ecee08eba1c54a7dbbdf0343ace1ae8a973f47988908837a0f16",
+      "sha256": "5afcb83af9a2be291b6f2d96e1be282e53e8a5ad193aa3736be0d32c99fc046a",
+      "bytes": 73515,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/daf0b3de516399b01b11dbe2.m4a": {
+      "source": "assets/music/fallback/daf0b3de516399b01b11dbe2.ogg",
+      "sourceSha256": "daf0b3de516399b01b11dbe25ee04c519436b2089f1c432c74343ebe1ffb9b56",
+      "sha256": "760bba6531a6fd88270746ec0e5efe0e118730942849d4e3115fbfc56005cd0d",
+      "bytes": 64132,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/dc1a86239194b9155a1b2fad.m4a": {
+      "source": "assets/music/fallback/dc1a86239194b9155a1b2fad.ogg",
+      "sourceSha256": "dc1a86239194b9155a1b2fad7cb90d527ec083ca8d23fa7c98463c58520c9da1",
+      "sha256": "2f5b8ceb1f3f84d8cd1aae8f9d4f70114ef5570b4cf79dff62e5ff3aa92976d9",
+      "bytes": 48138,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/dc81af2705fce62637dde69c.m4a": {
+      "source": "assets/music/fallback/dc81af2705fce62637dde69c.ogg",
+      "sourceSha256": "dc81af2705fce62637dde69ccba762016f4a87b1f133b74025e1b000f12b79b7",
+      "sha256": "60f318cee68b751e2cb8ba799d883c62dbb6b580e4f0167fc9675863a93aeebf",
+      "bytes": 48327,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/dd7693ae4029c7823cea8dfc.m4a": {
+      "source": "assets/music/fallback/dd7693ae4029c7823cea8dfc.ogg",
+      "sourceSha256": "dd7693ae4029c7823cea8dfc9967c0b471b1d97d97c098a1fb0417a5caf163ee",
+      "sha256": "d916842659d91a94011e15b680eb655a58b84cfbbdfa9dc5baa2058a1f71a7d1",
+      "bytes": 55856,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/dd7c43e98e9855768f7b958f.m4a": {
+      "source": "assets/music/fallback/dd7c43e98e9855768f7b958f.ogg",
+      "sourceSha256": "dd7c43e98e9855768f7b958fb610e1b76b2b7862a62e18662ed0de71dfcca81f",
+      "sha256": "c23ec911b9d1fc085025b3e5446b0a5e3768f09300bf55ed772f51b6804bfe3d",
+      "bytes": 104678,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/deb7fc7b9ea9a02a74ddbcf6.m4a": {
+      "source": "assets/music/fallback/deb7fc7b9ea9a02a74ddbcf6.ogg",
+      "sourceSha256": "deb7fc7b9ea9a02a74ddbcf674798f94fb032da45256f4cfc1373219900d6e0c",
+      "sha256": "20c1425ac333386bfdd1bb0f4f8ca57795f1124ad2dfc753ac69fd5316685564",
+      "bytes": 66449,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/df9be8098b0c685ae6298200.m4a": {
+      "source": "assets/music/fallback/df9be8098b0c685ae6298200.ogg",
+      "sourceSha256": "df9be8098b0c685ae62982008c5438d6bfe4923bfdc29808c3f076fb9e0313ac",
+      "sha256": "7ebf81bb5eef5fd9b7049f872ba10a629cd82b1d87167feafea5cd45cd9a478c",
+      "bytes": 69539,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/dff76502f65de62f9e102857.m4a": {
+      "source": "assets/music/fallback/dff76502f65de62f9e102857.ogg",
+      "sourceSha256": "dff76502f65de62f9e102857bb0fd90ff437150709c1236661b392580d90093c",
+      "sha256": "e8e7116f0631edab907dada1f919caa3cf54c084845ecd5085a3b5a77dcf10e5",
+      "bytes": 46054,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/dffb4c5282d89e9cba296957.m4a": {
+      "source": "assets/music/fallback/dffb4c5282d89e9cba296957.ogg",
+      "sourceSha256": "dffb4c5282d89e9cba296957f6b6b068484554debcb366720f750fb3abe0a23c",
+      "sha256": "01d5a461aaf282cb5a9e40e00390e2a4ea0f8da8523374f14b2501df2b651fd5",
+      "bytes": 75197,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/e0a581604de8f2ad569b1756.m4a": {
+      "source": "assets/music/fallback/e0a581604de8f2ad569b1756.ogg",
+      "sourceSha256": "e0a581604de8f2ad569b1756039ba1239d8167cee2155c62696a07d757814be2",
+      "sha256": "875edc73d8fc706ceeab22b6fa84995de776cc40512a2f2234577f38f28d23d7",
+      "bytes": 55541,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/e3096c61ba279abcf7d95816.m4a": {
+      "source": "assets/music/fallback/e3096c61ba279abcf7d95816.ogg",
+      "sourceSha256": "e3096c61ba279abcf7d95816fbc8812a75e2bb727f1227cbec7bec676df17562",
+      "sha256": "f4f6c3a1b90905adc2af2c06fa33149d102684ab3d6a7a6145ede2c7c210a1b0",
+      "bytes": 100487,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/e645b36b861106dca0475fff.m4a": {
+      "source": "assets/music/fallback/e645b36b861106dca0475fff.ogg",
+      "sourceSha256": "e645b36b861106dca0475fffa1c11804e310448242943b96b704b33c0a2b1fc9",
+      "sha256": "a5ca98f9ff8f36f842f461d40706cf052a97c54e17a0840515236113ceceb300",
+      "bytes": 105960,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/eb75181c5a9cf8bda6d7aeb3.m4a": {
+      "source": "assets/music/fallback/eb75181c5a9cf8bda6d7aeb3.ogg",
+      "sourceSha256": "eb75181c5a9cf8bda6d7aeb3eaa12c10b28704b1e1f52f5c6c94e0f2be5716b7",
+      "sha256": "27681bad32913d93bc6d60a6da379c1a2cdf193ff1a797cc6ffa4b8c4ee976dd",
+      "bytes": 76937,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/eb7dc2952349690924cae4c6.m4a": {
+      "source": "assets/music/fallback/eb7dc2952349690924cae4c6.ogg",
+      "sourceSha256": "eb7dc2952349690924cae4c67652101791b1ad75c44dc2fcc03a6e7fbf47da06",
+      "sha256": "0db36cecc8a2a43fd5a7558715fffa1258ccb65f29ca88df6b4aaceecf31d720",
+      "bytes": 100974,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/ebd9af627473b4b6320cda59.m4a": {
+      "source": "assets/music/fallback/ebd9af627473b4b6320cda59.ogg",
+      "sourceSha256": "ebd9af627473b4b6320cda5940ee828409cc4007938a4fc546bcf3e9a7dc791d",
+      "sha256": "5f69054bd35c26c1832df39fa7aeb3aefebe61088926f1c36ceed290b9617660",
+      "bytes": 56330,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/ec0bbe35bb8ca70505bb537b.m4a": {
+      "source": "assets/music/fallback/ec0bbe35bb8ca70505bb537b.wav",
+      "sourceSha256": "ec0bbe35bb8ca70505bb537b6b522626face4e82ed7372f4074708dda98e939a",
+      "sha256": "e978678f03f988baae2302bd08ef6fa441ad0fc74e8659d3c8dbeaabd0b605e5",
+      "bytes": 47513,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/f151760579cd783035886954.m4a": {
+      "source": "assets/music/fallback/f151760579cd783035886954.ogg",
+      "sourceSha256": "f151760579cd783035886954dc1bb5bdbe21153f8449772ad63c989d76ea1db3",
+      "sha256": "3d5b40873d1a1a0e34be2cd9713c613ad494253e9c89dc0730da42c554353175",
+      "bytes": 65541,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/f178b57cc2cfc4abb393f068.m4a": {
+      "source": "assets/music/fallback/f178b57cc2cfc4abb393f068.ogg",
+      "sourceSha256": "f178b57cc2cfc4abb393f068db0c7cf181917f874c9897a262f35317f3ed3387",
+      "sha256": "58873ad4bd4179326187b69f3f5ccd019b8f9fd5c431506e4b871d7cc6471308",
+      "bytes": 75407,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/f2cc0c209ef92c6cd191f33d.m4a": {
+      "source": "assets/music/fallback/f2cc0c209ef92c6cd191f33d.ogg",
+      "sourceSha256": "f2cc0c209ef92c6cd191f33da36f1bc435620019ce3f4ee3452912c8838a265e",
+      "sha256": "ff0615368e0559ba3e89cf6188af58e473d34a6ab2b2d0e7dd562f4903f8e981",
+      "bytes": 45001,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/f2ddd8336302917293daef09.m4a": {
+      "source": "assets/music/fallback/f2ddd8336302917293daef09.ogg",
+      "sourceSha256": "f2ddd8336302917293daef0929d4a75d0c19a6a06d3aa353332c8914764d819a",
+      "sha256": "561f91f247643fe93bc36081c3e9e1371e1a7c7d026ab041793927a11bb77740",
+      "bytes": 49160,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/f36fecfd430d0c2c14785e90.m4a": {
+      "source": "assets/music/fallback/f36fecfd430d0c2c14785e90.ogg",
+      "sourceSha256": "f36fecfd430d0c2c14785e90a412362c72e4a68f1fd207aa10608f6ddfcb4584",
+      "sha256": "ac7bfdfec9fb21fb6ed95e39e0c53f348a746c7b0438cbf84d235d4463288abf",
+      "bytes": 55571,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/f3daebdc09b43fbf71593be7.m4a": {
+      "source": "assets/music/fallback/f3daebdc09b43fbf71593be7.ogg",
+      "sourceSha256": "f3daebdc09b43fbf71593be731546718ff7529d4d217b1dfeb6ded94e447207f",
+      "sha256": "4543649dd2416ffe0ec61f76ed8ec10449e9bbc224831d95f079cf5c6b0b6eba",
+      "bytes": 62404,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/f4a95982c33edcb2b0f53d53.m4a": {
+      "source": "assets/music/fallback/f4a95982c33edcb2b0f53d53.ogg",
+      "sourceSha256": "f4a95982c33edcb2b0f53d53531c1fb020a95de36c76555606dde1b7fecb7312",
+      "sha256": "913e8f1d3833a919978720570fe72827390d5fb5e3bc01b734d99684073ea784",
+      "bytes": 87961,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/f516f5f98f3da87a996bcfe7.m4a": {
+      "source": "assets/music/fallback/f516f5f98f3da87a996bcfe7.ogg",
+      "sourceSha256": "f516f5f98f3da87a996bcfe785cbd9c3c46cec066fadd222e1494b62bce25fc3",
+      "sha256": "e5e2d21c2dcd75db64472e77af83bcb4ad689aea56d414b565a3ac1519d6917d",
+      "bytes": 130052,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/f528a4d96ad4d0f0ed74abd0.m4a": {
+      "source": "assets/music/fallback/f528a4d96ad4d0f0ed74abd0.ogg",
+      "sourceSha256": "f528a4d96ad4d0f0ed74abd03d432312476bfdbb76dc1f9717397255d93adfac",
+      "sha256": "60107a5017b26a0da5cdc51db2d33b09f8e33caacc5124ee2a641e216dd82c35",
+      "bytes": 48871,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/f6837be7ef70af41aab8fe6d.m4a": {
+      "source": "assets/music/fallback/f6837be7ef70af41aab8fe6d.ogg",
+      "sourceSha256": "f6837be7ef70af41aab8fe6d077ae9118a187a55315c370130b570c06455c5f6",
+      "sha256": "2f57967150950cc7853c3d30264b68d243bdd7ef05c8268e0af9995a73010552",
+      "bytes": 58759,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/f9525b582f2545819d2ed45f.m4a": {
+      "source": "assets/music/fallback/f9525b582f2545819d2ed45f.ogg",
+      "sourceSha256": "f9525b582f2545819d2ed45ffd8c75e44c9f955606d6764d68dc115f6a13561c",
+      "sha256": "e0b9a033ffda7b2743b084d67237c76d174c3bb2150988c3d7750a77dab6917e",
+      "bytes": 76347,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/f9e42835b7328e144a5fdafb.m4a": {
+      "source": "assets/music/fallback/f9e42835b7328e144a5fdafb.ogg",
+      "sourceSha256": "f9e42835b7328e144a5fdafb5d90fd14df53ec88b15edbb6bb76745a6b7da4d5",
+      "sha256": "8fbec6780b47e729777d52b4eb035c5adf221d2a139ac492e1e7d4be0d95c81f",
+      "bytes": 73569,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/fa547ba3ef78f73455a2d1ae.m4a": {
+      "source": "assets/music/fallback/fa547ba3ef78f73455a2d1ae.ogg",
+      "sourceSha256": "fa547ba3ef78f73455a2d1ae20168be5808bedff4bbf0b506d54b76a40d61fad",
+      "sha256": "bdbcacba22318125d8e2f96ea3a0404738ea3e36b35a899c326e5261de6657f8",
+      "bytes": 72635,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/fbfae15e8ee4a2baaf86a85a.m4a": {
+      "source": "assets/music/fallback/fbfae15e8ee4a2baaf86a85a.ogg",
+      "sourceSha256": "fbfae15e8ee4a2baaf86a85a06dd83fc4e7ac1f731ee53f15c216ee68f351c99",
+      "sha256": "4784334107281d7b12a850a0cb94b7cccee41214ddb40206c605da4de0e84353",
+      "bytes": 94129,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/fe60e116a35debf25805304f.m4a": {
+      "source": "assets/music/fallback/fe60e116a35debf25805304f.ogg",
+      "sourceSha256": "fe60e116a35debf25805304f66b7d24eb84636f5df8964db968df07da9b9759c",
+      "sha256": "dbc83bcf27eef8ce37ea67c5e04602ce18fdf92e8b769a29feff8911389a6733",
+      "bytes": 82758,
+      "sampleRate": 22050,
+      "kbps": 16
+    },
+    "assets/music/encoded/16k/ff57ff0ee0b31e6bea2907db.m4a": {
+      "source": "assets/music/fallback/ff57ff0ee0b31e6bea2907db.ogg",
+      "sourceSha256": "ff57ff0ee0b31e6bea2907db5b5c27c273429def01dc5f27db3ccc9de4626690",
+      "sha256": "25e378aa0d0c207d1f1ec8f59fb1a64c6fe2a5d34d2df4c8069a8cbe0f832647",
+      "bytes": 100028,
+      "sampleRate": 22050,
+      "kbps": 16
+    }
+  }
+}

@@ -1,3 +1,4 @@
+import { defaultSongLanes, SONG_CATALOG } from '../src/native/music';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { NativeAudio } from '../src/native/audio';
@@ -21,11 +22,13 @@ class Param {
   }
 }
 class AudioNode {
+  connections: unknown[] = [];
   gain = new Param();
   threshold = new Param();
   ratio = new Param();
   playbackRate = new Param();
   connect<T>(node: T): T {
+    this.connections.push(node);
     return node;
   }
   disconnect() {}
@@ -253,5 +256,67 @@ test('clears during initial decoding are played after audio loads, while muted c
     audio.setMuted(true);
     audio.handle({ type: 'break', time: 0, position: { x: 0, y: 0 }, color: 0 });
     assert.equal(ctx.sources.filter((s) => !s.loop).length, 6);
+    audio.dispose();
+  }));
+
+test('supplied five-part songs keep stem zero silent until its authored color is earned', async () =>
+  withAudio(async () => {
+    const song = SONG_CATALOG.find((song) => song.id.startsWith('supplied-'))!;
+    const level = cloneLevel();
+    Object.assign(level, {
+      songId: song.id,
+      bpm: song.bpm,
+      loopBeats: song.loopBeats,
+      downbeatOffset: song.downbeatOffset,
+      stemLanes: defaultSongLanes(song.id, 2),
+    });
+    const audio = new NativeAudio(level, assets);
+    assert.equal(
+      FakeAudioContext.instances.length,
+      0,
+      'constructing a song does not initialize or load audio',
+    );
+    await audio.unlock();
+    const context = FakeAudioContext.instances[0];
+    const loops = context.sources.filter((source) => source.loop);
+    assert.equal(loops.length, 5);
+    assert.ok(loops.every((source) => (source.connections[0] as AudioNode).gain.value === 0));
+    assert.deepEqual(
+      loops.map((source) => source.starts[0]),
+      Array(5).fill(loops[0].starts[0]),
+      'all stems share one phase before any unlock',
+    );
+    audio.handle({ type: 'unlock', stem: 0, color: 0, time: 0, position: { x: 0, y: 0 } });
+    assert.deepEqual(audio.snapshot().earned, [0]);
+    assert.ok(
+      (loops[0].connections[0] as AudioNode).gain.scheduled.some((point) => point.value > 0),
+    );
+    assert.ok(
+      loops.slice(1).every((source) => (source.connections[0] as AudioNode).gain.value === 0),
+    );
+    audio.dispose();
+  }));
+
+test('unassigned parts never activate and imported loop starts retain their exact phase', async () =>
+  withAudio(async () => {
+    const song = SONG_CATALOG.find((song) => song.loopStartSeconds > 0)!;
+    const level = cloneLevel();
+    Object.assign(level, {
+      songId: song.id,
+      bpm: song.bpm,
+      loopBeats: song.loopBeats,
+      downbeatOffset: song.downbeatOffset,
+      stemLanes: [],
+    });
+    const elapsed = song.loopEndSeconds + 0.4;
+    const audio = new NativeAudio(level, assets, () => elapsed);
+    await audio.unlock();
+    const context = FakeAudioContext.instances[0];
+    audio.handle({ type: 'unlock', stem: 1, color: 0, time: elapsed, position: { x: 0, y: 0 } });
+    assert.deepEqual(audio.snapshot().earned, []);
+    const loops = context.sources.filter((source) => source.loop);
+    const end = Math.min(35.67575, song.loopEndSeconds);
+    const expected = song.loopStartSeconds + ((elapsed - end) % (end - song.loopStartSeconds));
+    for (const source of loops) near(source.starts[0][1], expected, 'exact authored loop phase');
     audio.dispose();
   }));

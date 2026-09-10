@@ -1,3 +1,4 @@
+import { getEarnableStems } from './music';
 import sourceLevel from './data/level-6.json';
 import type { NativeConfig, NativeLevel, Vec2 } from './types';
 export const NATIVE_CONFIG: NativeConfig = {
@@ -98,8 +99,11 @@ export function instrumentCenters(
   songId: string,
   view: NativeConfig['view'] = NATIVE_CONFIG.view,
 ): number[] {
-  const count = songId === 'nobatidao' ? 2 : 4;
-  const spacing = view.instrumentX[1] - view.instrumentX[0];
+  const count = getEarnableStems(songId).length;
+  const spacing = Math.min(
+    view.instrumentX[1] - view.instrumentX[0],
+    (view.width - 110) / Math.max(1, count - 1),
+  );
   return Array.from({ length: count }, (_, i) => view.center.x + (i - (count - 1) / 2) * spacing);
 }
 /** Preserve fixed UI furniture while fitting edited/imported larger fields inside the safe viewport. */

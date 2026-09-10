@@ -157,9 +157,13 @@ test('export calls the runtime level validator and enforces playable song/layout
     );
   }
   await assert.rejects(validatePackageOptions({ ...basic, level: null }), code('INVALID_LEVEL'));
+  assert.equal(
+    (await validatePackageOptions({ ...basic, profile: 'a-heart', level })).songId,
+    level.songId,
+  );
   await assert.rejects(
-    validatePackageOptions({ ...basic, profile: 'a-heart', level }),
-    code('PROFILE_SONG_MISMATCH'),
+    validatePackageOptions({ ...basic, level: { ...level, songId: '../untrusted' } }),
+    code('INVALID_SONG'),
   );
   await assert.rejects(
     validatePackageOptions({ ...basic, level: { ...level, queueColumns: 4 } }),

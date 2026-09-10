@@ -7,6 +7,7 @@ The shipped game has one implementation: `src/native/`. Avoid adding alternate g
 | Fixed-step simulation, collisions, queue and progress | `src/native/model.ts` |
 | Contours shared by rendering and collisions | `src/native/geometry.ts` |
 | Pixi rendering, reusable meshes and bounded effects | `src/native/render.ts`, `vfx.ts`, `shatter.ts` |
+| Song catalog, source identities and binding validation | `src/native/data/song-catalog.json`, `src/native/music.ts` |
 | Audio clock, stems, beat-aligned cues and context lifecycle | `src/native/audio.ts` |
 | Runtime input, DOM presentation and host lifecycle | `src/native/main.ts` |
 | Level defaults, normalization and validated edits | `config.ts`, `creative.ts`, `queue.ts`, `level-editor.ts` |
@@ -25,3 +26,5 @@ Keep production output free of preview APIs and external assets, apart from the 
 Before release, test on physical lower-end Android and iOS devices and in each network's validator/SDK. Desktop CPU throttling is useful regression evidence, but does not reproduce mobile GPU performance, thermal limits or audio output latency. The hosted adapter in `api/export.js` uses the same package builder as the local export server; keep its streamed response and same-origin validation intact. See `docs/HOSTING.md`.
 
 Guidance reviewed for this cleanup (8 September 2026): [PixiJS performance tips](https://pixijs.com/8.x/guides/concepts/performance-tips), [Web Audio best practices](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Best_practices), [Page Visibility](https://developer.mozilla.org/en-US/blog/using-the-page-visibility-api/), and [Unity playable configuration](https://docs.unity.com/grow/acquire/creatives/playable/configure).
+
+Music authoring and import invariants are documented in [Songs and color assignments](docs/MUSIC.md). Preserve raw stem indexes (including earnable zero), per-song mappings, and selected-song lazy loading. Hosted previews use URL assets; offline packages embed their selected assets and must not include the entire catalog media.

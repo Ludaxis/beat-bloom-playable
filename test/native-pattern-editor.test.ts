@@ -98,10 +98,11 @@ for (const options of [
         (r) => r.length === options.segmentsPerRing && new Set(r).size === options.colorsPerRing,
       ),
     );
-    assert.equal(level.stemLanes.length, source.stemLanes.length);
     assert.deepEqual(
       level.stemLanes.map((l) => l.stem),
-      source.stemLanes.map((l) => l.stem),
+      source.stemLanes
+        .filter((l) => l.colors.some((color) => color < options.colorCount))
+        .map((l) => l.stem),
     );
     assert.deepEqual(
       level.palette.slice(0, Math.min(source.palette.length, options.colorCount)),

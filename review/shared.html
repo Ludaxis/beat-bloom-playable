@@ -115,7 +115,7 @@
         ].join('-');
         localStorage.setItem('beatbloom:studio-preview:' + id, raw);
         const frame = document.querySelector('#playable');
-        frame.src = `/dist/preview/${saved.profile}.html?studioLevel=${id}`;
+        frame.src = `/dist/preview/${saved.profile}.html?studioLevel=${id}&song=${encodeURIComponent(saved.level.songId)}`;
         frame.hidden = false;
         document.querySelector('#status').hidden = true;
       } catch (error) {

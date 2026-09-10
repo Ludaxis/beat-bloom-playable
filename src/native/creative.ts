@@ -3,6 +3,7 @@ import studioDefault from './data/studio-default.json';
 import charts from '../../assets/native/charts.json';
 import type { NativeLevel } from './types';
 import { normalizePlayableQueue } from './queue';
+import { getSong, defaultSongLanes } from './music';
 
 export const END_CARD = {
   revealDelaySeconds: 4,
@@ -38,4 +39,20 @@ export function getPlayableLevel(profile: string, override?: NativeLevel | null)
       ];
   }
   return normalizePlayableQueue(level);
+}
+
+/** Change only song timing and its default bindings; the authored puzzle and design stay. */
+export function applySongToLevel(level: NativeLevel, songId: string): NativeLevel {
+  const song = getSong(songId);
+  if (level.songId === songId) return cloneLevel(level);
+  const next = cloneLevel(level);
+  next.songId = song.id;
+  next.bpm = song.bpm;
+  next.beatsPerBar = song.beatsPerBar;
+  next.loopBeats = song.loopBeats;
+  next.downbeatOffset = song.downbeatOffset;
+  next.sections = structuredClone(song.sections ?? []);
+  next.stemLanes = defaultSongLanes(song.id, next.palette.length);
+  if (next.referenceCalibration) delete next.referenceCalibration.audioSourceOffsetSeconds;
+  return normalizePlayableQueue(next);
 }

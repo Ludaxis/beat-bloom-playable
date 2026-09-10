@@ -1776,3 +1776,134 @@ summary {
   color: var(--color-text-primary);
   font: inherit;
 }
+
+/* The palette is a playable score: colors down the side, individual sounds across. */
+.advanced-pattern .palette {
+  display: block;
+  min-width: 0;
+  margin-bottom: 22px;
+}
+.palette-colors:empty {
+  display: none;
+}
+.palette .control-help {
+  margin: 0 0 10px;
+}
+.stem-assignment-scroll {
+  overflow-x: auto;
+}
+#stem-assignments {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+#stem-assignments th,
+#stem-assignments td {
+  padding: 0;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border-strong);
+}
+#stem-assignments thead th {
+  vertical-align: bottom;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  overflow-wrap: anywhere;
+}
+#stem-assignments thead th:first-child {
+  width: 52px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+#stem-assignments thead th > span {
+  display: block;
+  font-size: 10px;
+  letter-spacing: -0.15px;
+}
+#stem-assignments button {
+  min-width: 0;
+  width: 100%;
+  padding: 4px 0;
+  border: 0;
+  background: transparent;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  color: var(--color-brand);
+}
+#stem-assignments button[aria-pressed='true'] {
+  color: var(--color-accent);
+}
+#stem-assignments label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  width: 100%;
+  cursor: pointer;
+}
+#stem-assignments tbody th label {
+  justify-content: flex-start;
+  gap: 5px;
+  font-weight: 400;
+  color: var(--color-text-secondary);
+}
+.advanced-pattern .palette input[type='color'] {
+  width: 30px;
+  height: 36px;
+  padding: 3px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.advanced-pattern .palette input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  border-radius: 3px;
+  accent-color: var(--color-brand);
+}
+.palette-music-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.palette-music-actions button {
+  font-size: 11px;
+  padding: 6px 10px;
+}
+.palette-music-actions .control-help {
+  margin: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.stem-bed-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--color-text-secondary);
+  font-size: 11px;
+}
+.stem-bed-preview:empty {
+  display: none;
+}
+.stem-bed-preview button {
+  border: 0;
+  background: transparent;
+  color: var(--color-brand);
+  font-size: 11px;
+}
+.stem-bed-preview button[aria-pressed='true'] {
+  color: var(--color-accent);
+}

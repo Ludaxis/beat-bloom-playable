@@ -1,4 +1,5 @@
 import type { NativeEvent, NativeLevel } from './types';
+import { getSong, songStemGain } from './music';
 import charts from '../../assets/native/charts.json';
 
 const AUDIO = {
@@ -14,11 +15,6 @@ const AUDIO = {
   drumVolume: 0.95,
   followerDecay: 0.82,
   historyBeats: 8,
-};
-const GAINS: Record<string, number[]> = {
-  kissmemore: [-0.56, -4.55, -1.71, -3.79, -1.31],
-  nobatidao: [-3.15, -6.26, -3.19],
-  sunflower: [0.8, -2.21, 2.24, 2.72, -2.34],
 };
 const CHORDS: Record<number, number[]> = {
   1: [0, 4, 7],
@@ -39,6 +35,7 @@ export class NativeAudio {
   private earned = new Set<number>();
   private contributions = new Map<number, number>();
   private startedAt = 0;
+  private activations = new Map<number, number>();
   private lastBounce = -1;
   private loading?: Promise<void>;
   private abortLoad?: AbortController;
@@ -62,18 +59,20 @@ export class NativeAudio {
       1,
       level.rings.reduce((sum, ring) => sum + ring.filter((color) => color >= 0).length, 0),
     );
-    this.harmony = (charts[level.songId as keyof typeof charts]?.harmony ?? [[0, 0, 1]]).map(
-      (chord) => ({
-        sample: chord[0],
-        vocabulary: [
-          ...new Set(
-            [...(CHORDS[chord[2]] ?? CHORDS[1]), ...[0, 2, 4, 7, 9]].map(
-              (note) => (chord[1] + note) % 12,
-            ),
+    this.harmony = (
+      getSong(level.songId).harmony ??
+      charts[level.songId as keyof typeof charts]?.harmony ??
+      []
+    ).map((chord) => ({
+      sample: chord[0],
+      vocabulary: [
+        ...new Set(
+          [...(CHORDS[chord[2]] ?? CHORDS[1]), ...[0, 2, 4, 7, 9]].map(
+            (note) => (chord[1] + note) % 12,
           ),
-        ],
-      }),
-    );
+        ),
+      ],
+    }));
   }
   private get sourceOffset() {
     return this.level.referenceCalibration?.audioSourceOffsetSeconds ?? 0;
@@ -105,7 +104,7 @@ export class NativeAudio {
       this.limiter.ratio.value = 10;
       this.master.connect(this.limiter).connect(this.context.destination);
     }
-    await this.syncContextState();
+    await this.syncContextState(true);
     if (this.disposed) return;
     if (!this.loading) this.loading = this.load();
     await this.loading;
@@ -136,11 +135,21 @@ export class NativeAudio {
       const decoded = new Map<string, AudioBuffer>();
       await Promise.all(
         names.map(async (name) => {
-          const response = await fetch(this.assets[name], { signal: controller.signal });
-          if (!response.ok) throw Error(`Unable to load audio ${name}.`);
-          const bytes = await response.arrayBuffer();
-          if (this.disposed || controller.signal.aborted) return;
-          const buffer = await ctx.decodeAudioData(bytes);
+          const decode = async (url: string) => {
+            const response = await fetch(url, { signal: controller.signal });
+            if (!response.ok) throw Error(`Unable to load audio ${name}.`);
+            const bytes = await response.arrayBuffer();
+            if (this.disposed || controller.signal.aborted) throw Error('Audio loading cancelled.');
+            return ctx.decodeAudioData(bytes);
+          };
+          let buffer: AudioBuffer;
+          try {
+            buffer = await decode(this.assets[name]);
+          } catch (error) {
+            const fallback = this.assets[`${name}Fallback`];
+            if (!fallback || this.disposed || controller.signal.aborted) throw error;
+            buffer = await decode(fallback);
+          }
           if (!this.disposed && !controller.signal.aborted) decoded.set(name, buffer);
         }),
       );
@@ -149,22 +158,33 @@ export class NativeAudio {
       const startAt = ctx.currentTime + AUDIO.lead,
         levelTime = this.getTime();
       this.startedAt = startAt - levelTime - this.sourceOffset;
-      const count = names.filter((n) => n.startsWith('stem')).length;
-      for (let i = 0; i < count; i++) {
+      const song = getSong(this.level.songId);
+      const stems = song.stems.filter((stem) => decoded.has(`stem${stem.index}`));
+      // One common boundary prevents differently padded codecs from drifting at each loop.
+      const loopEnd = Math.min(
+        song.loopEndSeconds,
+        ...stems.map((stem) => decoded.get(`stem${stem.index}`)!.duration),
+      );
+      const loopStart = Math.min(song.loopStartSeconds, Math.max(0, loopEnd - 0.001));
+      const elapsed = Math.max(0, levelTime + this.sourceOffset);
+      const offset =
+        elapsed < loopEnd ? elapsed : loopStart + ((elapsed - loopEnd) % (loopEnd - loopStart));
+      this.activations.clear();
+      for (const stem of stems) {
+        const i = stem.index;
         const source = ctx.createBufferSource(),
           gain = ctx.createGain();
-        source.buffer = this.buffers.get(`stem${i}`)!;
+        source.buffer = decoded.get(`stem${i}`)!;
         source.loop = true;
-        source.loopEnd = Math.min(
-          source.buffer.duration,
-          (this.level.loopBeats * 60) / this.level.bpm,
-        );
-        gain.gain.value = i === 0 ? this.stemGain(i) : 0;
+        source.loopStart = loopStart;
+        source.loopEnd = loopEnd;
+        if (!stem.earnable) this.activations.set(i, startAt);
+        gain.gain.value = stem.earnable ? 0 : this.stemGain(i);
         source.connect(gain).connect(this.master!);
         this.sources.set(source, gain);
         created.push(source);
-        source.start(startAt, Math.max(0, levelTime + this.sourceOffset) % source.loopEnd);
-        this.gains.push(gain);
+        source.start(startAt, offset);
+        this.gains[i] = gain;
       }
       this.error = '';
       this.ready = true;
@@ -186,9 +206,10 @@ export class NativeAudio {
     }
   }
   /** Coalesce overlapping visibility/gesture requests; the latest desired state wins. */
-  private syncContextState(): Promise<void> {
+  private syncContextState(fromGesture = false): Promise<void> {
     if (!this.context || this.disposed) return Promise.resolve();
-    if (this.stateSync) return this.stateSync;
+    // A new activation-granting gesture must retry even if a prior touch resume is pending.
+    if (this.stateSync && !(fromGesture && !this.paused)) return this.stateSync;
     const ctx = this.context;
     const sync = (async () => {
       while (!this.disposed && ctx.state !== 'closed') {
@@ -213,21 +234,22 @@ export class NativeAudio {
   private flushLoadingBreaks() {
     if (this.active) for (const event of this.loadingBreaks.splice(0)) this.handle(event);
   }
-  private stemGain(stem: number) {
-    return (
-      10 **
-      (((GAINS[this.level.songId]?.[stem] ?? 0) +
-        (this.level.songId === 'kissmemore'
-          ? -0.12
-          : this.level.songId === 'nobatidao'
-            ? -2.54
-            : 0)) /
-        20)
+  private stemGain(stem: number, active?: number[]) {
+    const song = getSong(this.level.songId);
+    return songStemGain(
+      song,
+      stem,
+      active ?? song.stems.filter((part) => !part.earnable).map((part) => part.index),
     );
   }
   private scheduleStem(stem: number) {
     const ctx = this.context!;
-    if (!this.gains[stem]) return;
+    if (
+      !this.gains[stem] ||
+      !this.level.stemLanes.some((lane) => lane.stem === stem) ||
+      !getSong(this.level.songId).stems[stem]?.earnable
+    )
+      return;
     const bar = (this.level.beatsPerBar * 60) / this.level.bpm;
     const origin = this.startedAt + this.level.downbeatOffset;
     const beat = 60 / this.level.bpm;
@@ -240,9 +262,56 @@ export class NativeAudio {
     const at = shortTrial
       ? origin + Math.ceil((ctx.currentTime - origin + AUDIO.lead) / beat) * beat
       : origin + Math.ceil((earliest - origin) / bar) * bar;
-    this.gains[stem].gain.setValueAtTime(0, at);
-    this.gains[stem].gain.linearRampToValueAtTime(this.stemGain(stem), at + AUDIO.fade);
+    this.activations.set(stem, at);
+    this.updateMix();
     this.pending.push({ stem, at });
+  }
+  private updateMix() {
+    const now = this.context!.currentTime;
+    const song = getSong(this.level.songId);
+    const events = [
+      ...new Set([now, ...[...this.activations.values()].filter((at) => at > now)]),
+    ].sort((a, b) => a - b);
+    for (const stem of song.stems) {
+      const gain = this.gains[stem.index]?.gain;
+      if (!gain) continue;
+      gain.cancelScheduledValues?.(now);
+      gain.setValueAtTime(gain.value, now);
+      for (const at of events) {
+        const active = song.stems.filter(
+          (part) => (this.activations.get(part.index) ?? Infinity) <= at,
+        );
+        const audible =
+          active.some((part) => part.index === stem.index) &&
+          (!song.exclusiveStages || active.at(-1)?.index === stem.index);
+        const value = audible
+          ? this.stemGain(
+              stem.index,
+              active.map((part) => part.index),
+            )
+          : 0;
+        if (at === now) gain.setValueAtTime(value, at);
+        else {
+          // Hold the previous gate through the booked boundary, then crossfade together.
+          const before = song.stems.filter(
+            (part) => (this.activations.get(part.index) ?? Infinity) < at,
+          );
+          const beforeAudible =
+            before.some((part) => part.index === stem.index) &&
+            (!song.exclusiveStages || before.at(-1)?.index === stem.index);
+          gain.setValueAtTime(
+            beforeAudible
+              ? this.stemGain(
+                  stem.index,
+                  before.map((part) => part.index),
+                )
+              : 0,
+            at,
+          );
+          gain.linearRampToValueAtTime(value, at + AUDIO.fade);
+        }
+      }
+    }
   }
   private play(name: string, volume: number, at?: number, semitones = 0) {
     if (this.disposed || !this.ready || !this.context || !this.master) return;
@@ -280,7 +349,12 @@ export class NativeAudio {
   }
   handle(e: NativeEvent): { launchTime: number; arrivalTime: number } | undefined {
     if (this.disposed) return undefined;
-    if (e.type === 'unlock' && e.stem !== undefined && !this.earned.has(e.stem)) {
+    if (
+      e.type === 'unlock' &&
+      e.stem !== undefined &&
+      !this.earned.has(e.stem) &&
+      this.level.stemLanes.some((lane) => lane.stem === e.stem)
+    ) {
       this.earned.add(e.stem);
       if (this.ready) this.scheduleStem(e.stem);
     }
@@ -347,14 +421,18 @@ export class NativeAudio {
           chord = this.harmony[i];
           break;
         }
-      const midi = 60 + chord.vocabulary[ordinal % chord.vocabulary.length];
+      const midi = 60 + (chord?.vocabulary[ordinal % chord.vocabulary.length] ?? 0);
       const closest = [61, 67, 73, 79].reduce((a, b) =>
         Math.abs(a - midi) < Math.abs(b - midi) ? a : b,
       );
-      const drum = this.level.stemLanes.find((l) => l.colors.includes(e.color))?.stem === 4;
+      const song = getSong(this.level.songId);
+      const drum = this.level.stemLanes.some(
+        (lane) => lane.colors.includes(e.color) && song.stems[lane.stem]?.performer === 'drum',
+      );
       const gain = Math.max(0.28, AUDIO.followerDecay ** ordinal);
       if (drum)
         this.play(ordinal % 2 ? 'snare' : 'kick', Math.max(0.58, AUDIO.drumVolume * gain), at);
+      else if (!chord) this.play('bounce_mute', AUDIO.bounceVolume * gain, at);
       else this.play(`bell-${closest}`, AUDIO.bellVolume * gain, at, midi - closest);
       return receipt;
     }
@@ -411,6 +489,7 @@ export class NativeAudio {
     this.loadingBreaks = [];
     this.pending = [];
     this.earned.clear();
+    this.activations.clear();
     this.contributions.clear();
     this.onAudible = () => {};
     for (const source of this.sources.keys()) this.releaseSource(source, true);

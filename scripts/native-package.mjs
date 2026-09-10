@@ -1,4 +1,4 @@
-import { encodedAudio } from './audio-variants.mjs';
+import { encodedAudio, importedAudio } from './audio-variants.mjs';
 import { build, transform } from 'esbuild';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, dirname } from 'node:path';
@@ -52,6 +52,13 @@ const META_TIERS = [
     audioKbps: 16,
     audioSampleRate: 22050,
   },
+  {
+    id: 'meta-16k-compact',
+    animationWidth: 384,
+    imageQuality: 66,
+    audioKbps: 16,
+    audioSampleRate: 22050,
+  },
 ];
 const COMMON_IMAGES = ['lock', 'clef', 'logo', 'icon'];
 const EFFECTS = [
@@ -66,19 +73,10 @@ const EFFECTS = [
   'kick',
   'snare',
 ];
-const SONGS = Object.freeze({
-  kissmemore: {
-    instruments: ['ukulele', 'violin', 'piano', 'drum'],
-    stems: 5,
-    prefix: 'assets/native/kissmemore',
-  },
-  nobatidao: { instruments: ['piano', 'trumpet'], stems: 3, prefix: 'assets/nobatidao' },
-  sunflower: {
-    instruments: ['ukulele', 'violin', 'xylophone', 'drum'],
-    stems: 5,
-    prefix: 'assets/sunflower',
-  },
-});
+const catalog = JSON.parse(
+  await readFile(resolve(root, 'src/native/data/song-catalog.json'), 'utf8'),
+);
+const SONGS = Object.freeze(Object.fromEntries(catalog.map((song) => [song.id, song])));
 const assetCache = new Map();
 let validatorPromise;
 
@@ -195,18 +193,14 @@ export async function validatePackageOptions(input, { allowPreview = false } = {
   }
   if (Buffer.byteLength(serialized) > MAX_EXPORT_BODY_BYTES)
     throw new NativePackageError('BODY_TOO_LARGE', 'Export options exceed 256 KiB.', 413);
-  const songId = songForProfile(input.profile);
+  const songId = input.level?.songId || songForProfile(input.profile);
+  if (!Object.hasOwn(SONGS, songId))
+    throw new NativePackageError('INVALID_SONG', 'Choose a song from the library.', 422);
   let level = null;
   if (input.level !== undefined) {
     const contract = await nativeContract();
     const errors = contract.validateNativeLevel(input.level, { queueBalance: false });
     if (errors.length) throw new NativePackageError('INVALID_LEVEL', errors.join(' '), 422, errors);
-    if (input.level.songId !== songId)
-      throw new NativePackageError(
-        'PROFILE_SONG_MISMATCH',
-        `This profile embeds ${songId}; the level must use the same song.`,
-        422,
-      );
     if (
       input.level.queueColumns !== 3 ||
       input.level.activeCapacity !== 3 ||
@@ -217,7 +211,12 @@ export async function validatePackageOptions(input, { allowPreview = false } = {
         'This playable supports three queue columns, three active balls, and three storage slots.',
         422,
       );
-    if (input.level.stemLanes.some((lane) => lane.stem >= SONGS[songId].stems))
+    if (
+      input.level.stemLanes.some(
+        (lane) => !SONGS[songId].stems.some((stem) => stem.index === lane.stem && stem.earnable),
+      ) ||
+      new Set(input.level.stemLanes.map((lane) => lane.stem)).size !== input.level.stemLanes.length
+    )
       throw new NativePackageError(
         'INVALID_STEM_LANE',
         'The level references an instrument stem absent from this song.',
@@ -264,8 +263,10 @@ async function packAsset(relativePath, mime, tier) {
           .resize({ width })
           .webp({ quality: tier.imageQuality, alphaQuality: 90 })
           .toBuffer();
-      } else if (tier.id !== 'original' && relativePath.endsWith('.mp3')) {
+      } else if (tier.id !== 'original' && tier.audioKbps <= 32 && relativePath.endsWith('.mp3')) {
         buffer = await encodedAudio(relativePath, tier);
+      } else if (relativePath.startsWith('assets/music/') && relativePath.endsWith('.m4a')) {
+        buffer = await importedAudio(relativePath);
       } else buffer = await readFile(path);
       return `data:${mime};base64,${buffer.toString('base64')}`;
     })();
@@ -284,10 +285,17 @@ const safeJSON = (value) =>
 const sha256 = (value) => createHash('sha256').update(value).digest('hex');
 
 /** In-memory, self-contained package. No delivery-directory writes or user-controlled paths. */
-export async function createNativePackage(input, { allowPreview = false } = {}) {
+export async function createNativePackage(input, { allowPreview = false, hosted = false } = {}) {
+  if (hosted && input.network !== 'preview')
+    throw new NativePackageError(
+      'INVALID_REQUEST',
+      'Hosted assets are only available in previews.',
+    );
   const options = await validatePackageOptions(input, { allowPreview });
   await prepareTutorialAssets();
   await checkArtwork(root);
+  const pack = (path, mime, tier) =>
+    hosted ? Promise.resolve('/' + path) : packAsset(path, mime, tier);
   const { network, profile, songId, level, storeURLs } = options,
     song = SONGS[songId],
     limitBytes = NETWORK_LIMIT_BYTES[network];
@@ -303,9 +311,7 @@ export async function createNativePackage(input, { allowPreview = false } = {}) 
   );
   const css = (
     await transform(
-      styles
-        .join('\n')
-        .replace('__FONT__', await packAsset('assets/lilita.ttf', 'font/ttf', ORIGINAL)),
+      styles.join('\n').replace('__FONT__', await pack('assets/lilita.ttf', 'font/ttf', ORIGINAL)),
       { loader: 'css', minify: true },
     )
   ).code;
@@ -314,27 +320,56 @@ export async function createNativePackage(input, { allowPreview = false } = {}) 
     '—',
   );
   let lastBytes;
-  for (const compression of network === 'meta' ? META_TIERS : [ORIGINAL]) {
+  for (const compression of network === 'meta'
+    ? META_TIERS
+    : hosted
+      ? [ORIGINAL]
+      : [
+          ORIGINAL,
+          {
+            id: 'compact-images',
+            animationWidth: 1024,
+            imageQuality: 82,
+            audioKbps: 64,
+            audioSampleRate: 44100,
+          },
+        ]) {
     const assets = {};
     // Preserve the native hand's proportions and the strip's slice coordinates in every tier.
     for (const [key, path] of Object.entries(TUTORIAL_ASSET_FILES))
-      assets[key] = await packAsset(path, 'image/webp', ORIGINAL);
+      assets[key] = await pack(path, 'image/webp', ORIGINAL);
     for (const name of COMMON_IMAGES)
-      assets[name] = await packAsset(
+      assets[name] = await pack(
         name === 'logo' || name === 'icon' ? `assets/${name}.webp` : `assets/native/${name}.webp`,
         'image/webp',
         compression,
       );
-    for (const instrument of song.instruments)
-      assets[`${instrument}Animation`] = await packAsset(
-        `assets/native/${instrument}-animation.webp`,
-        'image/webp',
-        compression,
-      );
-    for (let i = 0; i < song.stems; i++)
-      assets[`stem${i}`] = await packAsset(`${song.prefix}-${i}.mp3`, 'audio/mpeg', compression);
+    if (!hosted) {
+      for (const stem of song.stems.filter((stem) => stem.earnable))
+        assets[`${stem.performer}Animation`] = await pack(
+          stem.performerSource,
+          'image/webp',
+          compression,
+        );
+      for (const stem of song.stems) {
+        const source =
+          compression.audioKbps === 16 && stem.meta16Source
+            ? stem.meta16Source
+            : compression.audioKbps > 0 && compression.audioKbps <= 32 && stem.metaSource
+              ? stem.metaSource
+              : stem.source;
+        const mime = source.endsWith('.m4a')
+          ? 'audio/mp4'
+          : source.endsWith('.ogg')
+            ? 'audio/ogg'
+            : source.endsWith('.wav')
+              ? 'audio/wav'
+              : 'audio/mpeg';
+        assets[`stem${stem.index}`] = await pack(source, mime, compression);
+      }
+    }
     for (const name of EFFECTS)
-      assets[name] = await packAsset(`assets/native/${name}.mp3`, 'audio/mpeg', compression);
+      assets[name] = await pack(`assets/native/${name}.mp3`, 'audio/mpeg', compression);
     const result = await build({
       entryPoints: [resolve(root, 'src/native/main.ts')],
       bundle: true,
@@ -344,6 +379,19 @@ export async function createNativePackage(input, { allowPreview = false } = {}) 
       format: 'iife',
       legalComments: 'none',
       logLevel: 'silent',
+      plugins: hosted
+        ? []
+        : [
+            {
+              name: 'selected-song-catalog',
+              setup(builder) {
+                builder.onLoad({ filter: /[\\/]song-catalog\.json$/ }, () => ({
+                  contents: JSON.stringify([song]),
+                  loader: 'json',
+                }));
+              },
+            },
+          ],
       define: {
         __ASSETS__: JSON.stringify(assets),
         __PROFILE__: JSON.stringify(profile),
