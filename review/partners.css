@@ -1,0 +1,90 @@
+/* Compact, shared partner credit for the Ludaxis studios. */
+.partner-footer {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 38px;
+  padding: 5px 16px;
+  margin: 0;
+  border-top: 1px solid #292930;
+  background: #0f0f14;
+  color: #a7abb5;
+  font:
+    400 10px/1.4 Inter,
+    system-ui,
+    sans-serif;
+  flex: none;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.partner-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+.partner-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 26px;
+  color: #e7e8ed;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.partner-footer a:hover {
+  opacity: 0.8;
+}
+.partner-footer a:focus-visible {
+  outline: 2px solid #3fe0b0;
+  outline-offset: 3px;
+}
+.partner-ludaxis img {
+  display: block;
+  width: 17px;
+  height: 17px;
+}
+.partner-ludaxis b {
+  font:
+    500 11px Comfortaa,
+    system-ui,
+    sans-serif;
+  letter-spacing: 0.2px;
+}
+.partner-amanotes img {
+  display: block;
+  width: 82px;
+  height: auto;
+}
+.partner-divider {
+  width: 1px;
+  height: 16px;
+  background: #292930;
+}
+.partner-footer #help {
+  font-size: 10px;
+  padding: 4px 6px;
+  min-height: 26px;
+}
+@media (max-width: 520px) {
+  .partner-footer {
+    min-height: 40px;
+    padding: 5px 10px;
+    gap: 10px;
+  }
+  .partner-credit {
+    gap: 5px;
+    font-size: 9px;
+  }
+  .partner-ludaxis b {
+    font-size: 10px;
+  }
+  .partner-amanotes img {
+    width: 72px;
+  }
+  .partner-divider {
+    height: 14px;
+  }
+}
