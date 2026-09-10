@@ -112,7 +112,7 @@
             <p id="gameplay-play-limit-help" class="control-help">0 plays the full level.</p>
           </section>
           <label class="field" for="profile"
-            >Song<select id="profile" aria-label="Song">
+            >Song<select id="profile" aria-label="Song" disabled>
               <option value="native">Kiss Me More</option>
               <option value="a-heart">NO BATIDÃO</option>
               <option value="a-flower">Sunflower</option>
@@ -222,15 +222,18 @@
             <p id="color-count-help" class="control-help">Balls update to match your colors.</p>
             <fieldset class="palette">
               <legend>Palette</legend>
-              <input type="color" aria-label="First color" value="#f64648" /><input
-                type="color"
-                aria-label="Second color"
-                value="#63cd42"
-              /><input type="color" aria-label="Third color" value="#308aff" /><input
-                type="color"
-                aria-label="Fourth color"
-                value="#fed22b"
-              />
+              <div class="palette-colors"></div>
+              <p id="palette-music-help" class="control-help">
+                Choose the sounds each color brings in.
+              </p>
+              <div id="stem-assignment-scroll" class="stem-assignment-scroll">
+                <table id="stem-assignments" aria-describedby="palette-music-help"></table>
+              </div>
+              <div id="stem-bed-preview" class="stem-bed-preview"></div>
+              <div class="palette-music-actions">
+                <button id="reset-stems" type="button">Reset assignments</button>
+                <span id="stem-listen-status" class="control-help" role="status"></span>
+              </div>
             </fieldset>
             <label class="field slider" for="segments-per-ring"
               >Segments per ring<output id="segments-per-ring-value">8</output
@@ -615,6 +618,7 @@
     </dialog>
     <script type="module" src="/review/share.js"></script>
     <script src="/review/review.js"></script>
+    <script src="/review/music.js"></script>
     <script src="/review/pattern.js"></script>
     <script src="/review/design.js"></script>
     <script src="/review/design-assets.js"></script>

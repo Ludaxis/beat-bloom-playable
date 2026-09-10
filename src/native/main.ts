@@ -1,3 +1,10 @@
+import {
+  getSong,
+  getEarnableStems,
+  getSongAssetURLs,
+  validateSongBindings,
+  songAssetURL,
+} from './music';
 import { updateIntroPresentation } from './intro-view';
 import { resolveIntroDesign, type IntroDesign } from './intro-settings';
 import { AdFlow, AD_FLOW } from './ad-flow';
@@ -5,7 +12,7 @@ import { logoHeartbeat, logoReveal } from './logo-motion';
 import { NativeModel, validateNativeLevel } from './model';
 import { NativeRenderer } from './render';
 import { NATIVE_CONFIG, cloneLevel, instrumentCenters } from './config';
-import { END_CARD, conceptForProfile, getPlayableLevel } from './creative';
+import { END_CARD, conceptForProfile, getPlayableLevel, applySongToLevel } from './creative';
 import {
   resolveEndCardDesign,
   setLevelEndCardDesign,
@@ -35,7 +42,7 @@ declare const __NETWORK__: 'preview' | 'unity' | 'applovin' | 'meta';
 declare const __PREVIEW__: boolean;
 declare const __LEVEL_OVERRIDE__: NativeLevel | null;
 declare const __STORE_URLS__: { ios: string; android: string } | null;
-const assets = __ASSETS__,
+const assets = { ...__ASSETS__ },
   view = NATIVE_CONFIG.view;
 const introEnabled =
   __PROFILE__ === 'native' && new URLSearchParams(location.search).get('intro') === '1';
@@ -60,6 +67,8 @@ let level = getPlayableLevel(__PROFILE__, __LEVEL_OVERRIDE__);
 let studioPreviewError = '';
 if (__PREVIEW__) {
   try {
+    const requestedSong = new URLSearchParams(location.search).get('song');
+    if (requestedSong) level = applySongToLevel(level, requestedSong);
     level = loadStudioPreview(__PROFILE__, level);
   } catch (error) {
     studioPreviewError = String(error);
@@ -67,20 +76,23 @@ if (__PREVIEW__) {
 }
 const concept = conceptForProfile(__PROFILE__);
 const embeddedSong = level.songId;
-const instruments =
-  level.songId === 'nobatidao'
-    ? ['piano', 'trumpet']
-    : level.songId === 'sunflower'
-      ? ['ukulele', 'violin', 'xylophone', 'drum']
-      : ['ukulele', 'violin', 'piano', 'drum'];
-const bandNames = () => instruments;
-const sprite = (name: string, cls = '') =>
-  `<span class="performer ${cls}" style="background-image:url('${assets[`${name}Animation`]}')"></span>`;
+function refreshSongAssets() {
+  if (!__PREVIEW__) return;
+  for (const key of Object.keys(assets)) if (/^stem\d+(Fallback)?$/.test(key)) delete assets[key];
+  Object.assign(assets, getSongAssetURLs(level.songId));
+}
+refreshSongAssets();
+const bandParts = () => getEarnableStems(level.songId);
+const sprite = (name: string, cls = '') => {
+  const part = bandParts().find((stem) => stem.performer === name);
+  const kind = part?.performerKind === 'image' ? ' performer-image' : '';
+  return `<span class="performer ${cls}${kind}" style="background-image:url('${assets[`${name}Animation`]}')"></span>`;
+};
 const bandHTML = () =>
-  bandNames()
+  bandParts()
     .map(
-      (name, i) =>
-        `<div class="band-item" data-stem="${i + 1}" data-instrument="${name}" style="left:${instrumentCenters(level.songId)[i]}px"><div class="band-halo"></div>${sprite(name, 'unfilled')}${sprite(name, 'filled')}</div>`,
+      (part, i) =>
+        `<div class="band-item" data-stem="${part.index}" data-instrument="${part.performer}" style="left:${instrumentCenters(level.songId)[i]}px;--band-scale:${Math.min(1, 5 / bandParts().length)}"><div class="band-halo"></div>${sprite(part.performer, 'unfilled')}${sprite(part.performer, 'filled')}</div>`,
     )
     .join('');
 document.body.innerHTML = `<div class="viewport"><main class="game" aria-label="Beat Bloom playable">
@@ -115,6 +127,7 @@ const traySlots = Array.from(document.querySelectorAll<HTMLButtonElement>('.tray
 function bindBand() {
   return Array.from(document.querySelectorAll<HTMLElement>('.band-item'), (element) => ({
     element,
+    stem: Number(element.dataset.stem),
     fill: element.querySelector<HTMLElement>('.filled')!,
     sprites: Array.from(element.querySelectorAll<HTMLElement>('.performer')),
     frame: -1,
@@ -175,8 +188,8 @@ let events: NativeEvent[] = [],
   feature: { stem: number; start: number } | null = null;
 let announcementTimer: ReturnType<typeof setTimeout> | undefined;
 let audible = new Set<number>(),
-  visualProgress = [0, 0, 0, 0],
-  collectedProgress = [0, 0, 0, 0];
+  visualProgress = bandParts().map(() => 0),
+  collectedProgress = level.stemLanes.map(() => 0);
 const featureQueue: number[] = [];
 const audioActive = () =>
   ready && !renderFailed && !manualPaused && !endCardPreview && adFlow.started && visible;
@@ -349,17 +362,21 @@ function updateHUD() {
 function updateBand(dt: number) {
   const time = model.time;
   band.forEach((binding, i) => {
+    const laneIndex = level.stemLanes.findIndex((lane) => lane.stem === binding.stem);
     const target =
-      (level.stemUnlockPolicy === 'half-per-color'
-        ? (model.stemProgress[i] ?? 0)
-        : (collectedProgress[i] ?? 0)) / (level.stemLanes[i]?.requiredBreaks ?? 1);
+      laneIndex < 0
+        ? 0
+        : (level.stemUnlockPolicy === 'half-per-color'
+            ? (model.stemProgress[laneIndex] ?? 0)
+            : (collectedProgress[laneIndex] ?? 0)) /
+          (level.stemLanes[laneIndex]?.requiredBreaks ?? 1);
     visualProgress[i] += (target - visualProgress[i]) * (1 - Math.exp(-dt / 0.28));
     const clip = `inset(${100 - Math.min(1, visualProgress[i]) * 100}% 0 0)`;
     if (binding.clip !== clip) {
       binding.clip = clip;
       binding.fill.style.clipPath = clip;
     }
-    const playing = audible.has(i + 1);
+    const playing = audible.has(binding.stem);
     if (binding.playing !== playing) {
       binding.playing = playing;
       binding.element.classList.toggle('playing', playing);
@@ -387,12 +404,13 @@ function updateBand(dt: number) {
       exit = Math.max(0, (age - 1.12) / 0.42);
     const el = $('.featured');
     el.hidden = false;
-    const name = bandNames()[feature.stem - 1];
+    const performerIndex = bandParts().findIndex((part) => part.index === feature!.stem);
+    const name = bandParts()[performerIndex].performer;
     if (el.dataset.stem !== String(feature.stem)) {
       el.dataset.stem = String(feature.stem);
       el.innerHTML = sprite(name);
     }
-    const x = 288 + (model.config.view.instrumentX[feature.stem - 1] - 288) * exit,
+    const x = 288 + (model.config.view.instrumentX[performerIndex] - 288) * exit,
       y = 440 + (view.instrumentY - 440) * exit;
     el.style.left = `${x}px`;
     el.style.top = `${y}px`;
@@ -558,7 +576,9 @@ function pause(value: boolean) {
 function restart(next: NativeLevel = level) {
   const nextLevel = normalizePlayableQueue(next),
     nextModel = new NativeModel(nextLevel);
+  stopAudition();
   level = nextLevel;
+  refreshSongAssets();
   if (level.adFlow) level.adFlow.design = resolveIntroDesign(level);
   model = nextModel;
   adFlow = new AdFlow(level.adFlow?.intro, level.adFlow?.interactionLimit, level.adFlow?.enabled);
@@ -576,8 +596,8 @@ function restart(next: NativeLevel = level) {
   endCardPreviewFocus = null;
   events = [];
   audible.clear();
-  visualProgress = [0, 0, 0, 0];
-  collectedProgress = [0, 0, 0, 0];
+  visualProgress = bandParts().map(() => 0);
+  collectedProgress = level.stemLanes.map(() => 0);
   feature = null;
   featureQueue.length = 0;
   finishTime = -1;
@@ -603,7 +623,7 @@ function validate(input: unknown): NativeLevel {
   const errors = validateNativeLevel(input, { queueBalance: false });
   if (errors.length) throw Error(errors.join('\n'));
   const l = input as NativeLevel;
-  if (l.songId !== embeddedSong)
+  if (!__PREVIEW__ && l.songId !== embeddedSong)
     throw Error(
       'Switch to the ' +
         l.songId +
@@ -611,8 +631,8 @@ function validate(input: unknown): NativeLevel {
         embeddedSong +
         ' audio.',
     );
-  if (l.stemLanes.some((lane) => lane.stem > bandNames().length))
-    throw Error('This song profile has ' + bandNames().length + ' performer layers.');
+  const bindings = validateSongBindings(l);
+  if (bindings.length) throw Error(bindings.join('\n'));
   if (l.queueColumns !== 3 || l.activeCapacity !== 3 || l.trayCapacity !== 3)
     throw Error('This gameplay profile uses 3 queue columns, 3 active balls and 3 tray slots.');
   return normalizePlayableQueue(l);
@@ -681,6 +701,76 @@ $('.canvas').addEventListener(
   },
   true,
 );
+// Studio source audition is isolated from earned gameplay gates and starts only on a tap.
+let auditionContext: AudioContext | undefined;
+let auditionController: AbortController | undefined;
+let auditionGeneration = 0;
+let auditionState: { stem: number | null; loading: boolean; error: string } = {
+  stem: null,
+  loading: false,
+  error: '',
+};
+function stopAudition() {
+  auditionGeneration++;
+  auditionController?.abort();
+  auditionController = undefined;
+  if (auditionContext) void auditionContext.close().catch(() => {});
+  auditionContext = undefined;
+  auditionState = { stem: null, loading: false, error: '' };
+}
+async function auditionStem(index: number) {
+  stopAudition();
+  const part = getSong(level.songId).stems.find((stem) => stem.index === index);
+  if (!part) throw Error('Choose a part from the selected song.');
+  const generation = auditionGeneration;
+  const controller = new AbortController();
+  auditionController = controller;
+  const Ctor =
+    window.AudioContext ||
+    (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+  if (!Ctor) throw Error('Web Audio is unavailable.');
+  const context = new Ctor();
+  auditionContext = context;
+  auditionState = { stem: index, loading: true, error: '' };
+  try {
+    const resume = context.resume();
+    const decode = async (path: string) => {
+      const response = await fetch(songAssetURL(path), { signal: controller.signal });
+      if (!response.ok) throw Error('This part could not be loaded.');
+      return context.decodeAudioData(await response.arrayBuffer());
+    };
+    const decoding = (async () => {
+      try {
+        return await decode(part.source);
+      } catch (error) {
+        if (!part.fallbackSource || controller.signal.aborted) throw error;
+        return decode(part.fallbackSource);
+      }
+    })();
+    const [buffer] = await Promise.all([decoding, resume]);
+    if (generation !== auditionGeneration) return;
+    const source = context.createBufferSource(),
+      gain = context.createGain();
+    source.buffer = buffer;
+    gain.gain.value = 0.72 * 10 ** ((part.gainDb + getSong(level.songId).programGainDb) / 20);
+    source.connect(gain).connect(context.destination);
+    source.onended = () => {
+      if (generation === auditionGeneration) stopAudition();
+    };
+    source.start();
+    auditionState.loading = false;
+  } catch (error) {
+    if (generation !== auditionGeneration) return;
+    stopAudition();
+    auditionState.error = String(error);
+    throw error;
+  }
+}
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) stopAudition();
+});
+window.addEventListener('pagehide', stopAudition);
+
 if (__PREVIEW__) {
   Object.assign(window, {
     __beatBloom: {
@@ -753,6 +843,11 @@ if (__PREVIEW__) {
         complete: adFlow.complete,
       }),
       getLevel: () => cloneLevel(level),
+      validateLevel: (input: unknown) => validate(input),
+      getSong: () => structuredClone(getSong(level.songId)),
+      auditionStem,
+      stopAudition,
+      getAuditionState: () => ({ ...auditionState }),
       setLevel: (input: unknown) => {
         const next = validate(input);
         restart(next);

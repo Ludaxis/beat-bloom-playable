@@ -325,7 +325,7 @@ export function validateNativeLevel(
       (s) =>
         !object(s) ||
         !Number.isInteger(s.stem) ||
-        s.stem < 1 ||
+        s.stem < 0 ||
         s.stem > 12 ||
         !Array.isArray(s.colors) ||
         !s.colors.length ||
@@ -335,6 +335,10 @@ export function validateNativeLevel(
     )
   )
     errors.push('Stem lanes are invalid.');
+  else if (new Set(l.stemLanes.map((lane) => lane.stem)).size !== l.stemLanes.length)
+    errors.push('Stem lanes cannot repeat the same instrument.');
+  else if (l.stemLanes.some((lane) => new Set(lane.colors).size !== lane.colors.length))
+    errors.push('Stem lanes cannot repeat the same color.');
   if (l.referenceCalibration !== undefined) {
     const r = l.referenceCalibration;
     if (

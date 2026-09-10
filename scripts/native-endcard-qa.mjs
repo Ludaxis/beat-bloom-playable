@@ -100,8 +100,17 @@ async function checkBrand(page, profile, { exactAssets = true, visible = true } 
     });
     assert.ok(await image.evaluate((el) => el.naturalWidth > 0 && el.naturalHeight > 0));
     const src = await image.getAttribute('src');
-    assert.match(src, /^data:image\//);
-    artwork[name] = sha(Buffer.from(src.split(',')[1], 'base64'));
+    if (src.startsWith('data:image/')) {
+      artwork[name] = sha(Buffer.from(src.split(',')[1], 'base64'));
+    } else {
+      assert.equal(src, `/assets/${name}.webp`);
+      const bytes = await page.evaluate(async (url) => {
+        const response = await fetch(url);
+        if (!response.ok) throw Error('Brand artwork failed to load.');
+        return Array.from(new Uint8Array(await response.arrayBuffer()));
+      }, src);
+      artwork[name] = sha(Buffer.from(bytes));
+    }
     if (exactAssets)
       assert.equal(artwork[name], approved[name], `use the existing approved ${name}`);
     if (visible) assert.equal(await image.isVisible(), true);

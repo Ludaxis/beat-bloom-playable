@@ -253,7 +253,7 @@ try {
         assert.equal((await snapshot(page)).music.error, '');
         await page.screenshot({ path: resolve(out, 'web-ball-active.png') });
         assert.deepEqual(errors, []);
-        assert.equal(requests.filter((u) => !u.startsWith(origin + '/dist/preview/')).length, 0);
+        assert.equal(requests.filter((u) => !u.startsWith(origin + '/')).length, 0);
         return {
           ...pixels,
           queueColumns: 3,
@@ -291,7 +291,7 @@ try {
             { ...edited, stemLanes: [null] },
             { ...edited, queue: [null] },
             { ...edited, lineThickness: edited.lineSpacing },
-            { ...edited, songId: 'sunflower' },
+            { ...edited, songId: 'unknown-song' },
           ];
           const rejected = invalid.map((value) => {
             let message = '';
@@ -618,13 +618,16 @@ try {
         assert.deepEqual(
           await page
             .locator('#profile option')
-            .evaluateAll((es) => es.map((el) => ({ value: el.value, label: el.textContent }))),
+            .evaluateAll((es) =>
+              es.slice(0, 3).map((el) => ({ value: el.value, label: el.textContent })),
+            ),
           [
             { value: 'native', label: 'Kiss Me More' },
             { value: 'a-heart', label: 'NO BATIDÃO' },
             { value: 'a-flower', label: 'Sunflower' },
           ],
         );
+        assert.equal(await page.locator('#profile option').count(), 72);
         const game = () =>
           page.evaluate(() => document.querySelector('#game').contentWindow.__beatBloom.getLevel());
         assertStudioDefault(await game());
@@ -639,7 +642,6 @@ try {
         const edited = await game();
         const songFields = new Set([
           'songId',
-          'name',
           'bpm',
           'beatsPerBar',
           'loopBeats',
@@ -647,8 +649,12 @@ try {
           'sections',
           'stemLanes',
         ]);
-        const mechanics = (l) =>
-          Object.fromEntries(Object.entries(l).filter(([key]) => !songFields.has(key)));
+        const mechanics = (l) => {
+          const result = structuredClone(l);
+          if (result.referenceCalibration)
+            delete result.referenceCalibration.audioSourceOffsetSeconds;
+          return Object.fromEntries(Object.entries(result).filter(([key]) => !songFields.has(key)));
+        };
         const songs = [];
         for (const [profile, songId, performers] of [
           ['a-heart', 'nobatidao', 2],
@@ -1109,13 +1115,13 @@ try {
               expected: 'does not match this song profile',
             },
             {
-              name: 'mismatched-audio',
+              name: 'unknown-audio',
               raw: JSON.stringify({
                 version: 1,
                 profile: 'native',
-                level: { ...valid, songId: 'sunflower' },
+                level: { ...valid, songId: 'unknown-song' },
               }),
-              expected: 'does not match this playable',
+              expected: 'Unknown song',
             },
             {
               name: 'oversized',

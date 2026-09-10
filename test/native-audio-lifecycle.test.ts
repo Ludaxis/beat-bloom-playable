@@ -225,3 +225,23 @@ test('two dense bursts cannot overbook already scheduled future beats, and ended
     assert.equal(audio.snapshot().scheduledSources, 0);
     assert.ok(context.sources.slice(0, 2).every((source) => source.stopped));
   }));
+
+test('an explicit release gesture retries a pending touch-down resume without duplicating loops', async () =>
+  usingAudio(async () => {
+    const audio = new NativeAudio(cloneLevel(), assets);
+    await audio.unlock();
+    const context = Context.instances[0];
+    await audio.setPaused(true);
+    const gate = deferred();
+    context.resumeWait = gate.promise;
+    const pending = audio.setPaused(false);
+    const before = context.resumeCalls;
+    context.resumeWait = undefined;
+    await audio.unlock();
+    assert.equal(context.resumeCalls, before + 1, 'new gesture retries resume synchronously');
+    assert.equal(audio.active, true);
+    gate.resolve();
+    await pending;
+    assert.equal(context.sources.filter((source) => source.loop).length, 2);
+    audio.dispose();
+  }));

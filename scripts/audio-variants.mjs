@@ -22,3 +22,23 @@ export async function encodedAudio(source, tier) {
     throw new Error(`Prepared audio checksum failed: ${variant.path}`);
   return buffer;
 }
+
+let importedManifest;
+/** Imported variants are prepared once; shipping builds verify the delivered bytes. */
+export async function importedAudio(source) {
+  importedManifest ??= Promise.all([
+    readFile(resolve(root, 'content/music/import-provenance.json'), 'utf8').then(JSON.parse),
+    readFile(resolve(root, 'content/music/encoded-provenance.json'), 'utf8').then(JSON.parse),
+  ]).then(
+    ([imported, encoded]) =>
+      new Map([
+        ...imported.files.map((entry) => [entry.path, entry]),
+        ...Object.entries(encoded.files),
+      ]),
+  );
+  const entry = (await importedManifest).get(source);
+  if (!entry) throw Error(`Prepared song audio is missing from the provenance: ${source}`);
+  const bytes = await readFile(resolve(root, source));
+  if (hash(bytes) !== entry.sha256) throw Error(`Prepared song audio checksum failed: ${source}`);
+  return bytes;
+}

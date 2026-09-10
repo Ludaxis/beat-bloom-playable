@@ -29,6 +29,7 @@ try {
     ['qa:export', 'export'],
     ['qa:endcard', 'endcard'],
     ['qa:patterns', 'patterns'],
+    ['qa:music', 'music'],
   ])
     await run(script, [], qaEnv(folder));
 } finally {

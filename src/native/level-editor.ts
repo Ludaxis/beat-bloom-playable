@@ -91,43 +91,27 @@ export function rebuildRingContents(
     level.previewRingCount,
     Math.max(0, count - next.arenaRingCapacity),
   );
-  const remap = next.palette.length !== level.palette.length;
-  const mappedColors = level.stemLanes.map((lane, index) =>
-    remap
-      ? next.palette
-          .map((_, color) => color)
-          .filter((color) => color % level.stemLanes.length === index)
-      : [...lane.colors],
+  // Palette indices are identities: editing its size must not reshuffle surviving assignments.
+  const mappedColors = level.stemLanes.map((lane) =>
+    lane.colors.filter((color) => color < next.palette.length),
   );
-  // Songs keep their existing voices. With fewer colors than voices, several voices share a
-  // real color and unlock at successive fractions, rather than referencing removed colors.
-  mappedColors.forEach((colors, index) => {
-    if (!colors.length) colors.push(index % next.palette.length);
-  });
-  next.stemLanes = level.stemLanes.map((lane, index) => {
+  for (let color = level.palette.length; color < next.palette.length; color++) {
+    if (mappedColors.length) mappedColors[color % mappedColors.length].push(color);
+  }
+  next.stemLanes = level.stemLanes.flatMap((lane, index) => {
+    const colors = mappedColors[index];
+    // A removed color never silently redirects its instrument to an unrelated color.
+    if (!colors.length) return [];
     const before = lane.colors.reduce((sum, color) => sum + oldDemand[color], 0);
-    const colors = mappedColors[index],
-      after = colors.reduce((sum, color) => sum + newDemand[color], 0);
-    const shared =
-      remap && next.palette.length < level.stemLanes.length
-        ? mappedColors.map((other, i) => (other[0] === colors[0] ? i : -1)).filter((i) => i >= 0)
-        : [];
-    // A voice with no authored colors stays present but silent; it must never receive a fake unlock.
+    const after = colors.reduce((sum, color) => sum + newDemand[color], 0);
     const requiredBreaks =
       after === 0
         ? 1
         : Math.max(
             1,
-            Math.min(
-              after,
-              Math.round(
-                shared.length
-                  ? (after * (shared.indexOf(index) + 1)) / shared.length
-                  : (lane.requiredBreaks * after) / Math.max(1, before),
-              ),
-            ),
+            Math.min(after, Math.round((lane.requiredBreaks * after) / Math.max(1, before))),
           );
-    return { ...lane, colors, requiredBreaks };
+    return [{ ...lane, colors, requiredBreaks }];
   });
   const editedErrors = validateNativeLevel(next);
   if (editedErrors.length) throw new Error(editedErrors.join('\n'));

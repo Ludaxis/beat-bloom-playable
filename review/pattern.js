@@ -319,6 +319,8 @@ function solvabilityKey(level) {
     ringAppearance,
     tutorial,
     endCard,
+    stemLanes,
+    stemUnlockPolicy,
     ...physics
   } = level;
   return JSON.stringify({ ...physics, colorCount: palette.length });

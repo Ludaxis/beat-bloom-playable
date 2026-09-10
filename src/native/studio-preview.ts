@@ -1,5 +1,6 @@
 import { validateNativeLevel } from './model';
 import { normalizePlayableQueue } from './queue';
+import { validateSongBindings } from './music';
 import type { NativeLevel } from './types';
 
 // Used only by local previews. Production exports embed their level directly.
@@ -27,10 +28,8 @@ export function loadStudioPreview(profile: string, fallback: NativeLevel): Nativ
   if (errors.length)
     throw Error('The saved studio level is invalid: ' + errors.slice(0, 3).join(' '));
   const level = saved.level as NativeLevel;
-  if (level.songId !== fallback.songId)
-    throw Error('The saved studio level does not match this playable’s audio.');
-  if (level.stemLanes.some((lane) => lane.stem > fallback.stemLanes.length))
-    throw Error('The saved studio level contains unsupported instrument layers.');
+  const musicErrors = validateSongBindings(level);
+  if (musicErrors.length) throw Error(musicErrors.join(' '));
   if (level.queueColumns !== 3 || level.activeCapacity !== 3 || level.trayCapacity !== 3)
     throw Error('The saved studio level requires unsupported queue or tray slots.');
   return normalizePlayableQueue(level);

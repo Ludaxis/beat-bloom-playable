@@ -24,11 +24,13 @@
   "functions": {
     "api/export.js": {
       "maxDuration": 60,
-      "includeFiles": "{assets/**,src/**,scripts/**,THIRD_PARTY_NOTICES.txt,node_modules/{pixi.js,@pixi,earcut,eventemitter3,gifuct-js,ismobilejs,parse-svg-path,tiny-lru,js-binary-schema-parser,@xmldom}/**}"
+      "includeFiles": "{assets/{native,encoded-audio,music}/**,assets/*.{mp3,webp,ttf,json},src/**,scripts/**,content/**,THIRD_PARTY_NOTICES.txt,node_modules/{pixi.js,@pixi,earcut,eventemitter3,gifuct-js,ismobilejs,parse-svg-path,tiny-lru,js-binary-schema-parser,@xmldom}/**}",
+      "excludeFiles": "assets/music/fallback/**"
     },
     "api/share.js": {
       "maxDuration": 30,
-      "includeFiles": "{assets/**,src/**,scripts/**,THIRD_PARTY_NOTICES.txt,node_modules/{pixi.js,@pixi,earcut,eventemitter3,gifuct-js,ismobilejs,parse-svg-path,tiny-lru,js-binary-schema-parser,@xmldom}/**}"
+      "includeFiles": "{assets/native/*.json,src/**,scripts/**,THIRD_PARTY_NOTICES.txt,node_modules/{pixi.js,@pixi,earcut,eventemitter3,gifuct-js,ismobilejs,parse-svg-path,tiny-lru,js-binary-schema-parser,@xmldom}/**}",
+      "excludeFiles": "assets/music/**"
     }
   }
 }

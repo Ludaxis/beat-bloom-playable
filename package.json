@@ -9,7 +9,7 @@
     "dev": "node scripts/serve.mjs",
     "typecheck": "tsc --noEmit",
     "test": "tsx --test test/native*.test.ts",
-    "test:export": "node --test scripts/native-package.test.mjs scripts/audio-variants.test.mjs scripts/hosted-export.test.mjs scripts/share.test.mjs",
+    "test:export": "node --test scripts/native-package.test.mjs scripts/audio-variants.test.mjs scripts/hosted-export.test.mjs scripts/share.test.mjs scripts/song-catalog.test.mjs",
     "qa": "node scripts/native-qa.mjs",
     "qa:export": "node scripts/native-export-qa.mjs",
     "qa:endcard": "node scripts/native-endcard-qa.mjs",
@@ -20,7 +20,9 @@
     "templates": "node scripts/export-ring-templates.mjs",
     "format": "prettier --write src review scripts test api",
     "format:check": "prettier --check src review scripts test api",
-    "assets:audio": "node scripts/prepare-audio-variants.mjs"
+    "assets:audio": "node scripts/prepare-audio-variants.mjs",
+    "qa:music": "node scripts/native-music-qa.mjs",
+    "assets:music": "node scripts/import-song-library.mjs && node scripts/prepare-song-audio.mjs"
   },
   "dependencies": {
     "@vercel/blob": "2.8.0",

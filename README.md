@@ -20,10 +20,12 @@ The default opening puzzle is the supplied 16-ring heart level (`beat-bloom-hear
 
 ## Create a playable
 
-1. **Gameplay:** select a song, then adjust the shape, colors, ring count, spacing, line thickness, and ball controls. Advanced pattern settings include the 20 imported ring templates.
+1. **Gameplay:** select from 72 song arrangements, then adjust the shape, colors, ring count, spacing, line thickness, and ball controls. Under **Palette**, choose the instruments each color brings in and listen to individual parts. Advanced pattern settings include the 20 imported ring templates.
 2. **Play:** try the puzzle in the live preview. Save level JSON to keep an editable copy. Load it to resume later.
 3. **Design:** customize the ending, upload a logo or icon, adjust text and button sizes, and choose whether to show Replay.
 4. **Export:** select the ad network and file format, review the install destination, then download the current playable.
+
+Studio remembers the current draft and each song’s color assignments in this browser. Switching songs keeps the puzzle and design. Audio loads on demand; opening the song list does not download the library. See [Songs and color assignments](docs/MUSIC.md).
 
 **Open playable** opens the current authored level. **Share** saves an immutable copy and creates a short link. Anyone with the link can play it; later edits do not change the shared copy. A localhost link works only on your computer.
 

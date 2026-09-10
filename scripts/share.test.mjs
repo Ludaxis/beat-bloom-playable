@@ -51,7 +51,7 @@ test('share rejects malformed, oversized, cross-origin and invalid gameplay befo
     [post('x'.repeat(262145)), 413],
     [post('{'), 400],
     [post({ ...snapshot, profile: 'unknown' }), 400],
-    [post({ ...snapshot, level: { ...level, songId: 'sunflower' } }), 422],
+    [post({ ...snapshot, level: { ...level, songId: 'missing-song' } }), 422],
     [new Request(origin + '/api/share?id=../secret'), 400],
     [post({ ...snapshot, extra: true }), 400],
   ])

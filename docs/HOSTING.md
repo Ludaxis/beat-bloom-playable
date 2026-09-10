@@ -6,11 +6,11 @@ The Studio runs at https://beatbloomstudio.ludaxis.io. The root opens the editor
 
 Vercel project: `beat-bloom-playable`, team `joyixir-games`. Build with `npm run build`; publish `dist`. `vercel.json` defines Studio, shared-viewer and legacy preview routes. The Cloudflare DNS record is a DNS-only CNAME: `beatbloomstudio` → `cname.vercel-dns.com`, as recommended by Vercel for this domain. Vercel provisions HTTPS. The main ludaxis.io website is a separate project.
 
-The build copies Studio files and its worker into `dist/review`, with approved icon/logo previews in `dist/assets`. Gameplay HTML includes its own assets. `.vercelignore` excludes dependencies, local captures and generated deliveries from CLI uploads.
+The build copies Studio files and its worker into `dist/review`, with approved icon/logo previews in `dist/assets`. Hosted gameplay previews load selected-song media from `/assets/` after a gesture; offline ad HTML includes its selected assets. The build publishes the song metadata at `/assets/music/catalog.json`. `.vercelignore` excludes dependencies, local captures and generated deliveries from CLI uploads.
 
 ## Custom exports
 
-`api/export.js` adapts the existing package builder to Vercel's Node runtime. Requests must be same-origin JSON and at most 256 KiB. Package validation and ad-network size checks are shared with the local server. Responses stream in bounded chunks so valid HTML packages over 4.5 MB can download. The function needs the source, prepared assets, esbuild and the runtime's dependencies; its explicit include list is in `vercel.json`.
+`api/export.js` adapts the existing package builder to Vercel's Node runtime. Requests must be same-origin JSON and at most 256 KiB. Package validation and ad-network size checks are shared with the local server. Responses stream in bounded chunks so valid HTML packages over 4.5 MB can download. The function needs the source, prepared delivery variants, esbuild and the runtime's dependencies; original fallback audio is static-only and excluded from function bundles; its explicit include list is in `vercel.json`.
 
 Exports do not need FFmpeg or write files. A busy instance rejects overlapping builds with a retry message. This guard is per instance, not a global rate limit. For a high-traffic public launch, configure rate limits in Vercel's firewall.
 
